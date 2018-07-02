@@ -1,0 +1,370 @@
+/* Begin Non-template CSS */
+
+/*
+  Start CSS
+  Location: Multiple Pages
+*/
+
+#modal-video {
+  height: 400px;
+  width: 600px;
+}
+
+.modal-logo {
+  max-height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+}
+
+#foundations-logo {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  #foundations-logo {
+    max-height: 20px;
+    margin-right: 0px;
+  }
+
+  .navbar-brand {
+    font-size: 12pt;
+  }
+
+  #modal-video {
+    max-width: 100%;
+    height: 60%;
+  }
+}
+
+/*
+  End CSS
+  Location: Multiple Pages
+*/
+
+
+/*
+   Start CSS
+   Location: Header
+
+*/
+
+video {
+  width: 100%;
+  height: 170%;
+}
+
+header .masthead {
+  text-align: center;
+  color: white;
+  height: 170%;
+  width: 100%;
+}
+
+.soundbutton {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 100px;
+  left: 46%;
+  color: white;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1));
+  border: 0px;
+  border-radius: 25%;
+  -webkit-animation: fadeOut 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
+  opacity: 0;
+}
+
+.soundOn {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3));
+  -webkit-animation: fadeOut 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
+}
+
+.soundbutton:hover {
+  cursor: pointer;
+  border-color: inherit;
+  opacity: 1;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@-moz-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media screen and (max-width: 787px) {
+  .masthead {
+    margin-top: 50px;
+  }
+
+  .soundbutton {
+    display: none;
+  }
+}
+
+/*
+   End CSS
+   Location: Header
+
+*/
+
+/*
+   Start CSS
+   Location: Exec Letter
+
+*/
+
+#section-main-content {
+  display: none;
+}
+
+#spring-cube {
+  height: 60%;
+  width: 40%;
+  display: inline-flex;
+  float: left;
+  margin: 20px;
+  margin-bottom: 200px;
+  /* border: double 5px black; */
+  box-shadow: 4px 4px 10px grey;
+  -webkit-animation: inFromLeft 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: inFromLeft 3s ease-out; /* Firefox < 16 */
+}
+
+@keyframes inFromLeft {
+  from {
+    position: relative;
+    opacity: 0;
+    left: -200px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@-moz-keyframes inFromLeft {
+  from {
+    position: relative;
+    opacity: 0;
+    left: -200px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+#exec-signOff {
+  text-align: right;
+}
+
+#exec-greeting {
+  text-align: justify;
+  -webkit-animation: inFromRight 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: inFromRight 3s ease-out; /* Firefox < 16 */
+}
+
+@keyframes inFromRight {
+  from {
+    position: relative;
+    opacity: 0;
+    right: -200px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@-moz-keyframes inFromRight {
+  from {
+    position: relative;
+    opacity: 0;
+    right: -200px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 786px) {
+  @keyframes inFromRight {
+    from {
+      position: relative;
+      opacity: 0;
+      bottom: -200px;
+    }
+    to {
+      position: relative;
+      opacity: 1;
+      bottom: 0px;
+    }
+  }
+
+  @-moz-keyframes inFromRight {
+    from {
+      position: relative;
+      opacity: 0;
+      bottom: -200px;
+    }
+    to {
+      position: relative;
+      opacity: 1;
+      bottom: 0px;
+    }
+  }
+}
+
+#welcome {
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+@media screen and (max-width: 1024px) {
+  #spring-cube {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #spring-cube {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #section-main-content {
+    display: block;
+  }
+}
+
+/*
+   End CSS
+   Location: Exec Letter
+
+*/
+
+/*
+   Start CSS
+   Location: Upcoming Events
+
+*/
+  .UpcomingEvents {
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  #summerBanner {
+      width: 100%;
+      height: 30%;
+  }
+
+  .bannerContent {
+    width: 60%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 575px) {
+    hello {
+        height: 10em;
+    }
+
+    .bannerContent {
+      text-align: justify;
+      width: 90%;
+    }
+  }
+
+/*
+   End CSS
+   Location: Exec Letter
+
+*/
+
+/*
+   Start CSS
+   Location: Highlights
+
+*/
+
+#highlight-main-content {
+  display: none;
+}
+
+#highlight-content-1 {
+  -webkit-animation: inFromBottom 4s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: inFromBottom 4s ease-out; /* Firefox < 16 */
+}
+
+#highlight-content-2 {
+  -webkit-animation: inFromBottom 4s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: inFromBottom 4s ease-out; /* Firefox < 16 */
+}
+
+#highlight-content-3 {
+  -webkit-animation: inFromBottom 4s ease-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: inFromBottom 4s ease-out; /* Firefox < 16 */
+}
+
+@keyframes inFromBottom {
+  from {
+    position: relative;
+    opacity: 0;
+    bottom: -300px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@-moz-keyframes inFromBottom {
+  from {
+    position: relative;
+    opacity: 0;
+    top: -200px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+/*
+   End CSS
+   Location: Highlights
+
+*/
