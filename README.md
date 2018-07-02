@@ -14,7 +14,7 @@ This is a testing environment for a website before deployment live. Sharing this
 Head over to the <a href="https://josh-w42.github.io/testing-environment-fc/" />Github Pages site</a> to try it out. Then clone or fork this repository.
 
 ### Authors
-Josh Wilson.
+bensonhan, ironsummitmedia, and myself. But Design has changed over multiple years; meaning we've all put forth new designs.
 
 ### Acknowledgments:
 * Excited to work on this one.
