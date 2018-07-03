@@ -77,6 +77,13 @@ footer {
    Location: lship;
 */
 
+#whiteBack {
+  padding-top: 100px;
+  padding-bottom: 300px;
+  background-color: white;
+  color: black;
+}
+
 #leadership {
   background-color: black;
   height: 100em;
@@ -87,6 +94,10 @@ footer {
 
 .section-heading {
   text-align: center;
+}
+
+#mainNav {
+  background-color: rgba(34, 34, 34, 0.95);
 }
 
 /*
@@ -443,9 +454,9 @@ footer {
 
 /* End of cube */
 
-p {
-  color: lightgrey;
-}
+/* p {
+  color: grey;
+} */
 
 #missionStatement {
   margin-top: 20px;
