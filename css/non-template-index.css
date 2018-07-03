@@ -137,6 +137,10 @@ header .masthead {
 
 */
 
+#letterFrom {
+  padding-bottom: 25px;
+}
+
 #section-main-content {
   display: none;
 }
@@ -278,13 +282,13 @@ header .masthead {
 
 */
   .UpcomingEvents {
-    padding-top: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     width: 100%;
   }
 
   #summerBanner {
-      width: 100%;
-      height: 30%;
+    width: 100%;
   }
 
   .bannerContent {
@@ -296,10 +300,6 @@ header .masthead {
   }
 
   @media screen and (max-width: 575px) {
-    hello {
-        height: 10em;
-    }
-
     .bannerContent {
       text-align: justify;
       width: 90%;
@@ -315,8 +315,15 @@ header .masthead {
 /*
    Start CSS
    Location: Highlights
-
 */
+
+.portfolio-item {
+  box-shadow: 0px 0px 10px lightgrey;
+}
+
+#portfolio {
+  padding-top: 25px;
+}
 
 #highlight-main-content {
   display: none;
