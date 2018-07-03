@@ -72,52 +72,10 @@ footer {
 
 /*
    Start CSS
-   Location: Community
-*/
-
-#community {
-  padding-bottom: 0px;
-}
-
-/*
-  End CSS
-  Location: Community
-*/
-
-/*
-   Start CSS
-   Location: Testimonials
-*/
-
-
-#andrewWang,
-#andrewWangPhotoModal,
-.switchToPic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.testimonialPhoto {
-  border: 6px double black;
-}
-
-
-.portfolio-hover {
-  border-radius: 50%;
-}
-
-/*
-  End CSS
-  Location: Testimonials
-*/
-
-/*
-   Start CSS
    Location: footer
 */
+
+
 
 .contactInfo {
   color: white;
