@@ -83,6 +83,16 @@ footer {
   padding-bottom: 0px;
 }
 
+.section-heading {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 575px) {
+  .section-heading {
+    font-size: 14pt;
+  }
+}
+
 /*
   End CSS
   Location: Community
