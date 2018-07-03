@@ -42,6 +42,10 @@ footer {
   background-color: #222;
 }
 
+#mainNav {
+  background-color: rgba(34, 34, 34, 0.95);
+}
+
 /*
   End CSS
   Location: Multiple Pages
@@ -78,8 +82,8 @@ footer {
 */
 
 #whiteBack {
-  padding-top: 100px;
-  padding-bottom: 300px;
+  padding-top: 50px;
+  padding-bottom: 200px;
   background-color: white;
   color: black;
 }
@@ -114,6 +118,7 @@ footer {
   color: white;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 150px;
 }
 
 .word {
