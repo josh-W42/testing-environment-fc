@@ -287,7 +287,7 @@ header .masthead {
 }
 
 #welcome {
-  font-weight: bold;
+  font-family: BebasNeue;
   font-size: 16pt;
 }
 
@@ -328,6 +328,7 @@ header .masthead {
 
   #summerBanner {
     width: 100%;
+    position: relative;
   }
 
   .bannerContent {
