@@ -38,7 +38,7 @@
 
   <!-- Navigation -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="index.html">
         <img id="foundations-logo" class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/Copy of Copy of 2014-11-12 Logo Shapes White 5 pt.png" alt="Foundations Cube" />
@@ -51,8 +51,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="about.html">About us</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="leadership.html">Leadership</a>
+                  <a class="dropdown-item" href="community.html">Community</a>
+                  <a class="dropdown-item" href="pastTeams.html">Past Teams</a>
+              </div>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="events.html">Events</a>
