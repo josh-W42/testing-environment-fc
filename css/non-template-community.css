@@ -134,8 +134,8 @@ footer {
 */
 
 
-#andrewWang,
-#andrewWangPhotoModal,
+#modalImg,
+.testimonialPhoto,
 .switchToPic {
   width: 200px;
   height: 200px;
