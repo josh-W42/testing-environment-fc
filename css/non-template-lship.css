@@ -78,6 +78,17 @@ footer {
 
 .lazy {
   -webkit-animation: 5s fadein ease-in;
+  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /*
@@ -120,7 +131,6 @@ footer {
   color: white;
   padding: 1%;
   padding-top: 15%;
-  margin-left: 20%;
   padding-bottom: 15%;
   position: fixed;
 }
@@ -139,9 +149,13 @@ footer {
 
 
 @media screen and (max-width: 991px) {
-  #desktopOnlyNav {
-    display: none;
-  }
+    #desktopOnlyNav {
+        display: none;
+    }
+
+    #lshipDescription {
+          margin-left: 0px;
+    }
 }
 
 /*
@@ -156,7 +170,11 @@ footer {
 
 #lshipDescription {
   min-height: 1000px;
-  margin-left: 40%;
+  margin-left: 50%;
+}
+
+#directorPhoto {
+
 }
 
 

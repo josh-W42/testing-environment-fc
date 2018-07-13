@@ -78,6 +78,7 @@ footer {
 
 .lazy {
   -webkit-animation: 5s fadein ease-in;
+  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
 }
 
 
