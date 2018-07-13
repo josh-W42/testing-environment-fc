@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- All favicon support for mobile and web -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon0/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon0/favicon-32x32.png">
@@ -118,31 +118,32 @@
 
   <section id="portfolio">
     <div class="container">
-      <div class="row">
+      <div id="targetContainer" class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Testimonials</h2>
           <p>Come see what past members of Foundations have said about their experience.</p>
         </div>
-        <div class="col-md-12 col-sm-12 portfolio-item">
-          <a class="portfolio-link switchToPic" data-toggle="modal" href="#andrewWangModal">
+        <!-- Bellow is the template model I rebuild in the JavaScript code, don't delete -->
+        <!-- <div class="col-md-4 portfolio-item">
+          <a class="portfolio-link switchToPic" data-toggle="modal" href="#modal">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <img class="modal-logo lazy" src="img/Copy of Copy of 2014-12-28 Logo Shapes White Thick 10 pt.png" alt="Foundations Cube" />
+                <img class="modal-logo lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/Copy of Copy of 2014-12-28 Logo Shapes White Thick 10 pt.png" alt="Foundations Cube" />
               </div>
             </div>
-            <img id="andrewWang" class="lazy testimonialPhoto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/TestimonialPhotos/AndrewWang.jpg" alt="Andrew Wang" />
+            <img class="lazy testimonialPhoto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/TestimonialPhotos/AndrewWang.jpg" alt="Andrew Wang" />
           </a>
           <div class="portfolio-caption text-center">
             <h4>Andrew Wang</h4>
             <p class="text-muted">Economics Major, UCLA Class of 2019</p>
-            <p class="text-muted">Dance LSHIP: Captain</p>
-          </div>
+            <pclass="text-muted">Dance LSHIP: Captain</p>
+          </div> -->
         </div>
       </div>
     </div>
   </section>
 
-  <div class="portfolio-modal modal fade" id="andrewWangModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -154,31 +155,11 @@
           <div class="row">
             <div class="modal-body">
               <div class="col-lg-12">
-                <img id="andrewWangPhotoModal" class="lazy testimonialPhoto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/TestimonialPhotos/AndrewWang.jpg" alt="Andrew Wang" />
-                <h2>Andrew Wang</h2>
-                <p class="item-intro text-muted">Captain of SOL Winter '18</p>
-                <p class="item-intro">
-                  When I joined Foundations at the start of last school year, I
-                  had no idea how impactful this organization would become in
-                  shaping my college experience.
-                </p>
-                <p class="text-justify">
-                  I came in with no dance experience but quickly found a very
-                  supportive community among the incredible people I’ve met
-                  through Foundations, and I also developed a very unexpected
-                  passion for dance. During last school year's winter quarter,
-                  I joined Dance LSHIP as a captain in the hopes of inspiring
-                  others to become better dancers, leaders, and people while
-                  also giving them the opportunity to find a home for themselves
-                  just like I did. While there were certainly moments of
-                  challenge and struggle, the overall experience I had on
-                  LSHIP was truly amazing and I don’t regret a single moment of
-                  it. If you’re interested in joining LSHIP specifically as a
-                  captain, just know that any moments of difficulty or
-                  uncertainty are nothing compared to the incredible journey
-                  that you go through with your team, along with the fact that
-                  you played a big part in shaping that journey for your team.
-                </p>
+                <img id="modalImg" class="lazy testimonialPhoto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/TestimonialPhotos/AndrewWang.jpg" alt="Andrew Wang" />
+                <h2 id="modalName"></h2>
+                <p id="modalSubName" class="item-intro text-muted"></p>
+                <p id="modalIntro" class="item-intro"></p>
+                <p id="modalBody" class="text-justify"></p>
               </div>
               <br />
               <button id="closeModal" class="btn btn-primary" data-dismiss="modal" type="button">
