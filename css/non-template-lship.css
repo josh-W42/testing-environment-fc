@@ -76,6 +76,10 @@ footer {
   }
 }
 
+.lazy {
+  -webkit-animation: 5s fadein ease-in;
+}
+
 /*
   End CSS
   Location: Multiple Pages
@@ -103,6 +107,64 @@ footer {
   End CSS
   Location: navbar
 */
+
+/*
+   Start CSS
+   Location: Side Nav
+*/
+
+#desktopOnlyNav {
+  height: 100%;
+  width: 15%;
+  background-color: rgba(34, 34, 34, 0.95);
+  color: white;
+  padding: 1%;
+  padding-top: 15%;
+  margin-left: 20%;
+  padding-bottom: 15%;
+  position: fixed;
+}
+
+#desktopOnlyNav li {
+  list-style: none;
+}
+
+#desktopOnlyNav li:hover {
+  margin-left: 20px;
+  color: gold;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  #desktopOnlyNav {
+    display: none;
+  }
+}
+
+/*
+   End CSS
+   Location: Side Nav
+*/
+
+/*
+   Start CSS
+   Location: description
+*/
+
+#lshipDescription {
+  min-height: 1000px;
+  margin-left: 40%;
+}
+
+
+/*
+   End CSS
+   Location: lshipDescription
+*/
+
 
 /*
    Start CSS

@@ -76,6 +76,10 @@ footer {
   }
 }
 
+.lazy {
+  -webkit-animation: 5s fadein ease-in;
+}
+
 /*
   End CSS
   Location: Multiple Pages
