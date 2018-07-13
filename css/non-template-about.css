@@ -5,6 +5,10 @@
   Location: Multiple Pages
 */
 
+body {
+    -webkit-tap-highlight-color: inherit;
+}
+
 #modal-video {
   height: 400px;
   width: 600px;
@@ -44,6 +48,20 @@ footer {
 
 #mainNav.navbar-shrink {
   background-color: rgba(34, 34, 34, 0.95);
+}
+
+.dropdown-menu {
+    background-color: rgba(34, 34, 34, 0.95);
+}
+
+.dropdown-item {
+    color: white;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+    background-color: #fed136;
 }
 
 @font-face {
