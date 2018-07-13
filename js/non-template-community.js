@@ -135,8 +135,6 @@
 
       init: function() {
           let testimonials = connector.getTestimonials();
-          const rows = 4;
-          const cols = 3;
 
           /*
             This may be hard to follow, but what I basically wanted here was to
@@ -152,71 +150,66 @@
           */
 
 
-          let dataID = 0;
 
-          for(let i = 0; i < rows; i++) {
-              for(let j = 0; j < cols; j++) {
-                  let parentDiv = document.createElement('div');
-                  parentDiv.classList.add('col-md-4');
-                  parentDiv.classList.add('portfolio-item');
+          testimonials.forEach(function(test, dataID) {
+              let parentDiv = document.createElement('div');
+              parentDiv.classList.add('col-lg-3');
+              parentDiv.classList.add('portfolio-item');
 
-                  let linkToModal = document.createElement('A');
-                  linkToModal.classList.add('portfolio-link');
-                  linkToModal.classList.add('switchToPic');
-                  linkToModal.dataset.toggle = 'modal';
-                  linkToModal.href = '#modal';
-                  connector.linkClicks(linkToModal, dataID);
-                  parentDiv.appendChild(linkToModal);
+              let linkToModal = document.createElement('A');
+              linkToModal.classList.add('portfolio-link');
+              linkToModal.classList.add('switchToPic');
+              linkToModal.dataset.toggle = 'modal';
+              linkToModal.href = '#modal';
+              connector.linkClicks(linkToModal, dataID);
+              parentDiv.appendChild(linkToModal);
 
-                  let hoverDiv1 = document.createElement('div');
-                  hoverDiv1.classList.add('portfolio-hover');
-                  linkToModal.appendChild(hoverDiv1);
+              let hoverDiv1 = document.createElement('div');
+              hoverDiv1.classList.add('portfolio-hover');
+              linkToModal.appendChild(hoverDiv1);
 
-                  let hoverDiv2 = document.createElement('div');
-                  hoverDiv2.classList.add('portfolio-hover-content');
-                  hoverDiv1.appendChild(hoverDiv2);
+              let hoverDiv2 = document.createElement('div');
+              hoverDiv2.classList.add('portfolio-hover-content');
+              hoverDiv1.appendChild(hoverDiv2);
 
-                  let hoverImg = document.createElement('IMG');
-                  hoverImg.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
-                  hoverImg.dataset.src = "img/Copy of Copy of 2014-12-28 Logo Shapes White Thick 10 pt.png";
-                  hoverImg.alt = "Foundations Cube";
-                  hoverImg.classList.add('modal-logo');
-                  hoverImg.classList.add('lazy');
-                  hoverDiv2.appendChild(hoverImg);
+              let hoverImg = document.createElement('IMG');
+              hoverImg.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+              hoverImg.dataset.src = "img/Copy of Copy of 2014-12-28 Logo Shapes White Thick 10 pt.png";
+              hoverImg.alt = "Foundations Cube";
+              hoverImg.classList.add('modal-logo');
+              hoverImg.classList.add('lazy');
+              hoverDiv2.appendChild(hoverImg);
 
-                  let testPhoto = document.createElement('IMG');
-                  testPhoto.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
-                  testPhoto.dataset.src = testimonials[dataID].img;
-                  testPhoto.alt = testimonials[dataID].name;
-                  testPhoto.classList.add('testimonialPhoto');
-                  testPhoto.classList.add('lazy');
-                  linkToModal.appendChild(testPhoto);
+              let testPhoto = document.createElement('IMG');
+              testPhoto.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+              testPhoto.dataset.src = test.img;
+              testPhoto.alt = test.name;
+              testPhoto.classList.add('testimonialPhoto');
+              testPhoto.classList.add('lazy');
+              linkToModal.appendChild(testPhoto);
 
-                  let captionDiv = document.createElement('div');
-                  captionDiv.classList.add('portfolio-caption');
-                  captionDiv.classList.add('text-center');
-                  parentDiv.appendChild(captionDiv);
+              let captionDiv = document.createElement('div');
+              captionDiv.classList.add('portfolio-caption');
+              captionDiv.classList.add('text-center');
+              parentDiv.appendChild(captionDiv);
 
-                  let testName = document.createElement('h4');
-                  testName.innerHTML = testimonials[dataID].name;
-                  captionDiv.appendChild(testName);
+              let testName = document.createElement('h4');
+              testName.innerHTML = test.name;
+              captionDiv.appendChild(testName);
 
-                  let uclaPara = document.createElement('p');
-                  uclaPara.innerHTML = testimonials[dataID].uclaInfo;
-                  uclaPara.classList.add('text-muted');
-                  captionDiv.appendChild(uclaPara);
+              let uclaPara = document.createElement('p');
+              uclaPara.innerHTML = test.uclaInfo;
+              uclaPara.classList.add('text-muted');
+              captionDiv.appendChild(uclaPara);
 
-                  let fcPara = document.createElement('p');
-                  fcPara.innerHTML = testimonials[dataID].fcInfo;
-                  fcPara.classList.add('text-muted');
-                  captionDiv.appendChild(fcPara);
+              let fcPara = document.createElement('p');
+              fcPara.innerHTML = test.fcInfo;
+              fcPara.classList.add('text-muted');
+              captionDiv.appendChild(fcPara);
 
-                  let portfolio = document.querySelector('#targetContainer');
-                  portfolio.appendChild(parentDiv);
-
-                  dataID++;
-              }
-          }
+              let portfolio = document.querySelector('#targetContainer');
+              portfolio.appendChild(parentDiv);
+          });
       }
 
   };
