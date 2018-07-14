@@ -1,4 +1,68 @@
+let words = document.querySelectorAll('.word');
+let i = 0;
+let topValues = [];
+let displayed = false;
+let fDisplayed = false;
+let fArray = [];
+fArray.push(document.querySelector('#ellisWong'));
+fArray.push(document.querySelector('#michelleTran'));
+fArray.push(document.querySelector('#michelleLiang'));
+fArray.push(document.querySelector('#joshuaFidelis'));
+fArray.push(document.querySelector('#ashleyPizarro'));
+fArray.push(document.querySelector('#lianaLiang'));
+fArray.push(document.querySelector('#jeremyQuan'));
+fArray.push(document.querySelector('#tennShaun'));
+fArray.push(document.querySelector('#sarahTian'));
+fArray.push(document.querySelector('#miyaSheker'));
+const fLimit = fArray.length;
+const limit = words.length;
 (function () {
+
+    // This is for the mobile verison, it's for building the cube.
+
+    window.addEventListener('load', function (){
+        if(window.innerWidth < 575) {
+            words.forEach(function (word){
+                topValues.push(word.style.top);
+                word.style.top = 0;
+            });
+            function buildYourself() {
+                setTimeout( function (){
+                    if (i < limit && !fDisplayed) {
+                        words[i].classList.toggle('displayWord');
+                        words[i].style.top = null;
+                    }
+                    else if (!displayed) {
+                        displayed = true;
+                        i = 0;
+                        setTimeout(displayFC, 500);
+                    }
+                    if(!displayed){
+                        i++;
+                        buildYourself();
+                    }
+                }, 400);
+
+            }
+            function displayFC() {
+                setTimeout( function (){
+                    if (i < fLimit && !fDisplayed) {
+                        fArray[i].classList.toggle('displayF');
+                        i++;
+                    }
+                    else if (!fDisplayed) {
+                        displayed = true;
+                        i = 0;
+                    }
+                    if(!fDisplayed){
+                        displayFC();
+                    }
+                }, 500);
+            }
+            buildYourself();
+        }
+    });
+
   // Everything that follows should be primarily for the index.html page.
   document.querySelector('.soundbutton').addEventListener('click', toggleSound);
 
@@ -49,22 +113,12 @@
       window.attachEvent('on' + event, func)
     }
   }
-  window.addEventListener('load', function () {
-    videoControl();
-    window.addEventListener('scroll', fadeInSection);
 
-    function videoControl() {
-      // This function will determine whether controls are visable for the main video.
-      // On mobile or tablet it gives users more options on how to deal with the video.
-      if (this.innerWidth < 787) {
-        document.querySelector('video').controls = true;
-        document.querySelector('video').loop = false;
-      }
-      else{
-        document.querySelector('video').controls = false;
-        document.querySelector('video').loop = true;
-      }
-    }
+  window.addEventListener('load', function () {
+  window.addEventListener('scroll', fadeInSection);
+
+
+
 
     // I'm having content fade in when the user scrolls down to certain "target points."
     // mainly for aestical reasons.

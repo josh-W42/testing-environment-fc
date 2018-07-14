@@ -104,6 +104,223 @@ footer {
   Location: Multiple Pages
 */
 
+/*
+  Start CSS
+  Location: Word Cube mobile only
+ */
+
+ #leadership {
+     display: none;
+ }
+
+ /* in this section is the cube built for the smallest phone size. */
+
+ @media screen and (max-width: 575px) {
+
+   header {
+       display: none;
+   }
+
+   #leadership {
+       background-color: black;
+       height: 40em;
+       max-width: 100%;
+       padding-top: 100px;
+       display: block;
+   }
+
+   #wordCube {
+     width: 500px;
+     height: 600px;
+     max-width: 100%;
+     color: white;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 150px;
+   }
+
+   .word {
+     position: relative;
+     font-size: 12pt;
+     font-weight: bolder;
+     transition: all 1s;
+     opacity: 0;
+     display: inline-block;
+   }
+
+
+   .displayWord {
+     opacity: 1;
+   }
+
+   .displayF {
+     color: gold;
+   }
+
+   #wordCube {
+     width: 320px;
+     height: 350px;
+   }
+
+   #lianaLiang {
+     right: -9%;
+     font-size: 11pt;
+     transform: matrix(1, 0.6, -2, 1, 0, 0);
+     top: 1.5%;
+   }
+
+   #miyaSheker {
+     right: -13%;
+     font-size: 12pt;
+     transform: matrix(0.9, 0.6, -1.9, 1, 0, 0);
+     top: -24%;
+   }
+
+   #marceaSuwandi {
+     top: 14%;
+     right: -26.5%;
+     font-size: 15pt;
+     transform: matrix(1, -0.5, 1.5, 1, 0, 0);
+   }
+
+   #tennShaun {
+     right: -16%;
+     top: -24%;
+     font-size: 16pt;
+     transform: matrix(1, -0.5, 1.5, 1, 0, 0);
+   }
+
+   #ellisWong {
+     top: 59.5%;
+     right: 24.5%;
+     transform: matrix(0, -1.3, 2, 1, 0, 0);
+   }
+
+   #michelleTran {
+     right: 44.5%;
+     top: 60%;
+     font-size: 12pt;
+     transform: matrix(0, -1, 2, -1, 0, 0);
+   }
+
+   #joshuaFidelis {
+     top: 28%;
+     right: 57%;
+     font-size: 12pt;
+     transform: matrix(0, -1, 2, 1, 0, 0);
+   }
+
+   #ashleyPizarro {
+     top: 22.5%;
+     right: 21%;
+     transform: matrix(3.1, 2, 0, 4, 0, 0);
+     font-size: 5pt;
+   }
+
+   #annaTian {
+     top: 69%;
+     left: 34.5%;
+     font-size: 12pt;
+     transform: matrix(0, -1, 2, 1, 0, 0);
+   }
+
+   #vivianTan {
+     top: 41.5%;
+     right: -22%;
+     font-size: 11pt;
+     transform: matrix(0, -1.5, 2, 1, 0, 0);
+   }
+
+   #michelleLiang {
+     top: 29%;
+     right: 22%;
+     font-size: 12pt;
+     transform: matrix(0, -1, 2, -1, 0, 0);
+   }
+
+   #andrewWang {
+     top: 40%;
+     right: 9%;
+     font-size: 12pt;
+     transform: matrix(0, -1, 2, -1, 0, 0);
+   }
+
+   #zacharyHuang {
+     right: -63%;
+     top: 21%;
+     font-size: 5pt;
+     transform: matrix(2, -1, 0, 4, 0, 0);
+   }
+
+   #sylviaHuynh {
+     right: -71%;
+     top: 12.5%;
+     font-size: 6pt;
+     transform: matrix(2, -1, 0, 3, 0, 0);
+   }
+
+   #tiaLiu {
+     right: 22%;
+     top: 66%;
+     font-size: 9.5pt;
+     transform: matrix(1, -0.5, 1.5, 1, 0, 0);
+   }
+
+   #bensonHan {
+     right: -85%;
+     top: 67.5%;
+     font-size: 5pt;
+     transform: matrix(2, -1, 0, 4, 0, 0);
+   }
+
+   #lisaChao {
+     top: 50.5%;
+     right: -77%;
+     font-size: 9pt;
+     transform: matrix(1, -0.5, 1.5, 1, 0, 0);
+   }
+
+   #jeremyQuan {
+     right: 24%;
+     font-size: 4.5pt;
+     transform: matrix(2, -1, 0, 3, 0, 0);
+     top: -12%;
+   }
+
+   #sarahTian {
+     right: -19.6%;
+     transform: matrix(3, 2, 0, 5, 0, 0);
+     font-size: 3.5pt;
+     top: -12%;
+   }
+
+   #joshLai {
+     font-size: 12pt;
+     transform: matrix(0, -1, 2, -1, 0, 0);
+     top: 67.5%;
+     right: -15%;
+   }
+
+   #jesicaTruong {
+     top: 29.5%;
+     right: 4%;
+     font-size: 7pt;
+     transform: matrix(2, -1, 0, 2, 0, 0);
+   }
+
+   #rebeccaLin {
+     right: -55%;
+     top: 76.5%;
+     font-size: 6pt;
+     transform: matrix(2, -1, 0, 3, 0, 0);
+   }
+ }
+
+ /*
+    End CSS
+    Location: Word Cube mobile only
+ */
+
 
 /*
    Start CSS
