@@ -9,7 +9,6 @@
               name: "Andrew Wang",
               subName: "Captain of SOL Winter '18",
               uclaInfo: "Economics Major, UCLA Class of 2019",
-              fcInfo: "Dance LSHIP: Captain",
               intro: "When I joined Foundations at the start of last school year, I had no idea how impactful this organization would become in shaping my college experience.",
               body: "I came in with no dance experience but quickly found a very supportive community among the incredible people I’ve met through Foundations, and I also developed a very unexpected passion for dance. During last school year's winter quarter, I joined Dance LSHIP as a captain in the hopes of inspiring others to become better dancers, leaders, and people while also giving them the opportunity to find a home for themselves just like I did. While there were certainly moments of challenge and struggle, the overall experience I had on LSHIP was truly amazing and I don’t regret a single moment of it. If you’re interested in joining LSHIP specifically as a captain, just know that any moments of difficulty or uncertainty are nothing compared to the incredible journey that you go through with your team, along with the fact that you played a big part in shaping that journey for your team."
           },
@@ -18,7 +17,6 @@
               name: "Kyle Diep",
               subName: "Captain of REV Fall 2017",
               uclaInfo: "Biology, 4th year",
-              fcInfo: "Dance LSHIP: Captain",
               intro: "Like many people in Foundations, I never thought that I would ever dance in my life. But I took a chance. I started freshman year and have been dancing a little over a year and a half.",
               body: "To think the first time I did this, I was unwillingly dragged with 10 friends (who all dropped lmao), but now I'm the one dragging people here. However, I still would never have thought to become a captain because I never thought I was good enough dance-wise for the position. I was blessed that I was able to become a captain even with my fears still lingering in my head. But being a captain was truly something I do not regret. Everyone brought a certain dynamic to the team and it made being a captain easier because everyone was friendly. The experience is so rewarding as you can see the progression of everyone throughout the quarter and know that you helped instill their passion for dance. If you are having second thoughts about being a captain, I would say do it. Don't have regrets later in your head because this experience was something of a lifetime. Foundations has given me everlasting friends and the opportunity to find my love for dance and to go even further, eventually joining VSU Modern. If you ever need to talk about dance or becoming a captain, hit me up I'll always be there to talk~ Shoutout to all my REV bbs, Dual Core, and .PDF dancers xoxo."
           },
@@ -27,9 +25,16 @@
               name: "Michelle Tran",
               subName: "Captain of Eta Spring '18 and Events Chair '18-'19",
               uclaInfo: "Second Year Undeclared Life Sciences",
-              fcInfo: "Admin LSHIP and Dance LSHIP: Captain",
               intro: "The biggest thing I took away from joining Foundations is that you can find a home and a place where you really feel like you belong with this org.",
               body: "Herro! I'm one of the new Events Chairs for the '18-'19 Admin LSHIP but since that hasn't happened quite yet, I'll write about being a captain! (LET'S GO ETA <3). There are so many people from different walks of life and each one is worlds away different from you, but at the end of each quarter, you've spent countless hours working and dancing side by side with these people, and you build so much from it that those differences don't really matter anymore. Experiencing this first hand as a member, it pushed me to be a part of that process by applying for captain for the Spring quarter! Captaining was certainly an amazing experience and so rewarding because you walk through the whole process by your teammates' sides (even through it can mean dancing in a parking lot for 6 hours). But I wouldn't really have it any other way, because I'm on that stage dancing with some of my best friends who, 9 weeks before, were just complete strangers in my life! I'm really excited to be coming back to this org next year as one of the next Events Chairs! I really wanted to help bring this experience to new and returning members and I can't wait to see what the new year has in store! Cy@ all the events keke c;  P.S. HI ETA ILY K BYE"
+          },
+          {
+              img: "img/TestimonialPhotos/Nguyen_Andrew.jpg",
+              name: "Andrew Nguyen",
+              subName: "Photographer",
+              uclaInfo: "Biology, 3rd year",
+              intro: "I dance because it brings people together. It's not just dance, but the community.",
+              body: "From Foundations, I've had the privilege to meet so many diverse and interesting people that have contributed so much to my personality and character. I feel like I have grown more comfortable in my own skin, developed my passion as a photographer, and have become a better person."
           },
           {
               img: "http://thecatapi.com/api/images/get?format=src&type=gif",
@@ -69,11 +74,11 @@
           */
 
           for(let i = 0; i < 12; i++) {
-              if(i < 3) {
+              if(i < 4) {
                   data.displayedTestimonials.push(data.testimonials[i]);
               }
               else {
-                  data.displayedTestimonials.push(data.testimonials[3]);
+                  data.displayedTestimonials.push(data.testimonials[4]);
               }
           }
       },
@@ -119,7 +124,7 @@
           link.addEventListener('click', function(){
               document.querySelector('#modalImg').src = data.displayedTestimonials[id].img;
               document.querySelector('#modalName').innerHTML = data.displayedTestimonials[id].name;
-              document.querySelector('#modalSubName').innerHTML = data.displayedTestimonials[id].fcInfo;
+              document.querySelector('#modalSubName').innerHTML = data.displayedTestimonials[id].subName;
               document.querySelector('#modalIntro').innerHTML = data.displayedTestimonials[id].intro;
               document.querySelector('#modalBody').innerHTML = data.displayedTestimonials[id].body;
           });
@@ -203,7 +208,7 @@
               captionDiv.appendChild(uclaPara);
 
               let fcPara = document.createElement('p');
-              fcPara.innerHTML = test.fcInfo;
+              fcPara.innerHTML = test.subName;
               fcPara.classList.add('text-muted');
               captionDiv.appendChild(fcPara);
 
