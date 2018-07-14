@@ -52,6 +52,7 @@ footer {
 
 .dropdown-menu {
     background-color: rgba(34, 34, 34, 0.95);
+    border: none;
 }
 
 .dropdown-item {
