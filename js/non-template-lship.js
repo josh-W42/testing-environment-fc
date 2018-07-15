@@ -219,6 +219,9 @@
           document.querySelectorAll('.branchLink').forEach(function(link){
             link.addEventListener('click', function() {
               data.branchID = link.innerHTML.toLowerCase();
+              if (data.branchID === 'team relations'){
+                data.branchID = 'teamRelations';
+              }
               connector.ready();
             });
           });
@@ -271,9 +274,6 @@
 
         //must be in lower case
         let branch = data.branchID;
-        if (branch === 'team relations'){
-          branch = 'teamRelations';
-        }
 
         let sectionTag = document.querySelector('#lshipDescription');
 
