@@ -296,7 +296,7 @@
         } else {
           secondPhoto.style.display = 'none';
           secondPhoto.classList.toggle('execPicStyle');
-          directorPhoto.classList.toggle('execPicStyle');
+          directorPhoto.classList.remove('execPicStyle');
           directorPhoto.src = data.branches[branch].director.photo;
           directorPhoto.alt = data.branches[branch].director.title;
         }
