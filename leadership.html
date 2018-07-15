@@ -56,10 +56,10 @@
                   About
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="about.html">Mission and History</a>
-                  <a class="dropdown-item" href="leadership.html">Leadership</a>
-                  <a class="dropdown-item" href="community.html">Community</a>
-                  <a class="dropdown-item" href="pastTeams.html">Past Teams</a>
+                <a class="dropdown-item" href="about.html">Mission and History</a>
+                <a class="dropdown-item" href="leadership.html">Leadership</a>
+                <a class="dropdown-item" href="community.html">Community</a>
+                <a class="dropdown-item" href="pastTeams.html">Past Teams</a>
               </div>
           </li>
           <li class="nav-item">
@@ -67,6 +67,17 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="apply.html">Apply</a>
+          </li>
+          <li id="lshipDropdown" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Branches
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Executives</a>
+                <a class="dropdown-item" href="#">Events</a>
+                <a class="dropdown-item" href="#">Media</a>
+                <a class="dropdown-item" href="#">Past Teams</a>
+              </div>
           </li>
         </ul>
       </div>
@@ -80,22 +91,28 @@
       <div>
         <h3>Leadership 2018/19</h3>
         <ul>
-          <li>Executives</li>
-          <li>Events</li>
-          <li>Media</li>
-          <li>Finance</li>
-          <li>Showcase</li>
-          <li>Team Relations</li>
+          <li class="branchLink">Executives</li>
+          <li class="branchLink">Events</li>
+          <li class="branchLink">Media</li>
+          <li class="branchLink">Finance</li>
+          <li class="branchLink">Showcase</li>
+          <li class="branchLink">Team Relations</li>
         </ul>
       </div>
     </Nav>
   </aside>
 
-  <section id="lshipDescription">
-    <div class="col-md-12">
-      <h3 id="lshipTitle">Events</h3>
-      <img id="directorPhoto" src="img/lship/WongEllis.jpg" alt="Director of Events: Ellis Wong" />
+  <section id="lshipDescription">-
+    <h4 id="directorName"></h4>
+    <h5 id="directorTitle"></h5>
+    <br />
+    <div id="descriptionHead" class="col-md-12">
+      <img class="directorPhoto" src="" alt="" />
+      <img class="execSecondPhoto" src="" alt="" />
+      <p id="branchBody"></p>
     </div>
+    <h2 id="imgArrayTitle">Admins</h2>
+    <div id="adminPicTarget" class="row"></div>
   </section>
 
 

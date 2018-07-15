@@ -142,10 +142,13 @@ footer {
    Start CSS
    Location: Side Nav
 */
+section {
+  padding-top: 100px;
+}
 
 #desktopOnlyNav {
   height: 100%;
-  width: 15%;
+  width: 20%;
   background-color: rgba(34, 34, 34, 0.95);
   color: white;
   padding: 1%;
@@ -167,14 +170,11 @@ footer {
 
 
 
-@media screen and (max-width: 991px) {
-    #desktopOnlyNav {
-        display: none;
-    }
 
-    #lshipDescription {
-          margin-left: 0px;
-    }
+@media screen and (max-width: 991px) {
+  #desktopOnlyNav {
+    display: none;
+  }
 }
 
 /*
@@ -187,15 +187,141 @@ footer {
    Location: description
 */
 
+#imgArrayTitle {
+  margin-top: 20%;
+}
+
 #lshipDescription {
-  min-height: 1000px;
-  margin-left: 50%;
+  margin-left: 20%;
+  text-align: center;
 }
 
-#directorPhoto {
-
+.directorPhoto,
+.execSecondPhoto {
+  width: 30em;
+  margin-left: 40px;
 }
 
+.execPicStyle {
+  width: 20em;
+}
+
+.directorPhoto {
+  display: inline-flex;
+}
+
+#branchBody {
+  text-align: justify;
+  display: inline-flex;
+  width: 50em;
+  margin-top: 50px;
+}
+
+#adminImgArray {
+  margin-right: auto;
+}
+
+
+.adminPics {
+  margin: 2px;
+  width: 13em;
+  height: 13em;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.adminPics:hover {
+  cursor: pointer;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  transition: 0.75s ease;
+}
+
+@media screen and (max-width: 500px) {
+
+  #branchBody {
+    width: 90%;
+  }
+
+
+  .directorPhoto,
+  .execSecondPhoto {
+    width: 15em;
+    margin-left: 0px;
+  }
+
+  .execPicStyle {
+    width: 10em;
+  }
+
+  #lshipDescription {
+    margin-left: 0px;
+  }
+
+  .adminPics {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 500px) {
+
+  #lshipDescription {
+    max-width: 100%;
+  }
+
+  #branchBody {
+    width: 90%;
+  }
+
+  .directorPhoto,
+  .execSecondPhoto {
+    width: 25em;
+    margin-left: 0px;
+  }
+
+  .execPicStyle {
+    width: 15em;
+  }
+
+
+  #lshipDescription {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .directorPhoto,
+  .execSecondPhoto {
+    width: 20em;
+    float: left;
+    margin-left: 5%;
+  }
+
+  .execPicStyle {
+    margin-left: 15%;
+  }
+
+  #execSecondPhoto {
+    float: right;
+    margin-right: 5%;
+  }
+
+  #branchBody {
+    text-align: justify;
+    width: 45em;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .directorPhoto,
+  .execSecondPhoto {
+    width: 25em;
+    float: left;
+    margin-left: 15%;
+  }
+}
 
 /*
    End CSS
