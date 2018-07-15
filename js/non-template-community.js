@@ -29,7 +29,7 @@
               body: "Herro! I'm one of the new Events Chairs for the '18-'19 Admin LSHIP but since that hasn't happened quite yet, I'll write about being a captain! (LET'S GO ETA <3). There are so many people from different walks of life and each one is worlds away different from you, but at the end of each quarter, you've spent countless hours working and dancing side by side with these people, and you build so much from it that those differences don't really matter anymore. Experiencing this first hand as a member, it pushed me to be a part of that process by applying for captain for the Spring quarter! Captaining was certainly an amazing experience and so rewarding because you walk through the whole process by your teammates' sides (even through it can mean dancing in a parking lot for 6 hours). But I wouldn't really have it any other way, because I'm on that stage dancing with some of my best friends who, 9 weeks before, were just complete strangers in my life! I'm really excited to be coming back to this org next year as one of the next Events Chairs! I really wanted to help bring this experience to new and returning members and I can't wait to see what the new year has in store! Cy@ all the events keke c;  P.S. HI ETA ILY K BYE"
           },
           {
-              img: "img/TestimonialPhotos/Nguyen_Andrew.jpg",
+              img: "img/TestimonialPhotos/Nguyen_Andrew.JPG",
               name: "Andrew Nguyen",
               subName: "Photographer",
               uclaInfo: "Biology, 3rd year",
@@ -37,7 +37,7 @@
               body: "From Foundations, I've had the privilege to meet so many diverse and interesting people that have contributed so much to my personality and character. I feel like I have grown more comfortable in my own skin, developed my passion as a photographer, and have become a better person."
           },
           {
-              img: "http://thecatapi.com/api/images/get?format=src&type=gif",
+              img: "https://thecatapi.com/api/images/get?format=src&type=gif",
               name: "Cat",
               subName: "I'm a cool cat",
               uclaInfo: "Dance Major, UCLA Class of 2020 (hehe)",
