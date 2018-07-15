@@ -112,7 +112,7 @@
                       photo: "img/temporary/WilsonJosh.jpg",
                       name: "Josh Wilson",
                       title: "Webmaster",
-                      detail: "Error 2020: go to office hours"
+                      detail: "Error 2020: Must sleep"
                   }
               ]
 
