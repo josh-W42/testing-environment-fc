@@ -227,7 +227,7 @@
                 document.querySelector('#lshipDescription').classList.remove('goAway');
                 document.querySelector('#lshipDescription').classList.add('flyIn');
                 connector.ready();
-              }, 900)
+              }, 750)
             });
           });
       },
@@ -272,6 +272,7 @@
 
       init: function() {
         data.branchID = 'executives';
+        document.querySelector('#lshipDescription').classList.add('flyIn');
         view.render();
       },
 

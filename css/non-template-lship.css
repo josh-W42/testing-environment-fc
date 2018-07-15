@@ -197,13 +197,13 @@ section {
 }
 
 .flyIn {
-  -webkit-animation: flyIn 1s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: flyIn 1s ease; /* Firefox < 16 */
+  -webkit-animation: flyIn 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyIn 1.5s ease; /* Firefox < 16 */
 }
 
 .goAway {
-  -webkit-animation: flyOut 1s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: flyOut 1s ease; /* Firefox < 16 */
+  -webkit-animation: flyOut 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyOut 1.5s ease; /* Firefox < 16 */
 }
 
 .directorPhoto,
