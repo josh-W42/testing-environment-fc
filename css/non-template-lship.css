@@ -273,6 +273,14 @@ section {
   }
 }
 
+#adminBox {
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  width: 13em;
+}
+
 @media screen and (max-width: 500px) {
 
   #branchBody {
@@ -297,6 +305,10 @@ section {
   .adminPics {
     width: 10em;
     height: 10em;
+  }
+
+  #adminBox {
+    width: 10em;
   }
 }
 
@@ -358,6 +370,7 @@ section {
     margin-left: 15%;
   }
 }
+
 
 /*
    End CSS

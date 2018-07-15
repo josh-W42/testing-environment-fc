@@ -215,7 +215,6 @@
           model.registerListener('load', model.lazyLoad);
           model.registerListener('scroll', model.lazyLoad);
 
-
           document.querySelectorAll('.branchLink').forEach(function(link){
             link.addEventListener('click', function() {
               data.branchID = link.innerHTML.toLowerCase();
@@ -230,6 +229,22 @@
               }, 750)
             });
           });
+      },
+
+      adminContent: function() {
+        document.querySelectorAll('.adminPics').forEach(function(pic){
+          pic.addEventListener('mouseout', function(e){
+            document.querySelector('#adminBox').remove();
+          });
+          pic.addEventListener('mouseover', function(e){
+            let offsets = e.target.getBoundingClientRect();
+            let xcord = offsets.left;
+            let ycord = offsets.top + window.pageYOffset - e.target.clientTop;
+            let name = e.target.alt;
+
+            connector.createTextBox(xcord,ycord,name);
+          });
+        });
       },
 
       setLazy: function(){
@@ -283,15 +298,28 @@
 
         let sectionTag = document.querySelector('#lshipDescription');
 
+
         let directorName = document.querySelector('#directorName');
         directorName.innerHTML = data.branches[branch].director.name;
 
         let directorTitle = document.querySelector('#directorTitle');
         directorTitle.innerHTML = data.branches[branch].director.title;
 
+        let imgArrayTitle = document.querySelector('#imgArrayTitle');
+        imgArrayTitle.style.display = 'block';
+
         let directorPhoto = document.querySelector('.directorPhoto');
         let secondPhoto = document.querySelector('.execSecondPhoto');
-        if(branch === 'executives') {
+        if (branch != 'executives') {
+          imgArrayTitle.innerHTML = 'Admins';
+
+          secondPhoto.style.display = 'none';
+          secondPhoto.classList.remove('execPicStyle');
+          directorPhoto.classList.remove('execPicStyle');
+          directorPhoto.src = data.branches[branch].director.photo;
+          directorPhoto.alt = data.branches[branch].director.title;
+        } else {
+          imgArrayTitle.style.display = 'none';
           secondPhoto.style.display = 'inline-flex';
           directorPhoto.src = data.branches[branch].director.miya.photo;
           directorPhoto.alt = data.branches[branch].director.miya.name;
@@ -303,13 +331,10 @@
           if(!(secondPhoto.classList.contains('execPicStyle'))){
             secondPhoto.classList.add('execPicStyle');
           }
-        } else {
-          secondPhoto.style.display = 'none';
-          secondPhoto.classList.remove('execPicStyle');
-          directorPhoto.classList.remove('execPicStyle');
-          directorPhoto.src = data.branches[branch].director.photo;
-          directorPhoto.alt = data.branches[branch].director.title;
+        } if (branch === 'teamRelations'){
+            imgArrayTitle.innerHTML = 'Dance Leadership';
         }
+
 
         let branchBody = document.querySelector('#branchBody');
         branchBody.innerHTML = data.branches[branch].body;
@@ -333,6 +358,43 @@
             adminDiv.appendChild(adPic);
           });
         }
+
+        connector.createAdminContent();
+      },
+
+      displayAdminBox: function(x,y, id) {
+        if(document.querySelector('#adminBox') != null) {
+          document.querySelector('#adminBox').remove();
+        }
+
+        let adminBox = document.createElement('div');
+        adminBox.id = 'adminBox';
+        adminBox.style.left = x + "px";
+        if(window.innerWidth < 450) {
+          adminBox.style.top = y + 150 + "px";
+        } else {
+          adminBox.style.top = y + 215 + "px";
+        }
+        document.querySelector('body').appendChild(adminBox);
+
+        let admin;
+        data.branches[data.branchID].admins.forEach(function(member){
+          if(member.name === id) {
+            admin = member;
+          }
+        });
+
+
+        let boxTitle = document.createElement('h6');
+        boxTitle.innerHTML = admin.name;
+        let boxSubtitle = document.createElement('h6');
+        boxSubtitle.innerHTML = admin.title;
+        let smallDetail = document.createElement('span');
+        smallDetail.innerHTML = admin.detail;
+
+        adminBox.appendChild(boxTitle);
+        adminBox.appendChild(boxSubtitle);
+        adminBox.appendChild(smallDetail);
       }
   };
 
@@ -345,6 +407,14 @@
 
       ready: function() {
         view.render();
+      },
+
+      createAdminContent: function() {
+        model.adminContent();
+      },
+
+      createTextBox: function(x,y,id) {
+        view.displayAdminBox(x,y,id);
       }
 
   };
