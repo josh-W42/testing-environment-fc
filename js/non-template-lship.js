@@ -289,13 +289,17 @@
           secondPhoto.style.display = 'inline-flex';
           directorPhoto.src = data.branches[branch].director.miya.photo;
           directorPhoto.alt = data.branches[branch].director.miya.name;
-          directorPhoto.classList.toggle('execPicStyle');
+          if(!(directorPhoto.classList.contains('execPicStyle'))){
+            directorPhoto.classList.add('execPicStyle');
+          }
           secondPhoto.src = data.branches[branch].director.liana.photo;
           secondPhoto.alt = data.branches[branch].director.liana.name;
-          secondPhoto.classList.toggle('execPicStyle');
+          if(!(secondPhoto.classList.contains('execPicStyle'))){
+            secondPhoto.classList.add('execPicStyle');
+          }
         } else {
           secondPhoto.style.display = 'none';
-          secondPhoto.classList.toggle('execPicStyle');
+          secondPhoto.classList.remove('execPicStyle');
           directorPhoto.classList.remove('execPicStyle');
           directorPhoto.src = data.branches[branch].director.photo;
           directorPhoto.alt = data.branches[branch].director.title;
