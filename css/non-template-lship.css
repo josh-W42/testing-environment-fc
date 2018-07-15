@@ -196,6 +196,16 @@ section {
   text-align: center;
 }
 
+.flyIn {
+  -webkit-animation: flyIn 1s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyIn 1s ease; /* Firefox < 16 */
+}
+
+.goAway {
+  -webkit-animation: flyOut 1s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyOut 1s ease; /* Firefox < 16 */
+}
+
 .directorPhoto,
 .execSecondPhoto {
   width: 30em;
@@ -235,6 +245,32 @@ section {
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
   transition: 0.75s ease;
+}
+
+@keyframes flyOut {
+  from {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    top: -500px;
+  }
+}
+
+@keyframes flyIn {
+  from {
+    position: relative;
+    opacity: 0;
+    top: 500px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {

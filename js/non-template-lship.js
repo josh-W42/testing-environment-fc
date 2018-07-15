@@ -222,7 +222,12 @@
               if (data.branchID === 'team relations'){
                 data.branchID = 'teamRelations';
               }
-              connector.ready();
+              document.querySelector('#lshipDescription').classList.add('goAway');
+              setTimeout(function() {
+                document.querySelector('#lshipDescription').classList.remove('goAway');
+                document.querySelector('#lshipDescription').classList.add('flyIn');
+                connector.ready();
+              }, 900)
             });
           });
       },
