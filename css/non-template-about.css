@@ -638,10 +638,6 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
-  #slideShow button {
-    margin: 0px;
-    font-size: 0.75em;
-  }
 
   #previousBanner,
   #nextBanner {
@@ -667,12 +663,12 @@ footer {
   from {
     position: relative;
     opacity: 1;
-    top: 0px;
+    right: 0px;
   }
   to {
     position: relative;
     opacity: 0;
-    top: -100px;
+    right: -20px;
   }
 }
 
@@ -680,12 +676,12 @@ footer {
   from {
     position: relative;
     opacity: 1;
-    top: 0px;
+    right: 0px;
   }
   to {
     position: relative;
     opacity: 0;
-    top: -100px;
+    right: -20px;
   }
 }
 
@@ -693,12 +689,12 @@ footer {
   from {
     position: relative;
     opacity: 0;
-    top: 100px;
+    right: 20px;
   }
   to {
     position: relative;
     opacity: 1;
-    top: 0px;
+    right: 0px;
   }
 }
 
@@ -706,12 +702,12 @@ footer {
   from {
     position: relative;
     opacity: 0;
-    top: 100px;
+    right: 20px;
   }
   to {
     position: relative;
     opacity: 1;
-    top: 0px;
+    right: 0px;
   }
 }
 
@@ -729,12 +725,12 @@ footer {
   from {
     position: relative;
     opacity: 1;
-    bottom: 0px;
+    left: 0px;
   }
   to {
     position: relative;
     opacity: 0;
-    bottom: -100px;
+    left: -20px;
   }
 }
 
@@ -742,12 +738,12 @@ footer {
   from {
     position: relative;
     opacity: 1;
-    bottom: 0px;
+    left: 0px;
   }
   to {
     position: relative;
     opacity: 0;
-    bottom: -100px;
+    left: -20px;
   }
 }
 
@@ -755,12 +751,12 @@ footer {
   from {
     position: relative;
     opacity: 0;
-    bottom: 100px;
+    left: 20px;
   }
   to {
     position: relative;
     opacity: 1;
-    bottom: 0px;
+    left: 0px;
   }
 }
 
@@ -768,12 +764,12 @@ footer {
   from {
     position: relative;
     opacity: 0;
-    bottom: 100px;
+    left: 20px;
   }
   to {
     position: relative;
     opacity: 1;
-    bottom: 0px;
+    left: 0px;
   }
 }
 

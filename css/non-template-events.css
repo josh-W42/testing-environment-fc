@@ -79,6 +79,7 @@ footer {
 
 #mainNav .navbar-brand {
   font-family: BebasNeue;
+  color: #F3F1ED;
 }
 
 #mainNav .navbar-brand span {
@@ -93,11 +94,6 @@ footer {
   #mainNav .navbar-brand {
     font-size: 1.25em;
   }
-}
-
-.lazy {
-  -webkit-animation: 5s fadein ease-in;
-  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
 }
 
 @keyframes fadein {
@@ -136,6 +132,233 @@ footer {
 /*
   End CSS
   Location: navbar
+*/
+
+/*
+   Start CSS
+   Location: topMost box
+*/
+
+#banner {
+  width: 100%;
+}
+
+.workshopSection {
+  margin-top: 50px;
+}
+
+.workshopPhoto {
+  width: 100%;
+}
+
+#workshopDescription {
+  text-align: justify;
+  margin-top: 100px;
+}
+
+body {
+  background-color: #292B2C;
+  color: #F3F1ED;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 3px 3px 1px #DD2695;
+}
+
+#calendarImg{
+  width: 100%;
+}
+
+#previousBanner,
+#nextBanner {
+  font-size: 5em;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: #F3F1ED;
+  text-shadow: 0px 0px 10px #26CAD3;
+}
+
+#previousBanner:hover,
+#nextBanner:hover {
+    color: #26CAD3;
+    cursor: pointer;
+}
+
+#nextBanner:hover {
+  -webkit-animation: slideRight 1.5s ease infinite;
+}
+
+#previousBanner:hover {
+  -webkit-animation: slideLeft 1.5s ease infinite;
+}
+
+@keyframes slideRight {
+  from {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    left: 25px;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    left: -25px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  #previousBanner,
+  #nextBanner {
+    font-size: 3em;
+  }
+}
+
+.flyInRight {
+  -webkit-animation: flyInRight 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyright 1.5s ease; /* Firefox < 16 */
+}
+
+.flyOutRight {
+  -webkit-animation: flyOutRight 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyOutRight 1.5s ease; /* Firefox < 16 */
+}
+
+@keyframes flyOutRight {
+  from {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    right: -20px;
+  }
+}
+
+@-moz-keyframes flyOutRight {
+  from {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    right: -20px;
+  }
+}
+
+@keyframes flyInRight {
+  from {
+    position: relative;
+    opacity: 0;
+    right: 20px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@-moz-keyframes flyInRight {
+  from {
+    position: relative;
+    opacity: 0;
+    right: 20px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+.flyInLeft {
+  -webkit-animation: flyInLeft 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyInLeft 1.5s ease; /* Firefox < 16 */
+}
+
+.flyOutLeft {
+  -webkit-animation: flyOutLeft 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyOutLeft 1.5s ease; /* Firefox < 16 */
+}
+
+@keyframes flyOutLeft {
+  from {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    left: -20px;
+  }
+}
+
+@-moz-keyframes flyOutLeft {
+  from {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    left: -20px;
+  }
+}
+
+@keyframes flyInLeft {
+  from {
+    position: relative;
+    opacity: 0;
+    left: 20px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@-moz-keyframes flyInLeft {
+  from {
+    position: relative;
+    opacity: 0;
+    left: 20px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+/*
+  End CSS
+  Location: topmost box
 */
 
 /*
