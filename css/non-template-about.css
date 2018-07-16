@@ -136,14 +136,13 @@ footer {
 
 #whiteBack {
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 0px;
   background-color: white;
   color: black;
 }
 
 #leadership {
   background-color: black;
-  height: 100em;
   max-width: 100%;
   color: white;
   padding-top: 100px;
@@ -512,10 +511,6 @@ footer {
 
 /* End of cube */
 
-/* p {
-  color: grey;
-} */
-
 #missionStatement {
   margin-top: 20px;
   width: 75%;
@@ -559,11 +554,193 @@ footer {
 
 /*
    Start CSS
-   Location: community;
+   Location: SlideShow;
 */
 
-#community {
-  display: none;
+#slideShow {
+  padding-top: 0px;
+  text-align: center;
+}
+
+#bannerCaption {
+  margin-top: 50px;
+}
+
+#slideShow button {
+  margin: 25px;
+  background-color: inherit;
+  font-size: 1.25em;
+  border-radius: 5%;
+  box-shadow: 2px 2px 5px black;
+  border-color: transparent;
+}
+
+#slideShow button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: gold;
+}
+
+#bannerSlideshow {
+  position: relative;
+  width: 100%;
+}
+
+#previousBanner,
+#nextBanner {
+  font-size: 5em;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: silver;
+  text-shadow: 0px 0px 1px black;
+}
+
+#previousBanner:hover,
+#nextBanner:hover {
+    color: black;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+  #slideShow button {
+    margin: 0px;
+    font-size: 0.75em;
+  }
+
+  #previousBanner,
+  #nextBanner {
+    font-size: 3em;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: silver;
+    text-shadow: 0px 0px 1px black;
+  }
+}
+
+.flyInRight {
+  -webkit-animation: flyInRight 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyright 1.5s ease; /* Firefox < 16 */
+}
+
+.flyOutRight {
+  -webkit-animation: flyOutRight 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyOutRight 1.5s ease; /* Firefox < 16 */
+}
+
+@keyframes flyOutRight {
+  from {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    top: -100px;
+  }
+}
+
+@-moz-keyframes flyOutRight {
+  from {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    top: -100px;
+  }
+}
+
+@keyframes flyInRight {
+  from {
+    position: relative;
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@-moz-keyframes flyInRight {
+  from {
+    position: relative;
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+.flyInLeft {
+  -webkit-animation: flyInLeft 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyInLeft 1.5s ease; /* Firefox < 16 */
+}
+
+.flyOutLeft {
+  -webkit-animation: flyOutLeft 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyOutLeft 1.5s ease; /* Firefox < 16 */
+}
+
+@keyframes flyOutLeft {
+  from {
+    position: relative;
+    opacity: 1;
+    bottom: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    bottom: -100px;
+  }
+}
+
+@-moz-keyframes flyOutLeft {
+  from {
+    position: relative;
+    opacity: 1;
+    bottom: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    bottom: -100px;
+  }
+}
+
+@keyframes flyInLeft {
+  from {
+    position: relative;
+    opacity: 0;
+    bottom: 100px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@-moz-keyframes flyInLeft {
+  from {
+    position: relative;
+    opacity: 0;
+    bottom: 100px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    bottom: 0px;
+  }
 }
 
 /*
