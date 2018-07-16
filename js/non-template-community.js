@@ -37,6 +37,14 @@
               body: "From Foundations, I've had the privilege to meet so many diverse and interesting people that have contributed so much to my personality and character. I feel like I have grown more comfortable in my own skin, developed my passion as a photographer, and have become a better person."
           },
           {
+              img: "img/TestimonialPhotos/Zhu_Ludi.JPG",
+              name: "Ludi Zhu",
+              subName: "Captain of Sporks Fall '17",
+              uclaInfo: "3rd Year Communications Major",
+              intro: "I've heard that people call Foundations corny, which frankly is right on the mark.",
+              body: "FC is corny, dorky, yet somehow manages to consistently put together some truly impressive work. The people I have worked with believe in this org and it's mission, believe in helping others. So yeah, corny but worth it."
+          },
+          {
               img: "https://thecatapi.com/api/images/get?format=src&type=gif",
               name: "Cat",
               subName: "I'm a cool cat",
@@ -74,11 +82,11 @@
           */
 
           for(let i = 0; i < 12; i++) {
-              if(i < 4) {
+              if(i < 5) {
                   data.displayedTestimonials.push(data.testimonials[i]);
               }
               else {
-                  data.displayedTestimonials.push(data.testimonials[4]);
+                  data.displayedTestimonials.push(data.testimonials[5]);
               }
           }
       },

@@ -45,7 +45,7 @@
                       photo: "img/lship/ZhuLudi.jpg",
                       name: "Ludi Zhu",
                       title: "Events Chair",
-                      detail: ""
+                      detail: '"Me think, why waste time say lot word, when few word do trick." - Kevin Malone'
                   },
                   {
                       photo: "img/temporary/TranMichelle.jpg",
