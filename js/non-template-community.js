@@ -37,7 +37,7 @@
               body: "From Foundations, I've had the privilege to meet so many diverse and interesting people that have contributed so much to my personality and character. I feel like I have grown more comfortable in my own skin, developed my passion as a photographer, and have become a better person."
           },
           {
-              img: "img/TestimonialPhotos/Zhu_Ludi.jpg",
+              img: "img/TestimonialPhotos/Zhu_Ludi.png",
               name: "Ludi Zhu",
               subName: "Captain of Sporks Fall '17",
               uclaInfo: "3rd Year Communications Major",
