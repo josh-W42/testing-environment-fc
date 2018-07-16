@@ -98,13 +98,8 @@
 
           document.querySelector('#previousBanner').addEventListener('click', model.previousBanner);
           document.querySelector('#nextBanner').addEventListener('click', model.nextBanner);
-          model.passiveSlide();
       },
 
-      passiveSlide: function() {
-        model.nextBanner();
-        setTimeout(model.passiveSlide, 7000);
-      },
 
       nextBanner: function() {
         data.bannerID++;
