@@ -58,7 +58,7 @@
         title: "Aurora"
       },
       {
-        img: "img/Banners/friendsAndFam.JPG",
+        img: "img/Banners/friendsAndFam.png",
         name: "Friends and Fam Night",
         title: "Spring 2017"
       },
