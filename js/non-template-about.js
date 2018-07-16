@@ -75,7 +75,7 @@
       {
         img: "img/Banners/firstWintensive.jpg",
         name: "First Wintensive",
-        title: ""
+        title: "Winter 2018"
       },
       {
         img: "img/Banners/tenthShowcase.jpg",
