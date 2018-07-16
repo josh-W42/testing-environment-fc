@@ -148,6 +148,10 @@ footer {
   text-align: justify;
 }
 
+.workshopDescription {
+  margin-top: 75px;
+}
+
 .workshopPhoto {
   width: 100%;
 }
