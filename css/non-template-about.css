@@ -603,6 +603,40 @@ footer {
     cursor: pointer;
 }
 
+#nextBanner:hover {
+  -webkit-animation: slideRight 1.5s ease infinite;
+}
+
+#previousBanner:hover {
+  -webkit-animation: slideLeft 1.5s ease infinite;
+}
+
+@keyframes slideRight {
+  from {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    left: 25px;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    position: relative;
+    opacity: 1;
+    left: 0px;
+  }
+  to {
+    position: relative;
+    opacity: 0;
+    left: -25px;
+  }
+}
+
 @media screen and (max-width: 575px) {
   #slideShow button {
     margin: 0px;
