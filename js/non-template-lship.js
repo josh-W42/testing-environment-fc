@@ -76,7 +76,7 @@
                       photo: "img/lship/LiAnya.jpg",
                       name: "Anya Li",
                       title: "Design Chair",
-                      detail: ""
+                      detail: "A UX/UI designer and a member of A** Designs"
                   },
                   {
                       photo: "img/temporary/RenSisi.jpg",

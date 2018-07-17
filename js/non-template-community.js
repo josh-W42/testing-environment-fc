@@ -45,6 +45,14 @@
               body: "FC is corny, dorky, yet somehow manages to consistently put together some truly impressive work. The people I have worked with believe in this org and it's mission, believe in helping others. So yeah, corny but worth it."
           },
           {
+              img: "img/TestimonialPhotos/Li_Anya.jpg",
+              name: "Anya Li",
+              subName: "Admin LSHIP: Design '17-'19",
+              uclaInfo: "Communications '18-'19",
+              intro: "It is honestly the truth when I say this is such a unique space that no other university can really offer.",
+              body: "I'm sure that so many lives have been changed within this dance community of ours. So many of my personal moments now have been influenced by UCLA's dance community: the fact that I spend hours in dirty parking lots, why I don't sleep until 4 or 5 am, why all my designs just look like dance promo material, why I dress the way I dress, why I seek the [dance] idols I do now, why all my recommended YouTube videos are just dance. It seems cheesy to say that one organization has helped propelled me into avenues that I never expected before -- but it is the truth. I hope that everyone who has joined Foundations has taken away something -- no matter how small or even if it isn't dance related -- and has seen how that made changes in their lives."
+          },
+          {
               img: "https://thecatapi.com/api/images/get?format=src&type=gif",
               name: "Cat",
               subName: "I'm a cool cat",
@@ -82,11 +90,11 @@
           */
 
           for(let i = 0; i < 12; i++) {
-              if(i < 5) {
+              if(i < 6) {
                   data.displayedTestimonials.push(data.testimonials[i]);
               }
               else {
-                  data.displayedTestimonials.push(data.testimonials[5]);
+                  data.displayedTestimonials.push(data.testimonials[6]);
               }
           }
       },
