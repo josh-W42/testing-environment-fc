@@ -103,15 +103,14 @@
   // Note, on mobile and smaller tablet it will not be visible.
 
   function toggleSound(e) {
-    e.target.classList.toggle('soundOn');
     let video = document.querySelector('video');
     if (video.muted === true) {
+      e.target.src = 'img/Animations and Buttons/Speaker_IconOn.svg';
       video.muted = false;
-      e.target.innerHTML = "Sound ON";
     }
     else if(video.muted === false) {
+      e.target.src = 'img/Animations and Buttons/Speaker_IconOff.svg';
       video.muted = true;
-      e.target.innerHTML = "Sound OFF";
     }
   }
 

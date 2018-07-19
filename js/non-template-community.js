@@ -29,6 +29,14 @@
               body: "Herro! I'm one of the new Events Chairs for the '18-'19 Admin LSHIP but since that hasn't happened quite yet, I'll write about being a captain! (LET'S GO ETA <3). There are so many people from different walks of life and each one is worlds away different from you, but at the end of each quarter, you've spent countless hours working and dancing side by side with these people, and you build so much from it that those differences don't really matter anymore. Experiencing this first hand as a member, it pushed me to be a part of that process by applying for captain for the Spring quarter! Captaining was certainly an amazing experience and so rewarding because you walk through the whole process by your teammates' sides (even through it can mean dancing in a parking lot for 6 hours). But I wouldn't really have it any other way, because I'm on that stage dancing with some of my best friends who, 9 weeks before, were just complete strangers in my life! I'm really excited to be coming back to this org next year as one of the next Events Chairs! I really wanted to help bring this experience to new and returning members and I can't wait to see what the new year has in store! Cy@ all the events keke c;  P.S. HI ETA ILY K BYE"
           },
           {
+            img: "img/TestimonialPhotos/Wong_Ellis.jpg",
+            name: "Ellis Wong",
+            subName: "Events Chair 17-18",
+            uclaInfo: "Physiological Science, 4th year",
+            intro: "Like most people, I originally joined Foundations just to have fun, make new friends, and try dancing for a quarter (something I never would’ve imagined doing).",
+            body: "What I didn’t know was that I would meet some of my closest college friends, develop a newfound passion for dance, and become a part of a such a close-knit community that is always so welcoming to everyone of all backgrounds. Foundations gave me a family away from home, one that has truly changed my life (as some of my non-Foundations friends have said), and one that I wish I was a part of earlier. As a way to give back to the organization that has provided me with so much, I applied for Lship as Events Chair, given how much potential I saw in the quarterly events hosted for general members. Being Events Chair allowed me to plan social events for general members and for Lship, and along with it came a sense of satisfaction upon seeing people bond and become closer. It also allowed me to improve as a person in so many aspects – including being a leader and working with others. If you are interested in joining Foundations or applying for Lship, I would definitely recommend doing both as they have redefined my college experience in their own respective ways."
+          },
+          {
               img: "img/TestimonialPhotos/Nguyen_Andrew.JPG",
               name: "Andrew Nguyen",
               subName: "Photographer",
@@ -45,12 +53,28 @@
               body: "FC is corny, dorky, yet somehow manages to consistently put together some truly impressive work. The people I have worked with believe in this org and it's mission, believe in helping others. So yeah, corny but worth it."
           },
           {
-              img: "img/TestimonialPhotos/Li_Anya.jpg",
-              name: "Anya Li",
-              subName: "Admin LSHIP: Design '17-'19",
-              uclaInfo: "Communications '18-'19",
-              intro: "It is honestly the truth when I say this is such a unique space that no other university can really offer.",
-              body: "I'm sure that so many lives have been changed within this dance community of ours. So many of my personal moments now have been influenced by UCLA's dance community: the fact that I spend hours in dirty parking lots, why I don't sleep until 4 or 5 am, why all my designs just look like dance promo material, why I dress the way I dress, why I seek the [dance] idols I do now, why all my recommended YouTube videos are just dance. It seems cheesy to say that one organization has helped propelled me into avenues that I never expected before -- but it is the truth. I hope that everyone who has joined Foundations has taken away something -- no matter how small or even if it isn't dance related -- and has seen how that made changes in their lives."
+              img: "img/TestimonialPhotos/Huang_Zach.jpg",
+              name: "Zachary Huang",
+              subName: "Captain of Nimbus Winter '18",
+              uclaInfo: "Second Year Business Economics Major",
+              intro: "Foundations gave me a community that I never dreamt of having, especially during my first year at college.",
+              body: "Coming into a large school with thousands of people who seemed to excel at so many different things, I was worried that I wouldn't find a place where I could fit in so easily.  However, FC provided the opportunity and platform for people who have a common interest to learn to overcome fears and difficulties together, which is why I love this organization so much. After my first team, by the grace of God, I was blessed with being a captain with some really great people. Leading my own team was an entirely different experience than what being a general member, but nonetheless, it was even more fulfilling. Dancing inspires me to be creative, be comfortable with myself, and to overcome fears with a community. All I wanted was to be able to share that same sense of togetherness with a whole team of people, and helping them realize why we love doing what we do. I love this organization, and I really hope that in the future we can spread the opportunities that Foundations to provides to as many people as we can and provide a bigger spotlight on the dance community so that those who want to learn how to dance, can."
+          },
+          {
+              img: "img/TestimonialPhotos/Huynh_Sylvia.JPG",
+              name: "Sylvia Huynh",
+              subName: "Captain of Vision Fall ‘17",
+              uclaInfo: "Chemistry, 4th year",
+              intro: "Foundations gave me a reason to stay at UCLA.",
+              body: "It welcomed me with a family that I will never forget. Wanting to give others the same experience, I became a captain for 3 teams. Although I am currently taking a break from dancing, I still want to be involved with the amazing organization, so I became the LSHIP Relations Chair."
+          },
+          {
+            img: "img/TestimonialPhotos/Li_Anya.jpg",
+            name: "Anya Li",
+            subName: "Admin LSHIP: Design '17-'19",
+            uclaInfo: "Communications '18-'19",
+            intro: "It is honestly the truth when I say this is such a unique space that no other university can really offer.",
+            body: "I'm sure that so many lives have been changed within this dance community of ours. So many of my personal moments now have been influenced by UCLA's dance community: the fact that I spend hours in dirty parking lots, why I don't sleep until 4 or 5 am, why all my designs just look like dance promo material, why I dress the way I dress, why I seek the [dance] idols I do now, why all my recommended YouTube videos are just dance. It seems cheesy to say that one organization has helped propelled me into avenues that I never expected before -- but it is the truth. I hope that everyone who has joined Foundations has taken away something -- no matter how small or even if it isn't dance related -- and has seen how that made changes in their lives."
           },
           {
               img: "https://thecatapi.com/api/images/get?format=src&type=gif",
@@ -90,11 +114,11 @@
           */
 
           for(let i = 0; i < 12; i++) {
-              if(i < 6) {
+              if(i < 9) {
                   data.displayedTestimonials.push(data.testimonials[i]);
               }
               else {
-                  data.displayedTestimonials.push(data.testimonials[6]);
+                  data.displayedTestimonials.push(data.testimonials[9]);
               }
           }
       },

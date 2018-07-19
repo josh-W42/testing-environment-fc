@@ -123,6 +123,8 @@ footer {
    }
 
    #mobileCube {
+       margin-top: 50px;
+       border: 0px solid black;
        width: 100%;
    }
 
@@ -155,37 +157,20 @@ header .masthead {
   width: 100%;
 }
 
-.soundbutton {
-  height: 50px;
-  width: 100px;
-  position: absolute;
-  top: 150px;
-  left: 46%;
+.soundtitle {
+  margin-left: 10px;
   color: white;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1));
-  border: 0px;
-  border-radius: 25%;
-  -webkit-animation: fadeOut 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
-  opacity: 0;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
-.soundOn {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3));
-  -webkit-animation: fadeOut 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
+.soundbutton {
+  max-height: 50px;
+  color: white;
 }
 
 .soundbutton:hover {
   cursor: pointer;
-  border-color: inherit;
-  opacity: 1;
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1s; /* Firefox < 16 */
 }
 
 @keyframes fadeOut {
@@ -212,8 +197,17 @@ header .masthead {
   .masthead {
     margin-top: 50px;
   }
+  .soundtitle {
+    margin-left: 0px;
+  }
 
+}
+
+@media screen and (max-width: 576px) {
   .soundbutton {
+    display: none;
+  }
+  .soundtitle {
     display: none;
   }
 }
@@ -239,14 +233,14 @@ header .masthead {
 }
 
 #spring-cube {
-  height: 60%;
+  height: 80%;
   width: 40%;
   display: inline-flex;
   float: left;
   margin: 20px;
   margin-bottom: 200px;
   /* border: double 5px black; */
-  box-shadow: 4px 4px 10px grey;
+  /* box-shadow: 4px 4px 10px grey; */
   -webkit-animation: inFromLeft 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: inFromLeft 3s ease-out; /* Firefox < 16 */
 }
@@ -313,11 +307,16 @@ header .masthead {
   }
 }
 @media screen and (max-width: 786px) {
+
+  #section-main-content {
+    display: block;
+  }
+
   @keyframes inFromRight {
     from {
       position: relative;
-      opacity: 0;
-      bottom: -200px;
+      opacity: 1;
+      bottom: -0px;
     }
     to {
       position: relative;
@@ -329,8 +328,8 @@ header .masthead {
   @-moz-keyframes inFromRight {
     from {
       position: relative;
-      opacity: 0;
-      bottom: -200px;
+      opacity: 1;
+      bottom: 0px;
     }
     to {
       position: relative;

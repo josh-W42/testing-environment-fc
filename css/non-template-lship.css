@@ -157,6 +157,19 @@ section {
   position: fixed;
 }
 
+.listlink {
+  color: white;
+}
+
+.listlink:hover {
+  text-decoration: none;
+  color: gold;
+}
+
+.listlink:visited {
+  color: inherit;
+}
+
 #desktopOnlyNav li {
   list-style: none;
 }
@@ -194,6 +207,7 @@ section {
 #lshipDescription {
   margin-left: 20%;
   text-align: center;
+  min-height: 1000px;
 }
 
 .flyIn {
@@ -287,7 +301,6 @@ section {
     width: 90%;
   }
 
-
   .directorPhoto,
   .execSecondPhoto {
     width: 15em;
@@ -300,6 +313,7 @@ section {
 
   #lshipDescription {
     margin-left: 0px;
+    min-height: 600px;
   }
 
   .adminPics {

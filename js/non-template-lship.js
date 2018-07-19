@@ -18,10 +18,12 @@
                 miya: {
                   photo: "img/lship/ShekerMiya.jpg",
                   name: "Miya Sheker",
+                  detail: ""
                 },
                 liana: {
                   photo: "img/lship/LiangLiana.jpg",
                   name: "Liana Liang",
+                  detail: ""
                 }
               }
           },
@@ -32,14 +34,15 @@
               director: {
                   photo: "img/lship/WongEllis.jpg",
                   name: "Ellis Wong",
-                  title: "Director of Events"
+                  title: "Director of Events",
+                  detail: "I can raise my eyebrows individually  ( ͡° ͜ʖ ͡°)"
               },
               admins: [
                   {
                       photo: "img/lship/HuynhSylvia.jpg",
                       name: "Sylvia Huynh",
                       title: "LSHIP Relations Chair",
-                      detail: ""
+                      detail: "Foundations really is Foundbaetions, I picked up a bae AND a wife! I also like corgi butts. :D"
                   },
                   {
                       photo: "img/lship/ZhuLudi.jpg",
@@ -69,7 +72,8 @@
               director: {
                   photo: "img/lship/TanVivian.jpg",
                   name: "Vivian Tan",
-                  title: "Director of Media"
+                  title: "Director of Media",
+                  detail: ""
               },
               admins: [
                   {
@@ -124,7 +128,8 @@
               director: {
                   photo: "img/lship/TianAnna.jpg",
                   name: "Anna Tian",
-                  title: "Director of Finance"
+                  title: "Director of Finance",
+                  detail: ""
               },
               admins: [
                   {
@@ -137,7 +142,7 @@
                       photo: "img/temporary/HuangZachary.jpg",
                       name: "Zachary Huang",
                       title: "Finance Chair",
-                      detail: ""
+                      detail: 'As one person, I cannot change the whole world, but I can change the whole world of one person" -Paul Shane Spear. Also, I actually do have 10 toes.'
                   },
               ]
 
@@ -149,7 +154,8 @@
               director: {
                   photo: "img/lship/LiangMichelle.jpg",
                   name: "Michelle Liang",
-                  title: "Showcase Producer"
+                  title: "Showcase Producer",
+                  detail: ""
               },
               admins: [
                   {
@@ -180,7 +186,8 @@
               director: {
                   photo: "img/lship/PizarroAshley.jpg",
                   name: "Ashley Pizarro",
-                  title: "Director of Team Relations"
+                  title: "Director of Team Relations",
+                  detail: ""
               },
 
               // Team Relations is special, Dance Lship will be added throughout
