@@ -5,11 +5,6 @@
   Location: Multiple Pages
 */
 
-#mobileCube {
-  margin-top: 50px;
-  width: 100%;
-}
-
 body {
     -webkit-tap-highlight-color: inherit;
 }
@@ -148,8 +143,8 @@ footer {
   min-height: 200px;
   margin-bottom: 100px;
   text-align: center;
-  border: 1px double white;
-  box-shadow: 0px 0px 30px #26CAD3;
+  border: 3px double white;
+  box-shadow: 0px 0px 40px #26CAD3;
   padding: 2%;
 }
 
@@ -170,7 +165,6 @@ footer {
 }
 
 .numberCase {
-  width: 100px;
   width: 50%;
   text-align: center;
   border-radius: 25%;
@@ -180,20 +174,21 @@ footer {
 
 @media screen and (max-width: 575px) {
   #timerBox h1 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding: 0px;
   }
 
   #timerBox h4 {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .countdownText {
-    font-size: 1.25em;
+    font-size: 1.15em;
   }
 
   .case {
     font-size: 1.25em;
+    width: 150px;
   }
 }
 

@@ -69,7 +69,7 @@
               body: "It welcomed me with a family that I will never forget. Wanting to give others the same experience, I became a captain for 3 teams. Although I am currently taking a break from dancing, I still want to be involved with the amazing organization, so I became the LSHIP Relations Chair."
           },
           {
-            img: "img/TestimonialPhotos/Li_Anya.jpg",
+            img: "img/TestimonialPhotos/Li_Anya.JPG",
             name: "Anya Li",
             subName: "Admin LSHIP: Design '17-'19",
             uclaInfo: "Communications '18-'19",
@@ -86,6 +86,60 @@
               body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           }
       ],
+
+      workshops: [
+        {
+          name: '2018 Summer',
+          animation: 'img/Animations and Buttons/new neon.mpv4',
+          dates: [
+            {
+              title: '6/29 Merton Ung',
+              video: 'https://www.youtube-nocookie.com/embed/Ubnio0ptxPI?rel=0&amp;showinfo=0'
+            },
+            {
+              title: '7/5 SAMANTHA KING',
+              video: 'https://www.youtube-nocookie.com/embed/VzZgKMFbNB4?rel=0&amp;showinfo=0'
+            },
+            {
+              title: '7/12 VINCENT PORTUGAL',
+              video: 'https://www.youtube-nocookie.com/embed/XdgYVzbgMJM?rel=0&amp;showinfo=0'
+            },
+            {
+              title: '7/17 COLIN HWANG x ARYANNA RAMIREZ',
+              video: 'https://www.youtube-nocookie.com/embed/PpNRVy2uFf8?rel=0&amp;showinfo=0'
+            },
+          ]
+        },
+      ],
+
+      showcase: [
+        {
+          title: 'Winter 2016: CASCADE',
+          video: 'https://www.youtube-nocookie.com/embed/yTcrYQWzYmk?rel=0&amp;showinfo=0'
+        },
+        {
+          title: 'Spring 2016: IGNITE',
+          video: 'https://www.youtube-nocookie.com/embed/V8DEfdNB3IY?rel=0&amp;showinfo=0'
+        },
+        {
+          title: 'Fall 2016: ECLIPSE',
+          video: 'https://www.youtube-nocookie.com/embed/ouiDsJSwehA?rel=0&amp;showinfo=0'
+        },
+        {
+          title: 'Spring 2018: KAIROS',
+          video: 'https://www.youtube-nocookie.com/embed/OjS81gBe3kQ?rel=0&amp;showinfo=0'
+        },
+      ],
+
+
+      makeID: function(type) {
+        if(type === 'workshop') {
+          return Math.floor(Math.random() * (data.workshops[0].dates.length));
+        }
+        if(type === 'showcase') {
+          return Math.floor(Math.random() * (data.showcase.length));
+        }
+      },
 
 
       cleanLazy: function() {
@@ -255,6 +309,27 @@
               let portfolio = document.querySelector('#targetContainer');
               portfolio.appendChild(parentDiv);
           });
+
+          // This intializes a random video from the array in data
+
+          let wkspID = data.makeID('workshop');
+          let wksp = data.workshops[0].dates[wkspID];
+
+          let wkspTitle = document.querySelector('#workshopTitle');
+          wkspTitle.innerHTML = wksp.title;
+
+          let wkspVideo = document.querySelectorAll('.modal-video')[0];
+          wkspVideo.src = wksp.video;
+
+          let shcsID = data.makeID('showcase');
+          let shcs = data.showcase[shcsID];
+
+          let shcsTitle = document.querySelector('#showcaseTitle');
+          shcsTitle.innerHTML = shcs.title;
+
+          let shcsVideo = document.querySelectorAll('.modal-video')[1];
+          shcsVideo.src = shcs.video;
+
       }
 
   };

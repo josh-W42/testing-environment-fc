@@ -9,9 +9,12 @@ body {
     -webkit-tap-highlight-color: inherit;
 }
 
-#modal-video {
-  height: 400px;
-  width: 600px;
+.modal-video {
+  height: 300px;
+  width: 100%;
+  border: 25px solid;
+  overflow: hidden;
+  border-image: url('../img/borders/directorBorder.jpg') 50 round;
 }
 
 .modal-logo {
@@ -36,9 +39,9 @@ body {
     font-size: 12pt;
   }
 
-  #modal-video {
+  .modal-video {
     max-width: 100%;
-    height: 60%;
+    height: 70%;
   }
 }
 
@@ -143,6 +146,15 @@ footer {
    Location: Community
 */
 
+
+#workshopDesc {
+  margin-top: 75px;
+}
+
+#showcaseDesc {
+  margin-top: 50px;
+}
+
 #community {
   padding-bottom: 0px;
 }
@@ -181,7 +193,6 @@ footer {
 .testimonialPhoto {
   border: 6px double black;
 }
-
 
 .portfolio-hover {
   border-radius: 50%;
