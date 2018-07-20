@@ -42,6 +42,7 @@ body {
   .modal-video {
     max-width: 100%;
     height: 70%;
+    border-image: url('../img/borders/directorBorder.jpg') 75 round;
   }
 }
 
