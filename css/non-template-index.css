@@ -188,7 +188,7 @@ header .masthead {
 
 @media screen and (max-width: 500px) {
   #soundBox {
-    top: 40%;
+    top: 45%;
     left: 75%;
   }
   .soundtitle {
