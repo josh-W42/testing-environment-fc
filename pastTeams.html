@@ -74,232 +74,123 @@
     </div>
   </nav>
 
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Showcase</h2>
-        </div>
+  <aside id="teamNav">
+    <Nav class="navbar">
+      <h3>Team Directory</h3>
+      <ul id="dropdown" class="navbar-nav">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle listlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                2014-15'
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item listlink" data-year="yearOne" data-showcase="build yourSelf" href="#">Winter: BUILD YOURSELF</a>
+                <a class="dropdown-item listlink" data-year="yearOne" data-showcase="emerge" href="#">Spring: EMERGE</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle listlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                2015-16'
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item listlink" data-year="yearTwo" data-showcase="summer 2015" href="#">Summer Teams</a>
+                <a class="dropdown-item listlink" data-year="yearTwo" data-showcase="freefall"  href="#">Fall: FREEFALL</a>
+                <a class="dropdown-item listlink" data-year="yearTwo" data-showcase="cascade" href="#">Winter: CASCADE</a>
+                <a class="dropdown-item listlink" data-year="yearTwo" data-showcase="ignite" href="#">Spring: IGNITE</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle listlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                2016-17'
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item listlink" data-year="yearThree" data-showcase="summer 2016" href="#">Summer Teams</a>
+                <a class="dropdown-item listlink" data-year="yearThree" data-showcase="eclipse" href="#">Fall: ECLIPSE</a>
+                <a class="dropdown-item listlink" data-year="yearThree" data-showcase="aurora" href="#">Spring: AURORA</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle listlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                2017-18'
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item listlink" data-year="yearFour" data-showcase="summer" href="#">Summer Teams</a>
+                <a class="dropdown-item listlink" data-year="yearFour" data-showcase="elysia" href="#">Fall: ELYSIA</a>
+                <a class="dropdown-item listlink" data-year="yearFour" data-showcase="theoria" href="#">Winter: THEORIA</a>
+                <a class="dropdown-item listlink" data-year="yearFour" data-showcase="kairos" href="#">Spring: KAIROS</a>
+            </div>
+        </li>
+      </ul>
+      <div>
       </div>
+    </Nav>
+  </aside>
+
+  <section id="portfolio" class="bg-light lshipDescription">
+    <h4 id="directorName"></h4>
+    <h5 id="directorTitle"></h5>
+    <br />
+    <div id="descriptionHead" class="col-md-12">
+      <img class="directorPhoto" src="" alt="" />
+      <img class="execSecondPhoto" src="" alt="" />
+      <p id="branchBody"></p>
     </div>
-  </section>
+    <h2 id="imgArrayTitle">Admins</h2>
+    <div id="adminPicTarget" class="row"></div>
 
-  <section class="bg-light" id="portfolio">
     <div class="container">
-      <div class="row">
+      <div id="targetContainer" class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Showcase</h2>
-          <h3 class="section-subheading text-muted">This could be you!</h3>
+          <h2 class="section-heading">Testimonials</h2>
+          <p>Come see what past members of Foundations have said about their experience.</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="tab-content">
-            <div class="row">
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal13">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/aim.jpg" alt="aim team work">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Aim</h4>
-                  <p class="text-muted">Winter 2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal12">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/swiped.jpg" alt="swiped team picture">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Swiped</h4>
-                  <p class="text-muted">Winter 2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal11">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/nimbus.jpg" alt="nimbus FAM!">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Nimbus</h4>
-                  <p class="text-muted">Winter 2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/fyr.jpg" alt="fyr team picture">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Fyr</h4>
-                  <p class="text-muted">Winter 2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/cerberus.jpg" alt="cerberus team picture">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Cerberus</h4>
-                  <p class="text-muted">Fall  2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/vision.jpg" alt="vision team photo">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Vision</h4>
-                  <p class="text-muted">Fall  2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/sporks.jpg" alt="sporks team photo">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Sporks</h4>
-                  <p class="text-muted">Fall  2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/rev.jpg" alt="rev team photo">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Rev</h4>
-                  <p class="text-muted">Fall  2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/rezn8.jpg" alt="rezn8 team photo">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Rezn8</h4>
-                  <p class="text-muted">Spring 2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/incognito.jpg" alt="incognito team photo">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Incognito</h4>
-                  <p class="text-muted">Spring 2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/fam.jpg" alt="fam team photo">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>F.A.M.</h4>
-                  <p class="text-muted">Spring 2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/lostandfound.jpg" alt="lost and found team photo">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Lost and Found</h4>
-                  <p class="text-muted">Spring 2017-18</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/spectra.jpg" alt="spectra team photo">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Spectra</h4>
-                  <p class="text-muted">Spring 2017-18</p>
-                </div>
+        <!-- Bellow is the template model I rebuild in the JavaScript code, don't delete -->
+        <div class="col-md-4 portfolio-item">
+          <a class="portfolio-link switchToPic" data-toggle="modal" href="#modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <img class="modal-logo lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/Copy of Copy of 2014-12-28 Logo Shapes White Thick 10 pt.png" alt="Foundations Cube" />
               </div>
             </div>
+            <img class="lazy teamPhoto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/placeholder.jpg" alt="" />
+          </a>
+          <div class="portfolio-caption text-center">
+            <h4>Test</h4>
+            <p class="text-muted">Team Name</p>
+          </div>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <a class="portfolio-link switchToPic" data-toggle="modal" href="#modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <img class="modal-logo lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/Copy of Copy of 2014-12-28 Logo Shapes White Thick 10 pt.png" alt="Foundations Cube" />
+              </div>
+            </div>
+            <img class="lazy teamPhoto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/placeholder.jpg" alt="" />
+          </a>
+          <div class="portfolio-caption text-center">
+            <h4>Test</h4>
+            <p class="text-muted">Team Name</p>
+          </div>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <a class="portfolio-link switchToPic" data-toggle="modal" href="#modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <img class="modal-logo lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/Copy of Copy of 2014-12-28 Logo Shapes White Thick 10 pt.png" alt="Foundations Cube" />
+              </div>
+            </div>
+            <img class="lazy teamPhoto" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/teams/placeholder.jpg" alt="" />
+          </a>
+          <div class="portfolio-caption text-center">
+            <h4>Test</h4>
+            <p class="text-muted">Team Name</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Modals -->
-
-  <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -309,342 +200,20 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Aim</h2>
-                <p class="item-intro text-muted">Winter 2017-18</p>
-                <iframe src="https://www.youtube.com/embed/epCEJBUKmxQ" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="modal-body">
+              <div class="col-lg-12">
+                <img id="modalImg" class="teamPhoto" src="" alt="Testimonial Photo" />
+                <h2 id="modalName">Team Name</h2>
+                <div class>
 
-  <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Swiped</h2>
-                <p class="item-intro text-muted">Winter 2017-18</p>
-                <iframe src="https://www.youtube.com/embed/EjnEkPHnd-0" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
+                </div>
+                <p id="modalIntro" class="item-intro"></p>
+                <p id="modalBody" class="text-justify"></p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Nimbus</h2>
-                <p class="item-intro text-muted">Winter 2017-18</p>
-                <iframe src="https://www.youtube.com/embed/SxXZGatH09g" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Fyr</h2>
-                <p class="item-intro text-muted">Winter 2017-18</p>
-                <iframe src="https://www.youtube.com/embed/a8pouPCg8QU" frameborder="0" allowfullscreen></iframe>
-                <br />
-                <br />
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Cerberus</h2>
-                <p class="item-intro text-muted">Fall  2017-18</p>
-                <iframe src="https://www.youtube.com/embed/iUFYlHj8sBY" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Vision</h2>
-                <p class="item-intro text-muted">Fall  2017-18</p>
-                <iframe src="https://www.youtube.com/embed/PtHFkwzQCPo" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Sporks</h2>
-                <p class="item-intro text-muted">Fall  2017-18</p>
-                <iframe src="https://www.youtube.com/embed/F1SqOkQJzp4" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Rev</h2>
-                <p class="item-intro text-muted">Fall  2017-18</p>
-                <iframe src="https://www.youtube.com/embed/9sv6VjLHpak" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Rezn8</h2>
-                <p class="item-intro text-muted">Spring 2017-18</p>
-                <iframe src="https://www.youtube.com/embed/AVasUouS-Fc" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Incognito</h2>
-                <p class="item-intro text-muted">Spring 2017-18</p>
-                <iframe src="https://www.youtube.com/embed/zlcqVJKyBG4" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>F.A.M.</h2>
-                <p class="item-intro text-muted">Spring 2017-18</p>
-                <iframe src="https://www.youtube.com/embed/LEitjjcUQNc" frameborder="0" allowfullscreen></iframe>
-                <br>
-                <br>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Lost and Found</h2>
-                <p class="item-intro text-muted">Spring 2017-18</p>
-                <iframe src="https://www.youtube.com/embed/etKtSxb47UU" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Spectra</h2>
-                <p class="item-intro text-muted">Spring 2017-18</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KQ5MiB8QiFU" frameborder="0" allowfullscreen></iframe>
-                <br/>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                Close</button>
-              </div>
+              <br />
+              <button id="closeModal" class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fa fa-times"></i>Close
+              </button>
             </div>
           </div>
         </div>
