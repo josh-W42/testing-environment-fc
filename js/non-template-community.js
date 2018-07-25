@@ -65,8 +65,8 @@
               name: "Sylvia Huynh",
               subName: "Captain of Vision Fall ‘17",
               uclaInfo: "Chemistry, 4th year",
-              intro: "Foundations gave me a reason to stay at UCLA.",
-              body: "It welcomed me with a family that I will never forget. Wanting to give others the same experience, I became a captain for 3 teams. Although I am currently taking a break from dancing, I still want to be involved with the amazing organization, so I became the LSHIP Relations Chair."
+              intro: "Foundations welcomed me with a family that I will never forget.",
+              body: "Coming into UCLA, I was far away from home and was homesick. During my first two quarters in college, I rarely stepped out of my dorm besides getting food. Life was pretty much the same every single day. The thought of dropping out of UCLA and going back home crossed my mind countless times. Meanwhile, my high school friends joined Foundations our first quarter, and it seemed like they were enjoying themselves, so I decided to try out that Spring. Foundations welcomed me with a family that I will never forget. They pushed me out of my comfort zone and never judged me for who I am. Because of Foundations and my first team, EON, I felt like I belonged. They were the ones that gave me a reason to stay. I wanted to give others the same enjoyable experience, so I became a captain for 3 teams. It is very rewarding to see people with different backgrounds all working towards the same goal and to see these people become one family. Although I am currently taking a break from dancing, I still want to be involved with the amazing organization, so I applied to be the LSHIP Relations Chair. "
           },
           {
             img: "img/TestimonialPhotos/Li_Anya.JPG",
