@@ -332,10 +332,12 @@ section {
   }
 
   .modal-logo {
-    margin-top: 0px;
+    margin-top: -35px;
+    /* max-height: 100px; */
   }
 
   #adminBox {
+    height: 6em;
     width: 8em;
   }
 }
