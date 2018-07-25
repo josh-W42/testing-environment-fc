@@ -50,6 +50,11 @@ footer {
   background-color: rgba(34, 34, 34, 0.95);
 }
 
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 1.25em;
+  font-family: BebasNeue;
+}
+
 .dropdown-menu {
     background-color: rgba(34, 34, 34, 0.95);
     border: none;
@@ -57,7 +62,8 @@ footer {
 
 .dropdown-item {
     color: white;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: BebasNeue;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
@@ -93,10 +99,6 @@ footer {
   #mainNav .navbar-brand {
     font-size: 1.25em;
   }
-}
-
-.lazy {
-  -webkit-animation: 5s fadein ease-in;
 }
 
 /*
@@ -511,6 +513,10 @@ footer {
 
 /* End of cube */
 
+#mission {
+  font-weight: normal;
+}
+
 #missionStatement {
   margin-top: 20px;
   width: 75%;
@@ -520,7 +526,7 @@ footer {
 
 #history {
   text-align: center;
-  width: 70%;
+  width: 100%;
   max-width: 100%;
   height: auto;
   margin-top: 5%;

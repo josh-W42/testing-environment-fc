@@ -15,7 +15,7 @@ body {
 }
 
 .modal-logo {
-  max-height: 70px;
+  max-height: 100px;
   margin-left: auto;
   margin-right: auto;
   margin-top: -25px;
@@ -50,18 +50,24 @@ footer {
   background-color: rgba(34, 34, 34, 0.95);
 }
 
-.dropdown-menu {
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 1.25em;
+  font-family: BebasNeue;
+}
+
+#mainNav .dropdown-menu {
     background-color: rgba(34, 34, 34, 0.95);
     border: none;
 }
 
 .dropdown-item {
     color: white;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: BebasNeue;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
-.dropdown-item:hover {
+#mainNav .dropdown-item:hover {
     background-color: #fed136;
 }
 
@@ -95,21 +101,6 @@ footer {
   }
 }
 
-.lazy {
-  -webkit-animation: 5s fadein ease-in;
-  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
-}
-
-@keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@-moz-keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
 /*
   End CSS
   Location: Multiple Pages
@@ -136,6 +127,84 @@ footer {
 /*
   End CSS
   Location: navbar
+*/
+
+/*
+   Start CSS
+   Location: SideBar
+*/
+
+#teamNav {
+  height: 100%;
+  width: 20%;
+  background-color: rgba(34, 34, 34, 0.95);
+  color: white;
+  padding: 1%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  position: fixed;
+}
+
+#teamNav .dropdown-menu {
+  background-color: inherit;
+  border: none;
+}
+
+.listlink {
+  color: white;
+}
+
+.listlink:hover {
+  text-decoration: none;
+  color: gold;
+}
+
+.listlink:visited {
+  background-color: black;
+}
+
+#teamNav li {
+  list-style: none;
+}
+
+#teamNav li:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+
+/*
+  End CSS
+  Location: SideBar
+*/
+
+/*
+   Start CSS
+   Location: Main Content
+*/
+
+.lshipDescription {
+  margin-left: 20%;
+  text-align: center;
+  min-height: 1000px;
+}
+
+/* .teamPhoto {
+  width: 100%;
+  height: 10%;
+} */
+
+#modalImg,
+.teamPhoto,
+.switchToPic {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  End CSS
+  Location: Main Content
 */
 
 /*

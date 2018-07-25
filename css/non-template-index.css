@@ -6,6 +6,10 @@
 */
 body {
     -webkit-tap-highlight-color: inherit;
+    /* font-family: Montserrat; */
+    /* font-family: Karla; */
+    /* font-family: 'PT Sans'; */
+    font-family: 'Lato';
 }
 
 #modal-video {
@@ -45,6 +49,11 @@ footer {
   background-color: #222;
 }
 
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 1.25em;
+  font-family: BebasNeue;
+}
+
 #mainNav.navbar-shrink {
   background-color: rgba(34, 34, 34, 0.95);
 }
@@ -56,7 +65,8 @@ footer {
 
 .dropdown-item {
     color: white;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: BebasNeue;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
@@ -94,11 +104,6 @@ footer {
   }
 }
 
-.lazy {
-  -webkit-animation: 5s fadein ease-in;
-  -moz-animation: fadeOut 3s ease-out; /* Firefox < 16 */
-}
-
 
 /*
   End CSS
@@ -116,22 +121,6 @@ footer {
 
  /* in this section is the cube built for the smallest phone size. */
 
- @media screen and (max-width: 575px) {
-   #leadership {
-       display: block;
-       width: 100%;
-   }
-
-   #mobileCube {
-       margin-top: 50px;
-       border: 0px solid black;
-       width: 100%;
-   }
-
-   header {
-       display: none;
-   }
-}
 
  /*
     End CSS
@@ -147,25 +136,29 @@ footer {
 
 video {
   width: 100%;
-  height: 170%;
 }
 
 header .masthead {
   text-align: center;
   color: white;
-  height: 170%;
   width: 100%;
 }
 
+#soundBox {
+  top: 80%;
+  left: 90%;
+  position: absolute;
+}
+
+
 .soundtitle {
-  margin-left: 10px;
   color: white;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: BebasNeue;
   text-transform: uppercase;
 }
 
 .soundbutton {
-  max-height: 50px;
+  max-height: 40px;
   color: white;
 }
 
@@ -173,24 +166,11 @@ header .masthead {
   cursor: pointer;
 }
 
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-@-moz-keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-@keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@-moz-keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
+@media screen and (max-width: 1250px) {
+  #soundBox {
+    top: 40%;
+    left: 85%;
+  }
 }
 
 @media screen and (max-width: 787px) {
@@ -200,15 +180,20 @@ header .masthead {
   .soundtitle {
     margin-left: 0px;
   }
-
+  #soundBox {
+    top: 40%;
+    left: 85%;
+  }
 }
 
-@media screen and (max-width: 576px) {
-  .soundbutton {
-    display: none;
+@media screen and (max-width: 500px) {
+  #soundBox {
+    top: 40%;
+    left: 75%;
   }
   .soundtitle {
-    display: none;
+    color: black;
+    margin-left: 0px;
   }
 }
 
@@ -226,50 +211,16 @@ header .masthead {
 
 #letterFrom {
   padding-bottom: 25px;
-}
-
-#section-main-content {
-  display: none;
+  background-color: rgb(255, 253, 255);
 }
 
 #spring-cube {
   height: 80%;
   width: 40%;
-  display: inline-flex;
-  float: left;
-  margin: 20px;
   margin-bottom: 200px;
-  /* border: double 5px black; */
-  /* box-shadow: 4px 4px 10px grey; */
-  -webkit-animation: inFromLeft 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: inFromLeft 3s ease-out; /* Firefox < 16 */
+  margin: auto;
 }
 
-@keyframes inFromLeft {
-  from {
-    position: relative;
-    opacity: 0;
-    left: -200px;
-  }
-  to {
-    position: relative;
-    opacity: 1;
-    left: 0px;
-  }
-}
-
-@-moz-keyframes inFromLeft {
-  from {
-    position: relative;
-    opacity: 0;
-    left: -200px;
-  }
-  to {
-    position: relative;
-    opacity: 1;
-    left: 0px;
-  }
-}
 
 #exec-signOff {
   text-align: right;
@@ -277,66 +228,6 @@ header .masthead {
 
 #exec-greeting {
   text-align: justify;
-  -webkit-animation: inFromRight 3s ease-out; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: inFromRight 3s ease-out; /* Firefox < 16 */
-}
-
-@keyframes inFromRight {
-  from {
-    position: relative;
-    opacity: 0;
-    right: -200px;
-  }
-  to {
-    position: relative;
-    opacity: 1;
-    right: 0px;
-  }
-}
-
-@-moz-keyframes inFromRight {
-  from {
-    position: relative;
-    opacity: 0;
-    right: -200px;
-  }
-  to {
-    position: relative;
-    opacity: 1;
-    right: 0px;
-  }
-}
-@media screen and (max-width: 786px) {
-
-  #section-main-content {
-    display: block;
-  }
-
-  @keyframes inFromRight {
-    from {
-      position: relative;
-      opacity: 1;
-      bottom: -0px;
-    }
-    to {
-      position: relative;
-      opacity: 1;
-      bottom: 0px;
-    }
-  }
-
-  @-moz-keyframes inFromRight {
-    from {
-      position: relative;
-      opacity: 1;
-      bottom: 0px;
-    }
-    to {
-      position: relative;
-      opacity: 1;
-      bottom: 0px;
-    }
-  }
 }
 
 #welcome {
@@ -344,21 +235,12 @@ header .masthead {
   font-size: 16pt;
 }
 
-@media screen and (max-width: 1024px) {
-  #spring-cube {
-    height: 50%;
-  }
-}
-
 @media screen and (max-width: 991px) {
-  #spring-cube {
-    display: none;
-  }
-}
 
-@media screen and (max-width: 575px) {
-  #section-main-content {
-    display: block;
+  #spring-cube {
+    margin-top: 50px;
+    width: 100%;
+    margin: 0px;
   }
 }
 
@@ -416,51 +298,6 @@ header .masthead {
 
 #portfolio {
   padding-top: 25px;
-}
-
-#highlight-main-content {
-  display: none;
-}
-
-#highlight-content-1 {
-  -webkit-animation: inFromBottom 4s ease-out; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: inFromBottom 4s ease-out; /* Firefox < 16 */
-}
-
-#highlight-content-2 {
-  -webkit-animation: inFromBottom 4s ease-out; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: inFromBottom 4s ease-out; /* Firefox < 16 */
-}
-
-#highlight-content-3 {
-  -webkit-animation: inFromBottom 4s ease-out; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: inFromBottom 4s ease-out; /* Firefox < 16 */
-}
-
-@keyframes inFromBottom {
-  from {
-    position: relative;
-    opacity: 0;
-    bottom: -300px;
-  }
-  to {
-    position: relative;
-    opacity: 1;
-    bottom: 0px;
-  }
-}
-
-@-moz-keyframes inFromBottom {
-  from {
-    position: relative;
-    opacity: 0;
-    top: -200px;
-  }
-  to {
-    position: relative;
-    opacity: 1;
-    top: 0px;
-  }
 }
 
 /*

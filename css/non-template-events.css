@@ -50,6 +50,11 @@ footer {
   background-color: rgba(34, 34, 34, 0.95);
 }
 
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 1.25em;
+  font-family: BebasNeue;
+}
+
 .dropdown-menu {
     background-color: rgba(34, 34, 34, 0.95);
     border: none;
@@ -57,7 +62,8 @@ footer {
 
 .dropdown-item {
     color: white;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: BebasNeue;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
