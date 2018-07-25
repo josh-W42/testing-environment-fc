@@ -1,117 +1,98 @@
 (function () {
 
-  // Everything that follows should be primarily for the index.html page.
-  document.querySelector('.soundbutton').addEventListener('click', toggleSound);
+  let data = {
 
-  // The code below is for implementing a 'lazy loading' strategy,
-  // a small place holder is over an image as source then, once the
-  // page loads it is replaced with the actual picture.
-  registerListener('load', setLazy);
-  registerListener('load', lazyLoad);
-  registerListener('scroll', lazyLoad);
+      lazy: [],
+      cleanLazy: function() {
+          data.lazy = Array.prototype.filter.call(data.lazy, function(l){ return l.getAttribute('data-src');});
+      },
 
-  let lazy = [];
+  };
 
-  function setLazy(){
-    lazy = document.getElementsByClassName('lazy');
-    console.log('Found ' + lazy.length + ' lazy images');
-  }
+  let model = {
 
-  function lazyLoad(){
-    for(var i=0; i<lazy.length; i++){
-      if(isInViewport(lazy[i])){
-        if (lazy[i].getAttribute('data-src')){
-          lazy[i].src = lazy[i].getAttribute('data-src');
-          lazy[i].removeAttribute('data-src');
-        }
+      init: function() {
+          // The code below is for implementing a 'lazy loading' strategy,
+          // a small place holder is over an image as source then, once the
+          // page loads it is replaced with the actual picture.
+          model.registerListener('load', model.setLazy);
+          model.registerListener('load', model.lazyLoad);
+          model.registerListener('scroll', model.lazyLoad);
+
+          let soundBox = document.querySelector('#soundBox');
+          soundBox.addEventListener('click', function() {
+            let mainVideo = document.querySelector('#mainVideo');
+            if(mainVideo.muted){
+              mainVideo.muted = false;
+              document.querySelector('.soundbutton').src = 'img/Animations and Buttons/Speaker_IconOn.svg';
+            } else {
+              mainVideo.muted = true;
+              document.querySelector('.soundbutton').src = 'img/Animations and Buttons/Speaker_IconOff.svg';
+            }
+          });
+
+      },
+
+      setLazy: function(){
+          data.lazy = document.querySelectorAll('.lazy');
+          console.log('Found ' + data.lazy.length + ' lazy images');
+      },
+
+      registerListener: function(event, func) {
+          if (window.addEventListener) {
+              window.addEventListener(event, func)
+          } else {
+              window.attachEvent('on' + event, func)
+          }
+      },
+
+      lazyLoad: function() {
+          for(var i=0; i < data.lazy.length; i++){
+              if(model.isInViewport(data.lazy[i])){
+                  if (data.lazy[i].getAttribute('data-src')){
+                      data.lazy[i].src = data.lazy[i].getAttribute('data-src');
+                      data.lazy[i].removeAttribute('data-src');
+                  }
+              }
+          }
+          data.cleanLazy();
+      },
+
+      isInViewport: function(el){
+          var rect = el.getBoundingClientRect();
+          return (
+              rect.bottom >= 0 &&
+              rect.right >= 0 &&
+              rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+          );
       }
-    }
-  cleanLazy();
-  }
+  };
 
-  function cleanLazy(){
-    lazy = Array.prototype.filter.call(lazy, function(l){ return l.getAttribute('data-src');});
-  }
+  let view = {
 
-  function isInViewport(el){
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.bottom >= 0 &&
-      rect.right >= 0 &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
+    init: function() {
+      //  soundBox placement.
 
-  function registerListener(event, func) {
-    if (window.addEventListener) {
-      window.addEventListener(event, func)
-    } else {
-      window.attachEvent('on' + event, func)
-    }
-  }
+      let soundBox = document.querySelector('#soundBox');
 
-  window.addEventListener('load', function () {
-  window.addEventListener('scroll', fadeInSection);
+      let offsets = soundBox.getBoundingClientRect();
+      let xcord = offsets.left;
+      let ycord = offsets.top + window.pageYOffset - soundBox.clientTop;
 
+      soundBox.style.top = ycord + "px";
+    },
 
+  };
 
+  let connector = {
 
-    // I'm having content fade in when the user scrolls down to certain "target points."
-    // mainly for aestical reasons.
+      init: function() {
+        model.init();
+        view.init();
+      },
 
-    function fadeInSection() {
-      if(this.innerWidth > 1024) {
-        if (this.pageYOffset > (document.querySelector('#fadein-target-section').offsetHeight + 500)) {
-          document.querySelector('#section-main-content').style.display = "block";
-          this.removeEventListener('scroll', fadeInSection);
-          this.addEventListener('scroll', fadeInHighlight)
-        }
-      }
-      else if (this.innerWidth <= 1024) {
-        if (this.pageYOffset > (document.querySelector('#fadein-target-section').offsetHeight)) {
-          document.querySelector('#section-main-content').style.display = "block";
-          this.removeEventListener('scroll', fadeInSection);
-          this.addEventListener('scroll', fadeInHighlight)
-        }
-      }
-    }
+  };
 
-    function fadeInHighlight() {
-      if (this.innerWidth > 1024) {
-        if (this.pageYOffset > (document.querySelector('#fadein-target-highlight').offsetHeight + 500)) {
-          document.querySelector('#highlight-main-content').style.display = "block";
-          this.removeEventListener('scroll', fadeInHighlight)
-        }
-      }
-      else if (this.innerWidth > 575 && this.innerWidth <= 1024) {
-        if (this.pageYOffset > (document.querySelector('#fadein-target-highlight').offsetHeight)) {
-          document.querySelector('#highlight-main-content').style.display = "block";
-          this.removeEventListener('scroll', fadeInHighlight)
-        }
-      }
-      else if (this.innerWidth < 575) {
-        if (this.pageYOffset > (document.querySelector('#fadein-target-highlight').offsetHeight + 500)) {
-          document.querySelector('#highlight-main-content').style.display = "block";
-          this.removeEventListener('scroll', fadeInHighlight)
-        }
-      }
-    }
-  });
-
-  // This function will toggle the sound button for the main video.
-  // Note, on mobile and smaller tablet it will not be visible.
-
-  function toggleSound(e) {
-    let video = document.querySelector('video');
-    if (video.muted === true) {
-      e.target.src = 'img/Animations and Buttons/Speaker_IconOn.svg';
-      video.muted = false;
-    }
-    else if(video.muted === false) {
-      e.target.src = 'img/Animations and Buttons/Speaker_IconOff.svg';
-      video.muted = true;
-    }
-  }
-
+  connector.init();
 })();
