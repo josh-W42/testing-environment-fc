@@ -2,7 +2,10 @@
 
   let data = {
 
+
       // All that follows is a dataset for lship
+
+      mouseOnAdmin: false,
 
       branchID: "",
 
@@ -11,7 +14,7 @@
           executives: {
 
               // executives are special, they get two images and no admins.
-              body: "",
+              body: "Since our formation on October 31, 2014, Foundations Choreography has aimed to create an environment for beginning and intermediate dancers to grow, train, and challenge themselves. Based in Westwood, California, we live by the idea that in both dance and life, there is always room to grow and to give back. Our passionate and driven team of leadership work tirelessly to make dance more accessible to everyone-- from the longtime dance fanatics hoping to begin their own dance journeys to the brave simply looking to push themselves to try something new. Through ten-week long training teams and weekly workshops, Foundations Choreography has become a home to an extensive network of incredibly hardworking dancers, some of whom have continued their own growth through joining some of the competitive teams, project teams, and cultural performance groups that UCLA has to offer.",
               director: {
                 title: "Executives",
                 name: "Miya Sheker and Liana Liang",
@@ -238,22 +241,6 @@
           });
       },
 
-      adminContent: function() {
-        document.querySelectorAll('.adminPics').forEach(function(pic){
-          pic.addEventListener('mouseout', function(e){
-            document.querySelector('#adminBox').remove();
-          });
-          pic.addEventListener('mouseover', function(e){
-            let offsets = e.target.getBoundingClientRect();
-            let xcord = offsets.left;
-            let ycord = offsets.top + window.pageYOffset - e.target.clientTop;
-            let name = e.target.alt;
-
-            connector.createTextBox(xcord,ycord,name);
-          });
-        });
-      },
-
       setLazy: function(){
           data.lazy = document.querySelectorAll('.lazy');
           console.log('Found ' + data.lazy.length + ' lazy images');
@@ -335,7 +322,7 @@
           }
           secondPhoto.src = data.branches[branch].director.liana.photo;
           secondPhoto.alt = data.branches[branch].director.liana.name;
-          if(!(secondPhoto.classList.contains('execPicStyle'))){
+          if(!(secondPhoto.classList.contains('execPicStyle'))) {
             secondPhoto.classList.add('execPicStyle');
           }
         } if (branch === 'teamRelations'){
@@ -353,56 +340,60 @@
         let adminDiv;
         adminDiv = document.createElement('div');
         adminDiv.id = 'adminImgArray';
-        adminDiv.classList.add('col-md-12');
-        document.querySelector('#adminPicTarget').appendChild(adminDiv);
+        adminDiv.classList.add('col-lg-12');
+        document.querySelector('#portfolio').appendChild(adminDiv);
 
         if (branch != 'executives') {
           data.branches[branch].admins.forEach(function(admin) {
+
+            let parentDiv = document.createElement('div');
+            parentDiv.classList.add('portfolio-item');
+            adminDiv.appendChild(parentDiv);
+
+            let linkToModal = document.createElement('A');
+            linkToModal.classList.add('portfolio-link');
+            parentDiv.appendChild(linkToModal);
+
+            let hoverDiv1 = document.createElement('div');
+            hoverDiv1.classList.add('portfolio-hover');
+            linkToModal.appendChild(hoverDiv1);
+
+            let hoverDiv2 = document.createElement('div');
+            hoverDiv2.classList.add('portfolio-hover-content');
+            hoverDiv1.appendChild(hoverDiv2);
+
+            let adminBox = document.createElement('div');
+            adminBox.id = 'adminBox';
+            adminBox.classList.add('modal-logo');
+            hoverDiv2.appendChild(adminBox);
+
+            let boxTitle = document.createElement('h6');
+            boxTitle.innerHTML = admin.name;
+            let boxSubtitle = document.createElement('h6');
+            boxSubtitle.innerHTML = admin.title;
+            let smallDetail = document.createElement('span');
+            smallDetail.classList.add('adminDetail');
+            smallDetail.innerHTML = admin.detail;
+
+            adminBox.appendChild(boxTitle);
+            adminBox.appendChild(boxSubtitle);
+            adminBox.appendChild(smallDetail);
+
             let adPic = document.createElement('IMG');
+
             adPic.classList.add('adminPics');
+            // adPic.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+            // adPic.dataset.src = admin.img;
             adPic.src = admin.photo;
             adPic.alt = admin.name;
-            adminDiv.appendChild(adPic);
+            linkToModal.appendChild(adPic);
+
+
           });
         }
 
-        connector.createAdminContent();
       },
 
-      displayAdminBox: function(x,y, id) {
-        if(document.querySelector('#adminBox') != null) {
-          document.querySelector('#adminBox').remove();
-        }
-
-        let adminBox = document.createElement('div');
-        adminBox.id = 'adminBox';
-        adminBox.style.left = x + "px";
-        if(window.innerWidth < 450) {
-          adminBox.style.top = y + 150 + "px";
-        } else {
-          adminBox.style.top = y + 215 + "px";
-        }
-        document.querySelector('body').appendChild(adminBox);
-
-        let admin;
-        data.branches[data.branchID].admins.forEach(function(member){
-          if(member.name === id) {
-            admin = member;
-          }
-        });
-
-
-        let boxTitle = document.createElement('h6');
-        boxTitle.innerHTML = admin.name;
-        let boxSubtitle = document.createElement('h6');
-        boxSubtitle.innerHTML = admin.title;
-        let smallDetail = document.createElement('span');
-        smallDetail.innerHTML = admin.detail;
-
-        adminBox.appendChild(boxTitle);
-        adminBox.appendChild(boxSubtitle);
-        adminBox.appendChild(smallDetail);
-      }
   };
 
   let connector = {
@@ -414,14 +405,6 @@
 
       ready: function() {
         view.render();
-      },
-
-      createAdminContent: function() {
-        model.adminContent();
-      },
-
-      createTextBox: function(x,y,id) {
-        view.displayAdminBox(x,y,id);
       }
 
   };
