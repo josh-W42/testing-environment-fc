@@ -77,6 +77,22 @@
             body: "I'm sure that so many lives have been changed within this dance community of ours. So many of my personal moments now have been influenced by UCLA's dance community: the fact that I spend hours in dirty parking lots, why I don't sleep until 4 or 5 am, why all my designs just look like dance promo material, why I dress the way I dress, why I seek the [dance] idols I do now, why all my recommended YouTube videos are just dance. It seems cheesy to say that one organization has helped propelled me into avenues that I never expected before -- but it is the truth. I hope that everyone who has joined Foundations has taken away something -- no matter how small or even if it isn't dance related -- and has seen how that made changes in their lives."
           },
           {
+            img: "img/TestimonialPhotos/Lee_Kevin.jpg",
+            name: "Kevin Lee",
+            subName: "Director",
+            uclaInfo: "Class of 2015",
+            intro: "",
+            body: "I love Foundations because everyone is supportive! As a director, I had all of the resources I needed to successfully train teams. On top of that, I made tons of friends. I wouldn't trade my experience directing for anything else in the world"
+          },
+          {
+            img: "img/TestimonialPhotos/Mejia_Mary.jpg",
+            name: "Mary Mejia",
+            subName: "General member Summer '17, Winter '18, Spring '18",
+            uclaInfo: "3rd year, Psychology",
+            intro: "Having been on three Foundations teams, I can definitively say that my relationship with dance has grown from interested, to my life passion.",
+            body: "Once in college, I thought it was too late, I thought I wouldn't be able to have the opportunity to dance, let alone have a space that was comfortable and non-intimidating. Foundations Choreography provided a space and opportunity. Having been on three Foundations teams, I can definitively say that my relationship with dance has grown from interested, to my life passion. But it wasn't just the dance that I fell in love with, it was the community. Admin, directors, captains, all filled with enthusiasm and encouragement, made me excited to go to practice and workshops."
+          },
+          {
               img: "https://thecatapi.com/api/images/get?format=src&type=gif",
               name: "Cat",
               subName: "I'm a cool cat",
@@ -131,6 +147,7 @@
         },
       ],
 
+      iDsInUse: [],
 
       makeID: function(type) {
         if(type === 'workshop') {
@@ -138,6 +155,15 @@
         }
         if(type === 'showcase') {
           return Math.floor(Math.random() * (data.showcase.length));
+        }
+        if(type === 'testimonial') {
+          let id = Math.floor(Math.random() * (data.testimonials.length));
+          if(data.iDsInUse.includes(id)) {
+            return data.makeID('testimonial');
+          } else {
+            data.iDsInUse.push(id);
+            return id;
+          }
         }
       },
 
@@ -168,12 +194,8 @@
           */
 
           for(let i = 0; i < 12; i++) {
-              if(i < 9) {
-                  data.displayedTestimonials.push(data.testimonials[i]);
-              }
-              else {
-                  data.displayedTestimonials.push(data.testimonials[9]);
-              }
+            let testID = data.makeID('testimonial');
+            data.displayedTestimonials.push(data.testimonials[testID]);
           }
       },
 
