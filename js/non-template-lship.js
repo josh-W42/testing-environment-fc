@@ -5,8 +5,6 @@
 
       // All that follows is a dataset for lship
 
-      mouseOnAdmin: false,
-
       branchID: "",
 
       branches: {
@@ -89,7 +87,7 @@
                       photo: "img/temporary/RenSisi.jpg",
                       name: "Sisi Ren",
                       title: "Design Chair",
-                      detail: ""
+                      detail: "I grew up in Vancouver, Canada and I'm easily distracted by shiny things."
                   },
                   {
                       photo: "img/temporary/NguyenAndrew.jpg",

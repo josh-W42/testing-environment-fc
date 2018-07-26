@@ -93,13 +93,12 @@
             body: "Once in college, I thought it was too late, I thought I wouldn't be able to have the opportunity to dance, let alone have a space that was comfortable and non-intimidating. Foundations Choreography provided a space and opportunity. Having been on three Foundations teams, I can definitively say that my relationship with dance has grown from interested, to my life passion. But it wasn't just the dance that I fell in love with, it was the community. Admin, directors, captains, all filled with enthusiasm and encouragement, made me excited to go to practice and workshops."
           },
           {
-              img: "https://thecatapi.com/api/images/get?format=src&type=gif",
-              name: "Cat",
-              subName: "I'm a cool cat",
-              uclaInfo: "Dance Major, UCLA Class of 2020 (hehe)",
-              fcInfo: "LSHIP Fan",
-              intro: "I'm really just a placeholder, no secrets I swear!",
-              body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              img: "img/TestimonialPhotos/Ren_Sisi.jpg",
+              name: "Sisi Ren",
+              subName: "General Member",
+              uclaInfo: "Business Economics, Third year",
+              intro: "Foundations made my second year of university one of the most memorable years of my life.",
+              body: "From early on in high school, I had always been mesmerized by dance. I remember binging hours and hours of 1 million dance studio on youtube and just thinking to myself: if I could have one wish granted, I’d want to be able to dance. But I never thought that it was possible for me. Foundations changed that. It gave me a chance to do something that I’ve always wanted to try. I never expected that I could feel...comfortable, dancing alongside others. But I was blown away by the overwhelming support around me, and soon enough Foundations felt like a home to me. Foundations was more than just a dance team. On my two teams, I’ve met so many precious friends, shared so much laughter and created so many irreplaceable memories. The months I spent dancing with Foundations have definitely been the brightest and happiest moments of my life. Nothing but love for this organization. "
           }
       ],
 
