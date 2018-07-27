@@ -137,7 +137,7 @@
                       photo: "img/temporary/LiDerek.jpg",
                       name: "Derek Li",
                       title: "Finance Chair",
-                      detail: ""
+                      detail: "I was born in Charlottesville, Virginia, and I'm jacked...jacked to the tits. Also, I wish my wallet was a thick as my thighs."
                   },
                   {
                       photo: "img/temporary/HuangZachary.jpg",

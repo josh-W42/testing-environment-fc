@@ -99,6 +99,14 @@
               uclaInfo: "Business Economics, Third year",
               intro: "Foundations made my second year of university one of the most memorable years of my life.",
               body: "From early on in high school, I had always been mesmerized by dance. I remember binging hours and hours of 1 million dance studio on youtube and just thinking to myself: if I could have one wish granted, I’d want to be able to dance. But I never thought that it was possible for me. Foundations changed that. It gave me a chance to do something that I’ve always wanted to try. I never expected that I could feel...comfortable, dancing alongside others. But I was blown away by the overwhelming support around me, and soon enough Foundations felt like a home to me. Foundations was more than just a dance team. On my two teams, I’ve met so many precious friends, shared so much laughter and created so many irreplaceable memories. The months I spent dancing with Foundations have definitely been the brightest and happiest moments of my life. Nothing but love for this organization. "
+          },
+          {
+              img: "img/TestimonialPhotos/Li_Derek.jpg",
+              name: "Derek Li",
+              subName: "General Member",
+              uclaInfo: "Economics, Senior",
+              intro: "Foundations Choreography is a gem that I am glad to discover during my time at UCLA.",
+              body: "As a person who came from a community where hip-hop dance is unheard of, I am fortunate to have the opportunity to be exposed to an environment where I can be challenged in every aspect of my character. From just learning choreography to meeting people from various backgrounds, Foundations Choreography has grown me to a person who is willing to put myself out of my own comfort zone. It is hard to find another organization at UCLA that matches the amount of personal growth that Foundations Choreography fosters. Foundations Choreography has been a fun and enlightening experience that I hope to continue to cherish throughout my time at UCLA!"
           }
       ],
 
