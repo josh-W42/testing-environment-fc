@@ -25,7 +25,7 @@
                 name: "Alpha Class",
                 directors: "Dione Dacuycuy x Julianna Bianes",
                 captains: "",
-                photo: "img/teams/_14-_15/15W - Alpha Class.jpg",
+                photo: "img/teams/_14-_15/15W-AlphaClass.jpg",
                 video: "https://www.youtube-nocookie.com/embed/FoP_fVAzKl8?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -33,7 +33,7 @@
                 name: "OOE",
                 directors: "Zheng Sun x Michael Bonifacio",
                 captains: "",
-                photo: "img/teams/_14-_15/15W - OOE.jpg",
+                photo: "img/teams/_14-_15/15W-OOE.jpg",
                 video: "https://www.youtube-nocookie.com/embed/zK6fgx9Lz-M?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -41,7 +41,7 @@
                 name: "TakeOff",
                 directors: "Samantha Amos x Kevin Yeh",
                 captains: "",
-                photo: "img/teams/_14-_15/15W - Takeoff.jpg",
+                photo: "img/teams/_14-_15/15W-Takeoff.jpg",
                 video: "https://www.youtube-nocookie.com/embed/oxSHs-DCl8c?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -56,7 +56,7 @@
                 name: "Betta Werk",
                 directors: "Dione Dacuycuy x Julianna Bianes",
                 captains: "",
-                photo: "img/teams/_14-_15/15SP - Betta Werk.jpg",
+                photo: "img/teams/_14-_15/15SP-BettaWerk.jpg",
                 video: "https://www.youtube-nocookie.com/embed/l0_pOdBwjRI?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -64,7 +64,7 @@
                 name: "Fireworks",
                 directors: "Zheng Sun x Justin Lee x Hesed Cabornida",
                 captains: "",
-                photo: "img/teams/_14-_15/15SP - Fireworks.jpg",
+                photo: "img/teams/_14-_15/15SP-Fireworks.jpg",
                 video: "https://www.youtube-nocookie.com/embed/Qa7Xy-sho-0?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -72,7 +72,7 @@
                 name: "Landing",
                 directors: "Samantha Amos x Kevin Yeh",
                 captains: "",
-                photo: "img/teams/_14-_15/15SP - Landing.jpg",
+                photo: "img/teams/_14-_15/15SP-Landing.jpg",
                 video: "https://www.youtube-nocookie.com/embed/9oS-880lHjg?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -97,7 +97,7 @@
                 name: "Baggage Claim",
                 directors: "Kevin Yeh x Samantha Amos",
                 captains: "",
-                photo: "img/teams/_15-_16/15SUM - Baggage Claim.jpg",
+                photo: "img/teams/_15-_16/15SUM-BaggageClaim.jpg",
                 video: "https://www.youtube-nocookie.com/embed/zUVZ6Upi42Q?rel=0&amp;showinfo=0",
                 noModal: false
               }
@@ -111,7 +111,7 @@
                 name: "Core",
                 directors: "Jason Chang x Adeney Zo",
                 captains: "Sarah Park",
-                photo: "img/teams/_15-_16/15F - CORE.jpg",
+                photo: "img/teams/_15-_16/15F-CORE.jpg",
                 video: "https://www.youtube-nocookie.com/embed/1lGw24rQuEk?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -119,7 +119,7 @@
                 name: "Full Metal Movement",
                 directors: "Bashir Hydari x Patrick Tran",
                 captains: "Jonnby LaGuardia",
-                photo: "img/teams/_15-_16/15F - Full Metal Movement.jpg",
+                photo: "img/teams/_15-_16/15F-FullMetalMovement.jpg",
                 video: "https://www.youtube-nocookie.com/embed/T5RBaPK_rQE?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -127,7 +127,7 @@
                 name: "Square One",
                 directors: "Angela David x Jucel Andrin",
                 captains: "",
-                photo: "img/teams/_15-_16/15F - SquareOne.jpg",
+                photo: "img/teams/_15-_16/15F-SquareOne.jpg",
                 video: "ttps://www.youtube-nocookie.com/embed/LYrX6IDqlvE?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -135,7 +135,7 @@
                 name: "Squirtle Squad Gen 2",
                 directors: "",
                 captains: "",
-                photo: "img/teams/_15-_16/15F - Squirtle Squad Gen 2.jpg",
+                photo: "img/teams/_15-_16/15F-SquirtleSquadGen2.jpg",
                 video: "",
                 noModal: true
               },
@@ -143,7 +143,7 @@
                 name: "Ultraviolet",
                 directors: "Zenon Davis x Kevin Lee",
                 captains: "Karen Lee",
-                photo: "img/teams/_15-_16/15F - Ultraviolet.jpg",
+                photo: "img/teams/_15-_16/15F-Ultraviolet.jpg",
                 video: "https://www.youtube-nocookie.com/embed/yfELyBOjP5M?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -157,7 +157,7 @@
                 name: "U-KNIGHTED",
                 directors: "Dexter Amande x Patrick Tran x Gene Viloria",
                 captains: "Amanat Bal x Steve Chung",
-                photo: "img/teams/_15-_16/16W - U-Knighted.jpg",
+                photo: "img/teams/_15-_16/16W-U-Knighted.jpg",
                 video: "https://www.youtube-nocookie.com/embed/BnH-A2ZOTFg?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -165,7 +165,7 @@
                 name: "Infrared",
                 directors: "Zenon Davis x Kevs Lee",
                 captains: "Belinda Chiu x Andrew Suykry",
-                photo: "img/teams/_15-_16/16W - Infrared.jpg",
+                photo: "img/teams/_15-_16/16W-Infrared.jpg",
                 video: "https://www.youtube-nocookie.com/embed/XS65c-6q79U?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -173,7 +173,7 @@
                 name: "Squirtle Squad Gen 3",
                 directors: "Benjamin Mark Nabong x Dennis Tran",
                 captains: "Yena Choi x Emily Ren",
-                photo: "img/teams/_15-_16/16W - Squirtle Squad Gen 3.jpg",
+                photo: "img/teams/_15-_16/16W-SquirtleSquadGen3.jpg",
                 video: "https://www.youtube-nocookie.com/embed/CtgjSDn2KwQ?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -181,7 +181,7 @@
                 name: "Root Two",
                 directors: "",
                 captains: "",
-                photo: "img/teams/_15-_16/16W - RootTwo.jpg",
+                photo: "img/teams/_15-_16/16W-RootTwo.jpg",
                 video: "",
                 noModal: true
               },
@@ -189,7 +189,7 @@
                 name: "Groove Factory",
                 directors: "",
                 captains: "",
-                photo: "img/teams/_15-_16/16W - Groove Factory.jpg",
+                photo: "img/teams/_15-_16/16W-GrooveFactory.jpg",
                 video: "",
                 noModal: true
               },
@@ -203,7 +203,7 @@
                 name: ".PDF",
                 directors: "Ping Quach x Benedict Dungca",
                 captains: "Emily Carter x Allan Qin",
-                photo: "img/teams/_15-_16/16SP - pdfteam.jpg",
+                photo: "img/teams/_15-_16/16SP-pdfteam.jpg",
                 video: "https://www.youtube-nocookie.com/embed/N35fF3peZiU?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -211,7 +211,7 @@
                 name: "EON",
                 directors: "Ariana Barker x Ben Yi",
                 captains: "Bobni Das x Shona Das",
-                photo: "img/teams/_15-_16/16SP - Eon.jpg",
+                photo: "img/teams/_15-_16/16SP-Eon.jpg",
                 video: "https://www.youtube-nocookie.com/embed/r8Z41d5VeyM?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -219,7 +219,7 @@
                 name: "Kaleido",
                 directors: "Yena Choi x Sarah Park",
                 captains: "Antoine Rajkovic x Michelle Lin",
-                photo: "img/teams/_15-_16/16SP - Kaleido.jpg",
+                photo: "img/teams/_15-_16/16SP-Kaleido.jpg",
                 video: "https://www.youtube-nocookie.com/embed/CtgjSDn2KwQ?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -227,15 +227,23 @@
                 name: "Heat Wave",
                 directors: "Ricardo Davis x Chantel Akrawi",
                 captains: "Lorraine Rowe x Emily Ren",
-                photo: "img/teams/_15-_16/16SP - Heat Wave.jpg",
+                photo: "img/teams/_15-_16/16SP-HeatWave.jpg",
                 video: "https://www.youtube-nocookie.com/embed/o5XowFSMyg0?rel=0&amp;showinfo=0",
                 noModal: false
+              },
+              {
+                name: "Squirtle Squad Gen 4",
+                directors: "",
+                captains: "",
+                photo: "img/teams/_15-_16/16SP-SquirtleSquadGen4.jpg",
+                video: "",
+                noModal: true
               },
               {
                 name: "Quixotics",
                 directors: "",
                 captains: "",
-                photo: "img/teams/_15-_16/16SP - Quixotics.jpg",
+                photo: "img/teams/_15-_16/16SP-Quixotics.jpg",
                 video: "",
                 noModal: true
               },
@@ -252,7 +260,7 @@
                 name: "Encore",
                 directors: "Jason Chang x Adeney Zo",
                 captains: "Jennifer Dihenia x Dalarm Han",
-                photo: "img/teams/_16-_17/16SM - Encore.jpg",
+                photo: "img/teams/_16-_17/16SM-Encore.jpg",
                 video: "https://www.youtube-nocookie.com/embed/ZOPPAh13VCE?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -260,7 +268,7 @@
                 name: "Nocturnal",
                 directors: "Michala Li x Gene Viloria",
                 captains: "Lisa Chao x Chris Lee",
-                photo: "img/teams/_16-_17/16SUM - Nocturnal.jpg",
+                photo: "img/teams/_16-_17/16SUM-Nocturnal.jpg",
                 video: "https://www.youtube-nocookie.com/embed/2IUbfuU_KzY?rel=0&amp;showinfo=0",
                 noModal: false
               }
@@ -274,7 +282,7 @@
                 name: "Empire",
                 directors: "",
                 captains: "",
-                photo: "img/teams/_16-_17/16F - Empire.jpg",
+                photo: "img/teams/_16-_17/16F-Empire.jpg",
                 video: "",
                 noModal: true
               },
@@ -282,7 +290,7 @@
                 name: "Ikigai",
                 directors: "Imesh Samarakoon x Sarah Park x Yena Choi",
                 captains: "Dean Sumitro x Jessica Nguyen",
-                photo: "img/teams/_16-_17/16F - Ikigai.jpg",
+                photo: "img/teams/_16-_17/16F-Ikigai.jpg",
                 video: "https://www.youtube-nocookie.com/embed/VEEUS80XbiU?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -290,7 +298,7 @@
                 name: "RA",
                 directors: "Alex Tang x Taleeah Mesa",
                 captains: "Antoine Rajkovic x Sophia Wong",
-                photo: "img/teams/_16-_17/16F - RA.jpg",
+                photo: "img/teams/_16-_17/16F-RA.jpg",
                 video: "https://www.youtube-nocookie.com/embed/5H4X48WDImk?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -298,7 +306,7 @@
                 name: "Ripple",
                 directors: "Rico Davis x Shawn Lo",
                 captains: "Evelyn Ly x Sherry Wang",
-                photo: "img/teams/_16-_17/16F - Ripple.jpg",
+                photo: "img/teams/_16-_17/16F-Ripple.jpg",
                 video: "https://www.youtube-nocookie.com/embed/vIrbGPERCHc?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -306,7 +314,7 @@
                 name: "Soulstice",
                 directors: "Ariana Barker x Dexter Amande",
                 captains: "Alex Byun x Ellen Hsieh",
-                photo: "img/teams/_16-_17/16F - Soulstice.jpg",
+                photo: "img/teams/_16-_17/16F-Soulstice.jpg",
                 video: "https://www.youtube-nocookie.com/embed/rQWKViqnj4g?rel=0&amp;showinfo=0",
                 noModal: false
               }
@@ -320,7 +328,7 @@
                 name: "F.A.M.",
                 directors: "Gary Bui x Tess Chen",
                 captains: "Derek Zhang x Susana Min",
-                photo: "img/teams/_16-_17/17SP - F.A.M..jpg",
+                photo: "img/teams/_16-_17/17SP-FAM.jpg",
                 video: "https://www.youtube-nocookie.com/embed/LEitjjcUQNc?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -328,7 +336,7 @@
                 name: "Incognito",
                 directors: "Matthew Diep x Lawrence Wang",
                 captains: "Evelynn Ly x Tanvi Rane",
-                photo: "img/teams/_16-_17/17SP - Incognito.jpg",
+                photo: "img/teams/_16-_17/17SP-Incognito.jpg",
                 video: "https://www.youtube-nocookie.com/embed/zlcqVJKyBG4?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -336,7 +344,7 @@
                 name: "Lost and Found",
                 directors: "Gene Viloria x Ricardo Davis",
                 captains: "Sylvia Huynh x Tianai Ren",
-                photo: "img/teams/_16-_17/17SP - Lost and Found.jpg",
+                photo: "img/teams/_16-_17/17SP-LostandFound.jpg",
                 video: "https://www.youtube-nocookie.com/embed/etKtSxb47UU?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -344,7 +352,7 @@
                 name: "Rezn8",
                 directors: "Max Woo x Merton Ung",
                 captains: "Alex Do x Miya Sheker",
-                photo: "img/teams/_16-_17/17SP - REZN8.jpg",
+                photo: "img/teams/_16-_17/17SP-REZN8.jpg",
                 video: "https://www.youtube-nocookie.com/embed/AVasUouS-Fc?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -352,7 +360,7 @@
                 name: "Spectra",
                 directors: "Kevz Lee x Zenon Davis",
                 captains: "Ellen Hsieh x Bert Yeh",
-                photo: "img/teams/_16-_17/17SP - Spectra.jpg",
+                photo: "img/teams/_16-_17/17SP-Spectra.jpg",
                 video: "https://www.youtube-nocookie.com/embed/KQ5MiB8QiFU?rel=0&amp;showinfo=0",
                 noModal: false
               }
@@ -369,7 +377,7 @@
                 name: "AXIS",
                 directors: "Alexxa Vasquez x Yessie Willis",
                 captains: "Eric Lin x Terri Shih",
-                photo: "img/teams/_17-_18/17SUM - Axis.jpg",
+                photo: "img/teams/_17-_18/17SUM-Axis.jpg",
                 video: "https://www.youtube-nocookie.com/embed/3VStBamgG-s?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -377,7 +385,7 @@
                 name: "DUAL CORE",
                 directors: "Dexter Amande x John Fernandez",
                 captains: "Calvin Ha x Derek Zhang",
-                photo: "img/teams/_17-_18/17SUM - Dual Core.jpg",
+                photo: "img/teams/_17-_18/17SUM-DualCore.jpg",
                 video: "https://www.youtube-nocookie.com/embed/cjJ8Pf3_ldQ?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -385,7 +393,7 @@
                 name: "Consensus",
                 directors: "Nalu Bauman x Timothy Hooker",
                 captains: "Bertrand Shao x Lisa Chao",
-                photo: "img/teams/_17-_18/17SUM - Consensus.jpg",
+                photo: "img/teams/_17-_18/17SUM-Consensus.jpg",
                 video: "https://www.youtube-nocookie.com/embed/AlrrfAlKOCY?rel=0&amp;showinfo=0",
                 noModal: false
               }
@@ -399,7 +407,7 @@
                 name: "Rev",
                 directors: "Patrick Tran x Priscilla McElhinney",
                 captains: "Helen-Sage Lee x Kyle Diep",
-                photo: "img/teams/_17-_18/17F - Rev.jpg",
+                photo: "img/teams/_17-_18/17F-Rev.jpg",
                 video: "https://www.youtube-nocookie.com/embed/9sv6VjLHpak?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -407,7 +415,7 @@
                 name: "Cerberus",
                 directors: "Alex Tang x Brandon Lee x Dean Sumitro",
                 captains: "Hansen Qiu x Tanvi Rane",
-                photo: "img/teams/_17-_18/17F - Cerberus.jpg",
+                photo: "img/teams/_17-_18/17F-Cerberus.jpg",
                 video: "https://www.youtube-nocookie.com/embed/iUFYlHj8sBY?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -415,7 +423,7 @@
                 name: "Vision",
                 directors: "Kevs Lee x Shona Das",
                 captains: "Isaac Yoon x Sylvia Hyunh",
-                photo: "img/teams/_17-_18/17F - Vision.jpg",
+                photo: "img/teams/_17-_18/17F-Vision.jpg",
                 video: "https://www.youtube-nocookie.com/embed/PtHFkwzQCPo?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -423,7 +431,7 @@
                 name: "Sporks",
                 directors: "Lawrence Wang x Thomas Choi",
                 captains: "Ashley Pizarro x Ludi Zhu",
-                photo: "img/teams/_17-_18/17F - Sporks.jpg",
+                photo: "img/teams/_17-_18/17F-Sporks.jpg",
                 video: "https://www.youtube-nocookie.com/embed/F1SqOkQJzp4?rel=0&amp;showinfo=0",
                 noModal: false
               }
@@ -437,7 +445,7 @@
                 name: "AIM",
                 directors: "Alexxa Vasquez x Jonathan Yokomizo x Maree Iligan",
                 captains: "Jeremy Quan x Sylvia Huynh",
-                photo: "img/teams/_17-_18/18W - AIM.jpg",
+                photo: "img/teams/_17-_18/18W-AIM.jpg",
                 video: "https://www.youtube-nocookie.com/embed/epCEJBUKmxQ?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -445,7 +453,7 @@
                 name: "Nimbus",
                 directors: "Benjamin Nabong x Michelle Lin",
                 captains: "Sarah Tian x Zachary Huang",
-                photo: "img/teams/_17-_18/18W - Nimbus.jpg",
+                photo: "img/teams/_17-_18/18W-Nimbus.jpg",
                 video: "https://www.youtube-nocookie.com/embed/SxXZGatH09g?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -483,7 +491,7 @@
                 name: "Kaizen",
                 directors: "Matthew Diep x Kristie Liu",
                 captains: "Ashley Pizarro x Josh Lai",
-                photo: "img/teams/_17-_18/18S - Kaizen.jpg",
+                photo: "img/teams/_17-_18/18S-Kaizen.jpg",
                 video: "https://www.youtube-nocookie.com/embed/-aI3aC9ajb4?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -491,7 +499,7 @@
                 name: "PWR",
                 directors: "Patrick Tran x Priscilla McElhinney",
                 captains: "Carley Jacobo x Cole Ibbotson",
-                photo: "img/teams/_17-_18/18S - PWR.jpg",
+                photo: "img/teams/_17-_18/18S-PWR.jpg",
                 video: "https://www.youtube-nocookie.com/embed/Hc4laiDkq-s?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -499,7 +507,7 @@
                 name: "Nimbus II",
                 directors: "Benjamin Nabong x Michelle Lin",
                 captains: "Angela Nguyen x Hansen Qiu",
-                photo: "img/teams/_17-_18/18S - NimbusII.jpg",
+                photo: "img/teams/_17-_18/18S-NimbusII.jpg",
                 video: "https://www.youtube-nocookie.com/embed/I_I77i6VtXk?rel=0&amp;showinfo=0",
                 noModal: false
               },
@@ -507,7 +515,7 @@
                 name: "ETA",
                 directors: "",
                 captains: "",
-                photo: "img/teams/_17-_18/18S - Eta.jpg",
+                photo: "img/teams/_17-_18/18S-Eta.jpg",
                 video: "",
                 noModal: true
               }
