@@ -628,7 +628,6 @@
         view.render();
       },
 
-
       //This function should be called every time you want a new showcase displayed.
       render: function() {
 
@@ -704,7 +703,6 @@
             let portfolio = document.querySelector('#targetContainer');
             portfolio.appendChild(parentDiv);
         });
-
       },
 
       resetSideBar: function() {
