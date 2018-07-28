@@ -173,6 +173,7 @@ footer {
 }
 
 
+
 /*
   End CSS
   Location: SideBar
@@ -189,10 +190,10 @@ footer {
   min-height: 1000px;
 }
 
-/* .teamPhoto {
+#bannerImg {
   width: 100%;
-  height: 10%;
-} */
+}
+
 
 #modalImg,
 .teamPhoto,
@@ -200,6 +201,78 @@ footer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#sideBarToggle {
+  display: none;
+}
+
+#sideBarClose {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  #teamNav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    left: -100%;
+    -webkit-transition: left 2s;
+    transition: left 2s;
+  }
+
+  #sidebarNav {
+    display: block;
+    text-align: center;
+  }
+
+  .listlink {
+    text-align: center;
+  }
+
+  #sideBarToggle {
+    display: block;
+    position: fixed;
+    top: 50%;
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 5;
+    left: -20px;
+    background-color: rgba(34, 34, 34, 1);
+    -webkit-transition: left 2s;
+    transition: left 2s;
+  }
+
+  #sideBarClose {
+    margin-top: 50px;
+    display: inline-flex;
+  }
+
+
+  .notification {
+    -webkit-animation: shake 2.5s infinite; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: shake 2.5s infinite; /* Firefox < 16 */
+  }
+
+  @keyframes shake {
+    25% {-webkit-transform: translateX(10px);}
+    50% {-webkit-transform: translateX(-10px);}
+    75% {-webkit-transform: translateX(10px);}
+    100% {-webkit-transform: translateX(-10px);}
+  }
+
+  #sideBarToggle:hover {
+    color: gold;
+  }
+
+  .lshipDescription {
+    margin-left: 0;
+  }
 }
 
 /*
