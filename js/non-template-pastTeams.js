@@ -553,7 +553,7 @@
           document.querySelector('#sideBarToggle').addEventListener('click', function(e){
             e.target.classList.remove('notification');
             document.querySelector('#teamNav').style.left = '0px';
-            e.target.style.left = '100%';
+            e.target.style.display = 'none';
           });
 
           document.querySelector('#sideBarClose').addEventListener('click', function(e){
@@ -707,13 +707,15 @@
 
       resetSideBar: function() {
         document.querySelector('#sideBarToggle').classList.add('notification');
-        document.querySelector('#sideBarToggle').style.left = '';
         document.querySelector('#teamNav').style.left = '';
         document.querySelector('#teamNav').style.position = '';
         setTimeout(function() {
+          document.querySelector('#sideBarToggle').style.display = '';
+        }, 2000)
+        setTimeout(function() {
           document.querySelector('#sideBarToggle').classList.remove('notification');
         }, 4000);
-      }
+      },
   };
 
   let connector = {

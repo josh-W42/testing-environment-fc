@@ -133,11 +133,19 @@ footer {
    Start CSS
    Location: Side Nav
 */
+main {
+  /* background-image: url('../img/Backgrounds/background.jpg');
+  background-position: center;
+  background-repeat: space;
+  background-size: cover; */
+}
+
 section {
-  padding-top: 100px;
+  padding-bottom: 0px;
 }
 
 #desktopOnlyNav {
+  text-align: center;
   height: 100%;
   width: 20%;
   background-color: rgba(34, 34, 34, 0.95);
@@ -165,6 +173,10 @@ section {
   list-style: none;
 }
 
+#desktopOnlyNav ul {
+  padding-left: 0;
+}
+
 #desktopOnlyNav li:hover {
   margin-left: 20px;
   color: gold;
@@ -172,12 +184,77 @@ section {
   font-size: 1.5em;
 }
 
+#sideBarToggle {
+  display: none;
+}
 
+#sideBarClose {
+  display: none;
+}
 
+#sideBarLogo {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
 
 @media screen and (max-width: 991px) {
   #desktopOnlyNav {
-    display: none;
+    font-size: 1.5em;
+    padding-top: 20%;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    left: -100%;
+    -webkit-transition: left 2s;
+    transition: left 2s;
+  }
+
+  #desktopOnlyNav ul {
+    padding-left: 0;
+  }
+
+  #sideBarToggle {
+    display: block;
+    position: fixed;
+    top: 50%;
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 5;
+    left: -20px;
+    background-color: rgba(34, 34, 34, 1);
+    -webkit-transition: left 2s;
+    transition: left 2s;
+  }
+
+  #sideBarClose {
+    margin-top: 25px;
+    display: inline-flex;
+  }
+
+
+  .notification {
+    -webkit-animation: shake 2.5s infinite; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: shake 2.5s infinite; /* Firefox < 16 */
+  }
+
+  @keyframes shake {
+    25% {-webkit-transform: translateX(10px);}
+    50% {-webkit-transform: translateX(-10px);}
+    75% {-webkit-transform: translateX(10px);}
+    100% {-webkit-transform: translateX(-10px);}
+  }
+
+  #sideBarToggle:hover {
+    color: gold;
   }
 }
 
@@ -192,7 +269,7 @@ section {
 */
 
 .imgArrayTitle {
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .lshipDescription {
@@ -214,10 +291,11 @@ section {
 .directorPhoto,
 .execSecondPhoto {
   width: 20em;
-  margin-left: ;
 }
 
 .execPicStyle {
+  margin-left: auto;
+  margin-right: auto;
   width: 20em;
 }
 
@@ -228,14 +306,10 @@ section {
 .branchBody {
   text-align: justify;
   display: flex;
-  width: 50em;
+  width: 75%;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.bodyExec {
-  display: inline-block;
 }
 
 #portfolio .portfolio-item {
@@ -371,45 +445,6 @@ section {
 
   .lshipDescription {
     margin-left: 0px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .directorPhoto,
-  .execSecondPhoto {
-    width: 17em;
-    float: left;
-    margin-left: 5%;
-  }
-
-  .execPicStyle {
-    margin-left: 15%;
-  }
-
-  .execSecondPhoto {
-    margin-right: 5%;
-  }
-
-  .branchBody {
-    width: 45em;
-  }
-
-  .bodyExec {
-    margin-right: 5%;
-  }
-
-}
-
-@media screen and (min-width: 1700px) {
-  .directorPhoto,
-  .execSecondPhoto {
-    width: 20em;
-    float: left;
-    margin-left: 15%;
-  }
-
-  .bodyExec {
-    margin-right: 16%;
   }
 }
 

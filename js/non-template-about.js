@@ -18,19 +18,9 @@
         title: "Build Yourself"
       },
       {
-        img: "img/Banners/secondShowcase.png",
-        name: "Second Exhibition",
-        title: "Emerge"
-      },
-      {
         img: "img/Banners/firstFamNight.jpg",
         name: "First Fam Night",
         title: "Winter 2015"
-      },
-      {
-        img: "img/Banners/thirdShowcase.jpg",
-        name: "Third Exhibition",
-        title: "Freefall"
       },
       {
         img: "img/Banners/oneYearAnniversary.jpg",
@@ -38,39 +28,14 @@
         title: ""
       },
       {
-        img: "img/Banners/fourthShowcase.jpg",
-        name: "Fourth Exhibition",
-        title: "Cascade"
-      },
-      {
         img: "img/Banners/fifthShowcase.jpg",
         name: "Fifth Exhibition",
         title: "Ignite"
       },
       {
-        img: "img/Banners/sixthShowcase.jpg",
-        name: "Sixth Exhibition",
-        title: "Eclipse"
-      },
-      {
-        img: "img/Banners/seventhShowcase.jpg",
-        name: "Seventh Exhibition",
-        title: "Aurora"
-      },
-      {
         img: "img/Banners/friendsAndFam.png",
         name: "Friends and Fam Night",
         title: "Spring 2017"
-      },
-      {
-        img: "img/Banners/eighthShowcase.jpg",
-        name: "Eighth Exhibition",
-        title: "Elysia"
-      },
-      {
-        img: "img/Banners/ninthShowcase.jpg",
-        name: "Ninth Exhibition",
-        title: "Theoria"
       },
       {
         img: "img/Banners/firstWintensive.jpg",

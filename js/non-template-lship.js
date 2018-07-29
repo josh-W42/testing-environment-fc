@@ -232,15 +232,15 @@
             });
           });
 
-          // document.querySelector('#sideBarToggle').addEventListener('click', function(e){
-          //   e.target.classList.remove('notification');
-          //   document.querySelector('#teamNav').style.left = '0px';
-          //   e.target.style.left = '100%';
-          // });
-          //
-          // document.querySelector('#sideBarClose').addEventListener('click', function(e){
-          //   connector.reset();
-          // });
+          document.querySelector('#sideBarToggle').addEventListener('click', function(e){
+            e.target.classList.remove('notification');
+            document.querySelector('#desktopOnlyNav').style.left = '0px';
+            e.target.style.display = 'none';
+          });
+
+          document.querySelector('#sideBarClose').addEventListener('click', function(e){
+            connector.reset();
+          });
       },
 
       setLazy: function(){
@@ -257,7 +257,7 @@
       },
 
       lazyLoad: function() {
-          for(var i=0; i < data.lazy.length; i++){
+          for(let i=0; i < data.lazy.length; i++){
               if(model.isInViewport(data.lazy[i])){
                   if (data.lazy[i].getAttribute('data-src')){
                       data.lazy[i].src = data.lazy[i].getAttribute('data-src');
@@ -323,6 +323,7 @@
 
         let descriptionHead = document.createElement('div');
         descriptionHead.classList.add('col-md-12');
+        descriptionHead.classList.add('container');
         descriptionHead.classList.add('descriptionHead');
         sectionTag.appendChild(descriptionHead);
 
@@ -433,7 +434,7 @@
       },
 
       goToSection: function() {
-        // view.resetSideBar();
+        view.resetSideBar();
 
         let scrollTarget;
         document.querySelectorAll('.lshipDescription').forEach(function(section) {
@@ -443,19 +444,25 @@
              let offset = sectionRect.top - bodyRect.top;
              scrollTarget = offset;
              $('html, body').animate({ scrollTop: scrollTarget }, 1500);
+             section.classList.add('flyIn');
+             setTimeout(function() {
+               section.classList.remove('flyIn');
+             }, 2000);
            }
         });
       },
 
-      // resetSideBar: function() {
-      //   document.querySelector('#sideBarToggle').classList.add('notification');
-      //   document.querySelector('#sideBarToggle').style.left = '';
-      //   document.querySelector('#teamNav').style.left = '';
-      //   document.querySelector('#teamNav').style.position = '';
-      //   setTimeout(function() {
-      //     document.querySelector('#sideBarToggle').classList.remove('notification');
-      //   }, 4000);
-      // },
+      resetSideBar: function() {
+        document.querySelector('#sideBarToggle').classList.add('notification');
+        document.querySelector('#desktopOnlyNav').style.left = '';
+        document.querySelector('#desktopOnlyNav').style.position = '';
+        setTimeout(function() {
+          document.querySelector('#sideBarToggle').style.display = '';
+        }, 2000)
+        setTimeout(function() {
+          document.querySelector('#sideBarToggle').classList.remove('notification');
+        }, 4000);
+      },
   };
 
   let connector = {
