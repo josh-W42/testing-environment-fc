@@ -101,6 +101,22 @@
               body: "From early on in high school, I had always been mesmerized by dance. I remember binging hours and hours of 1 million dance studio on youtube and just thinking to myself: if I could have one wish granted, I’d want to be able to dance. But I never thought that it was possible for me. Foundations changed that. It gave me a chance to do something that I’ve always wanted to try. I never expected that I could feel...comfortable, dancing alongside others. But I was blown away by the overwhelming support around me, and soon enough Foundations felt like a home to me. Foundations was more than just a dance team. On my two teams, I’ve met so many precious friends, shared so much laughter and created so many irreplaceable memories. The months I spent dancing with Foundations have definitely been the brightest and happiest moments of my life. Nothing but love for this organization. "
           },
           {
+              img: "img/TestimonialPhotos/Susai_Joshua.jpg",
+              name: "Joshua Susai",
+              subName: "Admin LSHIP: Showcase Chair '17-'18",
+              uclaInfo: "Fourth Year",
+              intro: "I joined Foundations because I wanted to get my foot in the door in collegiate dancing, and it’s led me on this incredible journey of self-discovery and maturation.",
+              body: "I wouldn’t be the dancer I am today without that first step that Foundations allowed me to take and I am so grateful for that, which is why I’m back as one of the Showcase Chairs for a second time. After having performed so many times and having even competed in the community a few times, I’ve almost forgotten how scary and emotional that first performance with Foundations really was. But being a part of the Showcase committee has allowed me to revisit that and see the powerful effect that the Foundations experience can have on people, from the moment where everyone is huddled backstage hearing pep talks from their directors, to the moment where they come off stage high from the adrenaline of the culmination of their hard work. I think it’s so beautiful to see fledgling dancers have their first taste of the stage, or their first time performing for such a large crowd, or their first (and last?) time sharing the stage with the people they’ve shared the parking lots with for almost a quarter. Some of them may never dance again, but some of them will go on to become the next generation of amazing dancers in the community, and none of them will leave the same people they were before. That’s the beauty of FC! #buildyourself"
+          },
+          {
+              img: "img/temporary/WilsonJosh.jpg",
+              name: "Joshua Wilson",
+              subName: "General Member",
+              uclaInfo: "Ling and CS, 4th year",
+              intro: "At the start of my senior year I didn’t really know how Foundations would impact my life.",
+              body: "I just joined mainly to do something fun and challenging, make some new friends and try something I always thought I’d be too busy to do. Over time, though, I began to see Foundations as something far greater than just a dance org on campus. I saw how passionate people were about building the community, both dancers and leadership alike. Strangely enough, I learned more about myself and how to be out of my comfort zone than I did learn about dance, but that in turn taught me how to grow as a dancer. And finally, I met some of the nicest and coolest people being apart of this org, some of which I’m lucky enough to call friends. So yeah, if you’re on the fence about whether you should join Foundations for the first time, JUST DO IT. You may end up loving it."
+          },
+          {
               img: "img/TestimonialPhotos/Li_Derek.jpg",
               name: "Derek Li",
               subName: "General Member",

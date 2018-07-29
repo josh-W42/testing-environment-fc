@@ -191,11 +191,11 @@ section {
    Location: description
 */
 
-#imgArrayTitle {
-  margin-top: 20%;
+.imgArrayTitle {
+  margin-top: 15%;
 }
 
-#lshipDescription {
+.lshipDescription {
   margin-left: 20%;
   text-align: center;
   min-height: 1000px;
@@ -213,8 +213,8 @@ section {
 
 .directorPhoto,
 .execSecondPhoto {
-  width: 30em;
-  margin-left: 40px;
+  width: 20em;
+  margin-left: ;
 }
 
 .execPicStyle {
@@ -225,11 +225,17 @@ section {
   display: inline-flex;
 }
 
-#branchBody {
+.branchBody {
   text-align: justify;
-  display: inline-flex;
+  display: flex;
   width: 50em;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bodyExec {
+  display: inline-block;
 }
 
 #portfolio .portfolio-item {
@@ -291,7 +297,7 @@ section {
   }
 }
 
-#adminBox {
+.adminBox {
   background-color: transparent;
   overflow: auto;
   text-align: center;
@@ -302,7 +308,7 @@ section {
 
 @media screen and (max-width: 500px) {
 
-  #branchBody {
+  .branchBody {
     width: 90%;
   }
 
@@ -316,7 +322,7 @@ section {
     width: 10em;
   }
 
-  #lshipDescription {
+  .lshipDescription {
     margin-left: 0px;
     min-height: 600px;
   }
@@ -336,7 +342,7 @@ section {
     /* max-height: 100px; */
   }
 
-  #adminBox {
+  .adminBox {
     height: 6em;
     width: 8em;
   }
@@ -344,17 +350,17 @@ section {
 
 @media screen and (max-width: 991px) and (min-width: 500px) {
 
-  #lshipDescription {
+  .lshipDescription {
     max-width: 100%;
   }
 
-  #branchBody {
+  .branchBody {
     width: 90%;
   }
 
   .directorPhoto,
   .execSecondPhoto {
-    width: 25em;
+    width: 20em;
     margin-left: 0px;
   }
 
@@ -363,7 +369,7 @@ section {
   }
 
 
-  #lshipDescription {
+  .lshipDescription {
     margin-left: 0px;
   }
 }
@@ -371,7 +377,7 @@ section {
 @media screen and (min-width: 1440px) {
   .directorPhoto,
   .execSecondPhoto {
-    width: 20em;
+    width: 17em;
     float: left;
     margin-left: 5%;
   }
@@ -380,24 +386,30 @@ section {
     margin-left: 15%;
   }
 
-  #execSecondPhoto {
-    float: right;
+  .execSecondPhoto {
     margin-right: 5%;
   }
 
-  #branchBody {
-    text-align: justify;
+  .branchBody {
     width: 45em;
-    margin-top: 0px;
   }
+
+  .bodyExec {
+    margin-right: 5%;
+  }
+
 }
 
 @media screen and (min-width: 1700px) {
   .directorPhoto,
   .execSecondPhoto {
-    width: 25em;
+    width: 20em;
     float: left;
     margin-left: 15%;
+  }
+
+  .bodyExec {
+    margin-right: 16%;
   }
 }
 

@@ -31,7 +31,7 @@
 
           events: {
 
-              body: "The Events Committee is responsible for planning and executing large-scale social events for all general members each quarter, and our main goal is to promote inter-team bonding. Given how close every team gets each quarter individually, it is important for them to also get to know dancers from other teams in order to maximize their “Foundations experience”. Upon making new friends from other teams, members can, for instance, cheer for them when they perform, thus reinforcing the supportive nature that characterizes Foundations Choreography as an organization. Within this committee, the two Events Chairs are in charge of planning a Clubbing event, an All-Team Amazing Race (in which members represent their teams in competitive outdoor games), and Choreo Showcase (in which members create and perform their own original choreography). A new addition to the Events Committee is the LSHIP Relations Chair, whose main goal is to facilitate LSHIP bonding and appreciation. As Foundations LSHIP is a large team with many committees and comprised of people from diverse backgrounds, it is important for everyone to work well as a team in order to make sure the organization is running smoothly for our general members. The LSHIP Relations Chair is in charge of planning bonding events within LSHIP, as well as show appreciation of the hard work that every LSHIP member puts in for the organization through gifts, posters, shoutouts etc. ",
+              body: "The Events Committee is responsible for planning large-scale social events for all general members each quarter. Given how close every team gets each quarter individually, it is important for them to also get to know dancers from other teams in order to maximize their “Foundations experience”. The two Events Chairs are in charge of planning a Clubbing event, an All-Team Amazing Race (in which members represent their teams in competitive outdoor games), and Choreo Showcase (in which members perform their own original choreography). A new addition to the Events Committee is the LSHIP Relations Chair, whose main goal is to facilitate LSHIP bonding and appreciation. They are in charge of planning bonding events within LSHIP, as well as show appreciation of the hard work that every LSHIP member puts in for the organization through gifts, posters, shoutouts etc.",
               director: {
                   photo: "img/lship/WongEllis.jpg",
                   name: "Ellis Wong",
@@ -117,10 +117,9 @@
                       photo: "img/temporary/WilsonJosh.jpg",
                       name: "Josh Wilson",
                       title: "Webmaster",
-                      detail: "Error 2020: Must sleep"
+                      detail: "A local from South Pasadena, also a superhero? What? #2020"
                   }
               ]
-
           },
 
           finance: {
@@ -134,16 +133,16 @@
               },
               admins: [
                   {
-                      photo: "img/temporary/LiDerek.jpg",
-                      name: "Derek Li",
-                      title: "Finance Chair",
-                      detail: "I was born in Charlottesville, Virginia, and I'm jacked...jacked to the tits. Also, I wish my wallet was a thick as my thighs."
+                    photo: "img/temporary/LiDerek.jpg",
+                    name: "Derek Li",
+                    title: "Finance Chair",
+                    detail: "I was born in Charlottesville, Virginia, and I'm jacked...jacked to the tits. Also, I wish my wallet was a thick as my thighs."
                   },
                   {
-                      photo: "img/temporary/HuangZachary.jpg",
-                      name: "Zachary Huang",
-                      title: "Finance Chair",
-                      detail: 'As one person, I cannot change the whole world, but I can change the whole world of one person" -Paul Shane Spear. Also, I actually do have 10 toes.'
+                    photo: "img/temporary/HuangZachary.jpg",
+                    name: "Zachary Huang",
+                    title: "Finance Chair",
+                    detail: 'As one person, I cannot change the whole world, but I can change the whole world of one person" -Paul Shane Spear. Also, I actually do have 10 toes.'
                   },
               ]
 
@@ -153,29 +152,29 @@
 
               body: "Every quarter, Foundations Choreography’s training teams spend 8 weeks putting together full sets that culminate in a Showcase at the end of the quarter. The Showcase Committee, which consists of a Showcase Producer and 3 Showcase Chairs, works to plan and execute three Showcases per year from start to finish. Our responsibilities include devising the theme and names of all Showcases of the year, booking a location for an audience of over 1,000 people, inviting dance teams from the UCLA and surrounding dance community as guest acts, finding MCs, coordinating Showcase day logistics, and more. On the day of Showcase, the committee not only works backstage to direct dancers to stage, but also assists in controlling sound and lighting of all performances. Our goal is to create a platform for our dancers to showcase their countless hours of hard work and growth in dance to friends, family, and the UCLA dance community.",
               director: {
-                  photo: "img/lship/LiangMichelle.jpg",
-                  name: "Michelle Liang",
-                  title: "Showcase Producer",
-                  detail: ""
+                photo: "img/lship/LiangMichelle.jpg",
+                name: "Michelle Liang",
+                title: "Showcase Producer",
+                detail: ""
               },
               admins: [
                   {
-                      photo: "img/temporary/SoonJordan.jpg",
-                      name: "Jordan Soon",
-                      title: "Showcase Chair",
-                      detail: ""
+                    photo: "img/temporary/SoonJordan.jpg",
+                    name: "Jordan Soon",
+                    title: "Showcase Chair",
+                    detail: ""
                   },
                   {
-                      photo: "img/lship/FidelisJosh.jpg",
-                      name: "Josh Fidelis",
-                      title: "Showcase Chair",
-                      detail: ""
+                    photo: "img/lship/FidelisJosh.jpg",
+                    name: "Josh Fidelis",
+                    title: "Showcase Chair",
+                    detail: "Fidelis is my middle name, but you can call me whatever you like ;)"
                   },
                   {
-                      photo: "img/temporary/TianSarah.jpg",
-                      name: "Sarah Tian",
-                      title: "Showcase Chair",
-                      detail: ""
+                    photo: "img/temporary/TianSarah.jpg",
+                    name: "Sarah Tian",
+                    title: "Showcase Chair",
+                    detail: ""
                   },
               ]
 
@@ -229,14 +228,19 @@
               if (data.branchID === 'team relations'){
                 data.branchID = 'teamRelations';
               }
-              document.querySelector('#lshipDescription').classList.add('goAway');
-              setTimeout(function() {
-                document.querySelector('#lshipDescription').classList.remove('goAway');
-                document.querySelector('#lshipDescription').classList.add('flyIn');
-                connector.ready();
-              }, 750)
+              connector.scroll();
             });
           });
+
+          // document.querySelector('#sideBarToggle').addEventListener('click', function(e){
+          //   e.target.classList.remove('notification');
+          //   document.querySelector('#teamNav').style.left = '0px';
+          //   e.target.style.left = '100%';
+          // });
+          //
+          // document.querySelector('#sideBarClose').addEventListener('click', function(e){
+          //   connector.reset();
+          // });
       },
 
       setLazy: function(){
@@ -279,38 +283,76 @@
 
       init: function() {
         data.branchID = 'executives';
-        document.querySelector('#lshipDescription').classList.add('flyIn');
         view.render();
+        data.branchID = 'events';
+        view.render();
+        data.branchID = 'media';
+        view.render();
+        data.branchID = 'finance';
+        view.render();
+        data.branchID = 'showcase';
+        view.render();
+        data.branchID = 'teamRelations';
+        view.render();
+
       },
+
+      //This long function will create all the sections for the page based on
+      // the dataset defined in the data object. There is no need to call this function
+      // unless you're adding another section.
 
       render: function() {
 
         //must be in lower case
         let branch = data.branchID;
 
-        let sectionTag = document.querySelector('#lshipDescription');
+        let sectionTag = document.createElement('SECTION');
+        sectionTag.classList.add('lshipDescription');
+        sectionTag.id = branch;
+        document.querySelector('main').appendChild(sectionTag);
 
-
-        let directorName = document.querySelector('#directorName');
+        let directorName = document.createElement('h4');
+        directorName.classList.add('directorName');
         directorName.innerHTML = data.branches[branch].director.name;
+        sectionTag.appendChild(directorName);
 
-        let directorTitle = document.querySelector('#directorTitle');
+        let directorTitle = document.createElement('h5');
+        directorTitle.classList.add('directorTitle');
         directorTitle.innerHTML = data.branches[branch].director.title;
+        sectionTag.appendChild(directorTitle);
 
-        let imgArrayTitle = document.querySelector('#imgArrayTitle');
+        let descriptionHead = document.createElement('div');
+        descriptionHead.classList.add('col-md-12');
+        descriptionHead.classList.add('descriptionHead');
+        sectionTag.appendChild(descriptionHead);
+
+        let imgArrayTitle = document.createElement('h2');
         imgArrayTitle.style.display = 'block';
+        imgArrayTitle.classList.add('imgArrayTitle');
+        sectionTag.appendChild(imgArrayTitle);
 
-        let directorPhoto = document.querySelector('.directorPhoto');
-        let secondPhoto = document.querySelector('.execSecondPhoto');
+        let directorPhoto = document.createElement('IMG');
+        directorPhoto.classList.add('directorPhoto');
+        descriptionHead.appendChild(directorPhoto);
+
+        let secondPhoto = document.createElement('IMG');
+        secondPhoto.classList.add('execSecondPhoto');
+        descriptionHead.appendChild(secondPhoto);
+
+        let branchBody = document.createElement('p');
+        branchBody.classList.add('branchBody');
+        branchBody.innerHTML = data.branches[branch].body;
+        descriptionHead.appendChild(branchBody);
+
         if (branch != 'executives') {
           imgArrayTitle.innerHTML = 'Admins';
-
           secondPhoto.style.display = 'none';
           secondPhoto.classList.remove('execPicStyle');
           directorPhoto.classList.remove('execPicStyle');
           directorPhoto.src = data.branches[branch].director.photo;
           directorPhoto.alt = data.branches[branch].director.title;
         } else {
+          branchBody.classList.add('bodyExec');
           imgArrayTitle.style.display = 'none';
           secondPhoto.style.display = 'inline-flex';
           directorPhoto.src = data.branches[branch].director.miya.photo;
@@ -328,18 +370,16 @@
         }
 
 
-        let branchBody = document.querySelector('#branchBody');
-        branchBody.innerHTML = data.branches[branch].body;
-
-        if(document.querySelector('#adminImgArray') != null) {
-          document.querySelector('#adminImgArray').remove();
-        }
+        let portfolio = document.createElement('div');
+        portfolio.id = 'portfolio';
+        portfolio.classList.add('row');
+        sectionTag.appendChild(portfolio);
 
         let adminDiv;
         adminDiv = document.createElement('div');
-        adminDiv.id = 'adminImgArray';
+        adminDiv.classList.add('adminImgArray');
         adminDiv.classList.add('col-lg-12');
-        document.querySelector('#portfolio').appendChild(adminDiv);
+        portfolio.appendChild(adminDiv);
 
         if (branch != 'executives') {
           data.branches[branch].admins.forEach(function(admin) {
@@ -348,6 +388,8 @@
             parentDiv.classList.add('portfolio-item');
             adminDiv.appendChild(parentDiv);
 
+            // There is no modal here, I'm just using vbootstrap's way
+            // of modal display to create an overlay effect.
             let linkToModal = document.createElement('A');
             linkToModal.classList.add('portfolio-link');
             parentDiv.appendChild(linkToModal);
@@ -361,7 +403,7 @@
             hoverDiv1.appendChild(hoverDiv2);
 
             let adminBox = document.createElement('div');
-            adminBox.id = 'adminBox';
+            adminBox.classList.add('adminBox');
             adminBox.classList.add('modal-logo');
             hoverDiv2.appendChild(adminBox);
 
@@ -386,12 +428,34 @@
             adPic.alt = admin.name;
             linkToModal.appendChild(adPic);
 
-
           });
         }
-
       },
 
+      goToSection: function() {
+        // view.resetSideBar();
+
+        let scrollTarget;
+        document.querySelectorAll('.lshipDescription').forEach(function(section) {
+           if(section.id === data.branchID) {
+             let bodyRect = document.body.getBoundingClientRect();
+             let sectionRect = section.getBoundingClientRect();
+             let offset = sectionRect.top - bodyRect.top;
+             scrollTarget = offset;
+             $('html, body').animate({ scrollTop: scrollTarget }, 1500);
+           }
+        });
+      },
+
+      // resetSideBar: function() {
+      //   document.querySelector('#sideBarToggle').classList.add('notification');
+      //   document.querySelector('#sideBarToggle').style.left = '';
+      //   document.querySelector('#teamNav').style.left = '';
+      //   document.querySelector('#teamNav').style.position = '';
+      //   setTimeout(function() {
+      //     document.querySelector('#sideBarToggle').classList.remove('notification');
+      //   }, 4000);
+      // },
   };
 
   let connector = {
@@ -401,8 +465,12 @@
         view.init();
       },
 
-      ready: function() {
-        view.render();
+      scroll: function() {
+        view.goToSection();
+      },
+
+      reset: function() {
+        view.resetSideBar();
       }
 
   };
