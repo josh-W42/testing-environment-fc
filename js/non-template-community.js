@@ -112,9 +112,105 @@
               img: "img/temporary/WilsonJosh.jpg",
               name: "Joshua Wilson",
               subName: "General Member",
-              uclaInfo: "Ling and CS, 4th year",
+              uclaInfo: "Linguistics and Computer Science, 5th Year",
               intro: "At the start of my senior year I didn’t really know how Foundations would impact my life.",
               body: "I just joined mainly to do something fun and challenging, make some new friends and try something I always thought I’d be too busy to do. Over time, though, I began to see Foundations as something far greater than just a dance org on campus. I saw how passionate people were about building the community, both dancers and leadership alike. Strangely enough, I learned more about myself and how to be out of my comfort zone than I did learn about dance, but that in turn taught me how to grow as a dancer. And finally, I met some of the nicest and coolest people being apart of this org, some of which I’m lucky enough to call friends. So yeah, if you’re on the fence about whether you should join Foundations for the first time, JUST DO IT. You may end up loving it."
+          },
+          {
+              img: "img/TestimonialPhotos/Pizarro_Ashley.jpg",
+              name: "Ashley Pizarro",
+              subName: "Captain of: Sporks Fall '17, Swiped Winter '18, Kaizen Spring '18",
+              uclaInfo: "3rd year, pre-Cognitive Science",
+              intro: "My experience captaining has been unforgettable, I've met with and worked with so many great people.",
+              body: "FC provided a warm welcoming environment that allowed me to see that it's perfectly ok to be a work in progress and this organization inspired me to come back time and time again to apply as a captain. My experience captaining has been unforgettable, I've met with and worked with so many great people. Seeing people grow as dancers and as people, becoming more confident and surprsing themselves with what they can do, has made all the stress and work worth it. From boba outings to photoshoot to late night adventures, I am so grateful for the bonds I've made with teammates and other lship members."
+          },
+          {
+              img: "img/TestimonialPhotos/Sheker_Miya.jpg",
+              name: "Miya Sheker",
+              subName: "Admin LSHIP: Executive",
+              uclaInfo: "Anthropology Major, Art History & Global Studies Double Minor; 4th Year",
+              intro: "Never pass up an opportunity to build yourself.",
+              body: "I joined Foundations my 1st year Spring quarter on a whim. I had no dance experience at all, and I really just wanted to push myself to try something outside of my comfort zone. For me, dance became a much-needed outlet, and the people I met through Foundations, my support system. I have never been more confident or happier than I have while being a part of the Foundations family. I joined LSHIP my 2nd year as a Captain, and joined Admin LSHIP my 3rd year. Now, I am the current Executive for Foundations, and it has been such an amazing journey as I grew alongside the organization. It's rare to find an organization where you so wholeheartedly believe in its message and mission, but I feel very blessed to have discovered that in Foundations. Take it from someone who was ready to quit after her first practice-- learning how to dance is so, so achievable as long as you keep your heart open to the endless possibilities for growth that Foundations can lend you. I've seen it in the shyest, most in-their-shell non-believers, and most importantly, I've seen the change in myself. Never pass up an opportunity to build yourself."
+          },
+          {
+              img: "img/TestimonialPhotos/Yao_Audrey.jpg",
+              name: "Audrey Yao",
+              subName: "Marketing Chair '18-'19",
+              uclaInfo: "2nd Year Political Science Major",
+              intro: "Throughout the first two quarters I spent with Foundations, I met some of the most wonderful people in the world.",
+              body: "I joined FC on a whim in winter quarter during my first year. My friend wanted to audition and had nobody to go with, and being the wonderful, self-sacrificing companion I am, I agreed to tag along. I was overwhelmed by the amount of friendly people that I met at auditions, people who clearly loved the organization and were eager to help clueless, fumbling beginners like me. I applied and auditioned not expecting much, but from it, I got everything. Throughout the first two quarters I spent with Foundations, I met some of the most wonderful people in the world. The strangers who you first consider mere teammates quickly become family. This organization is run by and filled with so many talented, dedicated, down to earth individuals, people who I cannot imagine having made it through my first year without. I applied for LSHIP because I wanted to give back, to be able to connect others to it firsthand so that they could maybe have the same lovely experience that I did. I adore FC for its tireless efforts in creating an environment that is truly welcome to everyone, for the unwaveringly positive energy that is fostered at every event they hold, for the amazing people behind the scenes that make it happen. I think that everyone should try it out at least once - I promise you won’t regret it."
+          },
+          {
+              img: "img/TestimonialPhotos/Lai_Joshua.jpg",
+              name: "Joshua Lai",
+              subName: "Captain of Kaizen Spring '18",
+              uclaInfo: "UCLA Class of 2018",
+              intro: "At the end of the day, you'll gain an experience and memory that you'll never forget.",
+              body: "Dance was something that was always intimidating to me. I was self-conscious about how I looked or if I would be any good at it, but Foundations Choreography really provided the space for me to really feel out the art and learn to love it. I really enjoyed the experience and decided that I wanted to recreate that experience for people who felt like me, people who felt self-conscious about themselves, people who were afraid to try something new. Even though I've been dancing for less than a year, I was fortunate enough to become a captain, and it's one of the most rewarding experiences that I've had. Being able to see people really grow and fall in love with the art is endearing. So join Foundations, push yourself outside of your comfort zone. At the end of the day, you'll gain an experience and memory that you'll never forget."
+          },
+          {
+              img: "img/TestimonialPhotos/Sasaki_Sara.jpg",
+              name: "Sara Sasaki",
+              subName: "Workshop Coordinator ‘18-‘19",
+              uclaInfo: "Psychobiology, 2nd year",
+              intro: "Foundations will forever hold a special place in my heart, and I’m truly honored to be a part of this organization.",
+              body: "for a long time, I’ve always admired the thought of being on a dance team, showcasing our hard work and bonding together towards something bigger than ourselves... but I never knew how or where to start. Then came Foundations Choreography. Thanks to this organization, I was able to put those dreams into action, and begin such an incredible and unforgettable journey through college, building confidence, meeting new people, and involving myself further within the dance community. and not only was I inspired to pursue dance, but I also found a home and support system as I was making a rather difficult transition into UCLA. I wouldn’t be who I am now, or be having such a meaningful college experience if Foundations wasn’t there for this lost, shy freshman a year ago. Foundations will forever hold a special place in my heart, and I’m truly honored to be a part of this organization. I‘m excited for the adventures that lie ahead as a part of LSHIP <3 why do I love to dance? so many reasons... but to keep it short and sweet, dance genuinely encompasses everything I love and stand for. community, artistry/self-expression, being present/aware, physical and emotional well-being, self-improvement, growth, having fun, etc. etc. etc... you get the jist. and the beautiful part is, ANYONE CAN DANCE. all you have to do is start. so, to all the new and aspiring dancers: keep pushing. growth is not always linear, but I can promise you that hard work truly pays off. I believe in you. (-:"
+          },
+          {
+              img: "img/temporary/SoonJordan.jpg",
+              name: "Jordan Soon",
+              subName: "General Member",
+              uclaInfo: "Computer Science, 2nd year",
+              intro: "It's a great environment, as a beginner dancer, to grow as a dancer and make friends; really, it's good vibes all around.",
+              body: "I joined Foundations in my first quarter at UCLA because I wanted to try something completely new to me: dance! That first quarter stuck with me and it has shaped my experience here at UCLA ever since. To me, the thing I love the most about Foundations is how supportive everyone is. It's a great environment, as a beginner dancer, to grow as a dancer and make friends; really, it's good vibes all around. I'm really excited I now get to serve on Admin LSHIP because I want to give back to the community, and this org that has impacted so many people's experience at UCLA."
+          },
+          {
+              img: "img/TestimonialPhotos/Tian_Sarah.jpg",
+              name: "Sarah Tian",
+              subName: "Captain of Nimbus winter 18",
+              uclaInfo: "Ecology, Behavior, and Evolution. Junior",
+              intro: "I love FC because when I came to UCLA, I struggled to find a community where I felt like I belonged and could make a difference.",
+              body: "Then I joined my first team, and was overwhelmed with how much fun I was having and how fulfilling it was to put together a set with other new dancers. I wanted to give back to the organization as much as it gave to me, so I captained the next quarter, did internship the next, and now I’m showcase chair!"
+          },
+          {
+              img: "img/TestimonialPhotos/Jacobo_Carley.jpg",
+              name: "Carley Jacobo",
+              subName: "Captain of PWR Spring ‘18",
+              uclaInfo: "Sociology, 4th Year",
+              intro: "I joined Foundations for the dancing, but stayed for the family.",
+              body: "I owe so much to this organization! Every quarter I spend with Foundations, my life changes for the better. I have learned so much this past year as a general member, and in spring, I was given the opportunity to grow even more as a part of leadership. I was a captain for one of the 2018 spring quarter teams, and the experience led me to a lot of self-reflection. Leaving my comfort zone was not something I had always been open to, but the warmth of the Foundations community motivated me. Every quarter, Foundations welcomes a new wave of beginning dancers who push themselves, despite any fear or hesitation, to try something new. Surrounded and inspired by that energy, I started to challenge myself as well, and as a captain I have my team to thank for accepting me as a leader, while also helping me along that path. Watching my team grow alongside me throughout the quarter was one of the most rewarding experiences of my life, and I will treasure those memories forever."
+          },
+          {
+              img: "img/TestimonialPhotos/Tian_Anna.jpg",
+              name: "Anna Tian",
+              subName: "Finance Chair '17-'18",
+              uclaInfo: "Business Economics, 3rd Year",
+              intro: "This organization has impacted so many people, and it’s even more inspiring seeing it happen from behind the scenes as lship.",
+              body: "I’m so lucky to have discovered and joined Foundations fall quarter freshman year because it provided such a welcoming environment that encouraged my self-conscious, shy self to step out of my comfort zone and learn how to dance. But not only did I just gain dance skills (which are still mediocre at most), I gained a family and a community of people who are some of the kindest, most supportive people I have ever met. This organization has impacted so many people, and it’s even more inspiring seeing it happen from behind the scenes as lship. Even from when I joined two years ago to now, Foundations has grown so much, and I know that it’ll continue to develop aspiring dancers and create lasting friendships."
+          },
+          {
+              img: "img/TestimonialPhotos/Suwandi_Marcea.jpg",
+              name: "Marcea Suwandi",
+              subName: "Advisor '17-'18",
+              uclaInfo: "Cognitive Science Major; 4th Year",
+              intro: "FC helped me grow into the person I am today and gave me so many wonderful memories along the way.",
+              body: "I joined FC as a first year to get myself out of my dorm room and make friends. I had always been interested in dancing, but never pursued it before college. Little did I know, joining FC would define my college career. I've made so many friends and been able to pursue opportunities my first-year self never would have dreamed of. I joined Admin LSHIP my second year as workshop coordinator while also dancing as a member of the competitive team, NSU. For my third year, I decided to run for Executive and grew immensely while being challenged to handle this giant organization. Finally for my fourth and final year, I continue to support FC through the role of advisor. I couldn't dream of dedicating my time anywhere else. FC helped me grow into the person I am today and gave me so many wonderful memories along the way."
+          },
+          {
+              img: "img/TestimonialPhotos/Tan_Vivian.jpg",
+              name: "Vivian Tan",
+              subName: "Marketing Chair ‘17-’18",
+              uclaInfo: "Microbiology, Immunlogy and Molecular Genetics (MIMG), 4th Year",
+              intro: "I wanted to be a part of creating an environment that allows new dancers to find a passion, meet new people, learn to grow, and hopefully find a home in. Just like I did.",
+              body: "Having binged in dance videos all throughout high school, I knew that once I got to UCLA, it’ll be something I would try. I remember going to a Foundations workshop, and having not ever danced before... it was a super challenging (and I probably sucked), but it was so much fun! I then swallowed my fears and decided to join a training team, and after having the time of my life after my first team, I applied for Admin LSHIP and served as FC’s Marketing Chair for the 2017-18 year. Being in control of all of FC’s social media really showed me how life-changing a post can be — and for a lot of new dancers, this is how they first learn about Foundations. I wanted to be a part of creating an environment that allows new dancers to find a passion, meet new people, learn to grow, and hopefully find a home in. Just like I did."
+          },
+          {
+              img: "img/TestimonialPhotos/Sumitro_Dean.jpg",
+              name: "Dean Sumitro",
+              subName: "Captain of Ikigai Fall '16/Director of Cerberus Fall '17",
+              uclaInfo: "Linguistics and Computer Science, Class of 2018",
+              intro: "Leading a Foundations team is an experience like no other.",
+              body: "As someone one whose passion for dance had begun during his time as a general member, I was inspired to grow as both a dancer and a person while meeting some of my closest friends along the way.  I decided to come back as a captain and a director because I wanted to help inspire a new generation of dancers in the UCLA Community. Seeing their progress both during and after their time in Foundations is something I enjoy witnessing and I am glad to have been a part of it."
           },
           {
               img: "img/TestimonialPhotos/Li_Derek.jpg",

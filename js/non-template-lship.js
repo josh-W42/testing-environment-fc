@@ -7,6 +7,8 @@
 
       branchID: "",
 
+      allPhotos: [],
+
       branches: {
 
           executives: {
@@ -19,7 +21,7 @@
                 miya: {
                   photo: "img/lship/ShekerMiya.jpg",
                   name: "Miya Sheker",
-                  detail: ""
+                  detail: "I've lived in California my entire life! When I'm not dancing, you can find me testing out new recipes or looking up pictures of manatees."
                 },
                 liana: {
                   photo: "img/lship/LiangLiana.jpg",
@@ -61,7 +63,7 @@
                       photo: "img/temporary/SasakiSara.jpg",
                       name: "Sara Sasaki",
                       title: "WorkShop Chair",
-                      detail: ""
+                      detail: "hi my name is Sara, I’m 5ft tall, have a pet corgi, and make EPIC burps. please send music, anime recommendations, and wholesome memes thru Facebook or IG @sarasasaki"
                   },
               ]
 
@@ -74,7 +76,7 @@
                   photo: "img/lship/TanVivian.jpg",
                   name: "Vivian Tan",
                   title: "Director of Media",
-                  detail: ""
+                  detail: "What’s Forrest Grumps’ password? 1forrest1 *badumtsssss* (follow me on IG for more of my *~sparkling~* personality @viviantan_)"
               },
               admins: [
                   {
@@ -99,19 +101,19 @@
                       photo: "img/temporary/LaiJosh.jpg",
                       name: "Josh Lai",
                       title: "Videographer",
-                      detail: ""
+                      detail: "I have a personal goal to eat at every restaurant within a 10 mile radius of UCLA... where should I go next? "
                   },
                   {
                       photo: "img/temporary/YaoAudrey.jpg",
                       name: "Audrey Yao",
                       title: "Social Media Marketing Chair",
-                      detail: ""
+                      detail: "I spent too much time at the optometrist's"
                   },
                   {
                       photo: "img/temporary/JacoboCarley.jpg",
                       name: "Carley Jacobo",
                       title: "Social Media Marketing Chair",
-                      detail: ""
+                      detail: "I joined Foundations for the dancing, but stayed for the family."
                   },
                   {
                       photo: "img/temporary/WilsonJosh.jpg",
@@ -129,7 +131,7 @@
                   photo: "img/lship/TianAnna.jpg",
                   name: "Anna Tian",
                   title: "Director of Finance",
-                  detail: ""
+                  detail: "I like cats, cake, and cute cafes!"
               },
               admins: [
                   {
@@ -162,7 +164,7 @@
                     photo: "img/temporary/SoonJordan.jpg",
                     name: "Jordan Soon",
                     title: "Showcase Chair",
-                    detail: ""
+                    detail: "Favorite line from my favorite show: \"Fool me once shame on you, but teach a man to fool me and I'll be fooled for the rest of my life\""
                   },
                   {
                     photo: "img/lship/FidelisJosh.jpg",
@@ -174,7 +176,7 @@
                     photo: "img/temporary/TianSarah.jpg",
                     name: "Sarah Tian",
                     title: "Showcase Chair",
-                    detail: ""
+                    detail: "When I was in 5th grade I got an A on my essay on sea cucumbers. I’m still pretty proud of it."
                   },
               ]
 
@@ -187,7 +189,7 @@
                   photo: "img/lship/PizarroAshley.jpg",
                   name: "Ashley Pizarro",
                   title: "Director of Team Relations",
-                  detail: ""
+                  detail: "*finger guns*"
               },
 
               // Team Relations is special, Dance Lship will be added throughout
@@ -201,8 +203,29 @@
                   },
               ]
 
-          }
+          },
 
+          advisors: {
+              // Currently Advisors don't have any description, so I'll just list
+              // They'll need a special render function.
+              admins: [
+                  {
+                      photo: "img/TestimonialPhotos/Suwandi_Marcea.jpg",
+                      name: "Marcea Suwandi",
+                      detail: "I love to bake cookies (Lship can testify to that), and I am an avid TV show binger."
+                  },
+                  {
+                      photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
+                      name: "Kevin Lee",
+                      detail: "I like to untie people's shoelaces."
+                  },
+                  {
+                      photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
+                      name: "Dean Sumitro",
+                      detail: "I was born in New York, I'm red-green colorblind and apparently my existence is a meme."
+                  },
+              ]
+          }
       },
 
       lazy: [],
@@ -334,28 +357,42 @@
 
         let directorPhoto = document.createElement('IMG');
         directorPhoto.classList.add('directorPhoto');
-        descriptionHead.appendChild(directorPhoto);
 
-        let secondPhoto = document.createElement('IMG');
-        secondPhoto.classList.add('execSecondPhoto');
-        descriptionHead.appendChild(secondPhoto);
 
         let branchBody = document.createElement('p');
         branchBody.classList.add('branchBody');
         branchBody.innerHTML = data.branches[branch].body;
-        descriptionHead.appendChild(branchBody);
 
         if (branch != 'executives') {
+
+          descriptionHead.appendChild(directorPhoto);
+
           imgArrayTitle.innerHTML = 'Admins';
-          secondPhoto.style.display = 'none';
-          secondPhoto.classList.remove('execPicStyle');
           directorPhoto.classList.remove('execPicStyle');
           directorPhoto.src = data.branches[branch].director.photo;
           directorPhoto.alt = data.branches[branch].director.title;
         } else {
+
+          let secondPhoto = document.createElement('IMG');
+          secondPhoto.classList.add('execSecondPhoto');
+          descriptionHead.appendChild(secondPhoto);
+
+          let containDiv1 = document.createElement('div');
+          containDiv1.classList.add('col-lg-6');
+          containDiv1.classList.add('photoContainer');
+          descriptionHead.appendChild(containDiv1);
+
+          containDiv1.appendChild(directorPhoto);
+
+          let containDiv2 = document.createElement('div');
+          containDiv2.classList.add('col-lg-6');
+          containDiv2.classList.add('photoContainer');
+          descriptionHead.appendChild(containDiv2);
+
+          containDiv2.appendChild(secondPhoto);
+
           branchBody.classList.add('bodyExec');
           imgArrayTitle.style.display = 'none';
-          secondPhoto.style.display = 'inline-flex';
           directorPhoto.src = data.branches[branch].director.miya.photo;
           directorPhoto.alt = data.branches[branch].director.miya.name;
           if(!(directorPhoto.classList.contains('execPicStyle'))){
@@ -366,10 +403,17 @@
           if(!(secondPhoto.classList.contains('execPicStyle'))) {
             secondPhoto.classList.add('execPicStyle');
           }
+
+          data.allPhotos.push(secondPhoto);
+
         } if (branch === 'teamRelations'){
             imgArrayTitle.innerHTML = 'Dance Leadership';
         }
 
+        data.allPhotos.push(directorPhoto);
+
+
+        descriptionHead.appendChild(branchBody);
 
         let portfolio = document.createElement('div');
         portfolio.id = 'portfolio';
@@ -429,6 +473,7 @@
             adPic.alt = admin.name;
             linkToModal.appendChild(adPic);
 
+            data.allPhotos.push(parentDiv);
           });
         }
       },

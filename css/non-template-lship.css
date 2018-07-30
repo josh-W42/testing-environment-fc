@@ -291,16 +291,13 @@ section {
 .directorPhoto,
 .execSecondPhoto {
   width: 20em;
+  display: inline;
 }
 
 .execPicStyle {
   margin-left: auto;
   margin-right: auto;
   width: 20em;
-}
-
-.directorPhoto {
-  display: inline-flex;
 }
 
 .branchBody {
@@ -318,6 +315,10 @@ section {
   height: 12em;
   display: inline-block;
   margin-bottom: 15px;
+}
+
+.photoContainer {
+  display: inline;
 }
 
 .modal-logo {
