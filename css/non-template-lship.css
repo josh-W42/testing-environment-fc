@@ -133,15 +133,14 @@ footer {
    Start CSS
    Location: Side Nav
 */
-main {
-  /* background-image: url('../img/Backgrounds/background.jpg');
-  background-position: center;
-  background-repeat: space;
-  background-size: cover; */
-}
 
 section {
   padding-bottom: 0px;
+  padding-top: 5%;
+}
+
+#executives {
+  padding-top: 10%;
 }
 
 #desktopOnlyNav {
@@ -198,6 +197,11 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+}
+
+#sideBarLogo:hover {
+  cursor: pointer;
+  opacity: 0.75;
 }
 
 @media screen and (max-width: 991px) {
@@ -265,101 +269,188 @@ section {
 
 /*
    Start CSS
-   Location: description
+   Location: main
 */
+
+
+main {
+  padding-top: 5%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.allLshipTitle {
+  margin: 2%;
+}
+
+.lshipPics {
+  opacity: 0;
+  width: 10em;
+  height: 10em;
+}
+
+.lshipPicBox {
+  margin-top: -50px;
+  overflow: auto;
+  min-height: 10em;
+  padding: 5px;
+  color: white;
+  text-shadow: 0px 0px 25px black;
+  font-size: 0.65em;
+}
+
+#allLshipArray #portfolio .adminImgArray .portfolio-item {
+  margin: 0px;
+  display: inline-block;
+}
+
+#allLshipArray, .adminImgArray {
+  text-align: center;
+  padding-right: 0;
+}
+
+#allLshipArray {
+  min-height: 100%;
+}
 
 .imgArrayTitle {
   margin-top: 5%;
 }
 
+
 .lshipDescription {
-  margin-left: 20%;
   text-align: center;
-  min-height: 1000px;
 }
 
-.flyIn {
-  -webkit-animation: flyIn 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: flyIn 1.5s ease; /* Firefox < 16 */
+.execPhoto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.goAway {
-  -webkit-animation: flyOut 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: flyOut 1.5s ease; /* Firefox < 16 */
+.execPicArray {
+  display: inline-flex;
+  margin: auto;
+}
+
+.miya {
+  margin-right: 2%;
+}
+
+.liana {
+  margin-left: 2%;
+}
+
+.directorBox {
+  height: 12em;
+  max-height: 200px;
+  width: 92%;
+  margin-top: -100px;
+}
+
+#descriptionExec {
+  margin-left: 0px;
+  max-width: 100%;
 }
 
 .directorPhoto,
 .execSecondPhoto {
-  width: 20em;
-  display: inline;
-}
-
-.execPicStyle {
-  margin-left: auto;
-  margin-right: auto;
   width: 20em;
 }
 
 .branchBody {
   text-align: justify;
   display: flex;
-  width: 75%;
-  margin-top: 50px;
+  width: 100%;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#portfolio .portfolio-item {
+.bodyExec {
+  width: 75%;
+}
+
+.photoContainer {
+  width: 50%;
+}
+
+.lshipDescription #portfolio .adminImgArray .portfolio-item {
   margin: 2px;
-  width: 13em;
+  width: 12em;
   height: 12em;
-  display: inline-block;
+  display: flex;
   margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portfolio #mediaAdminPic {
+  display: inline-block;
+  margin: 2px;
+  width: 12em;
+  height: 12em;
+}
+
+#portfolio #mediaAdminPic .adminPics {
+  width: 12em;
+  height: 12em;
 }
 
 .photoContainer {
   display: inline;
 }
 
-.modal-logo {
+.admin-logo {
   margin-top: -75px;
   max-height: 200px;
   padding: 5px;
 }
 
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background-color: transparent;
 }
 
-#portfolio .adminDetail {
+#portfolio .adminImgArray .adminDetail {
   font-size: 0.75em;
 }
 
 .adminPics {
-  width: 13em;
-  height: 13em;
+  width: 12em;
+  height: 12em;
 }
 
-.portfolio-item:hover .adminPics {
+.portfolio-item:hover .adminPics,
+.portfolio-item:hover .lshipPics,
+.portfolio-link:hover .directorPhoto {
   -webkit-filter: blur(15px); /* Safari 6.0 - 9.0 */
   filter: blur(10px);
   transition: 0.5s ease;
 }
 
-@keyframes flyOut {
-  from {
-    position: relative;
-    opacity: 1;
-    top: 0px;
-  }
-  to {
-    position: relative;
-    opacity: 0;
-    top: -500px;
-  }
+.adminBox,
+.directorBox {
+  background-color: transparent;
+  overflow: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  height: 12em;
 }
 
-@keyframes flyIn {
+
+.flyIn {
+  opacity: 1;
+  -webkit-animation: flyIn 3s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyIn 3s ease; /* Firefox < 16 */
+}
+
+.flyInNoScale {
+  -webkit-animation: flyInNoScale 2s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: flyInNoScale 2s ease; /* Firefox < 16 */
+}
+
+@keyframes flyInNoScale {
   from {
     position: relative;
     opacity: 0;
@@ -372,30 +463,59 @@ section {
   }
 }
 
-.adminBox {
-  background-color: transparent;
-  overflow: auto;
-  text-align: center;
-  color: white;
-  text-shadow: 0px 0px 10px black;
-  height: 12em;
+@keyframes flyIn {
+  from {
+    position: relative;
+    opacity: 0;
+    top: 500px;
+    transform: scale(2.5, 2.5);
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    top: 0px;
+    transform: scale(1, 1);
+  }
 }
 
 @media screen and (max-width: 500px) {
+
+  .allLshipTitle {
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+
+  .lshipPics {
+    width: 8em;
+    height: 8em;
+    margin: 0;
+  }
+
+  .lshipPicBox {
+    margin-top: -50px;
+    overflow: auto;
+    max-height: 8em;
+    padding: 5px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    font-size: 0.75em;
+  }
 
   .branchBody {
     width: 90%;
   }
 
+  main {
+    margin-left: 0%;
+     width: 100%;
+  }
+
   .directorPhoto,
   .execSecondPhoto {
-    width: 15em;
+    width: 10em;
     margin-left: 0px;
   }
 
-  .execPicStyle {
-    width: 10em;
-  }
 
   .lshipDescription {
     margin-left: 0px;
@@ -407,23 +527,66 @@ section {
     height: 10em;
   }
 
-  #portfolio .portfolio-item {
-    width: 10em;
+  .directorBox {
     height: 10em;
+    max-height: 8em;
+    width: 50%;
+    margin-top: -50px;
+    font-size: 0.75em;
   }
 
-  .modal-logo {
+  .lshipDescription #portfolio .adminImgArray .portfolio-item {
+    width: 10em;
+    height: 10em;
+    display: inline-block;
+  }
+
+  .admin-logo {
     margin-top: -35px;
-    /* max-height: 100px; */
   }
 
   .adminBox {
     height: 6em;
     width: 8em;
   }
+
+  @keyframes flyIn {
+    from {
+      position: static;
+      opacity: 0;
+      top: 500px;
+      transform: scale(2.5, 2.5);
+    }
+    to {
+      position: static;
+      opacity: 1;
+      top: 0px;
+      transform: scale(1, 1);
+    }
+  }
 }
 
+
 @media screen and (max-width: 991px) and (min-width: 500px) {
+
+  .allLshipTitle {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  main {
+    margin-left: 0%;
+     width: 100%;
+  }
+
+  .lshipDescription #portfolio .adminImgArray .portfolio-item {
+    display: inline-block;
+  }
+
+  .adminPics {
+    height: 12em;
+    width: 12em;
+  }
 
   .lshipDescription {
     max-width: 100%;
@@ -437,10 +600,6 @@ section {
   .execSecondPhoto {
     width: 20em;
     margin-left: 0px;
-  }
-
-  .execPicStyle {
-    width: 15em;
   }
 
 

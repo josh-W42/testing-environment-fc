@@ -149,7 +149,7 @@
               body: "Dance was something that was always intimidating to me. I was self-conscious about how I looked or if I would be any good at it, but Foundations Choreography really provided the space for me to really feel out the art and learn to love it. I really enjoyed the experience and decided that I wanted to recreate that experience for people who felt like me, people who felt self-conscious about themselves, people who were afraid to try something new. Even though I've been dancing for less than a year, I was fortunate enough to become a captain, and it's one of the most rewarding experiences that I've had. Being able to see people really grow and fall in love with the art is endearing. So join Foundations, push yourself outside of your comfort zone. At the end of the day, you'll gain an experience and memory that you'll never forget."
           },
           {
-              img: "img/TestimonialPhotos/Sasaki_Sara.jpg",
+              img: "img/TestimonialPhotos/Sasaki_Sara.JPG",
               name: "Sara Sasaki",
               subName: "Workshop Coordinator ‘18-‘19",
               uclaInfo: "Psychobiology, 2nd year",
@@ -165,7 +165,7 @@
               body: "I joined Foundations in my first quarter at UCLA because I wanted to try something completely new to me: dance! That first quarter stuck with me and it has shaped my experience here at UCLA ever since. To me, the thing I love the most about Foundations is how supportive everyone is. It's a great environment, as a beginner dancer, to grow as a dancer and make friends; really, it's good vibes all around. I'm really excited I now get to serve on Admin LSHIP because I want to give back to the community, and this org that has impacted so many people's experience at UCLA."
           },
           {
-              img: "img/TestimonialPhotos/Tian_Sarah.jpg",
+              img: "img/TestimonialPhotos/Tian_Sarah.JPG",
               name: "Sarah Tian",
               subName: "Captain of Nimbus winter 18",
               uclaInfo: "Ecology, Behavior, and Evolution. Junior",

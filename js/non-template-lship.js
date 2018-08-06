@@ -21,11 +21,13 @@
                 miya: {
                   photo: "img/lship/ShekerMiya.jpg",
                   name: "Miya Sheker",
+                  title: "Executive",
                   detail: "I've lived in California my entire life! When I'm not dancing, you can find me testing out new recipes or looking up pictures of manatees."
                 },
                 liana: {
                   photo: "img/lship/LiangLiana.jpg",
                   name: "Liana Liang",
+                  title: "Executive",
                   detail: ""
                 }
               }
@@ -255,6 +257,10 @@
             });
           });
 
+          document.querySelector('#sideBarLogo').addEventListener('click', function(){
+            $('html, body').animate({ scrollTop: 0 }, 1500);
+          });
+
           document.querySelector('#sideBarToggle').addEventListener('click', function(e){
             e.target.classList.remove('notification');
             document.querySelector('#desktopOnlyNav').style.left = '0px';
@@ -317,6 +323,11 @@
         view.render();
         data.branchID = 'teamRelations';
         view.render();
+        view.showLship();
+
+        setTimeout(function() {
+          document.querySelector('#sideBarToggle').classList.remove('notification');
+        }, 4000);
 
       },
 
@@ -337,15 +348,12 @@
         let directorName = document.createElement('h4');
         directorName.classList.add('directorName');
         directorName.innerHTML = data.branches[branch].director.name;
-        sectionTag.appendChild(directorName);
 
         let directorTitle = document.createElement('h5');
         directorTitle.classList.add('directorTitle');
         directorTitle.innerHTML = data.branches[branch].director.title;
-        sectionTag.appendChild(directorTitle);
 
         let descriptionHead = document.createElement('div');
-        descriptionHead.classList.add('col-md-12');
         descriptionHead.classList.add('container');
         descriptionHead.classList.add('descriptionHead');
         sectionTag.appendChild(descriptionHead);
@@ -353,129 +361,172 @@
         let imgArrayTitle = document.createElement('h2');
         imgArrayTitle.style.display = 'block';
         imgArrayTitle.classList.add('imgArrayTitle');
-        sectionTag.appendChild(imgArrayTitle);
-
-        let directorPhoto = document.createElement('IMG');
-        directorPhoto.classList.add('directorPhoto');
-
 
         let branchBody = document.createElement('p');
         branchBody.classList.add('branchBody');
         branchBody.innerHTML = data.branches[branch].body;
 
+        let portfolio = document.createElement('div');
+        portfolio.id = 'portfolio';
+
+        let leftImgDiv = document.createElement('div');
+        leftImgDiv.classList.add('col-lg-6');
+
+        let rightMainDiv = document.createElement('div');
+        rightMainDiv.classList.add('col-lg-6');
+
         if (branch != 'executives') {
-
-          descriptionHead.appendChild(directorPhoto);
-
+          if(window.innerWidth > 991 && branch != 'teamRelations'){
+            descriptionHead.classList.add('row');
+            descriptionHead.appendChild(leftImgDiv);
+            descriptionHead.appendChild(rightMainDiv);
+            leftImgDiv.appendChild(imgArrayTitle);
+            rightMainDiv.appendChild(directorName);
+            rightMainDiv.appendChild(directorTitle);
+            rightMainDiv.appendChild(portfolio);
+            rightMainDiv.appendChild(branchBody);
+          } else {
+            sectionTag.appendChild(directorName);
+            sectionTag.insertBefore(directorName, descriptionHead);
+            sectionTag.insertBefore(directorTitle, descriptionHead);
+            descriptionHead.appendChild(portfolio);
+            descriptionHead.appendChild(branchBody);
+            descriptionHead.appendChild(imgArrayTitle);
+          }
+          portfolio.appendChild(view.createHoverPic(data.branches[branch].director, 'director'));
           imgArrayTitle.innerHTML = 'Admins';
-          directorPhoto.classList.remove('execPicStyle');
-          directorPhoto.src = data.branches[branch].director.photo;
-          directorPhoto.alt = data.branches[branch].director.title;
         } else {
 
-          let secondPhoto = document.createElement('IMG');
-          secondPhoto.classList.add('execSecondPhoto');
-          descriptionHead.appendChild(secondPhoto);
+          sectionTag.insertBefore(directorName, descriptionHead);
+          sectionTag.insertBefore(directorTitle, descriptionHead);
 
-          let containDiv1 = document.createElement('div');
-          containDiv1.classList.add('col-lg-6');
-          containDiv1.classList.add('photoContainer');
-          descriptionHead.appendChild(containDiv1);
+          let execPicArray = document.createElement('div');
+          execPicArray.classList.add('execPicArray');
+          descriptionHead.appendChild(execPicArray);
 
-          containDiv1.appendChild(directorPhoto);
+          descriptionHead.classList.add('row');
+          descriptionHead.id = "descriptionExec";
 
-          let containDiv2 = document.createElement('div');
-          containDiv2.classList.add('col-lg-6');
-          containDiv2.classList.add('photoContainer');
-          descriptionHead.appendChild(containDiv2);
+          portfolio.classList.add('execPhoto');
+          portfolio.classList.add('miya');
+          portfolio.appendChild(view.createHoverPic(data.branches[branch].director.miya, 'director'));
 
-          containDiv2.appendChild(secondPhoto);
+          execPicArray.appendChild(portfolio);
+
+          portfolio = document.createElement('div');
+          portfolio.id = 'portfolio';
+
+          portfolio.classList.add('execPhoto');
+          portfolio.classList.add('liana');
+          portfolio.appendChild(view.createHoverPic(data.branches[branch].director.liana, 'director'));
+
+          execPicArray.appendChild(portfolio);
 
           branchBody.classList.add('bodyExec');
           imgArrayTitle.style.display = 'none';
-          directorPhoto.src = data.branches[branch].director.miya.photo;
-          directorPhoto.alt = data.branches[branch].director.miya.name;
-          if(!(directorPhoto.classList.contains('execPicStyle'))){
-            directorPhoto.classList.add('execPicStyle');
-          }
-          secondPhoto.src = data.branches[branch].director.liana.photo;
-          secondPhoto.alt = data.branches[branch].director.liana.name;
-          if(!(secondPhoto.classList.contains('execPicStyle'))) {
-            secondPhoto.classList.add('execPicStyle');
-          }
 
-          data.allPhotos.push(secondPhoto);
+          descriptionHead.appendChild(branchBody);
 
-        } if (branch === 'teamRelations'){
-            imgArrayTitle.innerHTML = 'Dance Leadership';
+        }
+        if (branch === 'teamRelations'){
+          branchBody.style.width = '75%';
+          imgArrayTitle.innerHTML = 'Dance Leadership';
         }
 
-        data.allPhotos.push(directorPhoto);
 
-
-        descriptionHead.appendChild(branchBody);
-
-        let portfolio = document.createElement('div');
+        portfolio = document.createElement('div');
         portfolio.id = 'portfolio';
         portfolio.classList.add('row');
-        sectionTag.appendChild(portfolio);
 
         let adminDiv;
         adminDiv = document.createElement('div');
         adminDiv.classList.add('adminImgArray');
         adminDiv.classList.add('col-lg-12');
+
+        if(window.innerWidth > 991) {
+          leftImgDiv.appendChild(portfolio);
+        } else {
+          sectionTag.appendChild(portfolio);
+        }
+
         portfolio.appendChild(adminDiv);
 
-        if (branch != 'executives') {
-          data.branches[branch].admins.forEach(function(admin) {
-
-            let parentDiv = document.createElement('div');
-            parentDiv.classList.add('portfolio-item');
-            adminDiv.appendChild(parentDiv);
-
-            // There is no modal here, I'm just using vbootstrap's way
-            // of modal display to create an overlay effect.
-            let linkToModal = document.createElement('A');
-            linkToModal.classList.add('portfolio-link');
-            parentDiv.appendChild(linkToModal);
-
-            let hoverDiv1 = document.createElement('div');
-            hoverDiv1.classList.add('portfolio-hover');
-            linkToModal.appendChild(hoverDiv1);
-
-            let hoverDiv2 = document.createElement('div');
-            hoverDiv2.classList.add('portfolio-hover-content');
-            hoverDiv1.appendChild(hoverDiv2);
-
-            let adminBox = document.createElement('div');
-            adminBox.classList.add('adminBox');
-            adminBox.classList.add('modal-logo');
-            hoverDiv2.appendChild(adminBox);
-
-            let boxTitle = document.createElement('h6');
-            boxTitle.innerHTML = admin.name;
-            let boxSubtitle = document.createElement('h6');
-            boxSubtitle.innerHTML = admin.title;
-            let smallDetail = document.createElement('span');
-            smallDetail.classList.add('adminDetail');
-            smallDetail.innerHTML = admin.detail;
-
-            adminBox.appendChild(boxTitle);
-            adminBox.appendChild(boxSubtitle);
-            adminBox.appendChild(smallDetail);
-
-            let adPic = document.createElement('IMG');
-
-            adPic.classList.add('adminPics');
-            // adPic.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
-            // adPic.dataset.src = admin.img;
-            adPic.src = admin.photo;
-            adPic.alt = admin.name;
-            linkToModal.appendChild(adPic);
-
-            data.allPhotos.push(parentDiv);
-          });
+        if (branch != 'executives' && branch != 'teamRelations') {
+          if (branch === 'media'){
+            data.branches[branch].admins.forEach(function (admin){
+              let mediaAdmin = view.createHoverPic(admin, 'admin');
+              mediaAdmin.id = 'mediaAdminPic';
+              adminDiv.appendChild(mediaAdmin);
+            });
+          } else {
+            data.branches[branch].admins.forEach(function (admin){
+              adminDiv.appendChild(view.createHoverPic(admin, 'admin'));
+            });
+          }
         }
+      },
+
+      // I didn't want to repeat code, this now discrives a process..
+      // admin = the information like an admin from the data object.
+      // type = is it a director photo or an admin photo, each have different sizes/parameters.
+
+      createHoverPic: function(member, type) {
+        let parentDiv = document.createElement('div');
+        parentDiv.classList.add('portfolio-item');
+
+        // There is no modal here, I'm just using bootstrap's way
+        // of hover displays to create an overlay effect.
+        let linkToModal = document.createElement('A');
+        linkToModal.classList.add('portfolio-link');
+        parentDiv.appendChild(linkToModal);
+
+        let hoverDiv1 = document.createElement('div');
+        hoverDiv1.classList.add('portfolio-hover');
+        linkToModal.appendChild(hoverDiv1);
+
+        let hoverDiv2 = document.createElement('div');
+        hoverDiv2.classList.add('portfolio-hover-content');
+        hoverDiv1.appendChild(hoverDiv2);
+
+        let hoverBox = document.createElement('div');
+        hoverBox.classList.add('modal-logo');
+        hoverDiv2.appendChild(hoverBox);
+
+
+
+        let boxTitle = document.createElement('h6');
+        boxTitle.innerHTML = member.name;
+        let boxSubtitle = document.createElement('h6');
+        boxSubtitle.innerHTML = member.title;
+        let smallDetail = document.createElement('span');
+        smallDetail.innerHTML = member.detail;
+
+        hoverBox.appendChild(boxTitle);
+        hoverBox.appendChild(boxSubtitle);
+        hoverBox.appendChild(smallDetail);
+
+        let pic = document.createElement('IMG');
+
+        pic.src = member.photo;
+        pic.alt = member.name;
+        linkToModal.appendChild(pic);
+
+        const divCopy = parentDiv.cloneNode(true);
+        data.allPhotos.push(divCopy);
+
+        if(type === 'director') {
+          hoverDiv2.id = 'hoverOveride';
+          hoverBox.classList.add('directorBox');
+          pic.classList.add('directorPhoto');
+        } else {
+          hoverBox.classList.add('adminBox');
+          hoverBox.classList.add('admin-logo');
+          smallDetail.classList.add('adminDetail');
+          pic.classList.add('adminPics');
+        }
+
+
+        return parentDiv;
       },
 
       goToSection: function() {
@@ -489,9 +540,9 @@
              let offset = sectionRect.top - bodyRect.top;
              scrollTarget = offset;
              $('html, body').animate({ scrollTop: scrollTarget }, 1500);
-             section.classList.add('flyIn');
+             section.classList.add('flyInNoScale');
              setTimeout(function() {
-               section.classList.remove('flyIn');
+               section.classList.remove('flyInNoScale');
              }, 2000);
            }
         });
@@ -508,6 +559,50 @@
           document.querySelector('#sideBarToggle').classList.remove('notification');
         }, 4000);
       },
+
+      showLship: function() {
+
+        let portfolio = document.createElement('div');
+        portfolio.id = 'portfolio';
+        portfolio.classList.add('row');
+        document.querySelector('#allLshipArray').appendChild(portfolio);
+
+        let adminDiv;
+        adminDiv = document.createElement('div');
+        adminDiv.classList.add('adminImgArray');
+        adminDiv.classList.add('col-lg-12');
+        portfolio.appendChild(adminDiv);
+
+
+
+        data.allPhotos.forEach(function(hoverDiv){
+          let lshipPhoto = view.findChild(hoverDiv, 1, 1);
+          lshipPhoto.classList.add('lshipPics');
+          view.findChild(hoverDiv, 3).classList.add('lshipPicBox');
+          document.querySelector('#allLshipArray .adminImgArray').appendChild(hoverDiv);
+          let seconds = ((Math.random() * 7)) * 500;
+          view.displayAfter(lshipPhoto, seconds)
+        });
+      },
+
+      displayAfter: function(el, time) {
+        setTimeout(function(){
+          //Here I'm finding all imgs within everyhover div, check structure in browser.
+          el.classList.add('flyIn');
+        }, time);
+      },
+
+      // This function should make the process of finding the first child of
+      // a higharcy of divs easier or for finding the specific element in an array of children.
+      findChild: function(parent, level, number = 0) {
+        if(level === 0) {
+          return parent.children[number];
+        } else {
+          level--;
+          return view.findChild(parent.children[0], level, number);
+        }
+      },
+
   };
 
   let connector = {
