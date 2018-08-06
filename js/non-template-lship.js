@@ -204,30 +204,147 @@
                       detail: ""
                   },
               ]
+        },
 
-          },
+        advisors: {
+            // Currently Advisors don't have any description, so I'll just list
+            // They'll need a special render function.
+            admins: [
+                {
+                    photo: "img/TestimonialPhotos/Suwandi_Marcea.jpg",
+                    name: "Marcea Suwandi",
+                    detail: "I love to bake cookies (Lship can testify to that), and I am an avid TV show binger."
+                },
+                {
+                    photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
+                    name: "Kevin Lee",
+                    detail: "I like to untie people's shoelaces."
+                },
+                {
+                    photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
+                    name: "Dean Sumitro",
+                    detail: "I was born in New York, I'm red-green colorblind and apparently my existence is a meme."
+                },
+            ]
+        },
 
-          advisors: {
-              // Currently Advisors don't have any description, so I'll just list
-              // They'll need a special render function.
-              admins: [
-                  {
-                      photo: "img/TestimonialPhotos/Suwandi_Marcea.jpg",
-                      name: "Marcea Suwandi",
-                      detail: "I love to bake cookies (Lship can testify to that), and I am an avid TV show binger."
-                  },
-                  {
-                      photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
-                      name: "Kevin Lee",
-                      detail: "I like to untie people's shoelaces."
-                  },
-                  {
-                      photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
-                      name: "Dean Sumitro",
-                      detail: "I was born in New York, I'm red-green colorblind and apparently my existence is a meme."
-                  },
-              ]
-          }
+        danceLship: {
+          quarter: [
+            {
+              name: 'Summer Dance Leadership',
+              teams: [
+                {
+                  name: "Apex",
+                  directors: [
+                    {
+                      photo: "",
+                      name:  "Joshua Kim",
+                      detail: "",
+                    },
+                    {
+                      photo: "",
+                      name:  "Brandon Aguilar",
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "img/temporary/TianSarah.jpg",
+                      name:  "Ellen Hsieh",
+                      detail: "",
+                    },
+                    {
+                      photo: "img/temporary/MartinezMartha.jpg",
+                      name:  "Martha Martinez",
+                      detail: "",
+                    },
+                  ],
+                },
+                {
+                  name: "MEH",
+                  directors: [
+                    {
+                      photo: "img/temporary/ZhangDerek.jpg",
+                      name:  "Derek Zheng",
+                      detail: "",
+                    },
+                    {
+                      photo: "img/temporary/AmandeDexter.jpg",
+                      name:  "Dexter Amande",
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "img/temporary/QuanJeremy.jpg",
+                      name:  "Jeremy Quan",
+                      detail: "",
+                    },
+                    {
+                      photo: "img/TestimonialPhotos/Mejia_Mary.jpg",
+                      name:  "Mary Mejia",
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "YURNT",
+                  directors: [
+                    {
+                      photo: "img/temporary/JulianRia.jpg",
+                      name:  "Ria Julian",
+                      detail: "",
+                    },
+                    {
+                      photo: "img/temporary/UngMerton.jpg",
+                      name:  "Merton Ung",
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "img/temporary/MeghalDubey.jpg",
+                      name:  "Meghal Dubey",
+                      detail: "",
+                    },
+                    {
+                      photo: "img/temporary/ChangMyles.jpg",
+                      name:  "Myles Chang",
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "RL8",
+                  directors: [
+                    {
+                      photo: "img/temporary/VasquezAlexxa.jpg",
+                      name:  "Alexxa Vasquez",
+                      detail: "",
+                    },
+                    {
+                      photo: "img/temporary/FuntanillaNoelle.jpg",
+                      name:  "Noelle Funtanilla",
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "img/temporary/WangAndy.jpg",
+                      name:  "Andy Wang",
+                      detail: "",
+                    },
+                    {
+                      photo: "img/temporary/TamondongLouise.jpg",
+                      name:  "Louise Tamondong",
+                      detail: "",
+                    }
+                  ],
+                },
+              ],
+            },
+          ],
+        },
       },
 
       lazy: [],

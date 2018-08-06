@@ -467,13 +467,11 @@ main {
   from {
     position: relative;
     opacity: 0;
-    top: 500px;
-    transform: scale(2.5, 2.5);
+    transform: scale(0, 0);
   }
   to {
     position: relative;
     opacity: 1;
-    top: 0px;
     transform: scale(1, 1);
   }
 }
