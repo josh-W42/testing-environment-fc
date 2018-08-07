@@ -115,7 +115,6 @@
               rect.left <= (window.innerWidth || document.documentElement.clientWidth)
           );
       }
-
   };
 
   let view = {

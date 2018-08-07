@@ -249,7 +249,7 @@
                   ],
                   captains: [
                     {
-                      photo: "img/temporary/TianSarah.jpg",
+                      photo: "img/temporary/HsiehEllen.jpg",
                       name:  "Ellen Hsieh",
                       detail: "",
                     },
@@ -546,8 +546,8 @@
 
         }
         if (branch === 'teamRelations'){
-          branchBody.style.width = '75%';
-          imgArrayTitle.innerHTML = 'Dance Leadership';
+          branchBody.classList.add('relationsBody');
+          imgArrayTitle.innerHTML = '';
         }
 
 
@@ -572,7 +572,9 @@
           if (branch === 'media'){
             data.branches[branch].admins.forEach(function (admin){
               let mediaAdmin = view.createHoverPic(admin, 'admin');
-              mediaAdmin.id = 'mediaAdminPic';
+              if(window.innerWidth > 991) {
+                mediaAdmin.id = 'mediaAdminPic';
+              }
               adminDiv.appendChild(mediaAdmin);
             });
           } else {
@@ -697,7 +699,7 @@
           lshipPhoto.classList.add('lshipPics');
           view.findChild(hoverDiv, 3).classList.add('lshipPicBox');
           document.querySelector('#allLshipArray .adminImgArray').appendChild(hoverDiv);
-          let seconds = ((Math.random() * 7)) * 500;
+          let seconds = ((Math.random() * 10)) * 500;
           view.displayAfter(lshipPhoto, seconds)
         });
       },

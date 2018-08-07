@@ -438,6 +438,9 @@ main {
   height: 12em;
 }
 
+.relationsBody {
+  width: 80%;
+}
 
 .flyIn {
   opacity: 1;
@@ -467,7 +470,7 @@ main {
   from {
     position: relative;
     opacity: 0;
-    transform: scale(0, 0);
+    transform: scale(1, 1);
   }
   to {
     position: relative;
@@ -484,15 +487,19 @@ main {
   }
 
   .lshipPics {
-    width: 8em;
-    height: 8em;
+    width: 7em;
+    height: 7em;
     margin: 0;
+  }
+
+  .admin-logo {
+    margin-top: -35px;
   }
 
   .lshipPicBox {
     margin-top: -50px;
     overflow: auto;
-    max-height: 8em;
+    min-height: 8em;
     padding: 5px;
     color: white;
     text-shadow: 0px 0px 10px black;
@@ -521,8 +528,8 @@ main {
   }
 
   .adminPics {
-    width: 10em;
-    height: 10em;
+    width: 9em;
+    height: 9em;
   }
 
   .directorBox {
@@ -533,33 +540,35 @@ main {
     font-size: 0.75em;
   }
 
-  .lshipDescription #portfolio .adminImgArray .portfolio-item {
-    width: 10em;
-    height: 10em;
-    display: inline-block;
+  #hoverOveride .directorBox {
+    width: 100%
   }
 
-  .admin-logo {
-    margin-top: -35px;
+  .lshipDescription #portfolio .adminImgArray .portfolio-item {
+    width: 9em;
+    height: 9em;
+    display: inline-block;
+    margin-bottom: 0px;
   }
+
 
   .adminBox {
-    height: 6em;
-    width: 8em;
+    height: 5em;
+    width: 7em;
+  }
+
+  .relationsBody {
+    width: 90%;
   }
 
   @keyframes flyIn {
     from {
       position: static;
       opacity: 0;
-      top: 500px;
-      transform: scale(2.5, 2.5);
     }
     to {
       position: static;
       opacity: 1;
-      top: 0px;
-      transform: scale(1, 1);
     }
   }
 }
@@ -588,6 +597,12 @@ main {
 
   .lshipDescription {
     max-width: 100%;
+    margin-left: 0px;
+  }
+
+  .descriptionHead {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .branchBody {
@@ -597,11 +612,6 @@ main {
   .directorPhoto,
   .execSecondPhoto {
     width: 20em;
-    margin-left: 0px;
-  }
-
-
-  .lshipDescription {
     margin-left: 0px;
   }
 }
