@@ -9,13 +9,9 @@
     },
 
     bannerID: 0,
-    bannerName: 'July Calendar',
+    bannerName: 'August Calendar',
 
     banners: [
-      {
-        img: 'img/events/julyCalendar.png',
-        name: 'July Calendar'
-      },
       {
         img: 'img/events/augustCalendar.png',
         name: 'August Calendar'

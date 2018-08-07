@@ -7,18 +7,13 @@
 
 body {
     -webkit-tap-highlight-color: inherit;
-    /* font-family: Montserrat; */
-    /* font-family: Karla; */
-    /* font-family: 'PT Sans'; */
     font-family: 'Lato';
 }
+
 
 .modal-video {
   height: 300px;
   width: 100%;
-  border: 25px solid;
-  overflow: hidden;
-  border-image: url('../img/borders/directorBorder.jpg') 50 round;
 }
 
 .modal-logo {
@@ -142,6 +137,18 @@ footer {
    Location: Community
 */
 
+#headerPic {
+  margin-top: 4em;
+  width: 100%;
+}
+
+.videoCover {
+  z-index: 1;
+  border: 25px solid;
+  overflow: hidden;
+  border-image: url('../img/borders/newBorder.png') 50 round;
+  border-image-width: 60px;
+}
 
 #workshopDesc {
   margin-top: 75px;
@@ -152,6 +159,7 @@ footer {
 }
 
 #community {
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
