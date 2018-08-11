@@ -22,6 +22,7 @@
           let soundBox = document.querySelector('#soundBox');
           soundBox.addEventListener('click', function() {
             let mainVideo = document.querySelector('#mainVideo');
+            mainVideo.volume = 0.1;
             if(mainVideo.muted){
               mainVideo.muted = false;
               document.querySelector('.soundbutton').src = 'img/Animations and Buttons/Speaker_IconOn.svg';

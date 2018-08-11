@@ -184,7 +184,7 @@
 
           },
 
-          teamRelations: {
+          teamrelations: {
 
               body: "Dance LShip are responsible for creating a supportive and positive team environment, encouraging dancers to continue to challenge and push themselves throughout the quarter. This committee consists of directors and captains, there to prepare their respective teams for the end-of-the-quarter showcase or concept video. For each team, there are two (or possibly three) directors and two captains present to lead the team. Directors are in charge of set building which includes choreographing, teaching, blocking, cleaning, creating the set mix, and generating ideas for team gear. Captains, on the other hand, are responsible for managing team logistics (i.e. organizing photoshoot, managing team Facebook page, keeping team roster updated) and facilitating intrateam and interteam bonding (i.e. team dinners, ice cream socials, study sessions, etc.), while also learning choreography alongside their teammates. Both positions are integral to team functionality so Dance LShip works together as a team themselves to ensure a rewarding experience for team members. ",
               director: {
@@ -213,37 +213,44 @@
                 {
                     photo: "img/TestimonialPhotos/Suwandi_Marcea.jpg",
                     name: "Marcea Suwandi",
+                    title: 'advisor',
                     detail: "I love to bake cookies (Lship can testify to that), and I am an avid TV show binger."
                 },
                 {
                     photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
                     name: "Kevin Lee",
+                    title: 'advisor',
                     detail: "I like to untie people's shoelaces."
                 },
                 {
-                    photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
+                    photo: "img/TestimonialPhotos/Sumitro_Dean.jpg",
                     name: "Dean Sumitro",
+                    title: 'advisor',
                     detail: "I was born in New York, I'm red-green colorblind and apparently my existence is a meme."
                 },
             ]
         },
 
+        danceID: 'summer',
+
         danceLship: {
           quarter: [
             {
-              name: 'Summer Dance Leadership',
+              name: 'summer',
               teams: [
                 {
                   name: "Apex",
                   directors: [
                     {
-                      photo: "",
+                      photo: "img/temporary/Kim_Joshua.jpg",
                       name:  "Joshua Kim",
+                      title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "",
+                      photo: "img/temporary/Aguilar_Brandon.jpg",
                       name:  "Brandon Aguilar",
+                      title: 'director',
                       detail: "",
                     }
                   ],
@@ -251,11 +258,13 @@
                     {
                       photo: "img/temporary/HsiehEllen.jpg",
                       name:  "Ellen Hsieh",
+                      title: 'captain',
                       detail: "",
                     },
                     {
                       photo: "img/temporary/MartinezMartha.jpg",
                       name:  "Martha Martinez",
+                      title: 'captain',
                       detail: "",
                     },
                   ],
@@ -266,11 +275,13 @@
                     {
                       photo: "img/temporary/ZhangDerek.jpg",
                       name:  "Derek Zheng",
+                      title: 'director',
                       detail: "",
                     },
                     {
                       photo: "img/temporary/AmandeDexter.jpg",
                       name:  "Dexter Amande",
+                      title: 'director',
                       detail: "",
                     }
                   ],
@@ -278,11 +289,13 @@
                     {
                       photo: "img/temporary/QuanJeremy.jpg",
                       name:  "Jeremy Quan",
+                      title: 'captain',
                       detail: "",
                     },
                     {
                       photo: "img/TestimonialPhotos/Mejia_Mary.jpg",
                       name:  "Mary Mejia",
+                      title: 'captain',
                       detail: "",
                     }
                   ],
@@ -293,23 +306,27 @@
                     {
                       photo: "img/temporary/JulianRia.jpg",
                       name:  "Ria Julian",
+                      title: 'director',
                       detail: "",
                     },
                     {
                       photo: "img/temporary/UngMerton.jpg",
                       name:  "Merton Ung",
+                      title: 'director',
                       detail: "",
                     }
                   ],
                   captains: [
                     {
-                      photo: "img/temporary/MeghalDubey.jpg",
+                      photo: "img/temporary/DubeyMeghal.jpg",
                       name:  "Meghal Dubey",
+                      title: 'captain',
                       detail: "",
                     },
                     {
                       photo: "img/temporary/ChangMyles.jpg",
                       name:  "Myles Chang",
+                      title: 'captain',
                       detail: "",
                     }
                   ],
@@ -320,11 +337,13 @@
                     {
                       photo: "img/temporary/VasquezAlexxa.jpg",
                       name:  "Alexxa Vasquez",
+                      title: 'director',
                       detail: "",
                     },
                     {
                       photo: "img/temporary/FuntanillaNoelle.jpg",
                       name:  "Noelle Funtanilla",
+                      title: 'director',
                       detail: "",
                     }
                   ],
@@ -332,11 +351,13 @@
                     {
                       photo: "img/temporary/WangAndy.jpg",
                       name:  "Andy Wang",
+                      title: 'captain',
                       detail: "",
                     },
                     {
                       photo: "img/temporary/TamondongLouise.jpg",
                       name:  "Louise Tamondong",
+                      title: 'captain',
                       detail: "",
                     }
                   ],
@@ -366,12 +387,26 @@
 
           document.querySelectorAll('.branchLink').forEach(function(link){
             link.addEventListener('click', function() {
-              data.branchID = link.innerHTML.toLowerCase();
-              if (data.branchID === 'team relations'){
-                data.branchID = 'teamRelations';
-              }
+              data.branchID = (link.innerHTML.toLowerCase()).replace(/ /g,'');
               connector.scroll();
             });
+          });
+
+          document.querySelectorAll('.termLink').forEach(function(link){
+            link.addEventListener('click', function() {
+              data.branchID = (link.innerHTML.toLowerCase()).replace(/ /g,'');
+              connector.scroll('dance');
+            });
+          });
+
+          document.querySelector('#adminLink').addEventListener('click', function() {
+            data.branchID = 'executives';
+            connector.scroll();
+          });
+
+          document.querySelector('#danceLink').addEventListener('click', function() {
+            data.branchID = 'summer';
+            connector.scroll('dance');
           });
 
           document.querySelector('#sideBarLogo').addEventListener('click', function(){
@@ -438,8 +473,16 @@
         view.render();
         data.branchID = 'showcase';
         view.render();
-        data.branchID = 'teamRelations';
+        data.branchID = 'teamrelations';
         view.render();
+
+        data.branchID = 'advisors';
+        view.render();
+
+        data.branchID = 'danceLship';
+        view.render();
+
+
         view.showLship();
 
         setTimeout(function() {
@@ -462,126 +505,173 @@
         sectionTag.id = branch;
         document.querySelector('main').appendChild(sectionTag);
 
+        let sectionTitle = document.createElement('h1');
+        sectionTitle.innerHTML = data.branchID;
+        sectionTag.appendChild(sectionTitle);
+
         let directorName = document.createElement('h4');
-        directorName.classList.add('directorName');
-        directorName.innerHTML = data.branches[branch].director.name;
 
         let directorTitle = document.createElement('h5');
-        directorTitle.classList.add('directorTitle');
-        directorTitle.innerHTML = data.branches[branch].director.title;
 
         let descriptionHead = document.createElement('div');
-        descriptionHead.classList.add('container');
-        descriptionHead.classList.add('descriptionHead');
-        sectionTag.appendChild(descriptionHead);
-
-        let imgArrayTitle = document.createElement('h2');
-        imgArrayTitle.style.display = 'block';
-        imgArrayTitle.classList.add('imgArrayTitle');
 
         let branchBody = document.createElement('p');
-        branchBody.classList.add('branchBody');
-        branchBody.innerHTML = data.branches[branch].body;
 
         let portfolio = document.createElement('div');
         portfolio.id = 'portfolio';
 
-        let leftImgDiv = document.createElement('div');
-        leftImgDiv.classList.add('col-lg-6');
 
-        let rightMainDiv = document.createElement('div');
-        rightMainDiv.classList.add('col-lg-6');
+        if(branch != 'advisors' && branch != 'danceLship') {
+          directorName.classList.add('directorName');
+          directorName.innerHTML = data.branches[branch].director.name;
 
-        if (branch != 'executives') {
-          if(window.innerWidth > 991 && branch != 'teamRelations'){
-            descriptionHead.classList.add('row');
-            descriptionHead.appendChild(leftImgDiv);
-            descriptionHead.appendChild(rightMainDiv);
-            leftImgDiv.appendChild(imgArrayTitle);
-            rightMainDiv.appendChild(directorName);
-            rightMainDiv.appendChild(directorTitle);
-            rightMainDiv.appendChild(portfolio);
-            rightMainDiv.appendChild(branchBody);
+          directorTitle.classList.add('directorTitle');
+          directorTitle.innerHTML = data.branches[branch].director.title;
+
+          descriptionHead.classList.add('container');
+          descriptionHead.classList.add('descriptionHead');
+          sectionTag.appendChild(descriptionHead);
+
+
+          branchBody.classList.add('branchBody');
+          branchBody.innerHTML = data.branches[branch].body;
+
+
+          if (branch != 'executives') {
+            portfolio.appendChild(view.createHoverPic(data.branches[branch].director, 'director'));
+            if(branch != 'teamrelations' && branch != 'advisors') {
+
+              let leftImgDiv = document.createElement('div');
+              leftImgDiv.classList.add('col-lg-6');
+
+              let rightMainDiv = document.createElement('div');
+              rightMainDiv.classList.add('col-lg-6');
+
+              leftImgDiv.appendChild(portfolio);
+              leftImgDiv.appendChild(directorName);
+              leftImgDiv.appendChild(directorTitle);
+              descriptionHead.appendChild(leftImgDiv);
+
+              rightMainDiv.appendChild(branchBody);
+              descriptionHead.appendChild(rightMainDiv);
+
+            } else {
+              sectionTag.appendChild(directorName);
+              descriptionHead.appendChild(portfolio);
+              descriptionHead.appendChild(branchBody);
+              descriptionHead.insertBefore(directorName, branchBody);
+              descriptionHead.insertBefore(directorTitle, branchBody);
+
+              branchBody.classList.add('relationsBody');
+              descriptionHead.classList.add('relationsHead');
+              sectionTitle.innerHTML = 'Team Relations';
+            }
           } else {
-            sectionTag.appendChild(directorName);
+
             sectionTag.insertBefore(directorName, descriptionHead);
-            sectionTag.insertBefore(directorTitle, descriptionHead);
-            descriptionHead.appendChild(portfolio);
+
+            let execPicArray = document.createElement('div');
+            execPicArray.classList.add('execPicArray');
+            descriptionHead.appendChild(execPicArray);
+
+            descriptionHead.classList.add('row');
+            descriptionHead.id = "descriptionExec";
+
+            portfolio.classList.add('execPhoto');
+            portfolio.classList.add('miya');
+            portfolio.appendChild(view.createHoverPic(data.branches[branch].director.miya, 'director'));
+
+            execPicArray.appendChild(portfolio);
+
+            portfolio = document.createElement('div');
+            portfolio.id = 'portfolio';
+
+            portfolio.classList.add('execPhoto');
+            portfolio.classList.add('liana');
+            portfolio.appendChild(view.createHoverPic(data.branches[branch].director.liana, 'director'));
+
+            execPicArray.appendChild(portfolio);
+
+            branchBody.classList.add('bodyExec');
+
             descriptionHead.appendChild(branchBody);
-            descriptionHead.appendChild(imgArrayTitle);
+
           }
-          portfolio.appendChild(view.createHoverPic(data.branches[branch].director, 'director'));
-          imgArrayTitle.innerHTML = 'Admins';
-        } else {
+        } else if(branch === 'danceLship') {
 
-          sectionTag.insertBefore(directorName, descriptionHead);
-          sectionTag.insertBefore(directorTitle, descriptionHead);
+          sectionTag.classList.add('term');
+          descriptionHead.classList.add('descriptionHead');
 
-          let execPicArray = document.createElement('div');
-          execPicArray.classList.add('execPicArray');
-          descriptionHead.appendChild(execPicArray);
+          let id = data.branches.danceID;
 
-          descriptionHead.classList.add('row');
-          descriptionHead.id = "descriptionExec";
+          let quarter;
+          data.branches.danceLship.quarter.forEach(function(term){
+            if(term.name === id) {
+              quarter = term;
+            }
+          });
 
-          portfolio.classList.add('execPhoto');
-          portfolio.classList.add('miya');
-          portfolio.appendChild(view.createHoverPic(data.branches[branch].director.miya, 'director'));
+          sectionTag.id = id;
 
-          execPicArray.appendChild(portfolio);
+          let termTitle = document.createElement('h3');
+          termTitle.innerHTML = id;
+          sectionTag.appendChild(termTitle);
+          sectionTag.appendChild(descriptionHead);
 
+          quarter.teams.forEach(function(team) {
+            let teamDiv = document.createElement('div');
+            teamDiv.classList.add('teamItem');
+
+            let teamName = document.createElement('h4');
+            teamName.innerHTML = team.name;
+            teamDiv.appendChild(teamName);
+
+            let directorDiv = document.createElement('div');
+            directorDiv.classList.add('teamInnerDiv');
+
+            portfolio = document.createElement('div');
+            portfolio.id = 'portfolio';
+            portfolio.classList.add('row');
+            teamDiv.appendChild(portfolio);
+
+            let adminDiv;
+            adminDiv = document.createElement('div');
+            adminDiv.classList.add('adminImgArray');
+            adminDiv.classList.add('col-lg-12');
+            portfolio.appendChild(adminDiv);
+
+            team.directors.forEach(function(director){
+              adminDiv.appendChild(view.createHoverPic(director, 'admin'));
+            });
+
+            team.captains.forEach(function(captain){
+              adminDiv.appendChild(view.createHoverPic(captain, 'admin'));
+            });
+
+            teamDiv.appendChild(directorDiv);
+
+            descriptionHead.appendChild(teamDiv);
+          });
+        }
+
+
+
+        if (branch != 'executives' && branch != 'teamrelations' && branch != 'danceLship') {
           portfolio = document.createElement('div');
           portfolio.id = 'portfolio';
+          portfolio.classList.add('row');
 
-          portfolio.classList.add('execPhoto');
-          portfolio.classList.add('liana');
-          portfolio.appendChild(view.createHoverPic(data.branches[branch].director.liana, 'director'));
+          let adminDiv;
+          adminDiv = document.createElement('div');
+          adminDiv.classList.add('adminImgArray');
+          adminDiv.classList.add('col-lg-12');
 
-          execPicArray.appendChild(portfolio);
-
-          branchBody.classList.add('bodyExec');
-          imgArrayTitle.style.display = 'none';
-
-          descriptionHead.appendChild(branchBody);
-
-        }
-        if (branch === 'teamRelations'){
-          branchBody.classList.add('relationsBody');
-          imgArrayTitle.innerHTML = '';
-        }
-
-
-        portfolio = document.createElement('div');
-        portfolio.id = 'portfolio';
-        portfolio.classList.add('row');
-
-        let adminDiv;
-        adminDiv = document.createElement('div');
-        adminDiv.classList.add('adminImgArray');
-        adminDiv.classList.add('col-lg-12');
-
-        if(window.innerWidth > 991) {
-          leftImgDiv.appendChild(portfolio);
-        } else {
           sectionTag.appendChild(portfolio);
-        }
 
-        portfolio.appendChild(adminDiv);
-
-        if (branch != 'executives' && branch != 'teamRelations') {
-          if (branch === 'media'){
-            data.branches[branch].admins.forEach(function (admin){
-              let mediaAdmin = view.createHoverPic(admin, 'admin');
-              if(window.innerWidth > 991) {
-                mediaAdmin.id = 'mediaAdminPic';
-              }
-              adminDiv.appendChild(mediaAdmin);
-            });
-          } else {
-            data.branches[branch].admins.forEach(function (admin){
-              adminDiv.appendChild(view.createHoverPic(admin, 'admin'));
-            });
-          }
+          portfolio.appendChild(adminDiv);
+          data.branches[branch].admins.forEach(function (admin){
+            adminDiv.appendChild(view.createHoverPic(admin, 'admin'));
+          });
         }
       },
 
@@ -648,25 +738,42 @@
         return parentDiv;
       },
 
-      goToSection: function() {
+
+      // This function is used to scroll the top of the window to section.
+      goToSection: function(term = 'admin') {
+
+        function helper(section){
+          if(section.id === data.branchID) {
+            let scrollTarget;
+            let bodyRect = document.body.getBoundingClientRect();
+            let sectionRect = section.getBoundingClientRect();
+            let offset = sectionRect.top - bodyRect.top;
+            scrollTarget = offset;
+            $('html, body').animate({ scrollTop: scrollTarget }, 1500);
+            section.classList.add('flyInNoScale');
+            setTimeout(function() {
+              section.classList.remove('flyInNoScale');
+            }, 2000);
+          }
+        }
+
         view.resetSideBar();
 
-        let scrollTarget;
-        document.querySelectorAll('.lshipDescription').forEach(function(section) {
-           if(section.id === data.branchID) {
-             let bodyRect = document.body.getBoundingClientRect();
-             let sectionRect = section.getBoundingClientRect();
-             let offset = sectionRect.top - bodyRect.top;
-             scrollTarget = offset;
-             $('html, body').animate({ scrollTop: scrollTarget }, 1500);
-             section.classList.add('flyInNoScale');
-             setTimeout(function() {
-               section.classList.remove('flyInNoScale');
-             }, 2000);
-           }
-        });
+        if(term === 'admin') {
+          document.querySelectorAll('.lshipDescription').forEach(function(section) {
+            helper(section);
+          });
+        } else {
+          document.querySelectorAll('.term').forEach(function(section){
+            helper(section);
+          });
+        }
+
       },
 
+
+
+      // On mobile, the sideBar needs to close when a user selects an option.
       resetSideBar: function() {
         document.querySelector('#sideBarToggle').classList.add('notification');
         document.querySelector('#desktopOnlyNav').style.left = '';
@@ -679,6 +786,9 @@
         }, 4000);
       },
 
+      // This is used for the the first animation scene on the page, using the
+      // the array we started making when we created hoverdivs, we display them
+      // at random intervals.
       showLship: function() {
 
         let portfolio = document.createElement('div');
@@ -700,15 +810,10 @@
           view.findChild(hoverDiv, 3).classList.add('lshipPicBox');
           document.querySelector('#allLshipArray .adminImgArray').appendChild(hoverDiv);
           let seconds = ((Math.random() * 10)) * 500;
-          view.displayAfter(lshipPhoto, seconds)
+          setTimeout(function(){
+            lshipPhoto.classList.add('flyIn');
+          }, seconds);
         });
-      },
-
-      displayAfter: function(el, time) {
-        setTimeout(function(){
-          //Here I'm finding all imgs within everyhover div, check structure in browser.
-          el.classList.add('flyIn');
-        }, time);
       },
 
       // This function should make the process of finding the first child of
@@ -731,8 +836,8 @@
         view.init();
       },
 
-      scroll: function() {
-        view.goToSection();
+      scroll: function(term = 'admin') {
+        view.goToSection(term);
       },
 
       reset: function() {

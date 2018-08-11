@@ -243,6 +243,14 @@
               title: '7/17 COLIN HWANG x ARYANNA RAMIREZ',
               video: 'https://www.youtube-nocookie.com/embed/PpNRVy2uFf8?rel=0&amp;showinfo=0'
             },
+            {
+              title: "7/28 JOMAR BATAC",
+              video: "https://www.youtube-nocookie.com/embed/nw3ZcaD9gzc?rel=0&amp;showinfo=0",
+            },
+            {
+              title: "8/3 T.Y. LI x SOFIA UNAL",
+              video: "https://www.youtube-nocookie.com/embed/-72WW9UgP-s?rel=0&amp;showinfo=0",
+            },
           ]
         },
       ],
