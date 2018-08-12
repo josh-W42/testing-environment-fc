@@ -464,7 +464,7 @@ footer {
 
   #bensonHan {
     right: -85%;
-    top: 68.5%;
+    top: 69%;
     font-size: 5pt;
     transform: matrix(2, -1, 0, 4, 0, 0);
   }
@@ -499,7 +499,7 @@ footer {
 
   #jesicaTruong {
     top: 32%;
-    right: -16%;
+    right: -15.5%;
     font-size: 6.5pt;
     transform: matrix(2, -1, 0, 2, 0, 0);
   }
