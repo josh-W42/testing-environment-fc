@@ -532,10 +532,8 @@
           descriptionHead.classList.add('descriptionHead');
           sectionTag.appendChild(descriptionHead);
 
-
           branchBody.classList.add('branchBody');
           branchBody.innerHTML = data.branches[branch].body;
-
 
           if (branch != 'executives') {
             portfolio.appendChild(view.createHoverPic(data.branches[branch].director, 'director'));

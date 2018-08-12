@@ -274,6 +274,44 @@
         },
       ],
 
+      showcaseImg: [
+        {
+          credit: 'PC: Golria Lam',
+          img: 'img/Community Pages/kaizen.jpg',
+        },
+        {
+          credit: 'PC: Tia Liu',
+          img: 'img/Community Pages/pwr.jpg',
+        },
+        {
+          credit: 'PC: Calvin Ha',
+          img: 'img/Community Pages/eta.jpg',
+        },
+        {
+          credit: 'PC: Calvin Ha',
+          img: 'img/Community Pages/nimbus.jpg',
+        },
+      ],
+
+      wintensive: [
+        {
+          credit: 'PC: Rebecca Lin',
+          img: 'img/Community Pages/wintensive1.jpg',
+        },
+        {
+          credit: 'PC: Rebecca Lin',
+          img: 'img/Community Pages/wintensive2.jpg',
+        },
+        {
+          credit: 'PC: Tia Liu',
+          img: 'img/Community Pages/wintensive3.jpg',
+        },
+        {
+          credit: 'PC: Tia Liu',
+          img: 'img/Community Pages/wintensive4.jpg',
+        },
+      ],
+
       iDsInUse: [],
 
       makeID: function(type) {
@@ -282,6 +320,12 @@
         }
         if(type === 'showcase') {
           return Math.floor(Math.random() * (data.showcase.length));
+        }
+        if(type === 'showcaseImg') {
+          return Math.floor(Math.random() * (data.showcaseImg.length));
+        }
+        if(type === 'wintensive') {
+          return Math.floor(Math.random() * (data.wintensive.length));
         }
         if(type === 'testimonial') {
           let id = Math.floor(Math.random() * (data.testimonials.length));
@@ -478,6 +522,23 @@
 
           let shcsVideo = document.querySelectorAll('.modal-video')[1];
           shcsVideo.src = shcs.video;
+
+          let shcsPicId = data.makeID('showcaseImg');
+          let shcsImg = data.showcaseImg[shcsPicId];
+
+          let shcsPic = document.querySelectorAll('.wkspImg')[1];
+          shcsPic.src = shcsImg.img;
+
+          document.querySelectorAll('.photoCredit')[0].innerHTML = shcsImg.credit;
+
+          let wintPicID = data.makeID('wintensive');
+          let winPic = data.wintensive[wintPicID];
+
+          let winImg = document.querySelectorAll('.wkspImg')[2];
+          winImg.src = winPic.img;
+
+          document.querySelectorAll('.photoCredit')[1].innerHTML = winPic.credit;
+
 
       }
 

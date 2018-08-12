@@ -8,6 +8,7 @@
 body {
     -webkit-tap-highlight-color: inherit;
     max-width: 100%;
+    font-family: 'Lato';
 }
 
 #modal-video {
@@ -510,8 +511,8 @@ main {
   }
 
   .lshipPics {
-    width: 7em;
-    height: 7em;
+    width: 6em;
+    height: 6em;
     margin: 0;
   }
 
@@ -520,13 +521,17 @@ main {
   }
 
   .lshipPicBox {
-    margin-top: -50px;
+    margin-top: -40px;
     overflow: auto;
-    min-height: 8em;
+    min-height: 7em;
     padding: 5px;
     color: white;
     text-shadow: 0px 0px 10px black;
     font-size: 0.75em;
+  }
+
+  .lshipPicBox span {
+    width: 100%;
   }
 
   .branchBody {

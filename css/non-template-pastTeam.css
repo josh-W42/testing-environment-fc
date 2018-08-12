@@ -7,6 +7,7 @@
 
 body {
     -webkit-tap-highlight-color: inherit;
+    font-family: 'Lato';
 }
 
 #modal-video {
