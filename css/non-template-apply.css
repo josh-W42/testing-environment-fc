@@ -109,8 +109,57 @@ footer {
 
 /*
   Start CSS
-  Location: Multiple Pages
+  Location: Main content
 */
+
+#timerBox {
+  min-height: 200px;
+  margin-bottom: 100px;
+  text-align: center;
+  padding: 2%;
+}
+
+.case {
+  margin-right: auto;
+  margin-left: auto;
+  height: 85px;
+  width: 100px;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.countdownText {
+  font-size: 1.5em;
+}
+
+.numberCase {
+  width: 50%;
+  text-align: center;
+  border-radius: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 575px) {
+  #timerBox h1 {
+    font-size: 1.25em;
+    padding: 0px;
+  }
+
+  #timerBox h4 {
+    font-size: 0.8em;
+  }
+
+  .countdownText {
+    font-size: 1.15em;
+  }
+
+  .case {
+    font-size: 1.25em;
+    width: 150px;
+  }
+}
 
 iframe {
   max-width: 100%;
@@ -118,7 +167,7 @@ iframe {
 
 /*
   End CSS
-  Location: Multiple Pages
+  Location: Main Content
 */
 
 /*

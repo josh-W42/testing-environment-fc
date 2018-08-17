@@ -411,6 +411,7 @@
 
           document.querySelector('#sideBarLogo').addEventListener('click', function(){
             $('html, body').animate({ scrollTop: 0 }, 1500);
+            connector.reset();
           });
 
           document.querySelector('#sideBarToggle').addEventListener('click', function(e){
@@ -505,7 +506,7 @@
         sectionTag.id = branch;
         document.querySelector('main').appendChild(sectionTag);
 
-        let sectionTitle = document.createElement('h1');
+        let sectionTitle = document.createElement('h2');
         sectionTitle.innerHTML = data.branchID;
         sectionTag.appendChild(sectionTitle);
 
@@ -611,7 +612,7 @@
 
           sectionTag.id = id;
 
-          let termTitle = document.createElement('h3');
+          let termTitle = document.createElement('h4');
           termTitle.innerHTML = id;
           sectionTag.appendChild(termTitle);
           sectionTag.appendChild(descriptionHead);

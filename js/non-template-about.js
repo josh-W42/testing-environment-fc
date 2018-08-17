@@ -25,7 +25,7 @@
       {
         img: "img/Banners/oneYearAnniversary.jpg",
         name: "ONE YEAR ANNIVERSARY",
-        title: ""
+        title: "Fall 2015"
       },
       {
         img: "img/Banners/fifthShowcase.jpg",

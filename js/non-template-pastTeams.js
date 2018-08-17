@@ -422,7 +422,7 @@
               {
                 name: "Vision",
                 directors: "Kevs Lee x Shona Das",
-                captains: "Isaac Yoon x Sylvia Hyunh",
+                captains: "Isaac Yoon x Sylvia Huynh",
                 photo: "img/teams/17-18/17F-Vision.jpg",
                 video: "https://www.youtube-nocookie.com/embed/PtHFkwzQCPo?rel=0&amp;showinfo=0",
                 noModal: false
@@ -577,6 +577,7 @@
                 document.querySelector('#directorDiv').classList = "";
                 document.querySelector('#directorDiv').classList.add('col-lg-6');
               }
+              document.querySelector('#modalTeamPic').src = showCase.teams[teamID].photo;
               document.querySelector('#modalCaptains').innerHTML = showCase.teams[teamID].captains;
               document.querySelector('#modalDirectors').innerHTML = showCase.teams[teamID].directors;
               document.querySelector('#modal-video').src = showCase.teams[teamID].video;
