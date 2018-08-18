@@ -28,7 +28,7 @@
                   photo: "img/lship/LiangLiana.jpg",
                   name: "Liana Liang",
                   title: "Executive",
-                  detail: ""
+                  detail: "a queen from Queens (jk not really but I'm from the same neighborhood as spiderman so that's cool)"
                 }
               }
           },
@@ -790,29 +790,45 @@
       // at random intervals.
       showLship: function() {
 
-        let portfolio = document.createElement('div');
-        portfolio.id = 'portfolio';
-        portfolio.classList.add('row');
-        document.querySelector('#allLshipArray').appendChild(portfolio);
+        let portfolio_admin = document.createElement('div');
+        portfolio_admin.id = 'portfolio';
+        portfolio_admin.classList.add('row');
+        document.querySelector('#adminLshipArray').appendChild(portfolio_admin);
 
-        let adminDiv;
-        adminDiv = document.createElement('div');
-        adminDiv.classList.add('adminImgArray');
-        adminDiv.classList.add('col-lg-12');
-        portfolio.appendChild(adminDiv);
+        let adminDiv_admin;
+        adminDiv_admin = document.createElement('div');
+        adminDiv_admin.classList.add('adminImgArray');
+        adminDiv_admin.classList.add('col-lg-12');
+        portfolio_admin.appendChild(adminDiv_admin);
+
+        let portfolio_dance = document.createElement('div');
+        portfolio_dance.id = 'portfolio';
+        portfolio_dance.classList.add('row');
+        document.querySelector('#danceLshipArray').appendChild(portfolio_dance);
+
+        let adminDiv_dance;
+        adminDiv_dance = document.createElement('div');
+        adminDiv_dance.classList.add('adminImgArray');
+        adminDiv_dance.classList.add('col-lg-12');
+        portfolio_dance.appendChild(adminDiv_dance);
 
 
 
-        data.allPhotos.forEach(function(hoverDiv){
+        data.allPhotos.forEach(function(hoverDiv, i){
           let lshipPhoto = view.findChild(hoverDiv, 1, 1);
           lshipPhoto.classList.add('lshipPics');
           view.findChild(hoverDiv, 3).classList.add('lshipPicBox');
-          document.querySelector('#allLshipArray .adminImgArray').appendChild(hoverDiv);
+          if(i >= 26) {
+            document.querySelector('#danceLshipArray .adminImgArray').appendChild(hoverDiv);
+          } else {
+            document.querySelector('#adminLshipArray .adminImgArray').appendChild(hoverDiv);
+          }
           let seconds = ((Math.random() * 10)) * 500;
           setTimeout(function(){
             lshipPhoto.classList.add('flyIn');
           }, seconds);
         });
+
       },
 
       // This function should make the process of finding the first child of

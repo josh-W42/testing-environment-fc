@@ -302,17 +302,32 @@ main {
   font-size: 0.65em;
 }
 
-#allLshipArray #portfolio .adminImgArray .portfolio-item {
+#adminLshipArray #portfolio .adminImgArray .portfolio-item {
   margin: 0px;
   display: inline-block;
 }
 
-#allLshipArray, .adminImgArray {
+#danceLshipArray #portfolio .adminImgArray .portfolio-item {
+  margin: 0px;
+  display: inline-block;
+}
+
+#adminLshipArray, .adminImgArray {
   text-align: center;
   padding-right: 0;
 }
 
-#allLshipArray {
+#danceLshipArray, .adminImgArray {
+  text-align: center;
+  padding-right: 0;
+}
+
+#adminLshipArray {
+  min-height: 100%;
+  margin-bottom: 50px;
+}
+
+#danceLshipArray {
   min-height: 100%;
 }
 

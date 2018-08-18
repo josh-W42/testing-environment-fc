@@ -213,6 +213,14 @@
               body: "As someone one whose passion for dance had begun during his time as a general member, I was inspired to grow as both a dancer and a person while meeting some of my closest friends along the way.  I decided to come back as a captain and a director because I wanted to help inspire a new generation of dancers in the UCLA Community. Seeing their progress both during and after their time in Foundations is something I enjoy witnessing and I am glad to have been a part of it."
           },
           {
+              img: "img/TestimonialPhotos/Liang_Liana.jpg",
+              name: "Liana Liang",
+              subName: "Admin LSHIP: Executive '18-'19",
+              uclaInfo: "International Development Studies, Senior",
+              intro: "I didn't expect the magic that was Foundations Choreography when I arrived into that dusty parking lot two years ago.",
+              body: "So much of who I am as a person today is because of what I experienced over those ten weeks, pushing myself to become a better dancer to perform my heart out at showcase. Joining leadership only made sense because why wouldn't I try to spread the same joy that I felt to others? FC and LSHIP gave me the opportunity to find amazing camaraderie, knowledge about and connections to the SoCal dance community, the opportunity to dance on a competitive dance team and so much more. Although its a hefty position, as Executive I'm already finding the same fulfillment as I did as a beginning dancer."
+          },
+          {
               img: "img/TestimonialPhotos/Li_Derek.jpg",
               name: "Derek Li",
               subName: "General Member",
