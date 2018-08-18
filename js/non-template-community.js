@@ -63,7 +63,7 @@
           {
               img: "img/TestimonialPhotos/Huynh_Sylvia.JPG",
               name: "Sylvia Huynh",
-              subName: "Captain of Vision Fall ‘17",
+              subName: "Captain of: Lost and Found Spring '17, Vision Fall '17, Aim Winter '18",
               uclaInfo: "Chemistry, 4th year",
               intro: "Foundations welcomed me with a family that I will never forget.",
               body: "Coming into UCLA, I was far away from home and was homesick. During my first two quarters in college, I rarely stepped out of my dorm besides getting food. Life was pretty much the same every single day. The thought of dropping out of UCLA and going back home crossed my mind countless times. Meanwhile, my high school friends joined Foundations our first quarter, and it seemed like they were enjoying themselves, so I decided to try out that Spring. Foundations welcomed me with a family that I will never forget. They pushed me out of my comfort zone and never judged me for who I am. Because of Foundations and my first team, EON, I felt like I belonged. They were the ones that gave me a reason to stay. I wanted to give others the same enjoyable experience, so I became a captain for 3 teams. It is very rewarding to see people with different backgrounds all working towards the same goal and to see these people become one family. Although I am currently taking a break from dancing, I still want to be involved with the amazing organization, so I applied to be the LSHIP Relations Chair. "
@@ -259,6 +259,10 @@
               title: "8/3 T.Y. LI x SOFIA UNAL",
               video: "https://www.youtube-nocookie.com/embed/-72WW9UgP-s?rel=0&amp;showinfo=0",
             },
+            {
+              title: '8/9 CHAU QUACH',
+              video: 'https://www.youtube-nocookie.com/embed/pX9D4s1jrVc?rel=0&amp;showinfo=0'
+            },
           ]
         },
       ],
@@ -266,18 +270,22 @@
       showcase: [
         {
           title: 'Winter 2016: CASCADE',
+          credit: '',
           video: 'https://www.youtube-nocookie.com/embed/yTcrYQWzYmk?rel=0&amp;showinfo=0'
         },
         {
           title: 'Spring 2016: IGNITE',
+          credit: 'VC: Colin Hwang',
           video: 'https://www.youtube-nocookie.com/embed/V8DEfdNB3IY?rel=0&amp;showinfo=0'
         },
         {
           title: 'Fall 2016: ECLIPSE',
+          credit: 'VC: Colin Hwang',
           video: 'https://www.youtube-nocookie.com/embed/ouiDsJSwehA?rel=0&amp;showinfo=0'
         },
         {
           title: 'Spring 2018: KAIROS',
+          credit: 'VC: Colin Hwang',
           video: 'https://www.youtube-nocookie.com/embed/OjS81gBe3kQ?rel=0&amp;showinfo=0'
         },
       ],
@@ -531,13 +539,15 @@
           let shcsVideo = document.querySelectorAll('.modal-video')[1];
           shcsVideo.src = shcs.video;
 
+          document.querySelectorAll('.photoCredit')[0].innerHTML = shcs.credit;
+
           let shcsPicId = data.makeID('showcaseImg');
           let shcsImg = data.showcaseImg[shcsPicId];
 
           let shcsPic = document.querySelectorAll('.wkspImg')[1];
           shcsPic.src = shcsImg.img;
 
-          document.querySelectorAll('.photoCredit')[0].innerHTML = shcsImg.credit;
+          document.querySelectorAll('.photoCredit')[1].innerHTML = shcsImg.credit;
 
           let wintPicID = data.makeID('wintensive');
           let winPic = data.wintensive[wintPicID];
@@ -545,7 +555,7 @@
           let winImg = document.querySelectorAll('.wkspImg')[2];
           winImg.src = winPic.img;
 
-          document.querySelectorAll('.photoCredit')[1].innerHTML = winPic.credit;
+          document.querySelectorAll('.photoCredit')[2].innerHTML = winPic.credit;
 
 
       }
