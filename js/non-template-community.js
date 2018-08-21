@@ -292,7 +292,7 @@
 
       showcaseImg: [
         {
-          credit: 'PC: Golria Lam',
+          credit: 'PC: Gloria Lam',
           img: 'img/Community Pages/kaizen.jpg',
         },
         {
