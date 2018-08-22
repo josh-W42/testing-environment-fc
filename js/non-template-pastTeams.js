@@ -128,7 +128,7 @@
                 directors: "Angela David x Jucel Andrin",
                 captains: "",
                 photo: "img/teams/15-16/15F-SquareOne.jpg",
-                video: "ttps://www.youtube-nocookie.com/embed/LYrX6IDqlvE?rel=0&amp;showinfo=0",
+                video: "https://www.youtube-nocookie.com/embed/LYrX6IDqlvE?rel=0&amp;showinfo=0",
                 noModal: false
               },
               {
