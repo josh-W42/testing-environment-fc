@@ -450,6 +450,12 @@ main {
   transition: 0.75s ease;
 }
 
+/* For some reason on firefox it wont automatically do this */
+#portfolio .portfolio-item:hover .portfolio-hover {
+  opacity: 1;
+  z-index: 3;
+}
+
 .adminBox,
 .directorBox {
   background-color: transparent;
