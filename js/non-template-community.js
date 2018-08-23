@@ -263,6 +263,10 @@
               title: '8/9 CHAU QUACH',
               video: 'https://www.youtube-nocookie.com/embed/pX9D4s1jrVc?rel=0&amp;showinfo=0'
             },
+            {
+              title: "8/15 GENESIS GARING x KRISTA ANTONIO",
+              video: "https://www.youtube-nocookie.com/embed/OENEsKzYKC4?rel=0&amp;showinfo=0",
+            },
           ]
         },
       ],
