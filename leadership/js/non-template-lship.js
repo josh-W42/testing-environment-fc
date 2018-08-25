@@ -19,13 +19,13 @@
                 title: "Executives",
                 name: "Miya Sheker and Liana Liang",
                 miya: {
-                  photo: "img/lship/ShekerMiya.jpg",
+                  photo: "../img/lship/ShekerMiya.jpg",
                   name: "Miya Sheker",
                   title: "Executive",
                   detail: "I've lived in California my entire life! When I'm not dancing, you can find me testing out new recipes or looking up pictures of manatees."
                 },
                 liana: {
-                  photo: "img/lship/LiangLiana.jpg",
+                  photo: "../img/lship/LiangLiana.jpg",
                   name: "Liana Liang",
                   title: "Executive",
                   detail: "a queen from Queens (jk not really but I'm from the same neighborhood as spiderman so that's cool)"
@@ -37,32 +37,32 @@
 
               body: "The Events Committee is responsible for planning large-scale social events for all general members each quarter. Given how close every team gets each quarter individually, it is important for them to also get to know dancers from other teams in order to maximize their “Foundations experience”. The two Events Chairs are in charge of planning a Clubbing event, an All-Team Amazing Race (in which members represent their teams in competitive outdoor games), and Choreo Showcase (in which members perform their own original choreography). A new addition to the Events Committee is the LSHIP Relations Chair, whose main goal is to facilitate LSHIP bonding and appreciation. They are in charge of planning bonding events within LSHIP, as well as show appreciation of the hard work that every LSHIP member puts in for the organization through gifts, posters, shoutouts etc.",
               director: {
-                  photo: "img/lship/WongEllis.jpg",
+                  photo: "../img/lship/WongEllis.jpg",
                   name: "Ellis Wong",
                   title: "Director of Events",
                   detail: "I can raise my eyebrows individually  ( ͡° ͜ʖ ͡°)"
               },
               admins: [
                   {
-                      photo: "img/lship/HuynhSylvia.jpg",
+                      photo: "../img/lship/HuynhSylvia.jpg",
                       name: "Sylvia Huynh",
                       title: "LSHIP Relations Chair",
                       detail: "Foundations really is Foundbaetions, I picked up a bae AND a wife! I also like corgi butts. :D"
                   },
                   {
-                      photo: "img/lship/ZhuLudi.jpg",
+                      photo: "../img/lship/ZhuLudi.jpg",
                       name: "Ludi Zhu",
                       title: "Events Chair",
                       detail: '"Me think, why waste time say lot word, when few word do trick." - Kevin Malone'
                   },
                   {
-                      photo: "img/temporary/TranMichelle.jpg",
+                      photo: "../img/temporary/TranMichelle.jpg",
                       name: "Michelle Tran",
                       title: "Events Chair",
                       detail: "I sustain myself on copious amounts of boba and caffeine and probably need 903827182 years of sleep but I'm fat chillin'"
                   },
                   {
-                      photo: "img/temporary/SasakiSara.jpg",
+                      photo: "../img/temporary/SasakiSara.jpg",
                       name: "Sara Sasaki",
                       title: "WorkShop Chair",
                       detail: "hi my name is Sara, I’m 5ft tall, have a pet corgi, and make EPIC burps. please send music, anime recommendations, and wholesome memes thru Facebook or IG @sarasasaki"
@@ -75,50 +75,50 @@
 
               body: "The media committee takes care of everything that you see online -- Facebook, YouTube, Snapchat, Instagram... you name it! These are the faces behind every punny Facebook caption and stunning design work. We showcase the best of Foundations through every video, team photo and website click. When we aren't busy keeping our social media sites poppin', we like to relax with strawberry smoothies and talk about dogs.",
               director: {
-                  photo: "img/lship/TanVivian.jpg",
+                  photo: "../img/lship/TanVivian.jpg",
                   name: "Vivian Tan",
                   title: "Director of Media",
                   detail: "What’s Forrest Grumps’ password? 1forrest1 *badumtsssss* (follow me on IG for more of my *~sparkling~* personality @viviantan_)"
               },
               admins: [
                   {
-                      photo: "img/lship/LiAnya.jpg",
+                      photo: "../img/lship/LiAnya.jpg",
                       name: "Anya Li",
                       title: "Design Chair",
                       detail: "A UX/UI designer and a member of A** Designs"
                   },
                   {
-                      photo: "img/temporary/RenSisi.jpg",
+                      photo: "../img/temporary/RenSisi.jpg",
                       name: "Sisi Ren",
                       title: "Design Chair",
                       detail: "I grew up in Vancouver, Canada and I'm easily distracted by shiny things."
                   },
                   {
-                      photo: "img/temporary/NguyenAndrew.jpg",
+                      photo: "../img/temporary/NguyenAndrew.jpg",
                       name: "Andrew Nguyen",
                       title: "Photographer",
                       detail: "Sometimes I sleep with my eyes open xD"
                   },
                   {
-                      photo: "img/temporary/LaiJosh.jpg",
+                      photo: "../img/temporary/LaiJosh.jpg",
                       name: "Josh Lai",
                       title: "Videographer",
                       detail: "I have a personal goal to eat at every restaurant within a 10 mile radius of UCLA... where should I go next? "
                   },
                   {
-                      photo: "img/temporary/YaoAudrey.jpg",
+                      photo: "../img/temporary/YaoAudrey.jpg",
                       name: "Audrey Yao",
                       title: "Social Media Marketing Chair",
                       detail: "I spent too much time at the optometrist's"
                   },
                   {
-                      photo: "img/temporary/JacoboCarley.jpg",
+                      photo: "../img/temporary/JacoboCarley.jpg",
                       name: "Carley Jacobo",
                       title: "Social Media Marketing Chair",
                       detail: "I joined Foundations for the dancing, but stayed for the family."
                   },
                   {
-                      photo: "img/temporary/WilsonJosh.jpg",
+                      photo: "../img/temporary/WilsonJosh.jpg",
                       name: "Josh Wilson",
                       title: "Webmaster",
                       detail: "A local from South Pasadena, also a superhero? What? #2020"
@@ -130,20 +130,20 @@
 
               body: "Finance is responsible for managing anything involving money for Foundations, which includes handling merchandise sales, Venmo transactions, and getting funding for Foundations activities. We apply for grants from the UCLA student government, reach out to sponsors, and organize fundraisers so that Foundations can provide showcases that are free to the audience as well as hold various events for members each quarter. In addition, we help make sure that the organization stays financially stable by maintaining the budget and properly accounting for expenses. We work closely with the other committees to effectively allocate funding in a way that benefits members the most.",
               director: {
-                  photo: "img/lship/TianAnna.jpg",
+                  photo: "../img/lship/TianAnna.jpg",
                   name: "Anna Tian",
                   title: "Director of Finance",
                   detail: "I like cats, cake, and cute cafes!"
               },
               admins: [
                   {
-                    photo: "img/temporary/LiDerek.jpg",
+                    photo: "../img/temporary/LiDerek.jpg",
                     name: "Derek Li",
                     title: "Finance Chair",
                     detail: "I was born in Charlottesville, Virginia, and I'm jacked...jacked to the tits. Also, I wish my wallet was a thick as my thighs."
                   },
                   {
-                    photo: "img/temporary/HuangZachary.jpg",
+                    photo: "../img/temporary/HuangZachary.jpg",
                     name: "Zachary Huang",
                     title: "Finance Chair",
                     detail: 'As one person, I cannot change the whole world, but I can change the whole world of one person" -Paul Shane Spear. Also, I actually do have 10 toes.'
@@ -156,26 +156,26 @@
 
               body: "Every quarter, Foundations Choreography’s training teams spend 8 weeks putting together full sets that culminate in a Showcase at the end of the quarter. The Showcase Committee, which consists of a Showcase Producer and 3 Showcase Chairs, works to plan and execute three Showcases per year from start to finish. Our responsibilities include devising the theme and names of all Showcases of the year, booking a location for an audience of over 1,000 people, inviting dance teams from the UCLA and surrounding dance community as guest acts, finding MCs, coordinating Showcase day logistics, and more. On the day of Showcase, the committee not only works backstage to direct dancers to stage, but also assists in controlling sound and lighting of all performances. Our goal is to create a platform for our dancers to showcase their countless hours of hard work and growth in dance to friends, family, and the UCLA dance community.",
               director: {
-                photo: "img/lship/LiangMichelle.jpg",
+                photo: "../img/lship/LiangMichelle.jpg",
                 name: "Michelle Liang",
                 title: "Showcase Producer",
                 detail: ""
               },
               admins: [
                   {
-                    photo: "img/temporary/SoonJordan.jpg",
+                    photo: "../img/temporary/SoonJordan.jpg",
                     name: "Jordan Soon",
                     title: "Showcase Chair",
                     detail: "Favorite line from my favorite show: \"Fool me once shame on you, but teach a man to fool me and I'll be fooled for the rest of my life\""
                   },
                   {
-                    photo: "img/lship/FidelisJosh.jpg",
+                    photo: "../img/lship/FidelisJosh.jpg",
                     name: "Josh Fidelis",
                     title: "Showcase Chair",
                     detail: "Fidelis is my middle name, but you can call me whatever you like ;)"
                   },
                   {
-                    photo: "img/temporary/TianSarah.jpg",
+                    photo: "../img/temporary/TianSarah.jpg",
                     name: "Sarah Tian",
                     title: "Showcase Chair",
                     detail: "When I was in 5th grade I got an A on my essay on sea cucumbers. I’m still pretty proud of it."
@@ -188,7 +188,7 @@
 
               body: "Dance LShip are responsible for creating a supportive and positive team environment, encouraging dancers to continue to challenge and push themselves throughout the quarter. This committee consists of directors and captains, there to prepare their respective teams for the end-of-the-quarter showcase or concept video. For each team, there are two (or possibly three) directors and two captains present to lead the team. Directors are in charge of set building which includes choreographing, teaching, blocking, cleaning, creating the set mix, and generating ideas for team gear. Captains, on the other hand, are responsible for managing team logistics (i.e. organizing photoshoot, managing team Facebook page, keeping team roster updated) and facilitating intrateam and interteam bonding (i.e. team dinners, ice cream socials, study sessions, etc.), while also learning choreography alongside their teammates. Both positions are integral to team functionality so Dance LShip works together as a team themselves to ensure a rewarding experience for team members. ",
               director: {
-                  photo: "img/lship/PizarroAshley.jpg",
+                  photo: "../img/lship/PizarroAshley.jpg",
                   name: "Ashley Pizarro",
                   title: "Director of Team Relations",
                   detail: "*finger guns*"
@@ -211,19 +211,19 @@
             // They'll need a special render function.
             admins: [
                 {
-                    photo: "img/TestimonialPhotos/Suwandi_Marcea.jpg",
+                    photo: "../img/TestimonialPhotos/Suwandi_Marcea.jpg",
                     name: "Marcea Suwandi",
                     title: 'advisor',
                     detail: "I love to bake cookies (Lship can testify to that), and I am an avid TV show binger."
                 },
                 {
-                    photo: "img/TestimonialPhotos/Lee_Kevin.jpg",
+                    photo: "../img/TestimonialPhotos/Lee_Kevin.jpg",
                     name: "Kevin Lee",
                     title: 'advisor',
                     detail: "I like to untie people's shoelaces."
                 },
                 {
-                    photo: "img/TestimonialPhotos/Sumitro_Dean.jpg",
+                    photo: "../img/TestimonialPhotos/Sumitro_Dean.jpg",
                     name: "Dean Sumitro",
                     title: 'advisor',
                     detail: "I was born in New York, I'm red-green colorblind and apparently my existence is a meme."
@@ -242,13 +242,13 @@
                   name: "Apex",
                   directors: [
                     {
-                      photo: "img/temporary/Kim_Joshua.jpg",
+                      photo: "../img/temporary/Kim_Joshua.jpg",
                       name:  "Joshua Kim",
                       title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "img/temporary/Aguilar_Brandon.jpg",
+                      photo: "../img/temporary/Aguilar_Brandon.jpg",
                       name:  "Brandon Aguilar",
                       title: 'director',
                       detail: "",
@@ -256,13 +256,13 @@
                   ],
                   captains: [
                     {
-                      photo: "img/temporary/HsiehEllen.jpg",
+                      photo: "../img/temporary/HsiehEllen.jpg",
                       name:  "Ellen Hsieh",
                       title: 'captain',
                       detail: "",
                     },
                     {
-                      photo: "img/temporary/MartinezMartha.jpg",
+                      photo: "../img/temporary/MartinezMartha.jpg",
                       name:  "Martha Martinez",
                       title: 'captain',
                       detail: "",
@@ -273,13 +273,13 @@
                   name: "MEH",
                   directors: [
                     {
-                      photo: "img/temporary/ZhangDerek.jpg",
+                      photo: "../img/temporary/ZhangDerek.jpg",
                       name:  "Derek Zheng",
                       title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "img/temporary/AmandeDexter.jpg",
+                      photo: "../img/temporary/AmandeDexter.jpg",
                       name:  "Dexter Amande",
                       title: 'director',
                       detail: "",
@@ -287,13 +287,13 @@
                   ],
                   captains: [
                     {
-                      photo: "img/temporary/QuanJeremy.jpg",
+                      photo: "../img/temporary/QuanJeremy.jpg",
                       name:  "Jeremy Quan",
                       title: 'captain',
                       detail: "",
                     },
                     {
-                      photo: "img/TestimonialPhotos/Mejia_Mary.jpg",
+                      photo: "../img/TestimonialPhotos/Mejia_Mary.jpg",
                       name:  "Mary Mejia",
                       title: 'captain',
                       detail: "",
@@ -304,13 +304,13 @@
                   name: "YURNT",
                   directors: [
                     {
-                      photo: "img/temporary/JulianRia.jpg",
+                      photo: "../img/temporary/JulianRia.jpg",
                       name:  "Ria Julian",
                       title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "img/temporary/UngMerton.jpg",
+                      photo: "../img/temporary/UngMerton.jpg",
                       name:  "Merton Ung",
                       title: 'director',
                       detail: "",
@@ -318,13 +318,13 @@
                   ],
                   captains: [
                     {
-                      photo: "img/temporary/DubeyMeghal.jpg",
+                      photo: "../img/temporary/DubeyMeghal.jpg",
                       name:  "Meghal Dubey",
                       title: 'captain',
                       detail: "",
                     },
                     {
-                      photo: "img/temporary/ChangMyles.jpg",
+                      photo: "../img/temporary/ChangMyles.jpg",
                       name:  "Myles Chang",
                       title: 'captain',
                       detail: "",
@@ -335,13 +335,13 @@
                   name: "RL8",
                   directors: [
                     {
-                      photo: "img/temporary/VasquezAlexxa.jpg",
+                      photo: "../img/temporary/VasquezAlexxa.jpg",
                       name:  "Alexxa Vasquez",
                       title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "img/temporary/FuntanillaNoelle.jpg",
+                      photo: "../img/temporary/FuntanillaNoelle.jpg",
                       name:  "Noelle Funtanilla",
                       title: 'director',
                       detail: "",
@@ -349,13 +349,13 @@
                   ],
                   captains: [
                     {
-                      photo: "img/temporary/WangAndy.jpg",
+                      photo: "../img/temporary/WangAndy.jpg",
                       name:  "Andy Wang",
                       title: 'captain',
                       detail: "",
                     },
                     {
-                      photo: "img/temporary/TamondongLouise.jpg",
+                      photo: "../img/temporary/TamondongLouise.jpg",
                       name:  "Louise Tamondong",
                       title: 'captain',
                       detail: "",

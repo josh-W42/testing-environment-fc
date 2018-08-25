@@ -80,14 +80,14 @@ footer {
 
 @font-face {
   font-family: BebasNeue Light;
-  src: url("../img/Fonts/BebasNeueLight.ttf") format("truetype");
-  src: url("../img/Fonts/BebasNeueLight.woff") format("woff");
+  src: url("../../img/Fonts/BebasNeueLight.ttf") format("truetype");
+  src: url("../../img/Fonts/BebasNeueLight.woff") format("woff");
 }
 
 @font-face {
   font-family: BebasNeue;
-  src: url("../img/Fonts/BebasNeue.ttf") format("truetype");
-  src: url("../img/Fonts/BebasNeue.woff") format("woff");
+  src: url("../../img/Fonts/BebasNeue.ttf") format("truetype");
+  src: url("../../img/Fonts/BebasNeue.woff") format("woff");
 }
 
 #mainNav .navbar-brand {

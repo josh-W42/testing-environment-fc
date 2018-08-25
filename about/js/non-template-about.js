@@ -13,37 +13,37 @@
 
     banners: [
       {
-        img: "img/Banners/firstShowcase.jpg",
+        img: "../img/Banners/firstShowcase.jpg",
         name: "First Exhibition",
         title: "Build Yourself"
       },
       {
-        img: "img/Banners/firstFamNight.jpg",
+        img: "../img/Banners/firstFamNight.jpg",
         name: "First Fam Night",
         title: "Winter 2015"
       },
       {
-        img: "img/Banners/oneYearAnniversary.jpg",
+        img: "../img/Banners/oneYearAnniversary.jpg",
         name: "ONE YEAR ANNIVERSARY",
         title: "Fall 2015"
       },
       {
-        img: "img/Banners/fifthShowcase.jpg",
+        img: "../img/Banners/fifthShowcase.jpg",
         name: "Fifth Exhibition",
         title: "Ignite"
       },
       {
-        img: "img/Banners/friendsAndFam.png",
+        img: "../img/Banners/friendsAndFam.png",
         name: "Friends and Fam Night",
         title: "Spring 2017"
       },
       {
-        img: "img/Banners/firstWintensive.jpg",
+        img: "../img/Banners/firstWintensive.jpg",
         name: "First Wintensive",
         title: "Winter 2018"
       },
       {
-        img: "img/Banners/tenthShowcase.jpg",
+        img: "../img/Banners/tenthShowcase.jpg",
         name: "Tenth Exhibition",
         title: "Kairos"
       }

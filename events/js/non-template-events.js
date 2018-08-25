@@ -13,11 +13,11 @@
 
     banners: [
       {
-        img: 'img/events/augustCalendar.png',
+        img: '../img/events/augustCalendar.png',
         name: 'August Calendar'
       },
       {
-        img: 'img/events/septemberCalendar.png',
+        img: '../img/events/septemberCalendar.png',
         name: 'September Calendar'
       }
     ]
