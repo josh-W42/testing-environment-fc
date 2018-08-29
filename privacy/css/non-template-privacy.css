@@ -1,0 +1,141 @@
+/* Begin Non-template CSS */
+
+/*
+  Start CSS
+  Location: Multiple Pages
+*/
+
+body {
+    -webkit-tap-highlight-color: inherit;
+    font-family: 'Lato';
+    margin-top: 10%;
+    max-width: 100%;
+}
+
+#modal-video {
+  height: 300px;
+  width: 100%;
+}
+
+.modal-logo {
+  max-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+}
+
+#foundations-logo {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 991px) {
+  #modal-video {
+    height: 400px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body {
+    margin-top: 20%;
+    font-size: 1.25em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #foundations-logo {
+    max-height: 20px;
+    margin-right: 0px;
+  }
+
+  .navbar-brand {
+    font-size: 12pt;
+  }
+
+  #modal-video {
+    height: auto;
+  }
+}
+
+footer {
+  background-color: #222;
+}
+
+#mainNav.navbar-shrink {
+  background-color: rgba(34, 34, 34, 0.95);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 1.25em;
+  font-family: BebasNeue;
+}
+
+#mainNav .dropdown-menu {
+    background-color: rgba(34, 34, 34, 0.95);
+    border: none;
+}
+
+.dropdown-item {
+    color: white;
+    font-family: BebasNeue;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+#mainNav .dropdown-item:hover {
+    background-color: #fed136;
+}
+
+@font-face {
+  font-family: BebasNeue Light;
+  src: url("../../img/Fonts/BebasNeueLight.ttf") format("truetype");
+  src: url("../../img/Fonts/BebasNeueLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("../../img/Fonts/BebasNeue.ttf") format("truetype");
+  src: url("../../img/Fonts/BebasNeue.woff") format("woff");
+}
+
+#mainNav .navbar-brand {
+  font-family: BebasNeue;
+}
+
+#mainNav .navbar-brand span {
+  font-family: BebasNeue Light;
+}
+
+#mainNav .navbar-brand {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 375px) {
+  #mainNav .navbar-brand {
+    font-size: 1.25em;
+  }
+}
+
+/*
+  End CSS
+  Location: Multiple Pages
+*/
+
+/*
+   Start CSS
+   Location: footer
+*/
+
+.contactInfo {
+  color: white;
+}
+
+/*
+  End CSS
+  Location: footer
+*/
