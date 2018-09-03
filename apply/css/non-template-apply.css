@@ -112,9 +112,17 @@ footer {
   Location: Main content
 */
 
+section {
+  padding-bottom: 0px;
+}
+
+#portfolio {
+  padding-top: 5%;
+  padding-bottom: 100px;
+}
+
 #timerBox {
   min-height: 200px;
-  margin-bottom: 100px;
   text-align: center;
   padding: 2%;
 }
@@ -141,6 +149,27 @@ footer {
   margin-right: auto;
 }
 
+.application {
+  margin-top: 50px;
+}
+
+.portfolio-link {
+  width: 50%;
+}
+
+.portfolio-link button:hover {
+  cursor: pointer;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+#modalFrame {
+  width: 80vh;
+  height: 70vh;
+}
+
 @media screen and (max-width: 575px) {
   #timerBox h1 {
     font-size: 1.25em;
@@ -161,13 +190,6 @@ footer {
   }
 }
 
-.application {
-  margin-top: 50px;
-}
-
-iframe {
-  max-width: 100%;
-}
 
 /*
   End CSS

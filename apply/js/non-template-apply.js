@@ -7,6 +7,20 @@
           data.lazy = Array.prototype.filter.call(data.lazy, function(l){ return l.getAttribute('data-src');});
       },
 
+      apps: [
+        {
+          name: "dance",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSd2lSckcuTgQthJLYc6Vh3Du1b002d6yp-MbwIrFsV8l416-g/viewform?embedded=true",
+        },
+        {
+          name: "workshop",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSf9Gr3k0UCQJcKop4vSzapqUupETBYHwS7OGtYJKNrJSiWO5A/viewform?embedded=true",
+        },
+        {
+          name: 'team',
+          link: "https://docs.google.com/forms/d/e/1FAIpQLScxrp3HUzbuMeTidZt_DVlsHuZ_dA0p7drQcn77q1onVisS2Q/viewform?embedded=true",
+        },
+      ],
   };
 
   let model = {
@@ -18,6 +32,16 @@
           model.registerListener('load', model.setLazy);
           model.registerListener('load', model.lazyLoad);
           model.registerListener('scroll', model.lazyLoad);
+
+          document.querySelectorAll('.portfolio-link').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+              for( let app of data.apps ) {
+                if( app.name === link.dataset.app ) {
+                  document.querySelector('#modalFrame').src = app.link;
+                }
+              }
+            });
+          });
 
       },
 
@@ -65,7 +89,7 @@
 
 
     fillZero: function(num) {
-      //This function should
+      //This function should "fill zeros" on the display.
       if (num < 10) {
         num = "0" + num;
       }
