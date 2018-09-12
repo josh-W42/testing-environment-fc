@@ -522,6 +522,47 @@
             ]
           },
         ],
+
+        yearFive: [
+          {
+            showcase: "summer 2018",
+            photo: "../img/Banners/fourthSummer.jpg",
+            teams: [
+              {
+                name: "APEX",
+                directors: "Joshua Kim x Brandon Aguilar",
+                captains: "Ellen Hsieh x Martha Martinez",
+                photo: "../img/teams/18-19/18SUM-APEX.jpg",
+                video: "",
+                noModal: false
+              },
+              {
+                name: "Coming Soon!",
+                directors: "",
+                captains: "",
+                photo: "../img/teams/newerPh.jpg",
+                video: "",
+                noModal: true
+              },
+              {
+                name: "Coming Soon!",
+                directors: "",
+                captains: "",
+                photo: "../img/teams/newerPh.jpg",
+                video: "",
+                noModal: true
+              },
+              {
+                name: "Coming Soon!",
+                directors: "",
+                captains: "",
+                photo: "../img/teams/newerPh.jpg",
+                video: "",
+                noModal: true
+              },
+            ]
+          },
+        ],
       },
 
 
@@ -624,8 +665,8 @@
 
       // Here I wanted the first showcase shown to be the most recent.
       init: function() {
-        data.yearID = 'yearFour';
-        data.showCaseID = '3'
+        data.yearID = 'yearFive';
+        data.showCaseID = '0'
         view.render();
       },
 
