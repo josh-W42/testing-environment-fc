@@ -537,20 +537,20 @@
                 noModal: false
               },
               {
-                name: "Coming Soon!",
-                directors: "",
-                captains: "",
-                photo: "../img/teams/newerPh.jpg",
+                name: "YURNT",
+                directors: "Ria Julian x Merton Ung",
+                captains: "Myles Chang x Meghal Dubey",
+                photo: "../img/teams/18-19/18SUM-YURNT.jpg",
                 video: "",
-                noModal: true
+                noModal: false
               },
               {
-                name: "Coming Soon!",
-                directors: "",
-                captains: "",
-                photo: "../img/teams/newerPh.jpg",
+                name: "MEH",
+                directors: "Dexter Amande x Derek Zhang",
+                captains: "Jeremy Quan x Mary Mejia",
+                photo: "../img/teams/18-19/18SUM-MEH.jpg",
                 video: "",
-                noModal: true
+                noModal: false
               },
               {
                 name: "Coming Soon!",
