@@ -553,12 +553,12 @@
                 noModal: false
               },
               {
-                name: "Coming Soon!",
-                directors: "",
-                captains: "",
-                photo: "../img/teams/newerPh.jpg",
+                name: "RL8",
+                directors: "Alexxa Vasquez x Noelle Funtanilla",
+                captains: "Andy Wang x Louise Tamondong",
+                photo: "../img/teams/18-19/18SUM-RL8.jpg",
                 video: "",
-                noModal: true
+                noModal: false
               },
             ]
           },
