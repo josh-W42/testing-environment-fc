@@ -541,7 +541,7 @@
                 directors: "Ria Julian x Merton Ung",
                 captains: "Myles Chang x Meghal Dubey",
                 photo: "../img/teams/18-19/18SUM-YURNT.jpg",
-                video: "",
+                video: "https://www.youtube-nocookie.com/embed/qUvVFSeMzdA?rel=0&amp;controls=0&amp;showinfo=0",
                 noModal: false
               },
               {
@@ -549,7 +549,7 @@
                 directors: "Dexter Amande x Derek Zhang",
                 captains: "Jeremy Quan x Mary Mejia",
                 photo: "../img/teams/18-19/18SUM-MEH.jpg",
-                video: "",
+                video: "https://www.youtube-nocookie.com/embed/m5rEFOm4Elg?rel=0&amp;controls=0&amp;showinfo=0",
                 noModal: false
               },
               {
