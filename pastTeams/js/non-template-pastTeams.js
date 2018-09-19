@@ -382,11 +382,11 @@
                 noModal: false
               },
               {
-                name: "DUAL CORE",
+                name: "Dual Core",
                 directors: "Dexter Amande x John Fernandez",
                 captains: "Calvin Ha x Derek Zhang",
                 photo: "../img/teams/17-18/17SUM-DualCore.jpg",
-                video: "https://www.youtube-nocookie.com/embed/cjJ8Pf3_ldQ?rel=0&amp;showinfo=0",
+                video: ["https://www.youtube-nocookie.com/embed/cjJ8Pf3_ldQ?rel=0&amp", "https://www.youtube-nocookie.com/embed/qK930htroq8?rel=0&amp", "https://www.youtube-nocookie.com/embed/8kIf4qguOqQ?rel=0"],
                 noModal: false
               },
               {
@@ -533,7 +533,7 @@
                 directors: "Joshua Kim x Brandon Aguilar",
                 captains: "Ellen Hsieh x Martha Martinez",
                 photo: "../img/teams/18-19/18SUM-APEX.jpg",
-                video: "",
+                video: "https://www.youtube-nocookie.com/embed/Jib1pjYq-Ts?rel=0&amp;showinfo=0",
                 noModal: false
               },
               {
@@ -541,7 +541,7 @@
                 directors: "Ria Julian x Merton Ung",
                 captains: "Myles Chang x Meghal Dubey",
                 photo: "../img/teams/18-19/18SUM-YURNT.jpg",
-                video: "https://www.youtube-nocookie.com/embed/qUvVFSeMzdA?rel=0&amp;controls=0&amp;showinfo=0",
+                video: "https://www.youtube-nocookie.com/embed/qUvVFSeMzdA?rel=0&amp;showinfo=0",
                 noModal: false
               },
               {
@@ -549,7 +549,7 @@
                 directors: "Dexter Amande x Derek Zhang",
                 captains: "Jeremy Quan x Mary Mejia",
                 photo: "../img/teams/18-19/18SUM-MEH.jpg",
-                video: "https://www.youtube-nocookie.com/embed/m5rEFOm4Elg?rel=0&amp;controls=0&amp;showinfo=0",
+                video: ["https://www.youtube-nocookie.com/embed/m5rEFOm4Elg?rel=0&amp", "https://www.youtube-nocookie.com/embed/TtUjdvoTjZk?rel=0&amp"],
                 noModal: false
               },
               {
@@ -601,6 +601,20 @@
             connector.reset();
           });
 
+          document.querySelector('#closeModal').addEventListener('click', model.resetModal);
+          document.querySelector('.close-modal').addEventListener('click', model.resetModal);
+
+      },
+
+      resetModal: function() {
+        if(document.querySelector('.multiVidContainer')) {
+          document.querySelectorAll('.multiVidContainer').forEach( function (frame) {
+            frame.remove();
+            setTimeout(function() {
+              document.querySelector('#modal-video').style.display = '';
+            }, 600);
+          });
+        }
       },
 
       // This method is for insuring that the correct modal info is displayed
@@ -621,7 +635,11 @@
               document.querySelector('#modalTeamPic').src = showCase.teams[teamID].photo;
               document.querySelector('#modalCaptains').innerHTML = showCase.teams[teamID].captains;
               document.querySelector('#modalDirectors').innerHTML = showCase.teams[teamID].directors;
-              document.querySelector('#modal-video').src = showCase.teams[teamID].video;
+              if(Array.isArray(showCase.teams[teamID].video)) {
+                connector.multiVidTrigger(showCase, teamID);
+              } else {
+                document.querySelector('#modal-video').src = showCase.teams[teamID].video;
+              }
           });
       },
 
@@ -758,6 +776,23 @@
           document.querySelector('#sideBarToggle').classList.remove('notification');
         }, 4000);
       },
+
+      multiVidModal: function(showcase, teamId) {
+        let vidArray = document.querySelector('#multiVidArray');
+
+        showcase.teams[teamId].video.forEach(function (vidLink) {
+          let videoFrame = document.querySelector('#modal-video').cloneNode(true);
+          videoFrame.id = '';
+          videoFrame.classList.add('multiVid');
+          videoFrame.src = vidLink;
+          let vidContainer = document.createElement('div');
+          vidContainer.classList.add('multiVidContainer');
+          vidContainer.classList.add('col-lg-6');
+          vidContainer.appendChild(videoFrame);
+          vidArray.appendChild(vidContainer);
+        });
+        document.querySelector('#modal-video').style.display = 'none';
+      }
   };
 
   let connector = {
@@ -777,6 +812,10 @@
 
       reset: function() {
         view.resetSideBar();
+      },
+
+      multiVidTrigger: function(showcase, id) {
+        view.multiVidModal(showcase, id);
       }
 
   };
