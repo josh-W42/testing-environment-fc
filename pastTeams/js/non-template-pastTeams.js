@@ -541,7 +541,7 @@
                 directors: "Ria Julian x Merton Ung",
                 captains: "Myles Chang x Meghal Dubey",
                 photo: "../img/teams/18-19/18SUM-YURNT.jpg",
-                video: "https://www.youtube-nocookie.com/embed/qUvVFSeMzdA?rel=0&amp;showinfo=0",
+                video: ["https://www.youtube-nocookie.com/embed/qUvVFSeMzdA?rel=0&amp", "https://www.youtube-nocookie.com/embed/0il3D2CfxXY?rel=0"],
                 noModal: false
               },
               {
@@ -607,12 +607,12 @@
       },
 
       resetModal: function() {
-        if(document.querySelector('.multiVidContainer')) {
+        if(document.querySelectorAll('.multiVidContainer').length != 0) {
           document.querySelectorAll('.multiVidContainer').forEach( function (frame) {
             frame.remove();
             setTimeout(function() {
               document.querySelector('#modal-video').style.display = '';
-            }, 600);
+            }, 100);
           });
         }
       },
