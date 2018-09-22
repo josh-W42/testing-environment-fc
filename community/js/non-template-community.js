@@ -267,6 +267,18 @@
               title: "8/15 GENESIS GARING x KRISTA ANTONIO",
               video: "https://www.youtube-nocookie.com/embed/OENEsKzYKC4?rel=0&amp;showinfo=0",
             },
+            {
+              title: "8/20 EDSON MALDONADO",
+              video: "https://www.youtube-nocookie.com/embed/V_c2Jumoow8?rel=0&amp;showinfo=0",
+            },
+            {
+              title: "8/27 Brandon x Elijah Aguilar",
+              video: "https://www.youtube-nocookie.com/embed/2kTdFF5gBZE?rel=0&amp;showinfo=0",
+            },
+            {
+              title: "9/1 MICHAEL NGUYEN",
+              video: "https://www.youtube-nocookie.com/embed/fyUZJfAFds0?rel=0&amp;showinfo=0",
+            },
           ]
         },
       ],

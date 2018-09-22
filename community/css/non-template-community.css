@@ -238,6 +238,29 @@ footer {
 */
 
 /*
+  Start CSS
+  Location: Contributors
+*/
+
+#contributorsSection li, #contributorsSection a  {
+  color: black;
+  list-style-type: none;
+}
+
+#contributorsSection ul {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  END CSS
+  Location: Contributors
+*/
+
+/*
    Start CSS
    Location: footer
 */
