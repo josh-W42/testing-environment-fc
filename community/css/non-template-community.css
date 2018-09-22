@@ -186,7 +186,6 @@ footer {
   .section-heading {
     font-size: 14pt;
   }
-
 }
 
 @media screen and (max-width: 991px) {
@@ -213,6 +212,9 @@ footer {
    Location: Testimonials
 */
 
+#portfolio {
+  padding-bottom: 50px;
+}
 
 #modalImg,
 .testimonialPhoto,
@@ -242,9 +244,14 @@ footer {
   Location: Contributors
 */
 
+#contributorsSection {
+  padding-top: 0px;
+}
+
 #contributorsSection li, #contributorsSection a  {
   color: black;
   list-style-type: none;
+  padding: 0px;
 }
 
 #contributorsSection ul {
@@ -253,6 +260,12 @@ footer {
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 991px) {
+  #contributorsSection ul {
+    text-align: center;
+  }
 }
 
 /*
