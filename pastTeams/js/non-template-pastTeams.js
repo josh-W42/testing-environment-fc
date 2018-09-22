@@ -549,7 +549,7 @@
                 directors: "Dexter Amande x Derek Zhang",
                 captains: "Jeremy Quan x Mary Mejia",
                 photo: "../img/teams/18-19/18SUM-MEH.jpg",
-                video: ["https://www.youtube-nocookie.com/embed/m5rEFOm4Elg?rel=0&amp", "https://www.youtube-nocookie.com/embed/TtUjdvoTjZk?rel=0&amp"],
+                video: ["https://www.youtube-nocookie.com/embed/m5rEFOm4Elg?rel=0&amp", "https://www.youtube-nocookie.com/embed/TtUjdvoTjZk?rel=0&amp", "https://www.youtube-nocookie.com/embed/fHtBja3d6sY?rel=0"],
                 noModal: false
               },
               {
@@ -557,7 +557,7 @@
                 directors: "Alexxa Vasquez x Noelle Funtanilla",
                 captains: "Andy Wang x Louise Tamondong",
                 photo: "../img/teams/18-19/18SUM-RL8.jpg",
-                video: "",
+                video: "https://www.youtube-nocookie.com/embed/ZOJgG1dLnZ0?rel=0&amp;showinfo=0",
                 noModal: false
               },
             ]
