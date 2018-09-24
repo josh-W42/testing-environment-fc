@@ -34,8 +34,8 @@
           model.registerListener('load', model.lazyLoad);
           model.registerListener('scroll', model.lazyLoad);
 
-          document.querySelector('#previousBanner').addEventListener('click', model.previousBanner);
-          document.querySelector('#nextBanner').addEventListener('click', model.nextBanner);
+          // document.querySelector('#previousBanner').addEventListener('click', model.previousBanner);
+          // document.querySelector('#nextBanner').addEventListener('click', model.nextBanner);
       },
 
 
@@ -116,7 +116,6 @@
   let view = {
 
       init: function() {
-        // view.runTimmer();
       },
 
 
@@ -127,40 +126,6 @@
         }
         return num;
       },
-
-      // runTimmer: function() {
-      //   // This function will run in the background, constantly updating the timer.
-      //   const currentDate = new Date();
-      //   const seconds = view.fillZero(currentDate.getSeconds());
-      //   const minutes = view.fillZero(currentDate.getMinutes());
-      //   const hours = view.fillZero(currentDate.getHours());
-      //   view.timeDifference(currentDate);
-      //   setTimeout(view.runTimmer, 500);
-      // },
-
-
-      // timeDifference: function(time) {
-      //   // Use this function to select your countdown end date.
-      //   const endDate = new Date('August 5, 2018 18:00:00');
-      //   const difference = endDate - time;
-      //   let seconds = Math.ceil(difference / 1000);
-      //   let minutes = Math.floor(seconds / 60);
-      //   let hours = Math.floor(minutes / 60)
-      //   let days = Math.floor(hours / 24);
-      //   if (seconds > 60) {
-      //     seconds = seconds % 60;
-      //   }
-      //   if (minutes > 60) {
-      //     minutes = minutes % 60;
-      //   }
-      //   if (hours > 24) {
-      //     hours = hours % 24;
-      //   }
-      //   document.querySelector('#dayCase').innerHTML = view.fillZero(days);
-      //   document.querySelector('#hourCase').innerHTML = view.fillZero(hours);
-      //   document.querySelector('#minuteCase').innerHTML = view.fillZero(minutes);
-      //   document.querySelector('#secondCase').innerHTML = view.fillZero(seconds);
-      // },
 
 
       // this function is designed for the slideshow.

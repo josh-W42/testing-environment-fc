@@ -170,8 +170,8 @@ footer {
 
 
 body {
-  background-color: #292B2C;
-  color: #F3F1ED;
+  background-color: #e3eeef;
+  color: #2B4162;
 }
 
 h1,
@@ -180,7 +180,7 @@ h3,
 h4,
 h5,
 h6 {
-  text-shadow: 3px 3px 1px #DD2695;
+  /* text-shadow: 3px 3px 1px ; */
 }
 
 #calendarImg{
