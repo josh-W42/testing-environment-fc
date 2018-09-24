@@ -109,7 +109,7 @@
 
     timeDifference: function(time) {
       // Use this function to select your countdown end date.
-      const endDate = new Date('September 25, 2018 0:00:00');
+      const endDate = new Date('September 30, 2018 18:00:00');
       const difference = endDate - time;
       let seconds = Math.ceil(difference / 1000);
       let minutes = Math.floor(seconds / 60);
