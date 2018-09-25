@@ -145,6 +145,25 @@ footer {
    Location: topMost box
 */
 
+body {
+  background-color: #e3eeef;
+  color: #2B4162;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* text-shadow: 3px 3px 1px ; */
+}
+
+.duoPostPic {
+  width: 50%;
+  height: 100%; 
+}
+
 @media screen and (min-width: 991px) {
   #contentDiv {
     width: 60%;
@@ -169,19 +188,6 @@ footer {
 }
 
 
-body {
-  background-color: #e3eeef;
-  color: #2B4162;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* text-shadow: 3px 3px 1px ; */
-}
 
 #calendarImg{
   width: 100%;
