@@ -308,6 +308,19 @@ header .masthead {
    Location: footer
 */
 
+.newsletterCube {
+  height: 300px;
+  width: 300px;
+}
+
+#newsletter {
+  box-shadow: none;
+}
+
+#newsletterPortfolio .modal-content {
+  background-color: black;
+}
+
 .contactInfo {
   color: white;
 }
