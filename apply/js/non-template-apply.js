@@ -83,6 +83,8 @@
 
   let view = {
 
+    timerGo: true,
+
     init: function() {
       view.runTimmer();
     },
@@ -97,13 +99,12 @@
     },
 
     runTimmer: function() {
-      // This function will run in the background, constantly updating the timer.
-      const currentDate = new Date();
-      const seconds = view.fillZero(currentDate.getSeconds());
-      const minutes = view.fillZero(currentDate.getMinutes());
-      const hours = view.fillZero(currentDate.getHours());
-      view.timeDifference(currentDate);
-      setTimeout(view.runTimmer, 500);
+      if(view.timerGo) {
+        // This function will run in the background, constantly updating the timer.
+        const currentDate = new Date();
+        view.timeDifference(currentDate);
+        setTimeout(view.runTimmer, 200);
+      }
     },
 
 
@@ -111,18 +112,34 @@
       // Use this function to select your countdown end date.
       const endDate = new Date('September 30, 2018 18:00:00');
       const difference = endDate - time;
-      let seconds = Math.ceil(difference / 1000);
-      let minutes = Math.floor(seconds / 60);
-      let hours = Math.floor(minutes / 60)
-      let days = Math.floor(hours / 24);
-      if (seconds > 60) {
-        seconds = seconds % 60;
-      }
-      if (minutes > 60) {
-        minutes = minutes % 60;
-      }
-      if (hours > 24) {
-        hours = hours % 24;
+      let seconds, minutes, hours, days;
+      if(difference <= 0) {
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        days = 0;
+
+        document.querySelector('#mainTimerHead').innerHTML = "Team Applications Now Live!";
+        document.querySelector('#danceTeamLink').dataset.app = 'team';
+        document.querySelector('#danceTeamLink').href = '#modal';
+        document.querySelector('#danceTeamBtn').innerHTML = "Open App";
+
+        view.timerGo = false;
+
+      } else {
+        seconds = Math.ceil(difference / 1000);
+        minutes = Math.floor(seconds / 60);
+        hours = Math.floor(minutes / 60);
+        days = Math.floor(hours / 24);
+        if (seconds > 60) {
+          seconds = seconds % 60;
+        }
+        if (minutes > 60) {
+          minutes = minutes % 60;
+        }
+        if (hours > 24) {
+          hours = hours % 24;
+        }
       }
       document.querySelector('#dayCase').innerHTML = view.fillZero(days);
       document.querySelector('#hourCase').innerHTML = view.fillZero(hours);
