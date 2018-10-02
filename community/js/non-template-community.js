@@ -109,7 +109,7 @@
               body: "I wouldn’t be the dancer I am today without that first step that Foundations allowed me to take and I am so grateful for that, which is why I’m back as one of the Showcase Chairs for a second time. After having performed so many times and having even competed in the community a few times, I’ve almost forgotten how scary and emotional that first performance with Foundations really was. But being a part of the Showcase committee has allowed me to revisit that and see the powerful effect that the Foundations experience can have on people, from the moment where everyone is huddled backstage hearing pep talks from their directors, to the moment where they come off stage high from the adrenaline of the culmination of their hard work. I think it’s so beautiful to see fledgling dancers have their first taste of the stage, or their first time performing for such a large crowd, or their first (and last?) time sharing the stage with the people they’ve shared the parking lots with for almost a quarter. Some of them may never dance again, but some of them will go on to become the next generation of amazing dancers in the community, and none of them will leave the same people they were before. That’s the beauty of FC! #buildyourself"
           },
           {
-              img: "../img/temporary/WilsonJosh.jpg",
+              img: "../img/lship/WilsonJosh.jpg",
               name: "Joshua Wilson",
               subName: "General Member",
               uclaInfo: "Linguistics and Computer Science, 5th Year",
@@ -157,7 +157,7 @@
               body: "For a long time, I’ve always admired the thought of being on a dance team, showcasing our hard work and bonding together towards something larger than ourselves... but I never knew how or where to start. Then came Foundations Choreography. Thanks to this organization, I was able to put those dreams into action, and begin an incredible and unforgettable journey through college, building confidence, meeting new people, and stepping myself further into the dance community. And, not only was I inspired to pursue dance, but also found a home and support system as I was making a rather difficult transition into UCLA. I wouldn’t be who I am now, or be having such a meaningful college experience if Foundations wasn’t there for this lost, shy freshman a year ago. Foundations will forever hold a special place in my heart, and I’m truly honored to be a part of this organization. I‘m excited for the adventures that lie ahead as a part of LSHIP <3 <br/> So why do I love to dance? Many, many reasons… but to keep it short and sweet, dance genuinely encompasses everything I love and stand for. Community, artistry/self-expression, being present/aware, physical and emotional well-being, self-improvement, growth, having fun, etc. etc. etc... you get the jist. And the beautiful part is, ANYONE CAN DANCE— all you have to do is start. So, to all the new and aspiring dancers: keep pushing! Growth is not always linear, but I promise you that hard work truly pays off. I believe in you. (-:"
           },
           {
-              img: "../img/temporary/SoonJordan.jpg",
+              img: "../img/lship/SoonJordan.jpg",
               name: "Jordan Soon",
               subName: "General Member",
               uclaInfo: "Computer Science, 2nd year",

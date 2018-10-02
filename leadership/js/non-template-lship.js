@@ -56,13 +56,13 @@
                       detail: '"Me think, why waste time say lot word, when few word do trick." - Kevin Malone'
                   },
                   {
-                      photo: "../img/temporary/TranMichelle.jpg",
+                      photo: "../img/lship/TranMichelle.jpg",
                       name: "Michelle Tran",
                       title: "Events Chair",
                       detail: "I sustain myself on copious amounts of boba and caffeine and probably need 903827182 years of sleep but I'm fat chillin'"
                   },
                   {
-                      photo: "../img/temporary/SasakiSara.jpg",
+                      photo: "../img/lship/SasakiSara.jpg",
                       name: "Sara Sasaki",
                       title: "WorkShop Chair",
                       detail: "hi my name is Sara, I’m 5ft tall, have a pet corgi, and make EPIC burps. please send music, anime recommendations, and wholesome memes thru Facebook or IG @sarasasaki"
@@ -88,13 +88,13 @@
                       detail: "A UX/UI designer and a member of A** Designs"
                   },
                   {
-                      photo: "../img/temporary/RenSisi.jpg",
+                      photo: "../img/lship/RenSisi.jpg",
                       name: "Sisi Ren",
                       title: "Design Chair",
                       detail: "I grew up in Vancouver, Canada and I'm easily distracted by shiny things."
                   },
                   {
-                      photo: "../img/temporary/NguyenAndrew.jpg",
+                      photo: "../img/lship/NguyenAndrew.jpg",
                       name: "Andrew Nguyen",
                       title: "Photographer",
                       detail: "Sometimes I sleep with my eyes open xD"
@@ -106,19 +106,19 @@
                       detail: "I have a personal goal to eat at every restaurant within a 10 mile radius of UCLA... where should I go next? "
                   },
                   {
-                      photo: "../img/temporary/YaoAudrey.jpg",
+                      photo: "../img/lship/YaoAudrey.jpg",
                       name: "Audrey Yao",
                       title: "Social Media Marketing Chair",
                       detail: "I spent too much time at the optometrist's"
                   },
                   {
-                      photo: "../img/temporary/JacoboCarley.jpg",
+                      photo: "../img/lship/JacoboCarley.jpg",
                       name: "Carley Jacobo",
                       title: "Social Media Marketing Chair",
                       detail: "I joined Foundations for the dancing, but stayed for the family."
                   },
                   {
-                      photo: "../img/temporary/WilsonJosh.jpg",
+                      photo: "../img/lship/WilsonJosh.jpg",
                       name: "Josh Wilson",
                       title: "Webmaster",
                       detail: "A local from South Pasadena, also a superhero? What? #2020"
@@ -137,13 +137,13 @@
               },
               admins: [
                   {
-                    photo: "../img/temporary/LiDerek.jpg",
+                    photo: "../img/lship/LiDerek.jpg",
                     name: "Derek Li",
                     title: "Finance Chair",
                     detail: "I was born in Charlottesville, Virginia, and I'm jacked...jacked to the tits. Also, I wish my wallet was a thick as my thighs."
                   },
                   {
-                    photo: "../img/temporary/HuangZachary.jpg",
+                    photo: "../img/lship/HuangZachary.jpg",
                     name: "Zachary Huang",
                     title: "Finance Chair",
                     detail: 'As one person, I cannot change the whole world, but I can change the whole world of one person" -Paul Shane Spear. Also, I actually do have 10 toes.'
@@ -163,7 +163,7 @@
               },
               admins: [
                   {
-                    photo: "../img/temporary/SoonJordan.jpg",
+                    photo: "../img/lship/SoonJordan.jpg",
                     name: "Jordan Soon",
                     title: "Showcase Chair",
                     detail: "Favorite line from my favorite show: \"Fool me once shame on you, but teach a man to fool me and I'll be fooled for the rest of my life\""
@@ -175,7 +175,7 @@
                     detail: "Fidelis is my middle name, but you can call me whatever you like ;)"
                   },
                   {
-                    photo: "../img/temporary/TianSarah.jpg",
+                    photo: "../img/lship/TianSarah.jpg",
                     name: "Sarah Tian",
                     title: "Showcase Chair",
                     detail: "When I was in 5th grade I got an A on my essay on sea cucumbers. I’m still pretty proud of it."
@@ -211,19 +211,19 @@
             // They'll need a special render function.
             admins: [
                 {
-                    photo: "../img/TestimonialPhotos/Suwandi_Marcea.jpg",
+                    photo: "../img/lship/SuwandiMarcea.jpg",
                     name: "Marcea Suwandi",
                     title: 'advisor',
                     detail: "I love to bake cookies (Lship can testify to that), and I am an avid TV show binger."
                 },
                 {
-                    photo: "../img/TestimonialPhotos/Lee_Kevin.jpg",
+                    photo: "../img/lship/LeeKevs.jpg",
                     name: "Kevin Lee",
                     title: 'advisor',
                     detail: "I like to untie people's shoelaces."
                 },
                 {
-                    photo: "../img/TestimonialPhotos/Sumitro_Dean.jpg",
+                    photo: "../img/lship/SumitroDean.jpg",
                     name: "Dean Sumitro",
                     title: 'advisor',
                     detail: "I was born in New York, I'm red-green colorblind and apparently my existence is a meme."
