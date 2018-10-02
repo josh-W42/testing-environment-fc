@@ -242,13 +242,13 @@
                   name: "Apex",
                   directors: [
                     {
-                      photo: "../img/temporary/Kim_Joshua.jpg",
+                      photo: "../img/TestimonialPhotos/Kim_Joshua.jpg",
                       name:  "Joshua Kim",
                       title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "../img/temporary/Aguilar_Brandon.jpg",
+                      photo: "../img/TestimonialPhotos/Aguilar_Brandon.jpg",
                       name:  "Brandon Aguilar",
                       title: 'director',
                       detail: "",
@@ -256,13 +256,13 @@
                   ],
                   captains: [
                     {
-                      photo: "../img/temporary/HsiehEllen.jpg",
+                      photo: "../img/TestimonialPhotos/Hsieh_Ellen.jpg",
                       name:  "Ellen Hsieh",
                       title: 'captain',
                       detail: "",
                     },
                     {
-                      photo: "../img/temporary/MartinezMartha.jpg",
+                      photo: "../img/TestimonialPhotos/Martinez_Martha.jpg",
                       name:  "Martha Martinez",
                       title: 'captain',
                       detail: "",
@@ -273,13 +273,13 @@
                   name: "MEH",
                   directors: [
                     {
-                      photo: "../img/temporary/ZhangDerek.jpg",
-                      name:  "Derek Zheng",
+                      photo: "../img/TestimonialPhotos/Zhang_Derek.jpg",
+                      name:  "Derek Zhang",
                       title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "../img/temporary/AmandeDexter.jpg",
+                      photo: "../img/TestimonialPhotos/Amande_Dexter.jpg",
                       name:  "Dexter Amande",
                       title: 'director',
                       detail: "",
@@ -287,13 +287,13 @@
                   ],
                   captains: [
                     {
-                      photo: "../img/temporary/QuanJeremy.jpg",
+                      photo: "../img/TestimonialPhotos/Quan_Jeremy.jpg",
                       name:  "Jeremy Quan",
                       title: 'captain',
                       detail: "",
                     },
                     {
-                      photo: "../img/TestimonialPhotos/Mejia_Mary.jpg",
+                      photo: "../img/TestimonialPhotos/Mejia_Mary2.jpg",
                       name:  "Mary Mejia",
                       title: 'captain',
                       detail: "",
@@ -304,13 +304,13 @@
                   name: "YURNT",
                   directors: [
                     {
-                      photo: "../img/temporary/JulianRia.jpg",
+                      photo: "../img/TestimonialPhotos/Julian_Ria.jpg",
                       name:  "Ria Julian",
                       title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "../img/temporary/UngMerton.jpg",
+                      photo: "../img/TestimonialPhotos/Ung_Merton.jpg",
                       name:  "Merton Ung",
                       title: 'director',
                       detail: "",
@@ -318,16 +318,16 @@
                   ],
                   captains: [
                     {
-                      photo: "../img/temporary/DubeyMeghal.jpg",
+                      photo: "../img/TestimonialPhotos/Dubey_Meghal.jpg",
                       name:  "Meghal Dubey",
                       title: 'captain',
-                      detail: "",
+                      detail: "I was born and raised in India, and the parking lots in UCLA are my second home!",
                     },
                     {
-                      photo: "../img/temporary/ChangMyles.jpg",
+                      photo: "../img/TestimonialPhotos/Chang_Myles.jpg",
                       name:  "Myles Chang",
                       title: 'captain',
-                      detail: "",
+                      detail: "What did the mother cow say to her calf?  It's pasture bedtime",
                     }
                   ],
                 },
@@ -335,13 +335,13 @@
                   name: "RL8",
                   directors: [
                     {
-                      photo: "../img/temporary/VasquezAlexxa.jpg",
+                      photo: "../img/TestimonialPhotos/Vasquez_Alexxa.jpg",
                       name:  "Alexxa Vasquez",
                       title: 'director',
                       detail: "",
                     },
                     {
-                      photo: "../img/temporary/FuntanillaNoelle.jpg",
+                      photo: "../img/TestimonialPhotos/Funtanilla_Noelle.jpg",
                       name:  "Noelle Funtanilla",
                       title: 'director',
                       detail: "",
@@ -349,16 +349,16 @@
                   ],
                   captains: [
                     {
-                      photo: "../img/temporary/WangAndy.jpg",
+                      photo: "../img/TestimonialPhotos/Wang_Andy.jpg",
                       name:  "Andy Wang",
                       title: 'captain',
                       detail: "",
                     },
                     {
-                      photo: "../img/temporary/TamondongLouise.jpg",
+                      photo: "../img/TestimonialPhotos/Tamondong_Louise.jpg",
                       name:  "Louise Tamondong",
                       title: 'captain',
-                      detail: "",
+                      detail: "Hi, I’m Louise, I’m 21, and I never learned how to drive. Also, I’m from the SFV, I’m currently operating UCLA’s first spacecraft, and I have a 1 year old chinchilla named Chili!",
                     }
                   ],
                 },

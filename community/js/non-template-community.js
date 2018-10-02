@@ -221,6 +221,30 @@
               body: "So much of who I am as a person today is because of what I experienced over those ten weeks, pushing myself to become a better dancer to perform my heart out at showcase. Joining leadership only made sense because why wouldn't I try to spread the same joy that I felt to others? FC and LSHIP gave me the opportunity to find amazing camaraderie, knowledge about and connections to the SoCal dance community, the opportunity to dance on a competitive dance team and so much more. Although its a hefty position, as Executive I'm already finding the same fulfillment as I did as a beginning dancer."
           },
           {
+              img: "../img/TestimonialPhotos/Tamondong_Louise.jpg",
+              name: "Louise Tamondong",
+              subName: "Dance LSHIP: Captain of RL8 Summer ‘18",
+              uclaInfo: "Physics, Senior",
+              intro: "",
+              body: "Being a captain gave me the opportunity to build an environment for my dancers to be confident in expressing their true selves. It’s crazy cool seeing not only the set come together, but the team as a whole, too! Seeing people, first-timer or not, open up their true colors within such a supportive environment was probably my favorite thing about being captain."
+          },
+          {
+              img: "../img/TestimonialPhotos/Chang_Myles.jpg",
+              name: "Myles Chang",
+              subName: "Dance LSHIP: Captain of YURNT Summer ‘18",
+              uclaInfo: "Physiological Sciences, 2nd Year",
+              intro: "",
+              body: "I first joined Foundations because I am very noodle-y and look incredibly awkward when I dance.  While I am still not that good of a dancer, it does not matter anymore because the people of Foundations are encouraged not to judge you regardless of what you are doing.  Thank you, Foundations, for introducing me to so many great people and accepting me for the gangly, obnoxiously loud derp that I have been told that I am."
+          },
+          {
+              img: "../img/TestimonialPhotos/Dubey_Meghal.jpg",
+              name: "Meghal Dubey",
+              subName: "Dance LSHIP: Captain of YURNT Summer'18",
+              uclaInfo: "Math Econ, Sophomore",
+              intro: "When I first joined Foundations, I joined because I wanted to give dancing a shot. By the end of my first team I realized that Foundations was so much more than that.",
+              body: "With events to promote team and inter-team bonding, workshops teaching different styles and performances to showcase one's own choreography, I not only ended up growing as a dancer but also ended up meeting equally passionate people who taught me more about dancing than I could have ever imagined. Foundations is undoubtedly one of the most supportive and friendly organisations that encourages both returning dancers as well as non-dancers to grow and challenge themselves in a positive manner. Foundations gave me so much to be thankful for my first year- it provided me the confidence to perform, friends I now consider my family and of course, improvement in dance. Being able to give back to this organisation as well as being given the opportunity to provide the same feeling of acceptance and support to people by being captain of a team was undoubtedly the best experience I have had in UCLA."
+          },
+          {
               img: "../img/TestimonialPhotos/Li_Derek.jpg",
               name: "Derek Li",
               subName: "General Member",

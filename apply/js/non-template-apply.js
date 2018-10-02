@@ -18,7 +18,7 @@
         },
         {
           name: 'team',
-          link: "https://docs.google.com/forms/d/e/1FAIpQLScxrp3HUzbuMeTidZt_DVlsHuZ_dA0p7drQcn77q1onVisS2Q/viewform?embedded=true",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSc2P8dyY-xKiryb4lYM1NaSqG82DPj5NmAY53SErkFHVUqyBg/viewform?embedded=true",
         },
       ],
   };
