@@ -249,6 +249,10 @@ h6 {
   #nextBanner {
     font-size: 3em;
   }
+
+  .duoPost {
+    width: 100%;
+  }
 }
 
 .flyInRight {
