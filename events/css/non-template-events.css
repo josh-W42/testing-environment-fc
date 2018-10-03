@@ -159,9 +159,9 @@ h6 {
   /* text-shadow: 3px 3px 1px ; */
 }
 
-.duoPostPic {
+.duoPost {
   width: 50%;
-  height: 100%; 
+  margin: auto;
 }
 
 @media screen and (min-width: 991px) {

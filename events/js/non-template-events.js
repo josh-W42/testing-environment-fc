@@ -118,16 +118,6 @@
       init: function() {
       },
 
-
-      fillZero: function(num) {
-        //This function should
-        if (num < 10) {
-          num = "0" + num;
-        }
-        return num;
-      },
-
-
       // this function is designed for the slideshow.
 
       renderCalendar: function () {
