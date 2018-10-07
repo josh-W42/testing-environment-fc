@@ -425,12 +425,27 @@
           });
       },
 
-      setLazy: function(){
+      assignEntry: function (photo) {
+        if(model.isInViewport(photo)) {
+          let seconds = ((Math.random() * 10)) * 500;
+          setTimeout(function(){
+            photo.classList.add('flyIn');
+          }, seconds);
+        } else {
+          window.addEventListener('scroll', function () {
+            if(model.isInViewport(photo)) {
+              photo.classList.add('flyIn');
+            }
+          });
+        }
+      },
+
+      setLazy: function () {
           data.lazy = document.querySelectorAll('.lazy');
           console.log('Found ' + data.lazy.length + ' lazy images');
       },
 
-      registerListener: function(event, func) {
+      registerListener: function (event, func) {
           if (window.addEventListener) {
               window.addEventListener(event, func)
           } else {
@@ -438,7 +453,7 @@
           }
       },
 
-      lazyLoad: function() {
+      lazyLoad: function () {
           for(let i=0; i < data.lazy.length; i++){
               if(model.isInViewport(data.lazy[i])){
                   if (data.lazy[i].getAttribute('data-src')){
@@ -450,7 +465,7 @@
           data.cleanLazy();
       },
 
-      isInViewport: function(el){
+      isInViewport: function (el) {
           var rect = el.getBoundingClientRect();
           return (
               rect.bottom >= 0 &&
@@ -463,7 +478,7 @@
 
   let view = {
 
-      init: function() {
+      init: function () {
         data.branchID = 'executives';
         view.render();
         data.branchID = 'events';
@@ -823,10 +838,8 @@
           } else {
             document.querySelector('#adminLshipArray .adminImgArray').appendChild(hoverDiv);
           }
-          let seconds = ((Math.random() * 10)) * 500;
-          setTimeout(function(){
-            lshipPhoto.classList.add('flyIn');
-          }, seconds);
+
+          connector.setEntryParam(lshipPhoto);
         });
 
       },
@@ -853,6 +866,10 @@
 
       scroll: function(term = 'admin') {
         view.goToSection(term);
+      },
+
+      setEntryParam: function (photo) {
+        model.assignEntry(photo);
       },
 
       reset: function() {
