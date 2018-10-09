@@ -479,6 +479,10 @@ main {
   margin-top: 15px;
 }
 
+.termTitle {
+  margin-top: 20px;
+}
+
 .flyIn {
   opacity: 1;
   -webkit-animation: flyIn 3s ease; /* Safari, Chrome and Opera > 12.1 */

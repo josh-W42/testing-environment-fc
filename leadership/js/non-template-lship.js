@@ -100,7 +100,7 @@
                       detail: "Sometimes I sleep with my eyes open xD"
                   },
                   {
-                      photo: "../img/temporary/LaiJosh.jpg",
+                      photo: "../img/temporaryPhotos/LaiJosh.jpg",
                       name: "Josh Lai",
                       title: "Videographer",
                       detail: "I have a personal goal to eat at every restaurant within a 10 mile radius of UCLA... where should I go next? "
@@ -364,6 +364,172 @@
                 },
               ],
             },
+            {
+              name: 'fall',
+              teams: [
+                {
+                  name: "KOI",
+                  directors: [
+                    {
+                      photo: "../img/temporaryPhotos/NgIsabel.jpg",
+                      name:  "Isabel Ng",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/ChoiThomas.jpg",
+                      name:  "Thomas Choi",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/temporaryPhotos/LeeIvan.jpg",
+                      name:  "Ivan Lee",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/ZhuAmy.jpg",
+                      name:  "Amy Zhu",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "Plus Ultra",
+                  directors: [
+                    {
+                      photo: "../img/lship/LeeBrandon.jpg",
+                      name:  "Brandon Lee",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/WangLawrence.jpg",
+                      name:  "Lawrence Wang",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/ManipudNick.jpg",
+                      name:  "Nick Manipud",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/FarzanMona.jpg",
+                      name:  "Mona Farzan",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "Pocket Monsters",
+                  directors: [
+                    {
+                      photo: "../img/lship/SuwandiMarcea.jpg",
+                      name:  "Marcea Suwandi",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/JudoBrandon.jpg",
+                      name:  "Brandon Judoprasetijo",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/HtutSwan.jpg",
+                      name:  "Swan Ye Htut",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/WuJolie.jpg",
+                      name:  "Jolie Wu",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "Peanut Butter",
+                  directors: [
+                    {
+                      photo: "../img/lship/ByunAlex.jpg",
+                      name:  "Alex Byun",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/MannCharlie.jpg",
+                      name:  "Charlie Mann",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/ChenNatalie.jpg",
+                      name:  "Natalie Chen",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/TsudamaKiana.jpg",
+                      name:  "Kiana Tsudama",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/QuachKim.jpg",
+                      name:  "Kim Quach",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "Exodia",
+                  directors: [
+                    {
+                      photo: "../img/lship/SinNatalie.jpg",
+                      name:  "Natalie Sin",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/TrancePatrick.jpg",
+                      name:  "Patrick Trance",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/TuckerSean.jpg",
+                      name:  "Sean Tucker",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/YazonVannah.jpg",
+                      name:  "Vannah-Wila Yazon",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+              ]
+            },
           ],
         },
       },
@@ -405,8 +571,8 @@
           });
 
           document.querySelector('#danceLink').addEventListener('click', function() {
-            data.branchID = 'summer';
-            connector.scroll('dance');
+            data.branchID = 'danceLship';
+            connector.scroll();
           });
 
           document.querySelector('#sideBarLogo').addEventListener('click', function(){
@@ -497,7 +663,6 @@
 
         data.branchID = 'danceLship';
         view.render();
-
 
         view.showLship();
 
@@ -614,57 +779,56 @@
         } else if(branch === 'danceLship') {
 
           sectionTag.classList.add('term');
-          descriptionHead.classList.add('descriptionHead');
 
-          let id = data.branches.danceID;
+          sectionTag.id = data.branchID;
 
-          let quarter;
-          data.branches.danceLship.quarter.forEach(function(term){
-            if(term.name === id) {
-              quarter = term;
-            }
-          });
+          data.branches.danceLship.quarter.forEach(function(quarter){
 
-          sectionTag.id = id;
+            let descriptionHead = document.createElement('div');
+            descriptionHead.classList.add('descriptionHead');
+            descriptionHead.id = quarter.name;
 
-          let termTitle = document.createElement('h4');
-          termTitle.innerHTML = id;
-          sectionTag.appendChild(termTitle);
-          sectionTag.appendChild(descriptionHead);
 
-          quarter.teams.forEach(function(team) {
-            let teamDiv = document.createElement('div');
-            teamDiv.classList.add('teamItem');
+            let termTitle = document.createElement('h4');
+            termTitle.innerHTML = quarter.name;
+            termTitle.classList.add('termTitle');
+            sectionTag.appendChild(termTitle);
+            sectionTag.appendChild(descriptionHead);
 
-            let teamName = document.createElement('h4');
-            teamName.innerHTML = team.name;
-            teamDiv.appendChild(teamName);
+            quarter.teams.forEach(function(team) {
+              let teamDiv = document.createElement('div');
+              teamDiv.classList.add('teamItem');
 
-            let directorDiv = document.createElement('div');
-            directorDiv.classList.add('teamInnerDiv');
+              let teamName = document.createElement('h4');
+              teamName.innerHTML = team.name;
+              teamDiv.appendChild(teamName);
 
-            portfolio = document.createElement('div');
-            portfolio.id = 'portfolio';
-            portfolio.classList.add('row');
-            teamDiv.appendChild(portfolio);
+              let directorDiv = document.createElement('div');
+              directorDiv.classList.add('teamInnerDiv');
 
-            let adminDiv;
-            adminDiv = document.createElement('div');
-            adminDiv.classList.add('adminImgArray');
-            adminDiv.classList.add('col-lg-12');
-            portfolio.appendChild(adminDiv);
+              portfolio = document.createElement('div');
+              portfolio.id = 'portfolio';
+              portfolio.classList.add('row');
+              teamDiv.appendChild(portfolio);
 
-            team.directors.forEach(function(director){
-              adminDiv.appendChild(view.createHoverPic(director, 'admin'));
+              let adminDiv;
+              adminDiv = document.createElement('div');
+              adminDiv.classList.add('adminImgArray');
+              adminDiv.classList.add('col-lg-12');
+              portfolio.appendChild(adminDiv);
+
+              team.directors.forEach(function(director){
+                adminDiv.appendChild(view.createHoverPic(director, 'admin'));
+              });
+
+              team.captains.forEach(function(captain){
+                adminDiv.appendChild(view.createHoverPic(captain, 'admin'));
+              });
+
+              teamDiv.appendChild(directorDiv);
+
+              descriptionHead.appendChild(teamDiv);
             });
-
-            team.captains.forEach(function(captain){
-              adminDiv.appendChild(view.createHoverPic(captain, 'admin'));
-            });
-
-            teamDiv.appendChild(directorDiv);
-
-            descriptionHead.appendChild(teamDiv);
           });
         }
 
@@ -778,7 +942,7 @@
             helper(section);
           });
         } else {
-          document.querySelectorAll('.term').forEach(function(section){
+          document.querySelectorAll('#danceLship .descriptionHead').forEach(function(section){
             helper(section);
           });
         }
