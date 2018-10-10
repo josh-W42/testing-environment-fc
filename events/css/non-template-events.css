@@ -146,8 +146,8 @@ footer {
 */
 
 body {
-  background-color: #e3eeef;
-  color: #2B4162;
+  background-color:	#F3E1C9;
+  color: #342F3E;
 }
 
 h1,
@@ -156,7 +156,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* text-shadow: 3px 3px 1px ; */
+  color: #C2384D;
 }
 
 .duoPost {
