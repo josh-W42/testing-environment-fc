@@ -20,6 +20,10 @@
           name: 'team',
           link: "https://docs.google.com/forms/d/e/1FAIpQLSc2P8dyY-xKiryb4lYM1NaSqG82DPj5NmAY53SErkFHVUqyBg/viewform?embedded=true",
         },
+        {
+          name: 'choreoShowcase',
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSfuTtGYUJlrAIdEV1bL3EAwVg4s7n_PEOmI9OBoGAxanLF3kg/viewform?embedded=true"
+        }
       ],
   };
 
@@ -110,7 +114,7 @@
 
     timeDifference: function(time) {
       // Use this function to select your countdown end date.
-      const endDate = new Date('September 30, 2018 18:00:00');
+      const endDate = new Date('November 3, 2018 00:00:00');
       const difference = endDate - time;
       let seconds, minutes, hours, days;
       if(difference <= 0) {
@@ -119,10 +123,6 @@
         hours = 0;
         days = 0;
 
-        document.querySelector('#mainTimerHead').innerHTML = "Team Applications Now Live!";
-        document.querySelector('#danceTeamLink').dataset.app = 'team';
-        document.querySelector('#danceTeamLink').href = '#modal';
-        document.querySelector('#danceTeamBtn').innerHTML = "Open App";
 
         view.timerGo = false;
 
