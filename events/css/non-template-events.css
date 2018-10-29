@@ -187,7 +187,9 @@ h6 {
   width: 100%;
 }
 
-
+.workshopSection a {
+  color: darkblue;
+}
 
 #calendarImg{
   width: 100%;
@@ -390,10 +392,60 @@ h6 {
 */
 
 /*
-   Start CSS
-   Location: footer
+  Start CSS
+  Location: specialSection
 */
 
+.specialSection {
+  background-color: white;
+}
+
+.specialSection h2,
+.specialSection h3 {
+  color: black;
+  text-shadow: 3px 3px lightblue;
+}
+
+.specialSection tr {
+  border-bottom: 2px solid black;
+}
+
+/*
+  End CSS
+  Location: specialSection
+*/
+
+/*
+  Start CSS
+  Location: calendar
+*/
+
+#calendar td {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#calender {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+#calendar td:hover {
+  background-color: white;
+}
+
+/*
+  End CSS
+  Location: calendar
+*/
+
+/*
+  Start CSS
+  Location: footer
+*/
 
 
 .contactInfo {
