@@ -116,17 +116,27 @@
   let view = {
 
       init: function() {
+
+        document.querySelector('#facebookFrame').onload = view.renderCalendar();
       },
 
       // this function is designed for the slideshow.
 
       renderCalendar: function () {
+        // let eventArray = Window.frames['f1763bea1bc79c4'].document.querySelectorAll('.clearfix');
+        console.log(window.frames['facebookFrame'].contentDocument.innerHTML);
 
-        let banner = data.banners[data.bannerID];
+        // let calendar = document.querySelector('#calendar');
 
-        let bannerImg = document.querySelector('#calendarImg');
-        bannerImg.src = banner.img;
-        bannerImg.alt = banner.name;
+        // for( let i = 0; i < 4; i++) {
+        //   let row = document.createElement('tr');
+        //   calendar.appendChild(row);
+        //   for( let k = 0; k < 7; k++) {
+        //     let col = document.createElement('td');
+        //     let date = new Date('November 3, 2018 00:00:00')
+        //
+        //   }
+        // }
       },
 
   };
