@@ -282,6 +282,37 @@ main {
   text-align: center;
 }
 
+.lotwPhoto {
+  border-radius: 50%;
+  margin-left: 50%;
+  width: 15em;
+  height: 15em;
+  border: 8px double black;
+}
+
+
+.lotwDescription {
+  margin-top: 10%;
+  margin-right: 50%;
+}
+
+.lotwSection {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 991px) {
+
+  .lotwSection {
+    margin-top: 10%;
+  }
+
+  .lotwPhoto,
+  .lotwDescription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .allLshipTitle {
   margin: 2%;
 }
@@ -511,7 +542,7 @@ main {
   from {
     position: relative;
     opacity: 0;
-    top: -100px;
+    top: 500px;
     transform: scale(2, 2);
   }
   to {

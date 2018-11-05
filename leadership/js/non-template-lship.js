@@ -600,7 +600,10 @@
         } else {
           window.addEventListener('scroll', function () {
             if(model.isInViewport(photo)) {
-              photo.classList.add('flyIn');
+              let seconds = ((Math.random() * 15)) * 1000;
+              setTimeout(function(){
+                photo.classList.add('flyIn');
+              }, seconds);
             }
           });
         }
