@@ -123,8 +123,12 @@
         hours = 0;
         days = 0;
 
-
+        document.querySelector('#countdownSection').style.display = "none";
+        document.querySelector('#choreoShowcaseLink').dataset.app = "";
+        document.querySelector('#choreoShowcaseLink').href = "";
+        document.querySelector('#choreoShowcaseBtn').innerHTML = "App Closed";
         view.timerGo = false;
+
 
       } else {
         seconds = Math.ceil(difference / 1000);
