@@ -10,7 +10,7 @@
       apps: [
         {
           name: "dance",
-          link: "https://docs.google.com/forms/d/e/1FAIpQLSd2lSckcuTgQthJLYc6Vh3Du1b002d6yp-MbwIrFsV8l416-g/viewform?embedded=true",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLScr5b4_MqviTiiRQtghp9IDb06-Cv0GeIs1UooiTdCQSvpnng/viewform?embedded=true",
         },
         {
           name: "workshop",
@@ -114,7 +114,7 @@
 
     timeDifference: function(time) {
       // Use this function to select your countdown end date.
-      const endDate = new Date('November 3, 2018 00:00:00');
+      const endDate = new Date('December 3, 2018 19:00:00');
       const difference = endDate - time;
       let seconds, minutes, hours, days;
       if(difference <= 0) {
@@ -123,10 +123,6 @@
         hours = 0;
         days = 0;
 
-        document.querySelector('#countdownSection').style.display = "none";
-        document.querySelector('#choreoShowcaseLink').dataset.app = "";
-        document.querySelector('#choreoShowcaseLink').href = "";
-        document.querySelector('#choreoShowcaseBtn').innerHTML = "App Closed";
         view.timerGo = false;
 
 
