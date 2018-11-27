@@ -562,6 +562,20 @@
               },
             ]
           },
+          {
+            showcase: "Fall 2018",
+            photo: "../img/Banners/eleventhShowcase.jpg",
+            teams: [
+              {
+                name: "KOI",
+                directors: "Thomas Choi x Isabel Ng",
+                captains: "Ivan Lee x Amy Zhu",
+                photo: "../img/teams/18-19/18F-KOI.jpg",
+                video: "",
+                noModal: false
+              },
+            ]
+          },
         ],
       },
 
@@ -684,7 +698,7 @@
       // Here I wanted the first showcase shown to be the most recent.
       init: function() {
         data.yearID = 'yearFive';
-        data.showCaseID = '0'
+        data.showCaseID = '1'
         view.render();
       },
 
