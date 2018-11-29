@@ -574,6 +574,14 @@
                 video: "",
                 noModal: false
               },
+              {
+                name: "PLUS ULTRA",
+                directors: " Brandon Lee x Lawrence Wang",
+                captains: "Mona Farzan and Nick Manipud",
+                photo: "../img/teams/18-19/18F-PLUS-ULTRA.jpg",
+                video: "",
+                noModal: false
+              },
             ]
           },
         ],
