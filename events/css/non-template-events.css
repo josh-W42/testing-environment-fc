@@ -397,9 +397,15 @@ h6 {
 */
 
 .specialSection {
-  background-color: white;
+  background-image: url("../../img/Banners/fallShowcaseBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 600;
+  text-shadow: 0.5px 0.5px lightblue;
 }
 
+.specialSection h1,
 .specialSection h2,
 .specialSection h3 {
   color: black;
@@ -409,6 +415,19 @@ h6 {
 .specialSection tr {
   border-bottom: 2px solid black;
 }
+
+#showcaseInfoDiv div {
+  padding: 1.5%;
+}
+
+#showcaseInfoDiv li {
+  list-style-type: none;
+}
+
+#showcaseInfoDiv a {
+  color: blue;
+}
+
 
 /*
   End CSS
