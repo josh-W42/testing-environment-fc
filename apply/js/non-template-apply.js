@@ -90,7 +90,7 @@
     timerGo: true,
 
     init: function() {
-      view.runTimmer();
+      // view.runTimmer();
     },
 
 
