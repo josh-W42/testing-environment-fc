@@ -252,6 +252,36 @@ header .masthead {
    Location: Upcoming Events
 
 */
+
+  #timerBox {
+    min-height: 200px;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .case {
+    margin-right: auto;
+    margin-left: auto;
+    height: 85px;
+    width: 100px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+  }
+
+  .countdownText {
+    font-size: 1.5em;
+  }
+
+  .numberCase {
+    width: 50%;
+    text-align: center;
+    border-radius: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   .UpcomingEvents {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -275,6 +305,24 @@ header .masthead {
     .bannerContent {
       text-align: justify;
       width: 90%;
+    }
+
+    #timerBox h1 {
+      font-size: 1.25em;
+      padding: 0px;
+    }
+
+    #timerBox h4 {
+      font-size: 0.8em;
+    }
+
+    .countdownText {
+      font-size: 1.15em;
+    }
+
+    .case {
+      font-size: 1.25em;
+      width: 150px;
     }
   }
 

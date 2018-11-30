@@ -72,6 +72,8 @@
 
   let view = {
 
+    timerGo: true,
+
     init: function() {
       //  soundBox placement.
 
@@ -82,6 +84,61 @@
       let ycord = offsets.top + window.pageYOffset - soundBox.clientTop;
 
       soundBox.style.top = ycord + "px";
+
+      view.runTimmer();
+    },
+
+    fillZero: function(num) {
+      //This function should "fill zeros" on the display.
+      if (num < 10) {
+        num = "0" + num;
+      }
+      return num;
+    },
+
+    runTimmer: function() {
+      if(view.timerGo) {
+        // This function will run in the background, constantly updating the timer.
+        const currentDate = new Date();
+        view.timeDifference(currentDate);
+        setTimeout(view.runTimmer, 200);
+      }
+    },
+
+    timeDifference: function(time) {
+      // Use this function to select your countdown end date.
+      const endDate = new Date('December 3, 2018 19:00:00');
+      const difference = endDate - time;
+      let seconds, minutes, hours, days;
+      if(difference <= 0) {
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        days = 0;
+
+        view.timerGo = false;
+        document.querySelector('#timerBox').style.display = "none";
+
+
+      } else {
+        seconds = Math.ceil(difference / 1000);
+        minutes = Math.floor(seconds / 60);
+        hours = Math.floor(minutes / 60);
+        days = Math.floor(hours / 24);
+        if (seconds > 60) {
+          seconds = seconds % 60;
+        }
+        if (minutes > 60) {
+          minutes = minutes % 60;
+        }
+        if (hours > 24) {
+          hours = hours % 24;
+        }
+      }
+      document.querySelector('#dayCase').innerHTML = view.fillZero(days);
+      document.querySelector('#hourCase').innerHTML = view.fillZero(hours);
+      document.querySelector('#minuteCase').innerHTML = view.fillZero(minutes);
+      document.querySelector('#secondCase').innerHTML = view.fillZero(seconds);
     },
 
   };
