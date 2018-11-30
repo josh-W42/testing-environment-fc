@@ -569,16 +569,24 @@
               {
                 name: "KOI",
                 directors: "Thomas Choi x Isabel Ng",
-                captains: "Ivan Lee x Amy Zhu",
+                captains: "Ivan Lee  Amy Zhu",
                 photo: "../img/teams/18-19/18F-KOI.jpg",
                 video: "",
                 noModal: false
               },
               {
                 name: "PLUS ULTRA",
-                directors: " Brandon Lee x Lawrence Wang",
-                captains: "Mona Farzan and Nick Manipud",
+                directors: "Brandon Lee x Lawrence Wang",
+                captains: "Mona Farzan x Nick Manipud",
                 photo: "../img/teams/18-19/18F-PLUS-ULTRA.jpg",
+                video: "",
+                noModal: false
+              },
+              {
+                name: "POCKET MONSTERS",
+                directors: "Marcea Suwandi x Brandon Judoprasetijo",
+                captains: "Swan Ye Htut x Jolie Wu",
+                photo: "../img/teams/18-19/18F-POCKET-MONSTERS.jpg",
                 video: "",
                 noModal: false
               },
