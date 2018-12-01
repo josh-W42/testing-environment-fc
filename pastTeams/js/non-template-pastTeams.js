@@ -590,6 +590,22 @@
                 video: "",
                 noModal: false
               },
+              {
+                name: "EXODIA",
+                directors: "Patrick Trance x Natalie Sin",
+                captains: "Sean Tucker x Vannah-Wila Yazon",
+                photo: "../img/teams/18-19/18F-EXODIA.jpg",
+                video: "",
+                noModal: false
+              },
+              {
+                name: "Peanut Butter",
+                directors: "Alex Byun x Charlie Mann x Natalie Chen",
+                captains: "Kim Quach x Kiana Tsudama",
+                photo: "../img/teams/18-19/18F-PEANUT-BUTTER.jpg",
+                video: "",
+                noModal: false
+              },
             ]
           },
         ],
