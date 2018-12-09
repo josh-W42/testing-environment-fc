@@ -85,7 +85,7 @@
 
       soundBox.style.top = ycord + "px";
 
-      view.runTimmer();
+      // view.runTimmer();
     },
 
     fillZero: function(num) {
