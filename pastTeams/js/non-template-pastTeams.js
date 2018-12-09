@@ -233,11 +233,11 @@
               },
               {
                 name: "Squirtle Squad Gen 4",
-                directors: "",
-                captains: "",
+                directors: "Benjamin Mark Nabong x Marlo Carreon x Dennis Tran",
+                captains: "Charlie Mann x Belinda Chiu",
                 photo: "../img/teams/15-16/16SP-SquirtleSquadGen4.jpg",
-                video: "",
-                noModal: true
+                video: "https://player.vimeo.com/video/171244958",
+                noModal: false
               },
               {
                 name: "Quixotics",
@@ -583,14 +583,6 @@
                 noModal: false
               },
               {
-                name: "POCKET MONSTERS",
-                directors: "Marcea Suwandi x Brandon Judoprasetijo",
-                captains: "Swan Ye Htut x Jolie Wu",
-                photo: "../img/teams/18-19/18F-POCKET-MONSTERS.jpg",
-                video: "",
-                noModal: false
-              },
-              {
                 name: "EXODIA",
                 directors: "Patrick Trance x Natalie Sin",
                 captains: "Sean Tucker x Vannah-Wila Yazon",
@@ -603,6 +595,14 @@
                 directors: "Alex Byun x Charlie Mann x Natalie Chen",
                 captains: "Kim Quach x Kiana Tsudama",
                 photo: "../img/teams/18-19/18F-PEANUT-BUTTER.jpg",
+                video: "",
+                noModal: false
+              },
+              {
+                name: "POCKET MONSTERS",
+                directors: "Marcea Suwandi x Brandon Judoprasetijo",
+                captains: "Swan Ye Htut x Jolie Wu",
+                photo: "../img/teams/18-19/18F-POCKET-MONSTERS.jpg",
                 video: "",
                 noModal: false
               },
