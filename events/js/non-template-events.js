@@ -1,4 +1,5 @@
-// import { Calendar } from './js/fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.js';
+import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min.js';
+
 
 (function () {
 
@@ -12,16 +13,20 @@
     bannerID: 0,
     bannerName: 'August Calendar',
 
-    banners: [
+    events: [
       {
-        img: '../img/events/augustCalendar.png',
-        name: 'August Calendar'
+        title: 'Arise 2018 Showcase',
+        start: '2018-12-03T18:00:00',
+        detail: 'This quarter, Foundations Choreography has guided five teams down this path of self-discovery, but the end of the journey is near: our 2018 Fall Exhibition, Arise. All five teams will showcase the culmination of their hard work in a special one-time performance on stage. Witness this unforgettable moment at our first showcase of the academic year!',
+        imgSrc: "../img/Banners/eleventhShowcase.jpg",
       },
       {
-        img: '../img/events/septemberCalendar.png',
-        name: 'September Calendar'
-      }
-    ]
+        title: 'Last Workshop of The Quarter',
+        start: '2018-12-07T20:00:00',
+        detail: "Sebastien Le of Rooks, ACA Hip-Hop, and co-director of siniGANG is coming to Lot 4 P1 TONIGHT from 8PM-10PM. Don't miss out!",
+        imgSrc: "../img/Banners/fallWorkShop18.jpg",
+      },
+    ],
 
   };
 
@@ -35,47 +40,7 @@
           model.registerListener('load', model.lazyLoad);
           model.registerListener('scroll', model.lazyLoad);
 
-          // document.querySelector('#previousBanner').addEventListener('click', model.previousBanner);
-          // document.querySelector('#nextBanner').addEventListener('click', model.nextBanner);
-      },
-
-
-      nextBanner: function() {
-        data.bannerID++;
-        if(data.bannerID >= data.banners.length) {
-          data.bannerID = 0;
-        }
-        data.bannerName = data.banners[data.bannerID];
-        model.bannerTransform('right');
-      },
-
-      bannerTransform: function(dir) {
-        if(dir === 'right'){
-          document.querySelector('#calendarImg').classList.add('flyOutRight');
-          document.querySelector('#calendarImg').classList.remove('flyInLeft');
-          setTimeout(function() {
-            document.querySelector('#calendarImg').classList.remove('flyOutRight');
-            document.querySelector('#calendarImg').classList.add('flyInRight');
-            connector.ready();
-          }, 750)
-        } else {
-          document.querySelector('#calendarImg').classList.add('flyOutLeft');
-          document.querySelector('#calendarImg').classList.remove('flyInRight');
-          setTimeout(function() {
-            document.querySelector('#calendarImg').classList.remove('flyOutLeft');
-            document.querySelector('#calendarImg').classList.add('flyInLeft');
-            connector.ready();
-          }, 750)
-        }
-      },
-
-      previousBanner: function() {
-        data.bannerID--;
-        if(data.bannerID < 0) {
-          data.bannerID = (data.banners.length - 1);
-        }
-        data.bannerName = data.banners[data.bannerID];
-        model.bannerTransform();
+          document.addEventListener('load', connector.ready);
       },
 
       setLazy: function(){
@@ -117,27 +82,39 @@
   let view = {
 
       init: function() {
-
-        document.querySelector('#facebookFrame').onload = view.renderCalendar();
+        view.renderCalendar();
       },
 
       // this function is designed for the slideshow.
 
       renderCalendar: function () {
         // let eventArray = Window.frames['f1763bea1bc79c4'].document.querySelectorAll('.clearfix');
-        console.log(window.frames['facebookFrame'].contentDocument.innerHTML);
 
-        // let calendar = document.querySelector('#calendar');
+        const currentDate = new Date();
 
-        // for( let i = 0; i < 4; i++) {
-        //   let row = document.createElement('tr');
-        //   calendar.appendChild(row);
-        //   for( let k = 0; k < 7; k++) {
-        //     let col = document.createElement('td');
-        //     let date = new Date('November 3, 2018 00:00:00')
-        //
-        //   }
-        // }
+        const eventsToPlace = data.events;
+
+        var calendarEl = document.querySelector('#calendar');
+
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          eventClick: function(calEvent, jsEvent, view) {
+            document.querySelector('#modalImg').src = calEvent.event.def.extendedProps.imgSrc;
+            calEvent.el.dataset.toggle = "modal";
+            calEvent.el.href= "#eventModal";
+            document.querySelector('#modalHeader').innerHTML = calEvent.el.textContent;
+            document.querySelector('#modalBody').innerHTML = calEvent.event.def.extendedProps.detail;
+            console.log(calEvent, jsEvent, view);
+          },
+
+          defaultDate: currentDate ,
+          editable: false,
+          eventLimit: true, // allow "more" link when too many events
+          events: eventsToPlace
+          });
+
+        calendar.render();
+
       },
 
   };
@@ -151,7 +128,7 @@
 
       ready: function() {
         view.renderCalendar();
-      }
+      },
 
 
   };

@@ -257,134 +257,7 @@ h6 {
   }
 }
 
-.flyInRight {
-  -webkit-animation: flyInRight 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: flyright 1.5s ease; /* Firefox < 16 */
-}
 
-.flyOutRight {
-  -webkit-animation: flyOutRight 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: flyOutRight 1.5s ease; /* Firefox < 16 */
-}
-
-@keyframes flyOutRight {
-  from {
-    position: relative;
-    opacity: 1;
-    right: 0px;
-  }
-  to {
-    position: relative;
-    opacity: 0;
-    right: -20px;
-  }
-}
-
-@-moz-keyframes flyOutRight {
-  from {
-    position: relative;
-    opacity: 1;
-    right: 0px;
-  }
-  to {
-    position: relative;
-    opacity: 0;
-    right: -20px;
-  }
-}
-
-@keyframes flyInRight {
-  from {
-    position: relative;
-    opacity: 0;
-    right: 20px;
-  }
-  to {
-    position: relative;
-    opacity: 1;
-    right: 0px;
-  }
-}
-
-@-moz-keyframes flyInRight {
-  from {
-    position: relative;
-    opacity: 0;
-    right: 20px;
-  }
-  to {
-    position: relative;
-    opacity: 1;
-    right: 0px;
-  }
-}
-
-.flyInLeft {
-  -webkit-animation: flyInLeft 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: flyInLeft 1.5s ease; /* Firefox < 16 */
-}
-
-.flyOutLeft {
-  -webkit-animation: flyOutLeft 1.5s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: flyOutLeft 1.5s ease; /* Firefox < 16 */
-}
-
-@keyframes flyOutLeft {
-  from {
-    position: relative;
-    opacity: 1;
-    left: 0px;
-  }
-  to {
-    position: relative;
-    opacity: 0;
-    left: -20px;
-  }
-}
-
-@-moz-keyframes flyOutLeft {
-  from {
-    position: relative;
-    opacity: 1;
-    left: 0px;
-  }
-  to {
-    position: relative;
-    opacity: 0;
-    left: -20px;
-  }
-}
-
-@keyframes flyInLeft {
-  from {
-    position: relative;
-    opacity: 0;
-    left: 20px;
-  }
-
-  to {
-    position: relative;
-    opacity: 1;
-    left: 0px;
-  }
-
-}
-
-@-moz-keyframes flyInLeft {
-
-  from {
-    position: relative;
-    opacity: 0;
-    left: 20px;
-  }
-
-  to {
-    position: relative;
-    opacity: 1;
-    left: 0px;
-  }
-
-}
 
 /*
   End CSS
@@ -428,7 +301,6 @@ h6 {
   color: blue;
 }
 
-
 /*
   End CSS
   Location: specialSection
@@ -439,21 +311,42 @@ h6 {
   Location: calendar
 */
 
+#calendar {
+  width: 100%;
+  margin: 0 auto;
+}
+
 #calendar td {
-  height: 100px;
-  width: 100px;
-  border: 1px solid black;
-  text-align: center;
+  border: 0.5px ridge grey;
 }
 
-#calender {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-}
-
-#calendar td:hover {
+#calendar .fc-h-event {
   background-color: white;
+  color: black;
+}
+
+.portfolio-modal .modal-content {
+  min-height: 0px;
+  max-height: 600px;
+  width: 600px;
+  margin: 5% auto 5% auto;
+  padding: auto;
+  position: relative;
+}
+
+.portfolio-modal #modalImg {
+  width: 100%;
+}
+
+.portfolio-modal .modal-container {
+  padding: 5%;
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio-modal .modal-content {
+    width: 100%;
+    min-height: 100%;
+  }
 }
 
 /*
