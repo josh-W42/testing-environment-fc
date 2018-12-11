@@ -24,7 +24,7 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
         title: 'Last Workshop of The Quarter',
         start: '2018-12-07T20:00:00',
         detail: "Sebastien Le of Rooks, ACA Hip-Hop, and co-director of siniGANG is coming to Lot 4 P1 TONIGHT from 8PM-10PM. Don't miss out!",
-        imgSrc: "../img/Banners/fallWorkShop18.jpg",
+        imgSrc: "../img/Banners/fallWorkshop18.jpg",
       },
     ],
 
