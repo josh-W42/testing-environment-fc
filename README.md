@@ -9,12 +9,10 @@ This is a testing environment for a website before deployment live. Sharing this
 * <a href="https://fontawesome.com/">Font Awesome</a>
 * <a href="https://jquery.com/">jquery</a>
 * <a href="https://fonts.google.com/">Google Fonts</a>
+* <a href="https://fullcalendar.io/">Javascript Calendar</a>
 
 ## Getting started:
 Head over to the <a href="https://josh-w42.github.io/testing-environment-fc/" />Github Pages site</a> to try it out. Then clone or fork this repository.
-
-### Authors
-bensonhan, ironsummitmedia, and myself. But Design has changed over multiple years; meaning we've all put forth new designs.
 
 ### Acknowledgments:
 * Excited to work on this one.
