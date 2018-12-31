@@ -15,17 +15,42 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
 
     events: [
       {
-        title: 'Arise 2018 Showcase',
-        start: '2018-12-03T18:00:00',
-        detail: 'This quarter, Foundations Choreography has guided five teams down this path of self-discovery, but the end of the journey is near: our 2018 Fall Exhibition, Arise. All five teams will showcase the culmination of their hard work in a special one-time performance on stage. Witness this unforgettable moment at our first showcase of the academic year!',
-        imgSrc: "../img/Banners/eleventhShowcase.jpg",
+        title: 'Winter Team App Drops',
+        start: '2019-01-02T18:00:00',
+        detail: `Fill out the audition form BEFORE the audition dates. Apply to join one of our Winter training teams for a unique, unforgettable experience. Our training teams will not only teach you dance fundamentals--they will be building a set throughout the quarter that will be performed on-stage at our end-of-the-quarter exhibition!`,
+        imgSrc: "../img/Banners/winterAuditions19.jpg",
+        eventLink: 'https://www.facebook.com/events/464363797423661/'
       },
       {
-        title: 'Last Workshop of The Quarter',
-        start: '2018-12-07T20:00:00',
-        detail: "Sebastien Le of Rooks, ACA Hip-Hop, and co-director of siniGANG is coming to Lot 4 P1 TONIGHT from 8PM-10PM. Don't miss out!",
-        imgSrc: "../img/Banners/fallWorkshop18.jpg",
+        title: 'Winter Pre-Audition Workshop 1',
+        start: '2019-01-08T18:00:00',
+        end: '2019-01-08T20:00:00',
+        detail: "The holidays have come and gone, but you still have a few things left on your wishlist... and what better way to welcome the new year than with a brand new experience? Our Winter teams are almost here, but before they get the quarter started they need YOU!",
+        imgSrc: "../img/Banners/winterAuditions19.jpg",
+        eventLink: 'https://www.facebook.com/events/464363797423661/?event_time_id=465380280655346'
       },
+      {
+        title: 'Winter Pre-Audition Workshop 2',
+        start: '2019-01-08T20:00:00',
+        end: '2019-01-08T22:00:00',
+        detail: "The holidays have come and gone, but you still have a few things left on your wishlist... and what better way to welcome the new year than with a brand new experience? Our Winter teams are almost here, but before they get the quarter started they need YOU!",
+        imgSrc: "../img/Banners/winterAuditions19.jpg",
+        eventLink: 'https://www.facebook.com/events/465380283988679'
+      },
+      {
+        title: 'Winter Auditions Day 1',
+        start: '2019-01-09T18:00:00',
+        detail: "The holidays have come and gone, but you still have a few things left on your wishlist... and what better way to welcome the new year than with a brand new experience? Our Winter teams are almost here, but before they get the quarter started they need YOU!",
+        imgSrc: "../img/Banners/winterAuditions19.jpg",
+        eventLink: 'https://www.facebook.com/events/464363807423660'
+      },
+      {
+        title: 'Winter Auditions Day 2',
+        start: '2019-01-10T18:00:00',
+        detail: "The holidays have come and gone, but you still have a few things left on your wishlist... and what better way to welcome the new year than with a brand new experience? Our Winter teams are almost here, but before they get the quarter started they need YOU!",
+        imgSrc: "../img/Banners/winterAuditions19.jpg",
+        eventLink: 'https://www.facebook.com/events/464363800756994'
+      }
     ],
 
   };
@@ -104,6 +129,7 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
             calEvent.el.href= "#eventModal";
             document.querySelector('#modalHeader').innerHTML = calEvent.el.textContent;
             document.querySelector('#modalBody').innerHTML = calEvent.event.def.extendedProps.detail;
+            document.querySelector('#modalEventLink').href = calEvent.event.def.extendedProps.eventLink;
             console.log(calEvent, jsEvent, view);
           },
 
