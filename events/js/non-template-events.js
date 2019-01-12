@@ -22,6 +22,27 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
         eventLink: 'https://www.facebook.com/events/464363797423661/'
       },
       {
+        title: 'ACA Midyear Auditions',
+        start: '2019-01-07T18:00:00',
+        detail: `Come out to ACA's midyear audition workshop!`,
+        imgSrc: "../img/events/Non_fc_events/aca_midyear.jpg",
+        eventLink: 'https://www.facebook.com/events/368512440385264/'
+      },
+      {
+        title: 'Koreos Midyear Pre-Audition Workshop',
+        start: '2019-01-07T20:30:00',
+        detail: `Come out to Koreos' midyear pre-audition workshop!`,
+        imgSrc: "../img/events/Non_fc_events/koreos_midyear.jpg",
+        eventLink: 'https://www.facebook.com/events/763395274038308/?event_time_id=763395280704974'
+      },
+      {
+        title: 'Koreos Midyear Audition Workshop',
+        start: '2019-01-08T20:30:00',
+        detail: `Come out to Koreos' midyear audition workshop!`,
+        imgSrc: "../img/events/Non_fc_events/koreos_midyear.jpg",
+        eventLink: 'https://www.facebook.com/events/763395277371641'
+      },
+      {
         title: 'Winter Pre-Audition Workshop 1',
         start: '2019-01-08T18:00:00',
         end: '2019-01-08T20:00:00',
@@ -50,7 +71,35 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
         detail: "The holidays have come and gone, but you still have a few things left on your wishlist... and what better way to welcome the new year than with a brand new experience? Our Winter teams are almost here, but before they get the quarter started they need YOU!",
         imgSrc: "../img/Banners/winterAuditions19.jpg",
         eventLink: 'https://www.facebook.com/events/464363800756994'
-      }
+      },
+      {
+        title: 'NSU Modern Midyear Auditions',
+        start: '2019-01-10T19:00:00',
+        detail: `Come out to NSU Modern's midyear audition workshop!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_midyear.jpg",
+        eventLink: 'https://www.facebook.com/events/544968559246410/'
+      },
+      {
+        title: 'SEOULA Midyear Auditions',
+        start: '2019-01-10T18:30:00',
+        detail: `Come out to SEOULA's midyear audition workshop!`,
+        imgSrc: "../img/events/Non_fc_events/seoula_midyear.jpg",
+        eventLink: 'https://www.facebook.com/events/2251966451714270/'
+      },
+      {
+        title: 'VSU Modern Midyear Auditions',
+        start: '2019-01-11T20:00:00',
+        detail: `Come out to VSU Modern's midyear audition workshop!`,
+        imgSrc: "../img/events/Non_fc_events/vsu_midyear.jpg",
+        eventLink: 'https://www.facebook.com/events/544968559246410/'
+      },
+      {
+        title: 'Samahang Modern Midyear Auditions',
+        start: '2019-01-14T19:00:00',
+        detail: `Come out to Samahang Modern's midyear audition workshop!`,
+        imgSrc: "../img/events/Non_fc_events/sama_midyear.jpg",
+        eventLink: 'https://www.facebook.com/events/544968559246410/'
+      },
     ],
 
   };
