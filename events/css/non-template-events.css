@@ -174,7 +174,7 @@ h6 {
 
 @media screen and (min-width: 991px) {
   #contentDiv {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -188,11 +188,14 @@ h6 {
 }
 
 .workshopDescription {
-  margin-top: 75px;
+  padding: 5% 10% 0px 0%;
 }
 
 .workshopPhoto {
-  width: 80%;
+  max-width: 40%;
+  float: left;
+  margin-left: 10%;
+  margin-right: 2%;
 }
 
 .workshopSection a {
@@ -254,6 +257,17 @@ h6 {
 }
 
 @media screen and (max-width: 575px) {
+
+  .workshopDescription {
+    padding: 5% 0% 0px 0%;
+  }
+
+  .workshopPhoto {
+    max-width: 100%;
+    float: none;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 
   #previousBanner,
   #nextBanner {
