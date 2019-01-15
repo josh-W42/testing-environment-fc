@@ -100,6 +100,77 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
         imgSrc: "../img/events/Non_fc_events/sama_midyear.jpg",
         eventLink: 'https://www.facebook.com/events/544968559246410/'
       },
+      {
+        title: 'FC Winter 2019 Workshop Series',
+        start: '2019-01-18T20:00:00',
+        detail: `It’s getting pretty cold outside, and we’ve got the perfect thing to help you warm up. Now presenting: FC Winter 2019 Workshop Series! Get ready to grow, train, and challenge yourself with a variety of different styles from choreographers of all backgrounds. It’s about to get hot in here...`,
+        imgSrc: "../img/events/workshops/winter/workshop_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/332852180889489/'
+      },
+      {
+        title: 'FC Winter 2019 Board Game Night',
+        start: '2019-01-19T20:00:00',
+        detail: `Looking for a chill, wholesome way to bond with your brand new team? Too early in the quarter for a crazy Saturday night out? Come to Hedrick Movement Studio on Saturday, January 19th for an all-team board game night! This is the perfect chance to get to know your teammates, people from other teams, and even your lship! Board games, free snacks, new friends..it's all waiting for you at our 2019 Winter board game night!`,
+        imgSrc: "../img/events/board_game_night.jpg",
+        eventLink: 'https://www.facebook.com/events/2164569110265823/'
+      },
+      {
+        title: 'FC Winter 2019 Workshop Series',
+        start: '2019-01-25T20:00:00',
+        detail: `It’s getting pretty cold outside, and we’ve got the perfect thing to help you warm up. Now presenting: FC Winter 2019 Workshop Series! Get ready to grow, train, and challenge yourself with a variety of different styles from choreographers of all backgrounds. It’s about to get hot in here...`,
+        imgSrc: "../img/events/workshops/winter/workshop_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/332852180889489/'
+      },
+      {
+        title: 'FC Winter 2019 Workshop Series',
+        start: '2019-02-01T20:00:00',
+        detail: `It’s getting pretty cold outside, and we’ve got the perfect thing to help you warm up. Now presenting: FC Winter 2019 Workshop Series! Get ready to grow, train, and challenge yourself with a variety of different styles from choreographers of all backgrounds. It’s about to get hot in here...`,
+        imgSrc: "../img/events/workshops/winter/workshop_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/332852180889489/'
+      },
+      {
+        title: 'FC Winter 2019 Workshop Series',
+        start: '2019-02-08T20:00:00',
+        detail: `It’s getting pretty cold outside, and we’ve got the perfect thing to help you warm up. Now presenting: FC Winter 2019 Workshop Series! Get ready to grow, train, and challenge yourself with a variety of different styles from choreographers of all backgrounds. It’s about to get hot in here...`,
+        imgSrc: "../img/events/workshops/winter/workshop_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/332852180889489/'
+      },
+      {
+        title: 'FC Winter 2019 Workshop Series',
+        start: '2019-02-15T20:00:00',
+        detail: `It’s getting pretty cold outside, and we’ve got the perfect thing to help you warm up. Now presenting: FC Winter 2019 Workshop Series! Get ready to grow, train, and challenge yourself with a variety of different styles from choreographers of all backgrounds. It’s about to get hot in here...`,
+        imgSrc: "../img/events/workshops/winter/workshop_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/332852180889489/'
+      },
+      {
+        title: 'FC Winter 2019 Workshop Series',
+        start: '2019-03-02T20:00:00',
+        detail: `It’s getting pretty cold outside, and we’ve got the perfect thing to help you warm up. Now presenting: FC Winter 2019 Workshop Series! Get ready to grow, train, and challenge yourself with a variety of different styles from choreographers of all backgrounds. It’s about to get hot in here...`,
+        imgSrc: "../img/events/workshops/winter/workshop_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/332852180889489/'
+      },
+      {
+        title: 'FC Winter 2019 Workshop Series',
+        start: '2019-03-09T20:00:00',
+        detail: `It’s getting pretty cold outside, and we’ve got the perfect thing to help you warm up. Now presenting: FC Winter 2019 Workshop Series! Get ready to grow, train, and challenge yourself with a variety of different styles from choreographers of all backgrounds. It’s about to get hot in here...`,
+        imgSrc: "../img/events/workshops/winter/workshop_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/332852180889489/'
+      },
+      {
+        title: 'FC Winter 2019 Workshop Series',
+        start: '2019-03-15T20:00:00',
+        detail: `It’s getting pretty cold outside, and we’ve got the perfect thing to help you warm up. Now presenting: FC Winter 2019 Workshop Series! Get ready to grow, train, and challenge yourself with a variety of different styles from choreographers of all backgrounds. It’s about to get hot in here...`,
+        imgSrc: "../img/events/workshops/winter/workshop_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/332852180889489/'
+      },
     ],
 
   };
