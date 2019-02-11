@@ -32,7 +32,7 @@
     <link href="css/non-template-gear.css" type="text/css" rel="stylesheet">
 </head>
 
-<body id="page-top">
+<body>
 
   <!-- Navigation -->
 
@@ -75,7 +75,7 @@
   </nav>
 
 
-<section>
+<!-- <section>
   <div class="container text-center">
     <img id="foundationsLogo" class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../img/Copy of Copy of 2014-11-12 Logo Shapes White 5 pt.png" alt="Foundations Cube" />
     <h3>Hi there.</h3>
@@ -86,7 +86,172 @@
     <h5>Be sure to like, subscribe and follow us!</h5>
     <h5>social media links are found below!</h5>
   </div>
+</section> -->
+
+<section id="gearView">
+    <div class="mainPhotoDiv">
+        <img class="bannerImage" src="../img/gear/fc_hats.jpg" alt="gearPhoto" />
+        <div class="mainPhotoOverlay">
+            <div class="innerOverlayContent">
+                <h2>Geared Up For Wintensive?</h2>
+                <p>Check out some of our new FC merch being sold at this years Wintensive!</p>
+            </div>
+        </div>
+        <div class="text-center container">
+            <h2 class="gearTitle">Winter Intensive Gear 2019</h2>
+            <div class="row">
+                <div class="pic-option portfolio-item">
+                    <div class="portfolio-caption">
+                        <h3>Pins</h3>
+                        <img src="../img/gear/pin.jpg" class="product-pic" alt="Photo of Foundations Pin" />
+                        <p class="gearCost">$3.00</p>
+                        <a class="portfolio-link" data-toggle="modal" href="#pinModal">
+                            <button class="gearButtons btn btn-primary" data-gear="pin" type="button">More Details</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="pic-option portfolio-item">
+                    <div class="portfolio-caption">
+                        <h3>Beanies</h3>
+                        <img src="../img/gear/beanie.jpg" class="product-pic" alt="Photo of Beanie" />
+                        <p class="gearCost">$8.00</p>
+                        <a class="portfolio-link gearLink" data-toggle="modal" href="#beanieModal">
+                            <button class="gearButtons btn btn-primary" type="button" data-gear="beanie">More Details</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="pic-option portfolio-item">
+                    <div class="portfolio-caption">
+                        <h3>T-Shirts</h3>
+                        <img src="../img/gear/old_front.png" class="product-pic" alt="Photo of T-Shirt" />
+                        <p class="gearCost">$17.00</p>
+                        <a class="portfolio-link gearLink" data-toggle="modal" href="#tshirtModal">
+                            <button class="gearButtons btn btn-primary" type="button" data-gear="shirt">More Details</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 portfolio-item orderFormDiv">
+              <div class="portfolio-caption text-center">
+                <h4>Done Viewing?</h4>
+                <p class="text-muted">Fill out an order form!</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSed3Zy3ZnyhgrbyWfQu8laHEBqP72ZSi21nYTH0jEIF0cAuBQ/viewform">
+                    <button class="btn btn-primary orderFormBtn" type="button">Go to Form</button>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<!--
+  Photos of stuff, hover over stuff and pop up info window pops up
+  and also an add to cart feature so it can intigrate with a RSVP form.
+-->
+
+<div class="portfolio-modal modal fade" id="pinModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="modal-body">
+              <div class="col-lg-12">
+                  <h2 id="modalName">Pins</h2>
+                  <img id="pin" class="primaryPhoto" src="../img/gear/pin.jpg" />
+                  <div class="productDescription">
+                      <p>$3.00</p>
+                      <p>Magnetic Cube Pin</p>
+                      <ul>
+                          <li>2 x 2 in</li>
+                          <li>Special Edition</li>
+                      </ul>
+                      <div id="altPhotoList" class="row">
+                          <img src="../img/gear/pin.jpg" data-owner="#pin" class="altPhotos" />
+                          <img src="../img/gear/beanie2.jpg" data-owner="#pin" class="altPhotos" />
+                      </div>
+                  </div>
+              </div>
+              <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="beanieModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="modal-body">
+              <div class="col-lg-12">
+                  <h2 id="modalName">Beanies</h2>
+                  <img id="beanie" class="primaryPhoto" src="../img/gear/beanie.jpg" />
+                  <div class="productDescription">
+                      <p>$8.00</p>
+                      <p>One Size fits all</p>
+                      <ul>
+                          <li>Polyester Material</li>
+                          <li>Fits True to Size</li>
+                      </ul>
+                      <div id="altPhotoList" class="row">
+                          <img src="../img/gear/beanie.jpg" data-owner="#beanie" class="altPhotos" />
+                          <img src="../img/gear/beanie2.jpg" data-owner="#beanie" class="altPhotos" />
+                      </div>
+                  </div>
+              </div>
+              <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="tshirtModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="modal-body">
+              <div class="col-lg-12">
+                  <h2 id="modalName">Wintensive T-Shirts</h2>
+                  <img id="tshirt" class="primaryPhoto" src="../img/gear/old_front.png" />
+                  <div class="productDescription">
+                      <p>$17.00</p>
+                      <p>Sizes Avalible: XS S M L XL</p>
+                      <ul>
+                          <li>Polyester Material</li>
+                          <li>Fits True to Size</li>
+                      </ul>
+                      <div id="altPhotoList" class="row">
+                          <img src="../img/gear/old_front.png" data-owner="#tshirt" class="altPhotos" />
+                          <img src="../img/gear/old_back.jpg" data-owner="#tshirt" class="altPhotos" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Footer -->
 

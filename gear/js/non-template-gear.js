@@ -19,6 +19,18 @@
           model.registerListener('load', model.lazyLoad);
           model.registerListener('scroll', model.lazyLoad);
 
+          document.querySelectorAll(".gearButtons").forEach(function(btn) {
+              btn.addEventListener('click', function(e) {
+
+              });
+          });
+
+          document.querySelectorAll(".altPhotos").forEach(function(photo) {
+              photo.addEventListener('click', function(e) {
+                  console.log(e.target.dataset)
+                  document.querySelector(e.target.dataset.owner).src = e.target.src;
+              });
+          });
       },
 
       setLazy: function(){

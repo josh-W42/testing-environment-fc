@@ -8,8 +8,7 @@
 body {
     -webkit-tap-highlight-color: inherit;
     font-family: 'Lato';
-    background-color: black;
-    color: white;
+    color: black;
 }
 
 #modal-video {
@@ -49,7 +48,7 @@ footer {
   background-color: #222;
 }
 
-#mainNav.navbar-shrink {
+#mainNav .navbar-shrink {
   background-color: rgba(34, 34, 34, 0.95);
 }
 
@@ -104,6 +103,8 @@ footer {
   }
 }
 
+
+
 /*
   End CSS
   Location: Multiple Pages
@@ -121,6 +122,193 @@ iframe {
 #foundationsLogo {
   width: 15%;
   margin-bottom: 30px;
+}
+
+/*
+  End CSS
+  Location: Multiple Pages
+*/
+
+/*
+   Start CSS
+   Location: Gear View
+*/
+body {
+    background-image: url("../../img/events/workshops/winter/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+#gearView {
+    padding-top: 0px;
+    background-color: rgba(255,255,255, 0.5);
+    font-weight: bold;
+    box-shadow: 0px 0px 50px white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainPhotoDiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bannerImage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+.mainPhotoOverlay {
+    margin-top: -15%;
+    width: 100%;
+    z-index: 2;
+    min-height: 75px;
+    padding: 1%;
+    font-weight: bold;
+    Color: white;
+    text-shadow: 0px 0px 10px black;
+    max-width: none;
+}
+
+.innerOverlayContent {
+    padding: 2%;
+    z-index: 3;
+}
+
+.gearTitle {
+    margin: 5%;
+}
+
+
+.pic-option button:hover {
+    box-shadow: 5px 5px 2px grey;
+    cursor: pointer;
+}
+
+.item-container {
+  display: inline-flex;
+  width: 100%;
+}
+
+.pic-option {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  width: 33%;
+}
+
+.gearCost {
+    margin-bottom: 0px;
+}
+
+.btn {
+    color: black;
+}
+
+.gearButtons {
+    background-color: snow;
+}
+
+.product-pic {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orderFormDiv {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: snow;
+    padding: 1%;
+    width: 100%;
+}
+
+.orderFormBtn {
+    cursor: pointer;
+}
+
+.primaryPhoto {
+    width: 35%;
+    float: left;
+    margin-left: 15%;
+}
+
+.productDescription {
+    text-align: left;
+    float: left;
+    margin-left: 5%;
+}
+
+.altPhotos {
+    margin-left: auto;
+    margin-right: auto;
+    height: 65px;
+    width: 65px;
+}
+
+.altPhotos:hover {
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 575px) {
+    #gearView {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    .gearButtons {
+        width: 100%;
+        font-size: 2.5vw;
+    }
+
+    .primaryPhoto {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .productDescription p,
+    .productDescription li {
+        font-size: 6vw;
+    }
+
+
 }
 
 /*
