@@ -256,52 +256,24 @@
 
       workshops: [
         {
-          name: '2018 Summer',
+          name: 'workshop',
           animation: '../img/Animations and Buttons/new neon.mpv4',
           dates: [
             {
-              title: '6/29 Merton Ung',
-              video: 'https://www.youtube-nocookie.com/embed/Ubnio0ptxPI?rel=0&amp;showinfo=0'
+              title: 'SEBASTIAN LE',
+              video: 'https://www.youtube-nocookie.com/embed/-ffqXaQ_k-8'
             },
             {
-              title: '7/5 SAMANTHA KING',
-              video: 'https://www.youtube-nocookie.com/embed/VzZgKMFbNB4?rel=0&amp;showinfo=0'
+              title: 'CHARLIE MANN',
+              video: 'https://www.youtube-nocookie.com/embed/Wp918PLwJho'
             },
             {
-              title: '7/12 VINCENT PORTUGAL',
-              video: 'https://www.youtube-nocookie.com/embed/XdgYVzbgMJM?rel=0&amp;showinfo=0'
+              title: 'SETH SO',
+              video: 'https://www.youtube-nocookie.com/embed/b9mJCNNg2uo'
             },
             {
-              title: '7/17 COLIN HWANG x ARYANNA RAMIREZ',
-              video: 'https://www.youtube-nocookie.com/embed/PpNRVy2uFf8?rel=0&amp;showinfo=0'
-            },
-            {
-              title: "7/28 JOMAR BATAC",
-              video: "https://www.youtube-nocookie.com/embed/nw3ZcaD9gzc?rel=0&amp;showinfo=0",
-            },
-            {
-              title: "8/3 T.Y. LI x SOFIA UNAL",
-              video: "https://www.youtube-nocookie.com/embed/-72WW9UgP-s?rel=0&amp;showinfo=0",
-            },
-            {
-              title: '8/9 CHAU QUACH',
-              video: 'https://www.youtube-nocookie.com/embed/pX9D4s1jrVc?rel=0&amp;showinfo=0'
-            },
-            {
-              title: "8/15 GENESIS GARING x KRISTA ANTONIO",
-              video: "https://www.youtube-nocookie.com/embed/OENEsKzYKC4?rel=0&amp;showinfo=0",
-            },
-            {
-              title: "8/20 EDSON MALDONADO",
-              video: "https://www.youtube-nocookie.com/embed/V_c2Jumoow8?rel=0&amp;showinfo=0",
-            },
-            {
-              title: "8/27 Brandon x Elijah Aguilar",
-              video: "https://www.youtube-nocookie.com/embed/2kTdFF5gBZE?rel=0&amp;showinfo=0",
-            },
-            {
-              title: "9/1 MICHAEL NGUYEN",
-              video: "https://www.youtube-nocookie.com/embed/fyUZJfAFds0?rel=0&amp;showinfo=0",
+              title: 'ALEX BYUN',
+              video: 'https://www.youtube-nocookie.com/embed/BC_qdhr_fyk'
             },
           ]
         },
@@ -332,20 +304,24 @@
 
       showcaseImg: [
         {
-          credit: 'PC: Gloria Lam',
-          img: '../img/Community Pages/kaizen.jpg',
+          credit: 'PC: Selina Pan',
+          img: '../img/Community Pages/exodia.jpg',
         },
         {
-          credit: 'PC: Tia Liu',
-          img: '../img/Community Pages/pwr.jpg',
-        },
-        {
-          credit: 'PC: Calvin Ha',
-          img: '../img/Community Pages/eta.jpg',
+          credit: 'PC: Andrew Nguyen',
+          img: '../img/Community Pages/plus_ultra.jpg',
         },
         {
           credit: 'PC: Calvin Ha',
-          img: '../img/Community Pages/nimbus.jpg',
+          img: '../img/Community Pages/pocket_monsters.jpg',
+        },
+        {
+          credit: 'PC: Calvin Ha',
+          img: '../img/Community Pages/koi.jpg',
+        },
+        {
+          credit: 'PC: Calvin Ha',
+          img: '../img/Community Pages/peanut_butter.jpg',
         },
       ],
 

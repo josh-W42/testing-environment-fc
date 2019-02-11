@@ -153,9 +153,11 @@ body {
 }
 
 #contentDiv,
-#calenderDiv {
+#calendarDiv {
   background-color: rgba(255,255,255, 0.75);
   font-weight: bold;
+  min-height: 500px;
+  box-shadow: 0px 0px 50px white;
 }
 
 h1,
@@ -174,7 +176,8 @@ h6 {
 
 @media screen and (min-width: 991px) {
   #contentDiv {
-    width: 50%;
+    width: 80%;
+    padding: 2%;
   }
 }
 
@@ -197,6 +200,7 @@ h6 {
   margin-left: 10%;
   margin-right: 2%;
 }
+
 
 .workshopSection a {
   color: darkblue;
@@ -257,30 +261,38 @@ h6 {
 }
 
 @media screen and (max-width: 575px) {
+    #contentDiv,
+    #calendarDiv {
+      background-color: rgba(255,255,255, 0.75);
+      font-weight: bold;
+      min-height: 500px;
+    }
 
-  .workshopDescription {
-    padding: 5% 0% 0px 0%;
-  }
+    #calendarDiv {
+        padding-top: 10%;
+    }
 
-  .workshopPhoto {
-    max-width: 100%;
-    float: none;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
+    .workshopDescription {
+        padding: 5% 0% 0px 0%;
+    }
 
-  #previousBanner,
-  #nextBanner {
-    font-size: 3em;
-  }
+    .workshopPhoto {
+        max-width: 100%;
+        float: none;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
 
-  .duoPost {
-    width: 100%;
-  }
+    #previousBanner,
+    #nextBanner {
+        font-size: 3em;
+    }
 
-  .workshopPhoto {
-    width: 100%;
-  }
+    .duoPost {
+        width: 100%;
+    }
+
 }
 
 
@@ -296,23 +308,34 @@ h6 {
 */
 
 .specialSection {
-  background-image: url("../../img/Banners/fallShowcaseBackground.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-weight: 600;
-  text-shadow: 0.5px 0.5px lightblue;
+    background-color: rgba(255,255,255, 0.75);
+    font-weight: bold;
+    box-shadow: 0px 0px 50px white;
+    width: 80%;
 }
 
-.specialSection h1,
-.specialSection h2,
-.specialSection h3 {
-  color: black;
-  text-shadow: 3px 3px lightblue;
+.bigEventBanner {
+    max-width: 100%;
 }
 
-.specialSection tr {
-  border-bottom: 2px solid black;
+.lineupBox {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: snow;
+    box-shadow: 0px 0px 50px snow;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+.dayList {
+    padding-left: 0px;
+    background: rgb(255,255,255, 0.2);
+    text-align: left;
+}
+
+.dayList span {
+    float: right;
 }
 
 #showcaseInfoDiv div {
@@ -323,8 +346,29 @@ h6 {
   list-style-type: none;
 }
 
-#showcaseInfoDiv a {
+#showcaseInfoDiv a,
+.specialSection a {
   color: blue;
+}
+
+@media screen and (max-width: 575px) {
+    .specialSection {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .lineupBox {
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    .dayList {
+        padding: 0px;
+    }
+
+    #showcaseInfoDiv {
+      padding: 0px;
+    }
 }
 
 /*
@@ -338,8 +382,9 @@ h6 {
 */
 
 #calendar {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
+  min-height: 400px;
 }
 
 #calendar td {
@@ -349,6 +394,7 @@ h6 {
 #calendar .fc-h-event {
   background-color: white;
   color: black;
+  margin: 1%;
 }
 
 #calendar .fc-h-event:hover {
