@@ -116,6 +116,10 @@ section {
   padding-bottom: 0px;
 }
 
+#targetContainer {
+    margin-top: 5%;
+}
+
 #portfolio {
   padding-top: 5%;
   padding-bottom: 100px;
@@ -171,23 +175,27 @@ iframe {
 }
 
 @media screen and (max-width: 575px) {
-  #timerBox h1 {
-    font-size: 1.25em;
-    padding: 0px;
-  }
 
-  #timerBox h4 {
-    font-size: 0.8em;
-  }
+    #targetContainer {
+        margin-top: 20%;
+    }
 
-  .countdownText {
-    font-size: 1.15em;
-  }
+    #timerBox h1 {
+        font-size: 1.25em;
+        padding: 0px;
+    }
 
-  .case {
-    font-size: 1.25em;
-    width: 150px;
-  }
+    #timerBox h4 {
+        font-size: 0.8em;
+    }
+
+    .countdownText {
+        font-size: 1.15em;
+    }
+    .case {
+        font-size: 1.25em;
+        width: 150px;
+    }
 }
 
 

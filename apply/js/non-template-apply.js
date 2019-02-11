@@ -23,6 +23,10 @@
         {
           name: 'choreoShowcase',
           link: "https://docs.google.com/forms/d/e/1FAIpQLSfuTtGYUJlrAIdEV1bL3EAwVg4s7n_PEOmI9OBoGAxanLF3kg/viewform?embedded=true"
+        },
+        {
+            name: "wintensive",
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSesWygJOX2tbpfsrpzqvOnIoARYyGE9808XAQtCIV08EeKjXQ/viewform?embedded=true"
         }
       ],
   };
@@ -114,7 +118,7 @@
 
     timeDifference: function(time) {
       // Use this function to select your countdown end date.
-      const endDate = new Date('December 3, 2018 19:00:00');
+      const endDate = new Date('February 8, 2018 18:00:00');
       const difference = endDate - time;
       let seconds, minutes, hours, days;
       if(difference <= 0) {
