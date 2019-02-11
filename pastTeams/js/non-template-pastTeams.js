@@ -729,6 +729,26 @@
 
       // Here I wanted the first showcase shown to be the most recent.
       init: function() {
+
+        let count = 0;
+
+        data.years.yearOne.forEach((sc) => {
+          count += sc.teams.length
+        });
+        data.years.yearTwo.forEach((sc) => {
+          count += sc.teams.length
+        });
+        data.years.yearThree.forEach((sc) => {
+          count += sc.teams.length
+        });
+        data.years.yearFour.forEach((sc) => {
+          count += sc.teams.length
+        });
+        data.years.yearFive.forEach((sc) => {
+          count += sc.teams.length
+        });
+        console.log(`There have been ${count} FC teams`)
+
         data.yearID = 'yearFive';
         data.showCaseID = '1'
         view.render();
