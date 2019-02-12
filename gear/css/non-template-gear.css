@@ -227,6 +227,8 @@ p {
 
 .gearButtons {
     background-color: snow;
+    box-shadow: 0px white;
+    border: 0px white;
 }
 
 .product-pic {
