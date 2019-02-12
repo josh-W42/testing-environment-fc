@@ -134,10 +134,7 @@ iframe {
    Location: Gear View
 */
 body {
-    background-image: url("../../img/events/workshops/winter/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: white;
+    background-color: #f8f9fa;
 }
 
 h1 {
@@ -158,9 +155,8 @@ p {
 
 #gearView {
     padding-top: 0px;
-    background-color: rgba(225, 239, 246, 0.7);
+    background-color: rgba(255, 255, 255);
     font-weight: bold;
-    box-shadow: 0px 0px 50px #E1EFF6;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -211,7 +207,7 @@ p {
 
 .pic-option {
   display: flex;
-  width: 33%;
+  width: 33.33%;
 }
 
 .hiddenDetails {
@@ -351,7 +347,7 @@ p {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    background: rgb(225, 239, 246);
+    background: #f8f9fa;
     padding: 1%;
     width: 100%;
 }
