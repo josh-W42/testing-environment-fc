@@ -7,6 +7,7 @@
           data.lazy = Array.prototype.filter.call(data.lazy, function(l){ return l.getAttribute('data-src');});
       },
 
+
   };
 
   let model = {
@@ -19,16 +20,14 @@
           model.registerListener('load', model.lazyLoad);
           model.registerListener('scroll', model.lazyLoad);
 
-          document.querySelectorAll(".gearButtons").forEach(function(btn) {
-              btn.addEventListener('click', function(e) {
-
+          document.querySelectorAll(".productDiv").forEach(function(pic) {
+              pic.addEventListener('mouseenter', function(e) {
+                  document.querySelector(e.target.dataset.info).style.display = "block";
               });
           });
-
-          document.querySelectorAll(".altPhotos").forEach(function(photo) {
-              photo.addEventListener('click', function(e) {
-                  console.log(e.target.dataset)
-                  document.querySelector(e.target.dataset.owner).src = e.target.src;
+          document.querySelectorAll(".productDiv").forEach(function(pic) {
+              pic.addEventListener('mouseleave', function(e) {
+                  document.querySelector(e.target.dataset.info).style.display = "none";
               });
           });
       },
@@ -72,6 +71,60 @@
   let view = {
 
     init: function() {
+        document.querySelectorAll(".altPhotos").forEach(function(photo) {
+            photo.addEventListener('click', function(e) {
+                view.showProductImg(e.target.dataset.index, e.target.dataset.owner);
+            });
+        });
+    },
+
+    showProductImg: (i, gear) => {
+
+        let current = document.querySelector(`${gear} .activeR`) ? (document.querySelector(`${gear} .activeR`)):(document.querySelector((`${gear} .activeL`)));
+
+        if(!(current.dataset.index === i)) {
+
+            let exp = (current.classList.contains("activeR")) ? ("activeR"):("activeL");
+
+
+            // The next photo is on the right.
+            if (current.dataset.index < i) {
+
+                function remove() {
+                    document.querySelector(`${gear} .previousL`).classList.remove("previousL");
+                }
+
+                function add() {
+                    let arr =  document.querySelectorAll(`${gear} .productPic`);
+                    arr[i].classList.add("activeR");
+                }
+
+                current.classList.replace(exp, "previousL");
+                current.classList.remove("activeL");
+
+                setTimeout(remove, 450);
+
+                setTimeout(add, 450);
+            }
+            // The next photo is on the left
+            else {
+                function remove() {
+                    document.querySelector(`${gear} .previousR`).classList.remove("previousR");
+                }
+
+                function add() {
+                    let arr =  document.querySelectorAll(`${gear} .productPic`);
+                    arr[i].classList.add("activeL");
+                }
+
+                current.classList.replace(exp, "previousR");
+                current.classList.remove("activeR");
+
+                setTimeout(remove, 450);
+
+                setTimeout(add, 450);
+            }
+        }
 
     },
 
@@ -82,7 +135,7 @@
       init: function() {
         model.init();
         view.init();
-      },
+    },
 
   };
 

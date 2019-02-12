@@ -137,6 +137,7 @@ body {
     background-image: url("../../img/events/workshops/winter/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: white;
 }
 
 h1 {
@@ -157,10 +158,10 @@ p {
 
 #gearView {
     padding-top: 0px;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(225, 239, 246, 0.7);
     font-weight: bold;
-    box-shadow: 0px 0px 50px white;
-    width: 70%;
+    box-shadow: 0px 0px 50px #E1EFF6;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -195,9 +196,8 @@ p {
 }
 
 .gearTitle {
-    margin: 5%;
+    margin: 10%;
 }
-
 
 .pic-option button:hover {
     box-shadow: 5px 5px 2px grey;
@@ -211,38 +211,147 @@ p {
 
 .pic-option {
   display: flex;
-  text-align: center;
-  flex-direction: column;
-  margin: auto;
   width: 33%;
+}
+
+.hiddenDetails {
+    display: none;
 }
 
 .gearCost {
     margin-bottom: 0px;
 }
 
-.btn {
-    color: black;
+.productPicSlider {
+    overflow: hidden;
+    display: inline-block;
 }
 
-.gearButtons {
-    background-color: snow;
-    box-shadow: 0px white;
-    border: 0px white;
+.productPic {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
 }
 
-.product-pic {
-  display: flex;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.activeR {
+    display: inline-flex;
+    -webkit-animation-name: rightSlideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: rightSlideIn;
+    animation-duration: 0.5s;
+}
+
+.activeL {
+    display: inline-flex;
+    -webkit-animation-name: leftSlideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: leftSlideIn;
+    animation-duration: 0.5s;
+}
+
+.previousR {
+    display: inline-flex;
+    -webkit-animation-name: rightSlideOut;
+    -webkit-animation-duration: 0.5s;
+    animation-name: rightSlideOut;
+    animation-duration: 0.5s;
+}
+
+.previousL {
+    display: inline-flex;
+    -webkit-animation-name: leftSlideOut;
+    -webkit-animation-duration: 0.5s;
+    animation-name: leftSlideOut;
+    animation-duration: 0.5s;
+}
+
+
+@-webkit-keyframes rightSlideIn {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rightSlideIn {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes rightSlideOut {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes rightSlideOut {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+@-webkit-keyframes leftSlideOut {
+    from {
+        display: flex;
+        transform: translateX(0px);
+    }
+    to {
+        display: flex;
+        transform: translateX(-500px);
+    }
+}
+
+@keyframes leftSlideOut {
+    from {
+        display: flex;
+        transform: translateX(0px);
+    }
+    to {
+        display: flex;
+        transform: translateX(-500px);
+    }
+}
+
+@-webkit-keyframes leftSlideIn {
+    from {
+        display: flex;
+        transform: translateX(-500px);
+    }
+    to {
+        display: flex;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes leftSlideIn {
+    from {
+        display: flex;
+        transform: translateX(-500px);
+    }
+    to {
+        display: flex;
+        transform: translateX(0px);
+    }
 }
 
 .orderFormDiv {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    background: snow;
+    background: rgb(225, 239, 246);
     padding: 1%;
     width: 100%;
 }
@@ -267,15 +376,18 @@ p {
     margin-left: 5%;
 }
 
+.photoCenterer {
+    margin: auto;
+}
+
 .altPhotos {
-    margin-left: auto;
-    margin-right: auto;
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
 }
 
 .altPhotos:hover {
     border: 1px solid black;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 575px) {

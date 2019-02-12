@@ -98,43 +98,83 @@
             </div>
         </div>
         <div class="text-center container">
-            <h2 class="gearTitle">Winter Intensive Gear 2019</h2>
+            <h2 class="gearTitle">Gear 2019</h2>
             <div class="row">
                 <div class="pic-option portfolio-item">
                     <div class="portfolio-caption">
-                        <h3>Pins</h3>
-                        <img src="../img/gear/pin.jpg" class="product-pic" alt="Photo of Foundations Pin" />
-                        <p class="gearCost">$3.00</p>
-                        <a class="portfolio-link" data-toggle="modal" href="#pinModal">
-                            <button class="gearButtons btn btn-primary" data-gear="pin" type="button">More Details</button>
-                        </a>
+                        <div class="productDiv" data-info="#hiddenPin">
+                            <h3>Pins</h3>
+                            <a class="portfolio-link" data-toggle="modal" href="#pinModal">
+                                <div id="pin" class="productPicSlider">
+                                    <img src="../img/gear/pinFront.jpg" class="productPic activeR" data-index="0" alt="Photo of Foundations Pin" />
+                                    <img src="../img/gear/pinBack.jpg" class="productPic" data-index="1" alt="Photo of Foundations Pin backside" />
+                                    <img src="../img/gear/pinExample.jpg" class="productPic" data-index="2" alt="Photo of Foundations Pin with other pins on jacket" />
+                                    <img src="../img/gear/pinExample2.jpg" class="productPic" data-index="3" alt="Photo of Foundations Pin on bag" />
+                                </div>
+                            </a>
+                            <div id="hiddenPin" class="hiddenDetails">
+                                <div id="altPhotoList" class="row">
+                                    <div class="photoCenterer">
+                                        <img src="../img/gear/pinFront.jpg" data-owner="#pin" data-index="0" class="altPhotos" />
+                                        <img src="../img/gear/pinBack.jpg" data-owner="#pin" data-index="1" class="altPhotos" />
+                                        <img src="../img/gear/pinExample.jpg" data-owner="#pin" data-index="2" class="altPhotos" />
+                                        <img src="../img/gear/pinExample2.jpg" data-owner="#pin" data-index="3" class="altPhotos" />
+                                    </div>
+                                </div>
+                                <p class="gearCost">$3.00</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="pic-option portfolio-item">
                     <div class="portfolio-caption">
-                        <h3>Beanies</h3>
-                        <img src="../img/gear/beanie.jpg" class="product-pic" alt="Photo of Beanie" />
-                        <p class="gearCost">$8.00</p>
-                        <a class="portfolio-link gearLink" data-toggle="modal" href="#beanieModal">
-                            <button class="gearButtons btn btn-primary" type="button" data-gear="beanie">More Details</button>
-                        </a>
+                        <div class="productDiv" data-info="#hiddenBeanie">
+                            <h3>Beanies</h3>
+                            <a class="portfolio-link gearLink" data-toggle="modal" href="#beanieModal">
+                                <div id="beanie" class="productPicSlider">
+                                    <img src="../img/gear/beanie.jpg" class="productPic activeR" data-index="0" alt="Photo of Beanie" />
+                                    <img src="../img/gear/beanie2.jpg"  class="productPic" data-index="1" alt="Photo of Beanie" />
+                                </div>
+                            </a>
+                            <div id="hiddenBeanie" class="hiddenDetails">
+                                <div id="altPhotoList" class="row">
+                                    <div class="photoCenterer">
+                                        <img src="../img/gear/beanie.jpg" data-owner="#beanie" data-index="0" class="altPhotos" />
+                                        <img src="../img/gear/beanie2.jpg" data-owner="#beanie" data-index="1" class="altPhotos" />
+                                    </div>
+                                </div>
+                                <p class="gearCost">$10.00</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="pic-option portfolio-item">
                     <div class="portfolio-caption">
-                        <h3>T-Shirts</h3>
-                        <img src="../img/gear/old_front.png" class="product-pic" alt="Photo of T-Shirt" />
-                        <p class="gearCost">$17.00</p>
-                        <a class="portfolio-link gearLink" data-toggle="modal" href="#tshirtModal">
-                            <button class="gearButtons btn btn-primary" type="button" data-gear="shirt">More Details</button>
-                        </a>
+                        <div class="productDiv" data-info="#hiddenStickers">
+                            <h3>Stickers</h3>
+                            <a class="portfolio-link gearLink" data-toggle="modal" href="#tshirtModal">
+                                <div id="sticker" class="productPicSlider">
+                                    <img src="../img/gear/sticker.jpg" class="productPic activeR" data-index="0" alt="Photo of Sticker" />
+                                    <img src="../img/gear/stickerExample.jpg" data-index="1" class="productPic" />
+                                </div>
+                            </a>
+                            <div id="hiddenStickers" class="hiddenDetails">
+                                <div id="altPhotoList" class="row">
+                                    <div class="photoCenterer">
+                                        <img src="../img/gear/sticker.jpg" data-owner="#sticker" data-index="0" class="altPhotos" />
+                                        <img src="../img/gear/stickerExample.jpg" data-owner="#sticker" data-index="1" class="altPhotos" />
+                                    </div>
+                                </div>
+                                <p class="gearCost">$1.00</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-5 portfolio-item orderFormDiv">
               <div class="portfolio-caption text-center">
                 <h4>Done Viewing?</h4>
-                <p class="text-muted">Fill out an order form!</p>
+                <p>Fill out an order form!</p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSed3Zy3ZnyhgrbyWfQu8laHEBqP72ZSi21nYTH0jEIF0cAuBQ/viewform">
                     <button class="btn btn-primary orderFormBtn" type="button">Go to Form</button>
                 </a>
@@ -149,7 +189,7 @@
   and also an add to cart feature so it can intigrate with a RSVP form.
 -->
 
-<div class="portfolio-modal modal fade" id="pinModal" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="portfolio-modal modal fade" id="pinModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
@@ -251,7 +291,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
   <!-- Footer -->
 
