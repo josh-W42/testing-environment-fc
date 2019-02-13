@@ -142,9 +142,9 @@
                 current.classList.replace(exp, "previousL");
                 current.classList.remove("activeL");
 
-                setTimeout(remove, 450);
+                setTimeout(remove, 200);
 
-                setTimeout(add, 450);
+                setTimeout(add, 200);
             }
             // The next photo is on the left
             else {
@@ -166,9 +166,9 @@
                 current.classList.replace(exp, "previousR");
                 current.classList.remove("activeR");
 
-                setTimeout(remove, 450);
+                setTimeout(remove, 200);
 
-                setTimeout(add, 450);
+                setTimeout(add, 200);
             }
         }
 

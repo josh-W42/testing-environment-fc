@@ -90,15 +90,8 @@
 
 <section id="gearView">
     <div class="mainPhotoDiv">
-        <img class="bannerImage" src="../img/gear/fc_hats.jpg" alt="gearPhoto" />
-        <div class="mainPhotoOverlay">
-            <div class="innerOverlayContent">
-                <h2>Geared Up For Workshops?</h2>
-                <p>Check out some of our new FC merch being sold this year!</p>
-            </div>
-        </div>
         <div class="text-center container">
-            <h2 class="gearTitle">Gear 2019</h2>
+            <h2 class="gearTitle">FC 2019 Merch</h2>
             <div class="row">
                 <div class="pic-option portfolio-item">
                     <div class="portfolio-caption">
@@ -106,10 +99,10 @@
                             <h3>Pins</h3>
                             <a class="portfolio-link" data-toggle="modal" href="#pinModal">
                                 <div id="pin" class="productPicSlider">
-                                    <img src="../img/gear/pinFront.jpg" class="productPic activeR" data-index="0" alt="Photo of Foundations Pin" />
+                                    <img src="../img/gear/pinFront.jpg" class="productPic" data-index="0" alt="Photo of Foundations Pin" />
                                     <img src="../img/gear/pinBack.jpg" class="productPic" data-index="1" alt="Photo of Foundations Pin backside" />
                                     <img src="../img/gear/pinExample.jpg" class="productPic" data-index="2" alt="Photo of Foundations Pin with other pins on jacket" />
-                                    <img src="../img/gear/pinExample2.jpg" class="productPic" data-index="3" alt="Photo of Foundations Pin on bag" />
+                                    <img src="../img/gear/pinExample2.jpg" class="productPic activeR" data-index="3" alt="Photo of Foundations Pin on bag" />
                                 </div>
                             </a>
                             <div id="hiddenPin" class="hiddenDetails">
@@ -132,15 +125,13 @@
                             <h3>Beanies</h3>
                             <a class="portfolio-link gearLink" data-toggle="modal" href="#beanieModal">
                                 <div id="beanie" class="productPicSlider">
-                                    <img src="../img/gear/beanie.jpg" class="productPic activeR" data-index="0" alt="Photo of Beanie" />
-                                    <img src="../img/gear/beanie2.jpg"  class="productPic" data-index="1" alt="Photo of Beanie" />
+                                    <img src="../img/gear/comingSoon.jpg" class="productPic activeR" data-index="0" alt="Photo of Beanie" />
                                 </div>
                             </a>
                             <div id="hiddenBeanie" class="hiddenDetails">
                                 <div id="altPhotoList" class="row">
                                     <div class="photoCenterer">
-                                        <img src="../img/gear/beanie.jpg" data-owner="#beanie" data-index="0" class="altPhotos" />
-                                        <img src="../img/gear/beanie2.jpg" data-owner="#beanie" data-index="1" class="altPhotos" />
+                                        <img src="../img/gear/comingSoon.jpg" data-owner="#beanie" data-index="0" class="altPhotos" />
                                     </div>
                                 </div>
                                 <p class="gearCost">$10.00</p>
@@ -152,10 +143,10 @@
                     <div class="portfolio-caption">
                         <div class="productDiv" data-info="#hiddenStickers">
                             <h3>Stickers</h3>
-                            <a class="portfolio-link gearLink" data-toggle="modal" href="#tshirtModal">
+                            <a class="portfolio-link gearLink" data-toggle="modal" href="#stickerModal">
                                 <div id="sticker" class="productPicSlider">
-                                    <img src="../img/gear/sticker.jpg" class="productPic activeR" data-index="0" alt="Photo of Sticker" />
-                                    <img src="../img/gear/stickerExample.jpg" data-index="1" class="productPic" />
+                                    <img src="../img/gear/sticker.jpg" class="productPic" data-index="0" alt="Photo of Sticker" />
+                                    <img src="../img/gear/stickerExample.jpg" class="productPic activeR" data-index="1" />
                                 </div>
                             </a>
                             <div id="hiddenStickers" class="hiddenDetails">
@@ -174,9 +165,8 @@
             <div class="col-md-5 portfolio-item orderFormDiv">
               <div class="portfolio-caption text-center">
                 <h4>Done Viewing?</h4>
-                <p>Fill out an order form!</p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSed3Zy3ZnyhgrbyWfQu8laHEBqP72ZSi21nYTH0jEIF0cAuBQ/viewform">
-                    <button class="btn btn-primary orderFormBtn" type="button">Go to Form</button>
+                    <button class="btn btn-primary orderFormBtn" type="button">Order Form</button>
                 </a>
               </div>
             </div>
@@ -189,7 +179,7 @@
   and also an add to cart feature so it can intigrate with a RSVP form.
 -->
 
-<!-- <div class="portfolio-modal modal fade" id="pinModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="pinModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
@@ -200,21 +190,25 @@
       <div class="container">
         <div class="row">
           <div class="modal-body">
-              <div class="col-lg-12">
-                  <h2 id="modalName">Pins</h2>
-                  <img id="pin" class="primaryPhoto" src="../img/gear/pin.jpg" />
-                  <div class="productDescription">
-                      <div id="altPhotoList" class="row">
-                          <img src="../img/gear/pin.jpg" data-owner="#pin" class="altPhotos" />
-                          <img src="../img/gear/beanie2.jpg" data-owner="#pin" class="altPhotos" />
-                      </div>
-                      <p>$3.00</p>
-                      <p>Magnetic Cube Pin</p>
-                      <ul>
-                          <li>2 x 2 in</li>
-                          <li>Special Edition</li>
-                      </ul>
+              <div id="pinModalTarget" class="productPicSlider">
+                  <img src="../img/gear/pinFront.jpg" class="productPic" data-index="0" />
+                  <img src="../img/gear/pinBack.jpg" class="productPic" data-index="1" alt="Photo of Foundations Pin backside" />
+                  <img src="../img/gear/pinExample.jpg" class="productPic" data-index="2" alt="Photo of Foundations Pin with other pins on jacket" />
+                  <img src="../img/gear/pinExample2.jpg" class="productPic activeR" data-index="3" alt="Photo of Foundations Pin on bag" />
+              </div>
+              <div class="productDescription">
+                  <div id="altPhotoList" class="modalAltList">
+                      <img src="../img/gear/pinFront.jpg" data-owner="#pinModalTarget" data-index="0" class="altPhotos" />
+                      <img src="../img/gear/pinBack.jpg" data-owner="#pinModalTarget" data-index="1" class="altPhotos" />
+                      <img src="../img/gear/pinExample.jpg" data-owner="#pinModalTarget" data-index="2" class="altPhotos" />
+                      <img src="../img/gear/pinExample2.jpg" data-owner="#pinModalTarget" data-index="3" class="altPhotos" />
                   </div>
+                  <p>$3.00</p>
+                  <p>Foundations Cube Pin</p>
+                  <ul>
+                      <li>1 x 1 inches.</li>
+                      <li>Pin onto backbacks and bags.</li>
+                  </ul>
               </div>
               <br />
           </div>
@@ -236,18 +230,18 @@
         <div class="row">
           <div class="modal-body">
               <div class="col-lg-12">
-                  <h2 id="modalName">Beanies</h2>
-                  <img id="beanie" class="primaryPhoto" src="../img/gear/beanie.jpg" />
+                  <div id="beanieModalTarget" class="productPicSlider">
+                      <img src="../img/gear/comingSoon.jpg" class="productPic activeR" data-index="0" alt="Photo of Beanie" />
+                  </div>
                   <div class="productDescription">
-                      <div id="altPhotoList" class="row">
-                          <img src="../img/gear/beanie.jpg" data-owner="#beanie" class="altPhotos" />
-                          <img src="../img/gear/beanie2.jpg" data-owner="#beanie" class="altPhotos" />
+                      <div id="altPhotoList" class="modalAltList">
+                          <img src="../img/gear/comingSoon.jpg" data-owner="#beanieModalTarget" data-index="0" class="altPhotos" alt="Photo of Beanie" />
                       </div>
-                      <p>$8.00</p>
-                      <p>One Size fits all</p>
+                      <p>$10.00</p>
+                      <p>Foundations Beanie</p>
                       <ul>
-                          <li>Polyester Material</li>
-                          <li>Fits True to Size</li>
+                          <li>Will be avalible very soon.</li>
+                          <li>Check social media for more updates.</li>
                       </ul>
                   </div>
               </div>
@@ -259,7 +253,7 @@
   </div>
 </div>
 
-<div class="portfolio-modal modal fade" id="tshirtModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="stickerModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
@@ -271,18 +265,20 @@
         <div class="row">
           <div class="modal-body">
               <div class="col-lg-12">
-                  <h2 id="modalName">Wintensive T-Shirts</h2>
-                  <img id="tshirt" class="primaryPhoto" src="../img/gear/old_front.png" />
+                  <div id="stickerModalTarget" class="productPicSlider">
+                      <img src="../img/gear/sticker.jpg" class="productPic" data-index="0" alt="Photo of Sticker" />
+                      <img src="../img/gear/stickerExample.jpg" data-index="1" class="productPic activeR" />
+                  </div>
                   <div class="productDescription">
-                      <div id="altPhotoList" class="row">
-                          <img src="../img/gear/old_front.png" data-owner="#tshirt" class="altPhotos" />
-                          <img src="../img/gear/old_back.jpg" data-owner="#tshirt" class="altPhotos" />
+                      <div id="altPhotoList" class="modalAltList">
+                          <img src="../img/gear/sticker.jpg" data-owner="#stickerModalTarget" data-index="0" class="altPhotos" />
+                          <img src="../img/gear/stickerExample.jpg" data-owner="#stickerModalTarget" data-index="1" class="altPhotos" />
                       </div>
-                      <p>$17.00</p>
-                      <p>Sizes Avalible: XS S M L XL</p>
+                      <p>$1.00</p>
+                      <p>Foundations Cube Sticker</p>
                       <ul>
-                          <li>Polyester Material</li>
-                          <li>Fits True to Size</li>
+                          <li>2.5 x 3 inches</li>
+                          <li>Perfect for laptops, water bottles and notebooks.</li>
                       </ul>
                   </div>
               </div>
@@ -291,7 +287,7 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
   <!-- Footer -->
 
