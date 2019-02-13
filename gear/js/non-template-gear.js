@@ -20,11 +20,13 @@
           model.registerListener('load', model.lazyLoad);
           model.registerListener('scroll', model.lazyLoad);
 
+
           document.querySelectorAll(".productDiv").forEach(function(pic) {
               pic.addEventListener('mouseenter', function(e) {
                   document.querySelector(e.target.dataset.info).style.display = "block";
               });
           });
+
           document.querySelectorAll(".productDiv").forEach(function(pic) {
               pic.addEventListener('mouseleave', function(e) {
                   document.querySelector(e.target.dataset.info).style.display = "none";
@@ -76,8 +78,40 @@
                 view.showProductImg(e.target.dataset.index, e.target.dataset.owner);
             });
         });
+
+        let bodyRect = document.body.getBoundingClientRect();
+        if(Math.floor(bodyRect.right) < 575) {
+
+            let start = 0;
+
+            document.querySelectorAll(".productPicSlider").forEach(function(pic) {
+                pic.addEventListener("touchstart", function(e) {
+                    start = e.changedTouches[0].clientX;
+                });
+            });
+
+            document.querySelectorAll(".productPicSlider").forEach(function(pic) {
+                pic.addEventListener("touchend", function(e) {
+                    let end = e.changedTouches[0].clientX;
+                    // Basically figures out if a swipe is:
+                    // 1. Significant, > than 100 in x position
+                    // 2. either from left to right or right to left
+                    // and 3. if there are any more photos in the array.
+                    if (start > end && Math.abs(start - end) > 50) {
+                        view.showProductImg(parseInt(e.target.dataset.index, 10) + 1, `#${e.target.parentElement.id}`);
+                    } else if (start < end && Math.abs(start - end) > 100) {
+                        view.showProductImg(parseInt(e.target.dataset.index, 10) - 1, `#${e.target.parentElement.id}`);
+                    }
+                });
+            });
+        }
     },
 
+
+    // This function should all the product photos to slide into and out of their
+    // respective sides of the page. Note that the setTimeout intervals must be
+    // shorter than the animation durration in the css. Also, when adding and
+    // removing classes the timeout interval must be equal for smooth transitions.
     showProductImg: (i, gear) => {
 
         let current = document.querySelector(`${gear} .activeR`) ? (document.querySelector(`${gear} .activeR`)):(document.querySelector((`${gear} .activeL`)));
@@ -96,6 +130,12 @@
 
                 function add() {
                     let arr =  document.querySelectorAll(`${gear} .productPic`);
+                    // Accounting for edge cases.
+                    if (i === arr.length) {
+                        i = 0;
+                    } else if (i < 0) {
+                        i = arr.length - 1;
+                    }
                     arr[i].classList.add("activeR");
                 }
 
@@ -114,6 +154,12 @@
 
                 function add() {
                     let arr =  document.querySelectorAll(`${gear} .productPic`);
+                    // Accounting for edge cases.
+                    if (i === arr.length) {
+                        i = 0;
+                    } else if (i < 0) {
+                        i = arr.length - 1;
+                    }
                     arr[i].classList.add("activeL");
                 }
 

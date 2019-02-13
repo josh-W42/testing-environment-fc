@@ -396,20 +396,34 @@ p {
     }
 
     h2 {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     h3 {
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
 
     p {
-        font-size: 2.5vw;
+        font-size: 2.75vw;
     }
 
-    .gearButtons {
-        width: 100%;
-        font-size: 2.5vw;
+    .gearTitle {
+        font-size: 5vw;
+    }
+
+    .gearCost {
+        font-size: 3vw;
+    }
+
+    .hiddenDetails {
+        display: block;
+    }
+
+    .pic-option {
+      width: 80%;
+      margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .primaryPhoto {
@@ -426,7 +440,6 @@ p {
         width: 50%;
         font-size: 2.5vw;
     }
-
 }
 
 /*
