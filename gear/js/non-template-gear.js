@@ -23,13 +23,17 @@
 
           document.querySelectorAll(".productDiv").forEach(function(pic) {
               pic.addEventListener('mouseenter', function(e) {
-                  document.querySelector(e.target.dataset.info).style.display = "block";
+                  document.querySelectorAll(e.target.dataset.info).forEach(function(detail) {
+                      detail.style.opacity = "1";
+                  });
               });
           });
 
           document.querySelectorAll(".productDiv").forEach(function(pic) {
               pic.addEventListener('mouseleave', function(e) {
-                  document.querySelector(e.target.dataset.info).style.display = "none";
+                  document.querySelectorAll(e.target.dataset.info).forEach(function(detail) {
+                      detail.style.opacity = "0";
+                  });
               });
           });
       },
