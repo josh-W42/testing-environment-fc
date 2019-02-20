@@ -434,6 +434,7 @@ p {
 
     .hiddenDetails {
         display: block;
+        opacity: 1.0;
     }
 
     .pic-option {
