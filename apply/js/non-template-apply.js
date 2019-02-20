@@ -10,23 +10,23 @@
       apps: [
         {
           name: "dance",
-          link: "https://docs.google.com/forms/d/e/1FAIpQLScr5b4_MqviTiiRQtghp9IDb06-Cv0GeIs1UooiTdCQSvpnng/viewform?embedded=true",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSdMzpkG0TMjHj-MoYmRyr8MyNoF1sPfJTHOvnAdAwWhr9oLmg/viewform",
         },
         {
           name: "workshop",
-          link: "https://docs.google.com/forms/d/e/1FAIpQLSf9Gr3k0UCQJcKop4vSzapqUupETBYHwS7OGtYJKNrJSiWO5A/viewform?embedded=true",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSf9Gr3k0UCQJcKop4vSzapqUupETBYHwS7OGtYJKNrJSiWO5A/viewform",
         },
         {
           name: 'team',
-          link: "https://docs.google.com/forms/d/e/1FAIpQLSc2P8dyY-xKiryb4lYM1NaSqG82DPj5NmAY53SErkFHVUqyBg/viewform?embedded=true",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSc2P8dyY-xKiryb4lYM1NaSqG82DPj5NmAY53SErkFHVUqyBg/viewform",
         },
         {
           name: 'choreoShowcase',
-          link: "https://docs.google.com/forms/d/e/1FAIpQLSfuTtGYUJlrAIdEV1bL3EAwVg4s7n_PEOmI9OBoGAxanLF3kg/viewform?embedded=true"
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSfuTtGYUJlrAIdEV1bL3EAwVg4s7n_PEOmI9OBoGAxanLF3kg/viewform"
         },
         {
             name: "wintensive",
-            link: "https://docs.google.com/forms/d/e/1FAIpQLSesWygJOX2tbpfsrpzqvOnIoARYyGE9808XAQtCIV08EeKjXQ/viewform?embedded=true"
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSesWygJOX2tbpfsrpzqvOnIoARYyGE9808XAQtCIV08EeKjXQ/viewform"
         }
       ],
   };
@@ -40,16 +40,6 @@
           model.registerListener('load', model.setLazy);
           model.registerListener('load', model.lazyLoad);
           model.registerListener('scroll', model.lazyLoad);
-
-          document.querySelectorAll('.portfolio-link').forEach(function (link) {
-            link.addEventListener('click', function (e) {
-              for( let app of data.apps ) {
-                if( app.name === link.dataset.app ) {
-                  document.querySelector('#modalFrame').src = app.link;
-                }
-              }
-            });
-          });
 
       },
 
