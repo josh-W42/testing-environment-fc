@@ -83,6 +83,38 @@
             });
         });
 
+        document.querySelectorAll(".productSlideshow").forEach(function(arrow) {
+            arrow.addEventListener("click", function(e) {
+                if (e.target.classList.contains("arrowR")) {
+                    let current = (document.querySelector(".show .activeR")) ? (
+                        document.querySelector(".show .activeR")
+                    ):(document.querySelector(".show .activeL"));
+                    view.showProductImg(parseInt(current.dataset.index, 10) + 1, `#${current.parentElement.id}`);
+                } else {
+                    let current = (document.querySelector(".show .activeR")) ? (
+                        document.querySelector(".show .activeR")
+                    ):(document.querySelector(".show .activeL"));
+                    view.showProductImg(parseInt(current.dataset.index, 10) - 1, `#${current.parentElement.id}`);
+                }
+            });
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if(document.querySelector(".show") !== null) {
+                if(e.key === "ArrowRight") {
+                    let current = (document.querySelector(".show .activeR")) ? (
+                        document.querySelector(".show .activeR")
+                    ):(document.querySelector(".show .activeL"));
+                    view.showProductImg(parseInt(current.dataset.index, 10) + 1, `#${current.parentElement.id}`);
+                } else if (e.key === "ArrowLeft") {
+                    let current = (document.querySelector(".show .activeR")) ? (
+                        document.querySelector(".show .activeR")
+                    ):(document.querySelector(".show .activeL"));
+                    view.showProductImg(parseInt(current.dataset.index, 10) - 1, `#${current.parentElement.id}`);
+                }
+            }
+        });
+
         let bodyRect = document.body.getBoundingClientRect();
         if(Math.floor(bodyRect.right) < 575) {
 

@@ -387,6 +387,32 @@ p {
     border: 1px solid black;
 }
 
+.productSlideshow {
+    display: block;
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    width: 4%;
+    padding: 1%;
+    background: black;
+    color: white;
+    z-index: 2;
+    font-size: 18pt;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.productSlideshow:hover {
+    transition: 0.25s ease;
+    color: black;
+    cursor: pointer;
+    background: white;
+}
+
+.arrowR {
+    left: 55.7%;
+}
+
 .modalAltList {
     display: inline-flex;
     margin: auto;
@@ -447,6 +473,10 @@ p {
     .modal .productPic {
         width: 100%;
         margin-left: 0px;
+    }
+
+    .productSlideshow {
+        display: none;
     }
 
     .productDescription p,
