@@ -95,6 +95,14 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
         eventLink: 'https://www.facebook.com/events/364316264191786/'
       },
       {
+        title: 'FC Spring 2019 Dance LSHIP Info Session',
+        start: '2019-02-20T18:00:00',
+        detail: `Are you passionate about nurturing beginning dancers, and providing a safe and supportive environment for their growth? Foundations is looking for dedicated, positive, and responsible individuals to become captains and directors for our spring quarter teams! Considered it, but don’t know exactly what being dance L-SHIP entails? Curious about the application, time commitment, or experiences of past dance LSHIP? Come to our info Session on February 20th from 6-7PM to find all the answers!`,
+        imgSrc: "../img/events/danceLship_info.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/349755469203218/'
+      },
+      {
         title: 'NSUdays Winter Workshops',
         start: '2019-02-24T17:00:00',
         detail: `Come out to workshops hosted by NSU Modern!`,
@@ -109,6 +117,14 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
         imgSrc: "../img/events/Non_fc_events/sama_winter_wksp.jpg",
         instructor_info: "",
         eventLink: 'https://www.facebook.com/events/590586374718316/'
+      },
+      {
+        title: 'FC Winter 2019 Choreo Showcase',
+        start: '2019-03-01T19:00:00',
+        detail: `Creative juices spilling over? Overflowing with ideas from watching dance videos instead of studying? You sound like someone who NEEDS to apply for our 2019 Winter Choreo Showcase! Perform your own original choreo with friends (or alone!) in front of all of your peers! Have your moment in the spotlight and live out all of your creative fantasies.`,
+        imgSrc: "../img/events/winter_choreo.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/240872433462188/'
       },
       {
         title: 'FC Winter 2019 Workshop Series',
