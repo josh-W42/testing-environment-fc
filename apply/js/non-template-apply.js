@@ -27,6 +27,10 @@
         {
             name: "wintensive",
             link: "https://docs.google.com/forms/d/e/1FAIpQLSesWygJOX2tbpfsrpzqvOnIoARYyGE9808XAQtCIV08EeKjXQ/viewform"
+        },
+        {
+            name: "intern",
+            link: "https://tinyurl.com/y2vwlr9n"
         }
       ],
   };
