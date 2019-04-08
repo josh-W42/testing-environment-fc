@@ -67,6 +67,18 @@
                       title: "WorkShop Chair",
                       detail: "hi my name is Sara, I’m 5ft tall, have a pet corgi, and make EPIC burps. please send music, anime recommendations, and wholesome memes thru Facebook or IG @sarasasaki"
                   },
+                  {
+                      photo: "../img/temporaryPhotos/PaduaJosh.jpg",
+                      name: "Josh Padua",
+                      title: "Spring Events Intern",
+                      detail: ""
+                  },
+                  {
+                      photo: "../img/lship/TsudamaKiana.jpg",
+                      name: "Kiana Tsudama",
+                      title: "Spring Events Intern",
+                      detail: ""
+                  },
               ]
 
           },
@@ -94,16 +106,34 @@
                       detail: "I grew up in Vancouver, Canada and I'm easily distracted by shiny things."
                   },
                   {
+                    photo: "../img/temporaryPhotos/TaVanessa.jpg",
+                    name: "Vanessa Ta",
+                    title: "Spring Design Intern",
+                    detail: ""
+                  },
+                  {
                       photo: "../img/lship/NguyenAndrew.jpg",
                       name: "Andrew Nguyen",
                       title: "Photographer",
                       detail: "Sometimes I sleep with my eyes open xD"
                   },
                   {
+                      photo: "../img/temporaryPhotos/PanSelina.jpg",
+                      name: "Selina Pan",
+                      title: "Spring Photographer Intern",
+                      detail: ""
+                  },
+                  {
                       photo: "../img/temporaryPhotos/LaiJosh.jpg",
                       name: "Josh Lai",
                       title: "Videographer",
                       detail: "I have a personal goal to eat at every restaurant within a 10 mile radius of UCLA... where should I go next? "
+                  },
+                  {
+                      photo: "../img/temporaryPhotos/LamLinus.jpg",
+                      name: "Linus Lam",
+                      title: "Videographer Intern",
+                      detail: ""
                   },
                   {
                       photo: "../img/lship/YaoAudrey.jpg",
@@ -116,6 +146,12 @@
                       name: "Carley Jacobo",
                       title: "Social Media Marketing Chair",
                       detail: "I joined Foundations for the dancing, but stayed for the family."
+                  },
+                  {
+                      photo: "../img/temporaryPhotos/NessipbekovDavid.jpg",
+                      name: "David Nessipbekov",
+                      title: "Spring Marketing Intern",
+                      detail: ""
                   },
                   {
                       photo: "../img/lship/WilsonJosh.jpg",
@@ -148,6 +184,18 @@
                     title: "Finance Chair",
                     detail: 'As one person, I cannot change the whole world, but I can change the whole world of one person" -Paul Shane Spear. Also, I actually do have 10 toes.'
                   },
+                  {
+                    photo: "../img/temporaryPhotos/VuongJennifer.jpg",
+                    name: "Jennifer Vuong",
+                    title: "Spring Finance Intern",
+                    detail: ""
+                  },
+                  {
+                    photo: "../img/TestimonialPhotos/Chang_Myles.jpg",
+                    name: "Myles Chang",
+                    title: "Spring Finance Intern",
+                    detail: ""
+                  },
               ]
 
           },
@@ -179,6 +227,12 @@
                     name: "Sarah Tian",
                     title: "Showcase Chair",
                     detail: "When I was in 5th grade I got an A on my essay on sea cucumbers. I’m still pretty proud of it."
+                  },
+                  {
+                    photo: "../img/temporaryPhotos/NevinsAlex.jpg",
+                    name: "Alex Nevins",
+                    title: "Spring Showcase Intern",
+                    detail: ""
                   },
               ]
 
@@ -318,7 +372,7 @@
                   ],
                   captains: [
                     {
-                      photo: "../img/TestimonialPhotos/Dubey_Meghal.jpg",
+                      photo: "../img/temporaryPhotos/DubeyMeghal.jpg",
                       name:  "Meghal Dubey",
                       title: 'captain',
                       detail: "I was born and raised in India, and the parking lots in UCLA are my second home!",
@@ -450,13 +504,13 @@
                       photo: "../img/lship/HtutSwan.jpg",
                       name:  "Swan Ye Htut",
                       title: 'captain',
-                      detail: "",
+                      detail: "I was born in Myanmar (Burma)!",
                     },
                     {
                       photo: "../img/lship/WuJolie.jpg",
                       name:  "Jolie Wu",
                       title: 'captain',
-                      detail: "",
+                      detail: "I look really serious and I love Amber Liu",
                     }
                   ],
                 },
@@ -529,6 +583,166 @@
                   ],
                 },
               ]
+            },
+            {
+              name: 'winter',
+              teams: [
+                {
+                  name: "ERA",
+                  directors: [
+                    {
+                      photo: "../img/temporaryPhotos/McElhinneyPriscilla.jpg",
+                      name:  "Priscilla McElhinney",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/TrancePatrick.jpg",
+                      name:  "Patrick Trance",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/temporaryPhotos/NgAshley.jpg",
+                      name:  "Ashley Ng",
+                      title: 'captain',
+                      detail: "I always thought dancing was something that only BTS could do, but Foundations has proven me wrong.",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/LeeIvanLship.jpg",
+                      name:  "Ivan Lee",
+                      title: 'captain',
+                      detail: "",
+                    },
+                  ],
+                },
+                {
+                  name: "Milk T's",
+                  directors: [
+                    {
+                      photo: "../img/temporaryPhotos/SanicoIvan.jpg",
+                      name:  "Ivan Sanico",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/ThaoJanme.jpg",
+                      name:  "Janme Thao",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/temporaryPhotos/LooneyHannah.jpg",
+                      name:  "Hannah Looney",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/ZhangSerena.jpg",
+                      name:  "Serena Zhang",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "NAKs",
+                  directors: [
+                    {
+                      photo: "../img/temporaryPhotos/QinAllan.jpg",
+                      name:  "Allan Qin",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/EvangelistaMatt.jpg",
+                      name:  "Matt Evangelista",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/temporaryPhotos/NguyenAngela.jpg",
+                      name:  "Angela Nguyen",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/HoKatie.jpg",
+                      name:  "Katie Ho",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "Reflect",
+                  directors: [
+                    {
+                      photo: "../img/temporaryPhotos/RaDaniel.jpg",
+                      name:  "Daniel Ra",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/ZhuangMichelle.jpg",
+                      name:  "Michelle Zhuang",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/temporaryPhotos/GuoPeibo.jpg",
+                      name:  "Peibo Guo",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/YazonVannah.jpg",
+                      name:  "Vannah-Wila Yazon",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "TSTR SDRDL",
+                  directors: [
+                    {
+                      photo: "../img/temporaryPhotos/AnchetaAnthony.jpg",
+                      name:  "Anthony Ancheta",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/temporaryPhotos/KesterGabbi.jpg",
+                      name:  "Gabbi Kester",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/temporaryPhotos/PanSelina.jpg",
+                      name:  "Selina Pan",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/TestimonialPhotos/Tamondong_Louise.jpg",
+                      name:  "Louise Tamondong",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+              ],
             },
           ],
         },
@@ -681,7 +895,6 @@
 
       render: function() {
 
-        //must be in lower case
         let branch = data.branchID;
 
         let sectionTag = document.createElement('SECTION');
@@ -791,7 +1004,6 @@
             descriptionHead.classList.add('descriptionHead');
             descriptionHead.id = quarter.name;
 
-
             let termTitle = document.createElement('h4');
             termTitle.innerHTML = quarter.name;
             termTitle.classList.add('termTitle');
@@ -856,8 +1068,8 @@
         }
       },
 
-      // I didn't want to repeat code, this now discrives a process..
-      // admin = the information like an admin from the data object.
+      // I didn't want to repeat code, I used javascript to make the DOM objects.
+      // member = the information like an admin from the data object.
       // type = is it a director photo or an admin photo, each have different sizes/parameters.
 
       createHoverPic: function(member, type) {
