@@ -146,10 +146,11 @@ footer {
 */
 
 body {
-  background-image: url("../../img/events/workshops/winter/background.jpg");
+  /* background-image: url("../../img/Banners/springAuditionsBackground.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   color: #272727;
+  background-color: #A4AF69;
 }
 
 #contentDiv,
@@ -166,7 +167,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #272727;
+  color: #D35269;
 }
 
 .duoPost {
@@ -307,6 +308,13 @@ h6 {
   Location: specialSection
 */
 
+/* section:first-of-type {
+  background-image: url("../../img/Banners/winterShowcaseBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
 .specialSection {
     background-color: rgba(255,255,255, 0.75);
     font-weight: bold;
@@ -331,7 +339,6 @@ h6 {
 .dayList {
     padding-left: 0px;
     background: rgb(255,255,255, 0.2);
-    text-align: left;
 }
 
 .dayList span {
@@ -349,6 +356,43 @@ h6 {
 #showcaseInfoDiv a,
 .specialSection a {
   color: blue;
+}
+
+.floatingDiv {
+    display: none;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+
+.floatingDivImg {
+    width: 100%;
+}
+
+.active {
+    display: block;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 575px) {
