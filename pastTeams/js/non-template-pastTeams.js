@@ -608,6 +608,52 @@
               },
             ]
           },
+          {
+            showcase: "Winter 2019",
+            photo: "../img/Banners/twelfthShowcase.jpg",
+            teams: [
+              {
+                name: "Reflect",
+                directors: "Michelle Zhuang x Daniel Ra",
+                captains: "Peibo Guo x Vannah-Wila Yazon",
+                photo: "../img/teams/18-19/19W-REFLECT.jpg",
+                video: "",
+                noModal: false
+              },
+              {
+                name: "TSTR STRDL",
+                directors: "Anthony Ancheta x Gabbi Kester",
+                captains: "Selina Pan x Louise Tamondong",
+                photo: "../img/teams/18-19/19W-TSTR-STRDL.jpg",
+                video: "https://player.vimeo.com/video/326959590",
+                noModal: false
+              },
+              {
+                name: "NAKs",
+                directors: "Allan Qin x Matt Evangelista",
+                captains: "Angela Nguyen x Katie Ho",
+                photo: "../img/teams/18-19/19W-NAKS.jpg",
+                video: "",
+                noModal: false
+              },
+              {
+                name: "ERA",
+                directors: "Priscilla McElhinney x Patrick Trance",
+                captains: "Ashley Ng x Ivan Lee",
+                photo: "../img/teams/18-19/19W-ERA.jpg",
+                video: "",
+                noModal: false
+              },
+              {
+                name: "MILK-Ts",
+                directors: "Ivan Sanico x Janme Thao",
+                captains: "Hannah Looney x Serena Zhang",
+                photo: "../img/teams/18-19/19W-MILK-T.jpg",
+                video: "",
+                noModal: false
+              },
+            ]
+          },
         ],
       },
 
@@ -750,7 +796,7 @@
         console.log(`There have been ${count} FC teams`)
 
         data.yearID = 'yearFive';
-        data.showCaseID = '1'
+        data.showCaseID = '2'
         view.render();
       },
 
