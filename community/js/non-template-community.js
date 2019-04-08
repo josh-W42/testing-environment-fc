@@ -178,7 +178,7 @@
               subName: "Captain of PWR Spring ‘18",
               uclaInfo: "Sociology, 4th Year",
               intro: "I joined Foundations for the dancing, but stayed for the family.",
-              body: "I owe so much to this organization! Every quarter I spend with Foundations, my life changes for the better. I have learned so much this past year as a general member, and in spring, I was given the opportunity to grow even more as a part of leadership. I was a captain for one of the 2018 spring quarter teams, and the experience led me to a lot of self-reflection. Leaving my comfort zone was not something I had always been open to, but the warmth of the Foundations community motivated me. Every quarter, Foundations welcomes a new wave of beginning dancers who push themselves, despite any fear or hesitation, to try something new. Surrounded and inspired by that energy, I started to challenge myself as well, and as a captain I have my team to thank for accepting me as a leader, while also helping me along that path. Watching my team grow alongside me throughout the quarter was one of the most rewarding experiences of my life, and I will treasure those memories forever."
+              body: "I owe so much to this organization! Every quarter I spend with Foundations, my life changes for the better. I have learned so much this past year as a general member, and in spring, I was given the opportunity to grow even more as a part of leadership. I was a captain for one of the 2018 spring quarter teams, and the experience led me to a lot of self-reflection. Leaving my comfort zone was not something I had always been open to, but the warmth of the Foundations community motivated me. Every quarter, Foundations welcomes a new wave of beginning dancers who push themselves, despite any fear or hesitation, to try something new. Surrounded and inspired by that energy, I started to challenge myself as well, and as a captain I have my team to thank for accepting me as a le, while also helping me along that path. Watching my team grow alongside me throughout the quarter was one of the most rewarding experiences of my life, and I will treasure those memories forever."
           },
           {
               img: "../img/TestimonialPhotos/Tian_Anna.jpg",
@@ -201,7 +201,7 @@
               name: "Vivian Tan",
               subName: "Marketing Chair ‘17-’18",
               uclaInfo: "Microbiology, Immunlogy and Molecular Genetics (MIMG), 4th Year",
-              intro: "I wanted to be a part of creating an environment that allows new dancers to find a passion, meet new people, learn to grow, and hopefully find a home in. Just like I did.",
+              intro: "I wanted to be a part of creating an environment that allows new dancers to find a passion, meet new people, learn to grow, and hopefully find a home in. Just ke I did.",
               body: "Having binged in dance videos all throughout high school, I knew that once I got to UCLA, it’ll be something I would try. I remember going to a Foundations workshop, and having not ever danced before... it was a super challenging (and I probably sucked), but it was so much fun! I then swallowed my fears and decided to join a training team, and after having the time of my life after my first team, I applied for Admin LSHIP and served as FC’s Marketing Chair for the 2017-18 year. Being in control of all of FC’s social media really showed me how life-changing a post can be — and for a lot of new dancers, this is how they first learn about Foundations. I wanted to be a part of creating an environment that allows new dancers to find a passion, meet new people, learn to grow, and hopefully find a home in. Just like I did."
           },
           {
@@ -251,7 +251,39 @@
               uclaInfo: "Economics, Senior",
               intro: "Foundations Choreography is a gem that I am glad to discover during my time at UCLA.",
               body: "As a person who came from a community where hip-hop dance is unheard of, I am fortunate to have the opportunity to be exposed to an environment where I can be challenged in every aspect of my character. From just learning choreography to meeting people from various backgrounds, Foundations Choreography has grown me to a person who is willing to put myself out of my own comfort zone. It is hard to find another organization at UCLA that matches the amount of personal growth that Foundations Choreography fosters. Foundations Choreography has been a fun and enlightening experience that I hope to continue to cherish throughout my time at UCLA!"
-          }
+          },
+          {
+              img: "../img/TestimonialPhotos/Wu_Jolie.jpg",
+              name: "Jolie Wu",
+              subName: "Dance LSHIP: Captain of Pocket Monsters Fall '18",
+              uclaInfo: "Pre-Cognitive Science, 2nd year",
+              intro: "I joined Foundations my first year in the Fall because dance was something I’ve never done before but want to.",
+              body: "Through Foundations, I found a community of people who genuinely cared for you, encouraged you to build yourself, and accepted you for who you are; and I found something that I’m willing to devote a lot of time on - dance. The beauty of dance (and being on a team) is that you can connect to others in a different way, you can express yourself purely by just moving the way you feel at the moment, and you can experience the bond you developed with your teammates, who are your family, through blood, sweat, and tears. The best thing about being on a team is that you can feed off of each other’s energy and grow together, where everyone is so unique, yet so united when you’re together. I applied for LSHIP because I want to bring to others everything I gained from FC - a welcoming environment, compassion, passion, and so much more. As a captain, you get to share your knowledge with others, create a good team experience, and witness the growth in your team in the span of 8 weeks, and I feel incredibly proud and rewarded as the team enjoyed dance and the FC experience. FC has brought me growth, challenge, and love, I’m thankful for everyone that contributed to my journey."
+          },
+          {
+              img: "../img/TestimonialPhotos/Htut_Swan.jpg",
+              name: "Swan Htut",
+              subName: "Dance LSHIP: Captain of Pocket Monsters Fall '18",
+              uclaInfo: "Global Studies major, Second year",
+              intro: "Being a Captain for Pocket Monsters was one of the most rewarding experiences I've had here at UCLA.",
+              body: "I was a bit worried going into this quarter because I wanted to emulate the amazing experiences I had on my past teams (Swiped and ETA). But the kiddos on my team made it so easy! As their captain, I saw how much growth they underwent and am extremely happy to say that I was a part of their journey. I couldn't be prouder of my Pocket Monsters for how well they did at showcase and can't wait to see where they go in their future as UCLA students and dancers. Special shoutouts to my LSHIP team (Jolie, Marcea, Brandon <3) for how much they put into this team, to Miya, Liana and Ashley for giving me this opportunity and to the rest of LSHIP for making everything possible. I'll never forget my experiences as a Captain."
+          },
+          {
+              img: "../img/TestimonialPhotos/Ng_Ashley.jpg",
+              name: "Ashley Ng",
+              subName: `General Member<br/>Member Dance LSHIP: Captain of ERA Winter '19`,
+              uclaInfo: "Global Studies, 3rd year",
+              intro: "I spent my first 2 years of college participating in activities in preparation for my career, but Foundations was one of the few things I did solely for myself.",
+              body: "FC is so much more than a dance organization; it has created a space where I can be 100% myself and be affirmed that I am worthy and can have a positive impact on people's lives. As a captain, I hoped to provide this space for my peers and for dance to become a source of happiness for them."
+          },
+          {
+              img: "../img/TestimonialPhotos/Lee_Ivan.jpg",
+              name: "Ivan Lee",
+              subName: "Dance LSHIP: Captain of KOI Fall '18 and ERA Winter '19",
+              uclaInfo: "Biochemistry major, Second year",
+              intro: "When I first joined foundations, I joined just to make friends, but I stayed because I fell in love with dancing.",
+              body: "My captains inspired me a lot as a dancer and I appreciated all of the work they did behind the scenes to make sure all of our teammates were having the best experience possible. I decided to apply to be a captain because I wanted to play the same role in the lives of new dancers. Captaining twice has definitely been difficult but I cherish every moment of it. I was able to witness the growth of so many dancers, and I was able to make so many close friends. I have definitely been impacted more by my teammates than they have by me. Overall, being able to play a part in bringing 40 strangers together into a single dance family has been my favorite experience in college so far. The sense of community and belonging this organization gives to its members is one of the reasons I have stuck with and will continue to stick with Foundations."
+          },
       ],
 
       workshops: [
