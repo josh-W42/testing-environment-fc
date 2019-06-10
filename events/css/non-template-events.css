@@ -308,12 +308,19 @@ h6 {
   Location: specialSection
 */
 
-/* section:first-of-type {
-  background-image: url("../../img/Banners/winterShowcaseBackground.jpg");
+section:first-of-type {
+  background-image: url("../../img/Banners/springShowcaseBackground.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-} */
+}
+
+section:nth-of-type(2) {
+  background-image: url("../../img/events/gala_spring_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .specialSection {
     background-color: rgba(255,255,255, 0.75);
@@ -478,6 +485,11 @@ h6 {
 }
 
 #modalEventLink:hover {
+  text-decoration: underline;
+}
+
+#modalBody a {
+  color: black;
   text-decoration: underline;
 }
 

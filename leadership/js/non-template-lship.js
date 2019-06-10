@@ -19,13 +19,13 @@
                 title: "Executives",
                 name: "Miya Sheker and Liana Liang",
                 miya: {
-                  photo: "../img/lship/ShekerMiya.jpg",
+                  photo: "../img/lship/lship_headshots/ShekerMiya.jpg",
                   name: "Miya Sheker",
                   title: "Executive",
                   detail: "I've lived in California my entire life! When I'm not dancing, you can find me testing out new recipes or looking up pictures of manatees."
                 },
                 liana: {
-                  photo: "../img/lship/LiangLiana.jpg",
+                  photo: "../img/lship/lship_headshots/LiangLiana.jpg",
                   name: "Liana Liang",
                   title: "Executive",
                   detail: "a queen from Queens (jk not really but I'm from the same neighborhood as spiderman so that's cool)"
@@ -37,14 +37,14 @@
 
               body: "The Events Committee is responsible for planning large-scale social events for all general members each quarter. Given how close every team gets each quarter individually, it is important for them to also get to know dancers from other teams in order to maximize their “Foundations experience”. The two Events Chairs are in charge of planning a Clubbing event, an All-Team Amazing Race (in which members represent their teams in competitive outdoor games), and Choreo Showcase (in which members perform their own original choreography). A new addition to the Events Committee is the LSHIP Relations Chair, whose main goal is to facilitate LSHIP bonding and appreciation. They are in charge of planning bonding events within LSHIP, as well as show appreciation of the hard work that every LSHIP member puts in for the organization through gifts, posters, shoutouts etc.",
               director: {
-                  photo: "../img/lship/WongEllis.jpg",
+                  photo: "../img/lship/lship_headshots/WongEllis.jpg",
                   name: "Ellis Wong",
                   title: "Director of Events",
                   detail: "I can raise my eyebrows individually  ( ͡° ͜ʖ ͡°)"
               },
               admins: [
                   {
-                      photo: "../img/lship/HuynhSylvia.jpg",
+                      photo: "../img/lship/lship_headshots/HuynhSylvia.jpg",
                       name: "Sylvia Huynh",
                       title: "LSHIP Relations Chair",
                       detail: "Foundations really is Foundbaetions, I picked up a bae AND a wife! I also like corgi butts. :D"
@@ -737,6 +737,172 @@
                     {
                       photo: "../img/TestimonialPhotos/Tamondong_Louise.jpg",
                       name:  "Louise Tamondong",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+              ],
+            },
+            {
+              name: 'spring',
+              teams: [
+                {
+                  name: "Azami",
+                  directors: [
+                    {
+                      photo: "../img/lship/lship_headshots/SanicoIvan.jpg",
+                      name:  "Ivan Sanico",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/LeeTeddy.jpg",
+                      name:  "Teddy Lee",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/lship_headshots/LeGabby.jpg",
+                      name:  "Gabby Le",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/TsiKara.jpg",
+                      name:  "Kara Tsi",
+                      title: 'captain',
+                      detail: "",
+                    },
+                  ],
+                },
+                {
+                  name: "Swangin’ Peaches",
+                  directors: [
+                    {
+                      photo: "../img/lship/lship_headshots/LiAnya.jpg",
+                      name:  "Anya Li",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/TuckerChantel.jpg",
+                      name:  "Chantel Tucker",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/MartinezVictor.jpg",
+                      name:  "Victor Martinez",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/lship_headshots/SilvermanMorgan.jpg",
+                      name:  "Morgan Silverman",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/LiPeggy.jpg",
+                      name:  "Peggy Li",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "BDE",
+                  directors: [
+                    {
+                      photo: "../img/lship/lship_headshots/CireBryce.jpg",
+                      name:  "Bryce Cire",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/CireDallas.jpg",
+                      name:  "Dallas Cire",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/lship_headshots/TranBrandon.jpg",
+                      name:  "Brandon Tran",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/FarzanMona.jpg",
+                      name:  "Mona Farzan",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "gRooTz",
+                  directors: [
+                    {
+                      photo: "../img/temporaryPhotos/EvangelistaMatt.jpg",
+                      name:  "Matt Evangelista",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/FuntanillaNoelle.jpg",
+                      name:  "Noelle Funtanilla",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/lship_headshots/VillamorBianca.jpg",
+                      name:  "Bianca Villamor",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/WuJolie.jpg",
+                      name:  "Jolie Wu",
+                      title: 'captain',
+                      detail: "",
+                    }
+                  ],
+                },
+                {
+                  name: "LMNT",
+                  directors: [
+                    {
+                      photo: "../img/lship/lship_headshots/DoCookie.jpg",
+                      name:  "Alex Do",
+                      title: 'director',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/CorreaNoelle.jpg",
+                      name:  "Noelle Correa",
+                      title: 'director',
+                      detail: "",
+                    }
+                  ],
+                  captains: [
+                    {
+                      photo: "../img/lship/lship_headshots/LiuSabrina.jpg",
+                      name:  "Sabrina Liu",
+                      title: 'captain',
+                      detail: "",
+                    },
+                    {
+                      photo: "../img/lship/lship_headshots/BaysaJosh.jpg",
+                      name:  "Joshua Baysa",
                       title: 'captain',
                       detail: "",
                     }

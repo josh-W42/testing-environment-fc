@@ -46,6 +46,222 @@ import './fullcalendar-4.0.0-alpha.2/fullcalendar-4.0.0-alpha.2/fullcalendar.min
         instructor_info: "",
         eventLink: 'https://www.facebook.com/events/266512220895520/'
       },
+      {
+        title: 'FC Spring 2019 Workshop Series',
+        start: '2019-04-12T20:00:00',
+        detail: `The sun is shining, the birds are chirping, the flowers are in full bloom. Spring is here, and so is FC’s quarterly workshop series! Bounce down to Lot 4 P1 and learn some cool choreography from a variety of talented choreographers.`,
+        imgSrc: "../img/events/workshops/spring/wk_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/266512220895520/'
+      },
+      {
+        title: 'NSUndays Spring Workshops',
+        start: '2019-04-14T16:30:00',
+        detail: `Come out to NSU's Sunday Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
+      {
+        title: "Samahang Modern | Friends and Family Night",
+        start: '2019-04-18T22:00:00',
+        detail: `Come out to Samahang Modern's Friends and Fam Night this Thursday!`,
+        imgSrc: "../img/events/Non_fc_events/sama_friends_fam.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/679325635817262/'
+      },
+      {
+        title: 'FC Spring 2019 Workshop Series',
+        start: '2019-04-19T18:00:00',
+        detail: `The sun is shining, the birds are chirping, the flowers are in full bloom. Spring is here, and so is FC’s quarterly workshop series! Bounce down to Lot 4 P1 and learn some cool choreography from a variety of talented choreographers.`,
+        imgSrc: "../img/events/workshops/spring/wk_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/266512220895520/'
+      },
+      {
+        title: "NSU Modern Friends & Family",
+        start: '2019-04-19T22:00:00',
+        detail: `Come out to NSU Modern's Friends and Fam Night this Friday!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_friends_fam.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/443274779547905/'
+      },
+      {
+        title: "FC Spring 2019 Super Smash Bash",
+        start: '2019-04-20T19:00:00',
+        detail: `Our Super Smash Bash is the perfect way to bond with your new team AND flex your smash skills in front of a crowd. Want to spectate? Try your hand at some board games and watch the drama unfold from the sidelines! All of our Spring 2019 team members are welcome to join in on the fun! Come down to the SAC Gym (2nd floor) from 7-9PM for a great night!`,
+        imgSrc: "../img/events/smash_bash.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/1564814063649954/'
+      },
+      {
+        title: 'NSUndays Spring Workshops',
+        start: '2019-04-21T16:30:00',
+        detail: `Come out to NSU's Sunday Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
+      {
+        title: 'ACA Hip Hop | Friends & Family (ALL CAL)',
+        start: '2019-04-24T22:00:00',
+        detail: `Come out to ACA's Friends and Fam Night on Wednesday!`,
+        imgSrc: "../img/events/Non_fc_events/aca_friends_fam.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/325497691445382/'
+      },
+      {
+        title: 'Psypher Mental Health Dance Workshops | Spring 2019',
+        start: '2019-04-26T18:00:00',
+        detail: `Come out to Psypher's Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/psypher_workshops_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/453253145217982/'
+      },
+      {
+        title: 'NSUndays Spring Workshops',
+        start: '2019-04-28T16:30:00',
+        detail: `Come out to NSU's Sunday Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
+      {
+        title: 'FC Spring 2019 Workshop Series',
+        start: '2019-05-03T18:00:00',
+        detail: `The sun is shining, the birds are chirping, the flowers are in full bloom. Spring is here, and so is FC’s quarterly workshop series! Bounce down to Lot 4 P1 and learn some cool choreography from a variety of talented choreographers.`,
+        imgSrc: "../img/events/workshops/spring/wk_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/266512220895520/'
+      },
+      {
+        title: 'Psypher Mental Health Dance Workshops | Spring 2019',
+        start: '2019-05-03T20:00:00',
+        detail: `Come out to Psypher's Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/psypher_workshops_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/453253145217982/'
+      },
+      {
+        title: 'FC Spring 2019 Dodgeball Tournament + Pie Your LSHIP Fundraiser',
+        start: '2019-05-05T15:00:00',
+        detail: `Need to release some midterms stress? You’re in luck, because the FC Dodgeball Tournament is back and better than ever! <br/><br/> And this time, we’ve got a special treat lined up for you. Has your LSHIP been pushing you too hard? Makes you run laps when you’re late? Always forcing you to do condition? Here’s your golden opportunity to get back at them: pie your LSHIP! <br/><br/> Come out for some sweet revenge, some dodgeball action, and a chance to win some dope prizes! <br/><br/> Sign up for dodgeball tournament: <br/> <a href="https://forms.gle/R8vZBhtC5bqrE2iX7">https://forms.gle/R8vZBhtC5bqrE2iX7</a> <br/><br/> Sign up to pie your LSHIP: <br/> <a href="https://forms.gle/WP9xAg87iAzK3thn9">https://forms.gle/WP9xAg87iAzK3thn9</a> <br/><br/>`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
+      {
+        title: 'NSUndays Spring Workshops',
+        start: '2019-05-05T16:30:00',
+        detail: `Come out to NSU's Sunday Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
+      {
+        title: 'FC LSHIP 2019-20 Info Session',
+        start: '2019-05-08T18:00:00',
+        detail: `Considering applying for an admin LSHIP position next year, but not sure which one is right for you? <br/><br/> Come to one of our spring admin LSHIP info session to learn more about which positions are available, and how you can get involved! Presentations will cover position expectations, application info, and more! Our current admin LSHIP will also be available for you to talk to if you have any additional questions. <br/><br/> Come out Wednesday, May 8th and Thursday, May 9th and start your Foundations LSHIP journey right. <br/><br/> Applications will be released on Monday, May 6th!`,
+        imgSrc: "../img/events/lshipInfoSesh.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/599142433920554/'
+      },
+      {
+        title: 'FC LSHIP 2019-20 Info Session',
+        start: '2019-05-09T18:00:00',
+        detail: `Considering applying for an admin LSHIP position next year, but not sure which one is right for you? <br/><br/> Come to one of our spring admin LSHIP info session to learn more about which positions are available, and how you can get involved! Presentations will cover position expectations, application info, and more! Our current admin LSHIP will also be available for you to talk to if you have any additional questions. <br/><br/> Come out Wednesday, May 8th and Thursday, May 9th and start your Foundations LSHIP journey right. <br/><br/> Applications will be released on Monday, May 6th!`,
+        imgSrc: "../img/events/lshipInfoSesh.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/599142433920554//'
+      },
+      {
+        title: 'FC Spring 2019 Workshop Series',
+        start: '2019-05-10T20:00:00',
+        detail: `The sun is shining, the birds are chirping, the flowers are in full bloom. Spring is here, and so is FC’s quarterly workshop series! Bounce down to Lot 4 P1 and learn some cool choreography from a variety of talented choreographers.`,
+        imgSrc: "../img/events/workshops/spring/wk_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/266512220895520/'
+      },
+      {
+        title: 'Psypher Mental Health Dance Workshops | Spring 2019',
+        start: '2019-05-10T20:00:00',
+        detail: `Come out to Psypher's Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/psypher_workshops_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/453253145217982/'
+      },
+      {
+        title: 'NSUndays Spring Workshops',
+        start: '2019-05-12T16:30:00',
+        detail: `Come out to NSU's Sunday Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
+      {
+        title: 'FC Spring 2019 Workshop Series',
+        start: '2019-05-17T18:00:00',
+        detail: `The sun is shining, the birds are chirping, the flowers are in full bloom. Spring is here, and so is FC’s quarterly workshop series! Bounce down to Lot 4 P1 and learn some cool choreography from a variety of talented choreographers.`,
+        imgSrc: "../img/events/workshops/spring/wk_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/266512220895520/'
+      },
+      {
+        title: 'NSUndays Spring Workshops',
+        start: '2019-05-19T16:30:00',
+        detail: `Come out to NSU's Sunday Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
+      {
+        title: 'FC Spring 2019 Workshop Series',
+        start: '2019-06-01T20:00:00',
+        detail: `The sun is shining, the birds are chirping, the flowers are in full bloom. Spring is here, and so is FC’s quarterly workshop series! Bounce down to Lot 4 P1 and learn some cool choreography from a variety of talented choreographers.`,
+        imgSrc: "../img/events/workshops/spring/wk_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/266512220895520/'
+      },
+      {
+        title: 'FC Spring 2019 Choreo Showcase',
+        start: '2019-05-24T19:00:00',
+        detail: `Have you been cooking up the perfect choreography and would love to have a taste of the spotlight? <br/><br/> The FC Spring 2019 Choreo Showcase is the best way to show your creativity and dazzle the audience with your talents! Whether you do a solo performance, or join a group endeavor, you will not regret signing up for Choreo Showcase! <br/><br/> Sign up form will be released on Tuesday, May 7th!`,
+        imgSrc: "../img/events/spring_choreo.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/435100040391677/'
+      },
+      {
+        title: 'NSUndays Spring Workshops',
+        start: '2019-05-26T16:30:00',
+        detail: `Come out to NSU's Sunday Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
+      {
+        title: 'Voyage: Foundations Choreography Spring 2019 Exhibition',
+        start: '2019-06-02T19:00:00',
+        detail: `A year in review; <br/><br/> We arose to begin our journey in the fall, and soared to new heights in the winter. Now, as we approach the end of this flight, we gather to reflect on three quarters of growth. <br/><br/> Our five spring teams have been working hard to create beautiful, original sets for your viewing pleasure. <br/><br/> Come to our thirteenth exhibition, Voyage, to see the culmination of three quarters of growing, training, and challenging.`,
+        imgSrc: "../img/Banners/thirteenthShowcase.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/2349224062019227/'
+      },
+      {
+        title: 'FC Spring 2019 Workshop Series',
+        start: '2019-06-07T20:00:00',
+        detail: `The sun is shining, the birds are chirping, the flowers are in full bloom. Spring is here, and so is FC’s quarterly workshop series! Bounce down to Lot 4 P1 and learn some cool choreography from a variety of talented choreographers.`,
+        imgSrc: "../img/events/workshops/spring/wk_banner.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/266512220895520/'
+      },
+      {
+        title: 'NSUndays Spring Workshops',
+        start: '2019-06-02T16:30:00',
+        detail: `Come out to NSU's Sunday Workshops!`,
+        imgSrc: "../img/events/Non_fc_events/nsu_sundays_spring.jpg",
+        instructor_info: "",
+        eventLink: 'https://www.facebook.com/events/282248839359030/'
+      },
     ],
 
   };

@@ -654,6 +654,28 @@
               },
             ]
           },
+          {
+            showcase: "Spring 2019",
+            photo: "../img/Banners/thirteenthShowcase.jpg",
+            teams: [
+              {
+                name: "Swangin’ Peaches",
+                directors: "Victor Martinez x Anya Li x Chantel Tucker",
+                captains: " Morgan Silverman x Peggy Li",
+                photo: "../img/teams/18-19/19S-SWANGING-PEACHES.jpg",
+                video: "",
+                noModal: false
+              },
+              {
+                name: "LMNT",
+                directors: "Alex Do x Noelle Correa",
+                captains: "Sabrina Liu x Joshua Baysa",
+                photo: "../img/teams/18-19/19S-LMNT.jpg",
+                video: "",
+                noModal: false
+              },
+            ]
+          },
         ],
       },
 
@@ -796,7 +818,7 @@
         console.log(`There have been ${count} FC teams`)
 
         data.yearID = 'yearFive';
-        data.showCaseID = '2'
+        data.showCaseID = '3'
         view.render();
       },
 
